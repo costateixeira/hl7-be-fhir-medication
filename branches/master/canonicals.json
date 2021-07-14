@@ -56,6 +56,13 @@
     "name": "BeNSProductPackage"
   },
   {
+    "id": "BeModelMedicationRecord",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecord",
+    "version": "0.2.0",
+    "name": "BeModelMedicationRecord"
+  },
+  {
     "id": "be-medicationdispense",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",

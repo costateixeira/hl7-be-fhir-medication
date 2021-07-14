@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-22T17:53:48+00:00",
+  "date": "2021-07-14T15:17:48+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -493,31 +493,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "NamingSystem"
-          }
-        ],
-        "reference": {
-          "reference": "NamingSystem/be-ns-cnk-codes"
-        },
-        "description": "Naming System - CNK Product Codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/example-dispense-communitypharmacy-1med"
-        },
-        "name": "Example MedicationDispense - example-dispense-communitypharmacy-1med",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -548,21 +523,22 @@
           }
         ],
         "reference": {
-          "reference": "NamingSystem/be-ns-prescription-ids"
+          "reference": "NamingSystem/be-ns-product-package-type"
         },
-        "description": "Naming System - Prescription IDs"
+        "description": "Naming System - Product Package Types"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "NamingSystem"
+            "valueString": "StructureDefinition:logical"
           }
         ],
         "reference": {
-          "reference": "NamingSystem/be-ns-product-package-type"
+          "reference": "StructureDefinition/BeModelMedicationRecord"
         },
-        "description": "Naming System - Product Package Types"
+        "name": "Medication Record logical model",
+        "description": "A collection of a patient's medication history."
       },
       {
         "extension": [
@@ -572,10 +548,22 @@
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/medication-dispense-hospital"
+          "reference": "MedicationDispense/example-dispense-communitypharmacy-1med"
         },
-        "name": "Example MedicationDispense - medication-dispense-hospital",
+        "name": "Example MedicationDispense - example-dispense-communitypharmacy-1med",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/be-ns-cnk-codes"
+        },
+        "description": "Naming System - CNK Product Codes"
       },
       {
         "extension": [
@@ -589,6 +577,31 @@
         },
         "name": "Medication Summary types",
         "description": "CodeSystem - Medication Summary types"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/be-ns-prescription-ids"
+        },
+        "description": "Naming System - Prescription IDs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/medication-dispense-hospital"
+        },
+        "name": "Example MedicationDispense - medication-dispense-hospital",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
       }
     ],
     "page": {
