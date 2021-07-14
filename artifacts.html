@@ -210,16 +210,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Medication Record</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Terminology: Naming Systems</a>
+         <a href="#5">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -297,6 +300,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="3"> </a>
+   <h3>Structures: Logical Models </h3>
+   <p>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BeModelMedicationRecord.html"
+                     title="StructureDefinition/BeModelMedicationRecord">Medication Record logical model</a>
+               </td>
+               <td>
+<p>A collection of a patient’s medication history.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -317,7 +341,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -338,7 +362,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Naming Systems </h3>
    <p>
     <p>These define identifier and/or code system identities used by systems conforming to this implementation guide</p>
@@ -347,6 +371,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-be-ns-product-package-type.html"
+                     title="NamingSystem/be-ns-product-package-type">NamingSystem/be-ns-product-package-type</a>
+               </td>
+               <td>
+<p>Naming System - Product Package Types</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="NamingSystem-be-ns-cnk-codes.html"
@@ -365,19 +398,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Naming System - Prescription IDs</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-product-package-type.html"
-                     title="NamingSystem/be-ns-product-package-type">NamingSystem/be-ns-product-package-type</a>
-               </td>
-               <td>
-<p>Naming System - Product Package Types</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -388,14 +412,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-example-dispense-communitypharmacy-1med.html"
-                     title="MedicationDispense/example-dispense-communitypharmacy-1med">Example MedicationDispense - example-dispense-communitypharmacy-1med</a>
+                  <a href="MedicationDispense-example-minimal-dispense.html"
+                     title="MedicationDispense/example-minimal-dispense">Example MedicationDispense - example-minimal-dispense</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-example-minimal-dispense.html"
-                     title="MedicationDispense/example-minimal-dispense">Example MedicationDispense - example-minimal-dispense</a>
+                  <a href="MedicationDispense-example-dispense-communitypharmacy-1med.html"
+                     title="MedicationDispense/example-dispense-communitypharmacy-1med">Example MedicationDispense - example-dispense-communitypharmacy-1med</a>
                </td>
             </tr>
             <tr>
@@ -429,7 +453,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 27, 2021 15:49+0000">2021-06-27</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 14, 2021 15:17+0000">2021-07-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
