@@ -1,0 +1,16 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeModelMedicationRecordDispense","","","",0,*,"","","","","Medication Record Dispense logical model","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelMedicationRecordDispense.patient","","","",1,1,"","","","BackboneElement {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.patient",1,1,"",""
+"BeModelMedicationRecordDispense.product","","","",1,1,"","","","Medication {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.product",1,1,"",""
+"BeModelMedicationRecordDispense.dispenseDate","","","",0,1,"","","","date {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dispenseDate",0,1,"",""
+"BeModelMedicationRecordDispense.dosageInstructions","","","",0,*,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dosageInstructions",0,*,"",""
+"BeModelMedicationRecordDispense.location","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.location",0,1,"",""
+"BeModelMedicationRecordDispense.prescriptionReference","","","",0,1,"","","","Reference {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.prescriptionReference",0,1,"",""
+"BeModelMedicationRecordDispense.treatmentReference","","","",0,1,"","","","Reference {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.treatmentReference",0,1,"",""

@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-14T15:17:48+00:00"/>
+  <date value="2021-07-14T15:53:00+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -347,6 +347,15 @@
         <reference value="NamingSystem/be-ns-product-package-type"/>
       </reference>
       <description value="Naming System - Product Package Types"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordDispense"/>
+      </reference>
+      <name value="Medication Record Dispense logical model"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

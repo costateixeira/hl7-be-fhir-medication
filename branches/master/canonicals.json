@@ -63,6 +63,13 @@
     "name": "BeModelMedicationRecord"
   },
   {
+    "id": "BeModelMedicationRecordDispense",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordDispense",
+    "version": "0.2.0",
+    "name": "BeModelMedicationRecordDispense"
+  },
+  {
     "id": "be-medicationdispense",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",
