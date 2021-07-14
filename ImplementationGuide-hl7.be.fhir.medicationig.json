@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-14T15:17:48+00:00",
+  "date": "2021-07-14T15:53:00+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -526,6 +526,18 @@
           "reference": "NamingSystem/be-ns-product-package-type"
         },
         "description": "Naming System - Product Package Types"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BeModelMedicationRecordDispense"
+        },
+        "name": "Medication Record Dispense logical model"
       },
       {
         "extension": [

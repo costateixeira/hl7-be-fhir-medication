@@ -4,7 +4,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.patient",1,1,"",""
 "BeModelMedicationRecord.prescription","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.prescription",0,*,"",""
-"BeModelMedicationRecord.dispense","","","",0,*,"","","","BackboneElement {[]} {[]}
+"BeModelMedicationRecord.dispense","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordDispense {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.dispense",0,*,"",""
 "BeModelMedicationRecord.treatmentLine","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.treatmentLine",0,*,"",""
