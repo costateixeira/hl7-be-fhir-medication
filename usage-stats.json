@@ -7,6 +7,10 @@
   "profiles": {
     "MedicationDispense": [
       {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense",
+        "title": "MedRecordDispense"
+      },
+      {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",
         "title": "BeMedicationDispense"
       }

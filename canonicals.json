@@ -63,11 +63,39 @@
     "name": "BeModelMedicationRecord"
   },
   {
+    "id": "BeModelMedicationRecordAdministration",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordAdministration",
+    "version": "0.2.0",
+    "name": "BeModelMedicationRecordAdministration"
+  },
+  {
     "id": "BeModelMedicationRecordDispense",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordDispense",
     "version": "0.2.0",
     "name": "BeModelMedicationRecordDispense"
+  },
+  {
+    "id": "BeModelMedicationRecordPrescription",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordPrescription",
+    "version": "0.2.0",
+    "name": "BeModelMedicationRecordPrescription"
+  },
+  {
+    "id": "BeModelMedicationRecordUsage",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordUsage",
+    "version": "0.2.0",
+    "name": "BeModelMedicationRecordUsage"
+  },
+  {
+    "id": "MedRecordDispense",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense",
+    "version": "0.2.0",
+    "name": "MedRecordDispense"
   },
   {
     "id": "be-medicationdispense",
