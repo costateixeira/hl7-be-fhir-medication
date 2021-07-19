@@ -48,7 +48,7 @@ Title:    "Dispense Example - Prescribed branded medication is changed by anothe
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-
+/*
 Instance: example-1-of-medication-presc 
 InstanceOf: BeModelMedicationRecordPrescription
 Usage: #example
@@ -80,3 +80,4 @@ Title:    "Dispense Example - Prescribed branded medication is changed by anothe
 
 * treatment.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * treatment.identifier.system = "http://treatment-identifiers.com"
+*/
