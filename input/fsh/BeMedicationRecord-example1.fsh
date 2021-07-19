@@ -1,44 +1,58 @@
 Instance: example-1-of-medication-dispense 
-InstanceOf: BeModelMedicationRecordDispense
+InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
 Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+Instance: example-1-of-medication-dispense 
+InstanceOf: MedRecordDispense
+Usage: #example
+Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
+Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed
 
-* product.identifier.system = "https://cnk.apb.be/codings/cnk_product_codes"
-* product.identifier.value = #2399640
-* product.display = "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
+* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#2399640  "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
 
-* date = "2021-07-19T13:00:00+02:00"
 
-* dispenseDetail.quantitydispensed.value = 100
-* dispenseDetail.quantitydispensed.unit = "TAB"
-* dispenseDetail.quantitydispensed.system =  "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
-* dispenseDetail.quantitydispensed.code = "TAB"
+* whenHandedOver = "2021-07-19T13:00:00+02:00"
+
+* quantity.value = 1
+* quantity.unit = "Box"
+* quantity.system =  "http://standardterms.edqm.eu/PAC"
+* quantity.code = #30009000
+
+/*
+* quantity.value = 100
+* quantity.unit = "TAB"
+* quantity.system =  "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
+* quantity.code = "TAB"
+*/
 //or 1 package?
 
-* prescription.identifier.system = "http://prescription-identifiers.com"
-* prescription.identifier.value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
+* authorizingPrescription.identifier.system = "http://prescription-identifiers.com"
+* authorizingPrescription.identifier.value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
 
-* SubstitutionReason.coding.display = "Out of Stock"
-* SubstitutionReason.coding.code = "OS"
-* SubstitutionReason.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
-* dispenser.actor.identifier.value = "7c3aa173-3185-4001-a661-df36a7492798"
-* dispenser.actor.identifier.system = "http://dispenser-identifiers.com"
+* substitution.wasSubstituted = true
+* substitution.reason.coding.display = "Out of Stock"
+* substitution.reason.coding.code = #OS
+* substitution.reason.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 
-* dispenser.actor.display = "Pharmacist"
+* performer[+].actor.identifier.value = "7c3aa173-3185-4001-a661-df36a7492798"
+* performer[=].actor.identifier.system = "http://dispenser-identifiers.com"
+* performer[=].actor.display = "Pharmacist"
+* performer[=].function.coding = #dispenser
 
-* dispenser.organization.identifier.value = "5b2e9903-fba7-4ed3-aa76-52d386012ca0"
-* dispenser.organization.identifier.system = "http://dispenser-identifiers.com"
+* performer[+].actor.identifier.value = "5b2e9903-fba7-4ed3-aa76-52d386012ca0"
+* performer[=].actor.identifier.system = "http://dispenser-identifiers.com"
+* performer[=].actor.display = "Pharmacy X"
+* performer[=].function.coding = #dispensingOrg
 
-* dispenser.organization.display = "Pharmacy X"
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-* treatment.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
-* treatment.identifier.system = "http://treatment-identifiers.com"
 
 
 Instance: example-1-of-medication-presc 
