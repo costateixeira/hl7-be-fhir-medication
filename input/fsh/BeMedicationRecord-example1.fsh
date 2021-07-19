@@ -4,12 +4,6 @@ Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
 Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 
-Instance: example-1-of-medication-dispense 
-InstanceOf: MedRecordDispense
-Usage: #example
-Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
-Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
-
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed
