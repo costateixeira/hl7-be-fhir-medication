@@ -5,14 +5,28 @@
   "jurisdiction": "056",
   "extensions": [],
   "profiles": {
-    "MedicationDispense": [
+    "MedicationAdministration": [
       {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense",
-        "title": "MedRecordDispense"
-      },
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration",
+        "title": "MedRecordAdministration"
+      }
+    ],
+    "MedicationDispense": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",
         "title": "BeMedicationDispense"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription",
+        "title": "MedRecordPrescription"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage",
+        "title": "MedRecordUsage"
       }
     ]
   },
@@ -37,7 +51,10 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/event-basedOn": [
-      "MedicationDispense"
+      "MedicationAdministration",
+      "MedicationDispense",
+      "MedicationRequest",
+      "MedicationStatement"
     ],
     "http://hl7.org/fhir/StructureDefinition/geolocation": [
       "MedicationDispense.contained"
