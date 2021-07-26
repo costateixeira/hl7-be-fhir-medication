@@ -1,9 +1,9 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 115, warn = 94, info = 49
+err = 112, warn = 93, info = 49
 IG Publisher Version: 1.1.77
-Generated Mon Jul 26 10:56:58 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Mon Jul 26 11:30:59 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 298 / 34 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types : 0 / 1 / 1
@@ -12,7 +12,7 @@ Generated Mon Jul 26 10:56:58 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense : 0 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense : 0 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense : 0 / 2 / 4
- /github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense : 5 / 3 / 5
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense : 2 / 2 / 5
  /github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense : 1 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense : 5 / 3 / 5
  /github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense : 1 / 2 / 4
@@ -5029,12 +5029,8 @@ INFORMATION: MedicationDispense/example-2-of-medication-dispense: MedicationDisp
 WARNING: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
-WARNING: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0]: Code System URI '' is unknown so the code cannot be validated
-ERROR: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0].system: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
-ERROR: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0].system: @value cannot be empty
-ERROR: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0].display: ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
-ERROR: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0].display: @value cannot be empty
+ERROR: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.substitution.reason[0].coding[0]: Code System URI 'medication-substitution-dispense-v1' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json ==
 ERROR: MedicationDispense/example-3-2-of-medication-dispense: MedicationDispense: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
 INFORMATION: MedicationDispense/example-3-2-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
