@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-26T11:30:33+00:00"/>
+  <date value="2021-07-26T12:38:59+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -331,6 +331,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medication-substitution-dispense-v1"/>
+      </reference>
+      <name value="medication substitution Value set"/>
+      <description value="Value set for substituting a medication on dispense."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example-5-of-medication-presc"/>
+      </reference>
+      <name value="Example MedicationRequest - example-5-of-medication-presc"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
@@ -532,6 +552,16 @@
         <reference value="StructureDefinition/BeModelMedicationRecordDispense"/>
       </reference>
       <name value="Medication Record Dispense logical model"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/example-5-of-medication-dispense"/>
+      </reference>
+      <name value="Example MedicationDispense - example-5-of-medication-dispense"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
