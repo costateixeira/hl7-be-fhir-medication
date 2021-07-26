@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-26T12:40:42+00:00",
+  "date": "2021-07-26T12:51:01+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -501,6 +501,18 @@
         },
         "name": "Example MedicationDispense - example-4-1-of-medication-dispense",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BeModelMedicationRecordTreatmentLine"
+        },
+        "name": "Medication Record Treatment Line logical model"
       },
       {
         "extension": [

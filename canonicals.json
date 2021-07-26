@@ -84,6 +84,13 @@
     "name": "BeModelMedicationRecordPrescription"
   },
   {
+    "id": "BeModelMedicationRecordTreatmentLine",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordTreatmentLine",
+    "version": "0.2.0",
+    "name": "BeModelMedicationRecordTreatmentLine"
+  },
+  {
     "id": "BeModelMedicationRecordUsage",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordUsage",

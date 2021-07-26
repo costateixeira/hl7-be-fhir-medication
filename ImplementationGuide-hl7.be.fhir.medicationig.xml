@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-26T12:40:42+00:00"/>
+  <date value="2021-07-26T12:51:01+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -328,6 +328,15 @@
       </reference>
       <name value="Example MedicationDispense - example-4-1-of-medication-dispense"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordTreatmentLine"/>
+      </reference>
+      <name value="Medication Record Treatment Line logical model"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
