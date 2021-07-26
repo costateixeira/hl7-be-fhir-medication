@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-26T11:30:33+00:00",
+  "date": "2021-07-26T12:38:59+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -506,6 +506,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medication-substitution-dispense-v1"
+        },
+        "name": "medication substitution Value set",
+        "description": "Value set for substituting a medication on dispense."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/example-5-of-medication-presc"
+        },
+        "name": "Example MedicationRequest - example-5-of-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -768,6 +794,19 @@
           "reference": "StructureDefinition/BeModelMedicationRecordDispense"
         },
         "name": "Medication Record Dispense logical model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/example-5-of-medication-dispense"
+        },
+        "name": "Example MedicationDispense - example-5-of-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
