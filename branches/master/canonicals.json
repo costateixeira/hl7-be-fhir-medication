@@ -119,13 +119,6 @@
     "name": "MedRecordPrescription"
   },
   {
-    "id": "MedRecordTreatmentLine",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
-    "version": "0.2.0",
-    "name": "MedRecordTreatmentLine"
-  },
-  {
     "id": "MedRecordUsage",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage",

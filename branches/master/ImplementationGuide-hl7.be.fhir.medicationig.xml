@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-26T12:51:02+00:00"/>
+  <date value="2021-07-26T12:51:01+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -542,14 +542,6 @@
       </reference>
       <name value="Example MedicationRequest - example-6-of-medication-presc"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MedRecordTreatmentLine"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

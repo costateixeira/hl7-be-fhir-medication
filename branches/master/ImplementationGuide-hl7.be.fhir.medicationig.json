@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-26T12:51:02+00:00",
+  "date": "2021-07-26T12:51:01+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -781,17 +781,6 @@
         },
         "name": "Example MedicationRequest - example-6-of-medication-presc",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/MedRecordTreatmentLine"
-        }
       },
       {
         "extension": [
