@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 288, errors = 115, warn = 94, info = 49 -->
+<!-- broken links = 288, errors = 112, warn = 93, info = 49 -->
 <head>
   <title>BEMedicationIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for BEMedicationIG</h1>
- <p>Generated Mon Jul 26 10:56:58 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Mon Jul 26 11:30:59 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.be.fhir.medicationig, Canonical = https://www.hl7belgium.be/fhir</td></tr>
@@ -38,7 +38,7 @@
  <br/><br/>The copyrightYear parameter ('2019+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.hl7belgium.be/fhir (Problem #1 with package-list.json at https://www.hl7belgium.be/fhir: www.hl7belgium.be)</td></tr>
- <tr><td>Summary:</td><td> broken links = 288, errors = 115, warn = 94, info = 49</td></tr>
+ <tr><td>Summary:</td><td> broken links = 288, errors = 112, warn = 93, info = 49</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -66,7 +66,7 @@
      <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-10-3-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-2-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense</b></a></td><td><b>5</b></td><td><b>3</b></td><td><b>3</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-2-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-3-2-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>2</b></td>
@@ -5948,23 +5948,11 @@
    <tr style="background-color: #ffffe6">
      <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>MedicationDispense.substitution.reason[0].coding[0] (l62/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationDispense.substitution.reason[0].coding[0] (l62/c12)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Relative"><b>Coding.system must be an absolute reference, not a local reference</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>MedicationDispense.substitution.reason[0].coding[0] (l62/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI '' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationDispense.substitution.reason[0].coding[0].system (l66/c12)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed"><b>ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationDispense.substitution.reason[0].coding[0].system (l66/c12)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationDispense.substitution.reason[0].coding[0].display (l63/c27)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed"><b>ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationDispense.substitution.reason[0].coding[0].display (l63/c27)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
+     <td><b>MedicationDispense.substitution.reason[0].coding[0] (l62/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'medication-substitution-dispense-v1' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -6244,7 +6232,7 @@
      <td><b>MedicationDispense.context.identifier.type.coding[0] (l59/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl423" class="flip" onclick="flip('l423')">Show Reasoning</span><div id="l423" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
+     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl419" class="flip" onclick="flip('l419')">Show Reasoning</span><div id="l419" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationDispense.quantity (l125/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
@@ -7130,9 +7118,6 @@
      <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
      <td><a href="MedicationDispense-example-3-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
@@ -7273,7 +7258,7 @@
      <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>Code System URI '' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>Code System URI 'medication-substitution-dispense-v1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="MedicationDispense-example-3-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
@@ -7379,6 +7364,14 @@
    </tr>
 </table>
 <hr/>
+<a name="Terminology_TX_System_Relative"> </a>
+<h2>Terminology_TX_System_Relative</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>Coding.system must be an absolute reference, not a local reference</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Terminology_TX_System_Unknown"> </a>
 <h2>Terminology_TX_System_Unknown</h2>
  <table class="grid">
@@ -7390,12 +7383,6 @@
 <a name="Type_Specific_Checks_DT_Primitive_NotEmpty"> </a>
 <h2>Type_Specific_Checks_DT_Primitive_NotEmpty</h2>
  <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>@value cannot be empty</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>@value cannot be empty</b></td>
-   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="MedicationDispense-example-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense.json</a></td><td><b>@value cannot be empty</b></td>
    </tr>
