@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BeVSMedicationSummaryTypes"];
   fhir:ValueSet.title [ fhir:value "Medication Summary types"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-07-23T13:09:50+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-07-26T08:50:53+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Belgium"];
   fhir:ValueSet.contact [
      fhir:index 0;
