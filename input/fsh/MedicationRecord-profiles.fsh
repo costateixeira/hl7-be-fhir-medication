@@ -98,7 +98,23 @@ Parent: MedicationStatement
 * category MS //medicationType
 * note MS //everything else (origintype, lotnumber and reaction)
 
-
+//based on R4
+Profile: MedRecordTreatmentLine
+Parent: MedicationStatement
+* identifier MS
+* basedOn MS
+* subject MS 
+* informationSource MS //recorder
+* dateAsserted MS //recordDate
+* effectiveDateTime MS //startMedicationDate + endMedicationDate
+* effectivePeriod MS //startMedicationDate + endMedicationDate
+* status MS //lifecycleStatus
+* statusReason MS //statusReason
+* medicationCodeableConcept MS
+* medicationReference MS
+* dosage MS //dosageAmmount + peridocity + dayperiod + route + instructionforUse
+* category MS //medicationType
+* note MS //everything else (origintype, lotnumber and reaction)
 
 /*
 Alias: $be-patient = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
