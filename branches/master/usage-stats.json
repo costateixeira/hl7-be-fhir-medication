@@ -25,6 +25,10 @@
     ],
     "MedicationStatement": [
       {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
+        "title": "MedRecordTreatmentLine"
+      },
+      {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage",
         "title": "MedRecordUsage"
       }

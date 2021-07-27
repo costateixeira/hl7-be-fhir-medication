@@ -1,9 +1,9 @@
 "Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
 "BeModelMedicationRecordPrescription","","","",0,*,"","","","","Medication Record Prescription logical model","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "BeModelMedicationRecordPrescription.identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","The business identifier(s) for the medication dispense session","The business identifier(s) for the medication dispense session","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordPrescription.identifier",0,1,"",""
+","The business identifier(s) for the medication prescription","The business identifier(s) for the medication prescription","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordPrescription.identifier",0,1,"",""
 "BeModelMedicationRecordPrescription.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","The person for which the medication is dispensed.","The person for which the medication is dispensed.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordPrescription.patient",1,1,"",""
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordPrescription.patient",1,1,"",""
 "BeModelMedicationRecordPrescription.status","","","",1,1,"","","","code {[]} {[]}
 ","active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)","active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordPrescription.status",1,1,"",""
 "BeModelMedicationRecordPrescription.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
