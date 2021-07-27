@@ -4,6 +4,9 @@ Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
 Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 
+* identifier[0].system = "http://prescription-identifiers.com"
+* identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
+
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 
@@ -30,8 +33,12 @@ Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
 Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 
+* identifier[0].system = "http://dispense-identifiers.com"
+* identifier[0].value = "f219aa4e-5d10-4f3d-840d-a15e0dff2957"
+
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
+
 * status = #completed
 
 * medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#2399640  "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
