@@ -1,11 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a7ab5418-f697-4396-bea6-952e85fb145b"/>
+  <id value="83306752-5e05-4050-98c6-cff4b1a7e09a"/>
   <meta>
-    <lastUpdated value="2021-07-27T10:22:17.082+00:00"/>
+    <lastUpdated value="2021-07-29T10:28:01.653+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-medication-summary-types"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-medication-summary-types.html">Medication Summary types v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-medication-summary-types.html">
+                <code>https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6"> </a>
+                  <a href="CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.466">kmehr-ms-5.6</a>
+                </td>
+                <td>Belgian Medication Schema v5.6 - 09/2018</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5"> </a>
+                  <a href="CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.465">kmehr-ms-5.5</a>
+                </td>
+                <td>Belgian Medication Schema v5.5 - 12-2017</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
+        <version value="0.2.0"/>
+        <name value="BeVSMedicationSummaryTypes"/>
+        <title value="Medication Summary types"/>
+        <status value="active"/>
+        <date value="2021-07-29T10:28:01+00:00"/>
+        <publisher value="HL7 Belgium"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7belgium.org"/>
+          </telecom>
+        </contact>
+        <description value="Valueset -  Medication Summary types"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <text value="Belgium"/>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8c415404-b40c-41dc-af65-65cc850320ed"/>
+          <timestamp value="2021-07-29T10:28:16+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
+            <code value="kmehr-ms-5.6"/>
+            <display value="Belgian Medication Schema v5.6 - 09/2018"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
+            <code value="kmehr-ms-5.5"/>
+            <display value="Belgian Medication Schema v5.5 - 12-2017"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1"/>
     <resource>
@@ -93,7 +188,7 @@
         <name value="SubstitutionReason"/>
         <title value="medication substitution Value set"/>
         <status value="active"/>
-        <date value="2021-07-27T10:22:17+00:00"/>
+        <date value="2021-07-29T10:28:01+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -110,8 +205,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b7b4ac15-7e67-48d8-b012-49175336eb16"/>
-          <timestamp value="2021-07-27T10:22:32+00:00"/>
+          <identifier value="urn:uuid:74c0d0e6-e09d-46cf-b4cf-63c44bff7836"/>
+          <timestamp value="2021-07-29T10:28:18+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -157,101 +252,6 @@
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
             <code value="UNABLE"/>
             <display value="unable to use"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
-    <resource>
-      <ValueSet>
-        <id value="be-vs-medication-summary-types"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-be-cs-medication-summary-types.html">Medication Summary types v0.2.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-be-cs-medication-summary-types.html">
-                <code>https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6"> </a>
-                  <a href="CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.466">kmehr-ms-5.6</a>
-                </td>
-                <td>Belgian Medication Schema v5.6 - 09/2018</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5"> </a>
-                  <a href="CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.465">kmehr-ms-5.5</a>
-                </td>
-                <td>Belgian Medication Schema v5.5 - 12-2017</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
-        <version value="0.2.0"/>
-        <name value="BeVSMedicationSummaryTypes"/>
-        <title value="Medication Summary types"/>
-        <status value="active"/>
-        <date value="2021-07-27T10:22:17+00:00"/>
-        <publisher value="HL7 Belgium"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7belgium.org"/>
-          </telecom>
-        </contact>
-        <description value="Valueset -  Medication Summary types"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <text value="Belgium"/>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:e85c1aef-dd9c-4efd-a865-c6a80b9dd0e1"/>
-          <timestamp value="2021-07-27T10:22:32+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types|0.2.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
-            <code value="kmehr-ms-5.6"/>
-            <display value="Belgian Medication Schema v5.6 - 09/2018"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
-            <code value="kmehr-ms-5.5"/>
-            <display value="Belgian Medication Schema v5.5 - 12-2017"/>
           </contains>
         </expansion>
       </ValueSet>
