@@ -23,6 +23,12 @@
         "title": "MedRecordPrescription"
       }
     ],
+    "CarePlan": [
+      {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment",
+        "title": "MedRecordTreatment"
+      }
+    ],
     "MedicationStatement": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
@@ -67,6 +73,9 @@
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [

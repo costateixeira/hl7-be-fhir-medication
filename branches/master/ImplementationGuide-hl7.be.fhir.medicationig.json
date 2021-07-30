@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-30T09:18:57+00:00",
+  "date": "2021-07-30T09:30:51+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -501,6 +501,17 @@
         },
         "name": "Example MedicationRequest - example-5-of-medication-presc",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedRecordTreatment"
+        }
       },
       {
         "extension": [
@@ -1070,90 +1081,14 @@
       }
     ],
     "page": {
-      "nameUrl": "toc.html",
-      "title": "Table of Contents",
-      "generation": "html",
+      "nameUrl": "implementation.html",
+      "title": "Medication Record Implementation",
+      "generation": "markdown",
       "page": [
         {
-          "nameUrl": "index.html",
-          "title": "MyIG Home Page",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "howto.html",
-          "title": "How to read this document",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "usecases-dispense.html",
-          "title": "Use Cases - Dispense",
+          "nameUrl": "medicationrecord-fhir-resources.html",
+          "title": "Medication Record - FHIR resources",
           "generation": "markdown"
-        },
-        {
-          "nameUrl": "medicationrecord.html",
-          "title": "The Belgian Medication Record",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "medicationrecord-scenarios.html",
-              "title": "Medication Record Scenarios",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "medicationrecord-scenario-1.html",
-                  "title": "Scenario 1 - concurrent medications",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "medicationrecord-scenario-2.html",
-                  "title": "Scenario 2 - medication protocols",
-                  "generation": "markdown"
-                }
-              ]
-            },
-            {
-              "nameUrl": "medicationrecord-definitions.html",
-              "title": "Definitions - Medication Record",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "medicationrecord-requirements.html",
-              "title": "Requirements - Medication Record",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "medicationrecord-patterns.html",
-              "title": "Architectural patterns - Medication Record",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "medicationrecord-pattern-1.html",
-                  "title": "Pattern 1 - Consult a patient's medication record",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "medicationrecord-pattern-2.html",
-                  "title": "Pattern 2 - update a patient's medication record",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "medicationrecord-pattern-3.html",
-                  "title": "Pattern 3 - Compile a medication record",
-                  "generation": "markdown"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "nameUrl": "logical-models.html",
-          "title": "Logical Models",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
-          "generation": "html"
         }
       ]
     },
