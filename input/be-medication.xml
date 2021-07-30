@@ -221,6 +221,16 @@
 	  		<generation value="html"/>
 		  </page>
     </page>
+	   <page>
+        <nameUrl value="implementation.html"/>
+        <title value="Medication Record Implementation"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="medicationrecord-fhir-resources.html"/>
+          <title value="Medication Record - FHIR resources"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
