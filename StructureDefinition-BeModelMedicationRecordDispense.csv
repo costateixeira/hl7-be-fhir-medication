@@ -30,8 +30,8 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 ","The instructions for use","The instructions for use","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dosageInstruction",0,1,"",""
 "BeModelMedicationRecordDispense.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Additional information about the dispensed item","Additional information about the dispensed item","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.note",0,*,"",""
-"BeModelMedicationRecordDispense.SubstitutionReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Why was substitution made","Why was substitution made","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.SubstitutionReason",0,1,"",""
+"BeModelMedicationRecordDispense.substitutionReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Why was substitution made","Why was substitution made","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.substitutionReason",0,1,"",""
 "BeModelMedicationRecordDispense.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Trial fill, partial fill, emergency fill, etc.","Trial fill, partial fill, emergency fill, etc.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.type",0,1,"",""
 "BeModelMedicationRecordDispense.location","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/openEHR-location]]}

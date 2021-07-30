@@ -1,9 +1,9 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 117, warn = 108, info = 51
+err = 117, warn = 106, info = 51
 IG Publisher Version: 1.1.77
-Generated Thu Jul 29 10:28:27 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Fri Jul 30 08:52:46 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 338 / 39 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types : 0 / 1 / 1
@@ -41,7 +41,7 @@ Generated Thu Jul 29 10:28:27 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration : 2 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense : 4 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense : 4 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordPrescription : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatment : 2 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatmentLine : 2 / 2 / 1
@@ -5839,8 +5839,6 @@ WARNING: StructureDefinition/BeModelMedicationRecordAdministration: StructureDef
 WARNING: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
-WARNING: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.snapshot.element[16]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.differential.element[16]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.differential.element[18].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)
 ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)
