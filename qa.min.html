@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 327, errors = 117, warn = 106, info = 51 -->
+<!-- broken links = 323, errors = 118, warn = 109, info = 51 -->
 <head>
   <title>BEMedicationIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for BEMedicationIG</h1>
- <p>Generated Fri Jul 30 09:19:31 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Fri Jul 30 09:31:33 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.be.fhir.medicationig, Canonical = https://www.hl7belgium.be/fhir</td></tr>
@@ -38,14 +38,14 @@
  <br/><br/>The copyrightYear parameter ('2019+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.hl7belgium.be/fhir (Problem #1 with package-list.json at https://www.hl7belgium.be/fhir: www.hl7belgium.be)</td></tr>
- <tr><td>Summary:</td><td> broken links = 327, errors = 117, warn = 106, info = 51</td></tr>
+ <tr><td>Summary:</td><td> broken links = 323, errors = 118, warn = 109, info = 51</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>338</b></td><td><b>39</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>335</b></td><td><b>40</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-be-cs-medication-summary-types"><b>/github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -177,6 +177,9 @@
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordPrescription"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordPrescription</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordTreatment"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatment</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordTreatmentLine"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatmentLine</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
@@ -219,6 +222,12 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-5-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/MedRecordTreatment.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedRecordTreatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-3-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -688,6 +697,25 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedRecordTreatment.profile.history.html">StructureDefinition-MedRecordTreatment.profile.history.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationDispense-example-10-2-of-medication-dispense.html">MedicationDispense-example-10-2-of-medication-dispense.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -745,25 +773,6 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="usecases-dispense.html">usecases-dispense.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationRequest-example-3-2-of-medication-presc.change.history.html">MedicationRequest-example-3-2-of-medication-presc.change.history.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -803,25 +812,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationDispense-medication-dispense-example-1.html">MedicationDispense-medication-dispense-example-1.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-scenario-2.html">medicationrecord-scenario-2.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -1315,6 +1305,44 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedRecordTreatment-examples.html">StructureDefinition-MedRecordTreatment-examples.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedRecordTreatment.profile.ttl.html">StructureDefinition-MedRecordTreatment.profile.ttl.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationStatement-example-8-of-medication-usage.json.html">MedicationStatement-example-8-of-medication-usage.json.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -1790,6 +1818,25 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedRecordTreatment.html">StructureDefinition-MedRecordTreatment.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationDispense-example-minimal-dispense.change.history.html">MedicationDispense-example-minimal-dispense.change.history.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -2037,25 +2084,6 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-scenario-1.html">medicationrecord-scenario-1.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-MedRecordDispense.html">StructureDefinition-MedRecordDispense.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -2266,6 +2294,25 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="NamingSystem-be-ns-prescription-ids.change.history.html">NamingSystem-be-ns-prescription-ids.change.history.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-fhir-resources.html">medicationrecord-fhir-resources.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -2778,7 +2825,7 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BeModelMedicationRecordTreatment.profile.ttl.html">StructureDefinition-BeModelMedicationRecordTreatment.profile.ttl.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+     <td><b><a href="StructureDefinition-MedRecordTreatment-definitions.html">StructureDefinition-MedRecordTreatment-definitions.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -2797,7 +2844,7 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-pattern-2.html">medicationrecord-pattern-2.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+     <td><b><a href="StructureDefinition-BeModelMedicationRecordTreatment.profile.ttl.html">StructureDefinition-BeModelMedicationRecordTreatment.profile.ttl.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -2911,44 +2958,6 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="logical-models.html">logical-models.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord.html">medicationrecord.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-MedRecordAdministration-definitions.html">StructureDefinition-MedRecordAdministration-definitions.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -2969,6 +2978,25 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="NamingSystem-be-ns-nihdi-professional.xml.html">NamingSystem-be-ns-nihdi-professional.xml.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedRecordTreatment-mappings.html">StructureDefinition-MedRecordTreatment-mappings.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -3519,25 +3547,6 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-pattern-3.html">medicationrecord-pattern-3.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-MedRecordDispense.profile.ttl.html">StructureDefinition-MedRecordDispense.profile.ttl.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -3918,25 +3927,6 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="downloads.html">downloads.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationRequest-example-6-of-medication-presc.json.html">MedicationRequest-example-6-of-medication-presc.json.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -4203,25 +4193,6 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="howto.html">howto.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-be-model-medication-record-examples.html">StructureDefinition-be-model-medication-record-examples.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -4412,25 +4383,6 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-requirements.html">medicationrecord-requirements.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-BeModelMedicationRecord-definitions.html">StructureDefinition-BeModelMedicationRecord-definitions.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -4489,6 +4441,25 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-be-model-medication-dispense.profile.ttl.html">StructureDefinition-be-model-medication-dispense.profile.ttl.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="implementation.html">implementation.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -4868,6 +4839,25 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedRecordTreatment.profile.json.html">StructureDefinition-MedRecordTreatment.profile.json.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-be-model-medication-dispense.profile.xml.html">StructureDefinition-be-model-medication-dispense.profile.xml.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -4888,25 +4878,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-BeModelMedicationRecordPrescription.profile.xml.html">StructureDefinition-BeModelMedicationRecordPrescription.profile.xml.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-definitions.html">medicationrecord-definitions.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -5040,6 +5011,25 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="NamingSystem-be-ns-nihdi-organization.html">NamingSystem-be-ns-nihdi-organization.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedRecordTreatment.profile.xml.html">StructureDefinition-MedRecordTreatment.profile.xml.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -5496,25 +5486,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationRequest-example-3-2-of-medication-presc.html">MedicationRequest-example-3-2-of-medication-presc.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-scenarios.html">medicationrecord-scenarios.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -6369,45 +6340,7 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-pattern-1.html">medicationrecord-pattern-1.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-MedRecordTreatmentLine-definitions.html">StructureDefinition-MedRecordTreatmentLine-definitions.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html">index.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -6446,25 +6379,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-MedRecordUsage-mappings.html">StructureDefinition-MedRecordUsage-mappings.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
-              default:
-                  console.log(&quot;Parameter value not supported&quot;);
-                  break;
-                case &quot;pageTitle&quot;:
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case &quot;sectionId&quot;:
-                  parameterValue = id;
-                  break;
-                case &quot;sectionName&quot;:
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="medicationrecord-patterns.html">medicationrecord-patterns.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -6576,6 +6490,9 @@
                   break;
             }
             feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="searchform.html#5f3bd96c-5608-4207-a446-a4660c1d202a">searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 63, column 21</a></b></td><td><b>error</b></td><td><b>The link 'index.html' for &quot;Specification&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -7022,7 +6939,7 @@
      <td><b>MedicationDispense.context.identifier.type.coding[0] (l59/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl465" class="flip" onclick="flip('l465')">Show Reasoning</span><div id="l465" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
+     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl463" class="flip" onclick="flip('l463')">Show Reasoning</span><div id="l463" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationDispense.quantity (l125/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
@@ -7463,7 +7380,7 @@
      <td><b>StructureDefinition.jurisdiction[0]</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[37].mapping[0].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition.snapshot.element[45].mapping[0].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -7477,6 +7394,22 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.jurisdiction[0]</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordTreatment"> </a>
+<h2><a href="StructureDefinition-MedRecordTreatment.html">/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatment.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.jurisdiction[0]</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>

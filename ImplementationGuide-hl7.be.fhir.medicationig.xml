@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-30T09:18:57+00:00"/>
+  <date value="2021-07-30T09:30:51+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -328,6 +328,14 @@
       </reference>
       <name value="Example MedicationRequest - example-5-of-medication-presc"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedRecordTreatment"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -761,83 +769,13 @@
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"/>
     </resource>
     <page>
-      <nameUrl value="toc.html"/>
-      <title value="Table of Contents"/>
-      <generation value="html"/>
+      <nameUrl value="implementation.html"/>
+      <title value="Medication Record Implementation"/>
+      <generation value="markdown"/>
       <page>
-        <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="howto.html"/>
-        <title value="How to read this document"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="usecases-dispense.html"/>
-        <title value="Use Cases - Dispense"/>
+        <nameUrl value="medicationrecord-fhir-resources.html"/>
+        <title value="Medication Record - FHIR resources"/>
         <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="medicationrecord.html"/>
-        <title value="The Belgian Medication Record"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="medicationrecord-scenarios.html"/>
-          <title value="Medication Record Scenarios"/>
-          <generation value="markdown"/>
-          <page>
-            <nameUrl value="medicationrecord-scenario-1.html"/>
-            <title value="Scenario 1 - concurrent medications"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="medicationrecord-scenario-2.html"/>
-            <title value="Scenario 2 - medication protocols"/>
-            <generation value="markdown"/>
-          </page>
-        </page>
-        <page>
-          <nameUrl value="medicationrecord-definitions.html"/>
-          <title value="Definitions - Medication Record"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="medicationrecord-requirements.html"/>
-          <title value="Requirements - Medication Record"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="medicationrecord-patterns.html"/>
-          <title value="Architectural patterns - Medication Record"/>
-          <generation value="markdown"/>
-          <page>
-            <nameUrl value="medicationrecord-pattern-1.html"/>
-            <title value="Pattern 1 - Consult a patient&#39;s medication record"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="medicationrecord-pattern-2.html"/>
-            <title value="Pattern 2 - update a patient&#39;s medication record"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="medicationrecord-pattern-3.html"/>
-            <title value="Pattern 3 - Compile a medication record"/>
-            <generation value="markdown"/>
-          </page>
-        </page>
-      </page>
-      <page>
-        <nameUrl value="logical-models.html"/>
-        <title value="Logical Models"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
-        <generation value="html"/>
       </page>
     </page>
     <parameter>

@@ -1,9 +1,13 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\Scenario 1 - concurrent medications - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.1.1"}
-    h3,h4,h5,h6{--heading-prefix:"4.1.1"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -181,7 +185,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='medicationrecord.html'><b>The Belgian Medication Record</b></a></li><li><a href='medicationrecord-scenarios.html'><b>Medication Record Scenarios</b></a></li><li><b>Scenario 1 - concurrent medications</b></li>
+          
           
         </ul>
       </div>  <!-- /container -->
@@ -193,16 +197,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
+<div style="counter-reset: section 6" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  <h2>Scenario 1 - concurrent medications</h2>
   
 
 
@@ -213,33 +209,70 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<p>Scenario</p>
 
-<p>This scenario shows the concurrent medication and the relevance in a medication overview that is independent of underlying indication, and can consider different pharmaceutical products.
-This scenario also shows the value of medication terminologies, namely ATC. In this case, all the medications are different products, but they are all under ATC code A02BC.</p>
 
-<ul>
+<ul class="nav nav-tabs">
+
   <li>
-    <p>After a GP visit, the patient Pia Peters is prescribed a PPI (pantoprazole) for an ulcer.</p>
+    <a href="StructureDefinition-MedRecordTreatment.html">Content</a>
   </li>
+
+
+
   <li>
-    <p>A few days later, with his GP on vacation, the patient has an infection and the physician says the patient should take a PPI for protecting the stomach when taking antibiotics, and prescribes lanzoprazole.</p>
+    <a href="StructureDefinition-MedRecordTreatment-definitions.html">Detailed Descriptions</a>
   </li>
-  <li>
-    <p>When the GP is back, the daughter of Patient Pia Peters declares they have taken a PPI (omeprazole) for some time, when they have some gastric complaints.</p>
-  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-MedRecordTreatment-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-MedRecordTreatment.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-MedRecordTreatment.profile.json.html">JSON</a>
+    </li>
+  
+
+
+
 </ul>
 
-<p>This should result in a medication summary that can be grouped by the medication class, which allows a correct identification of concurrent medication.</p>
+
+  <a name="root"> </a>
+  <h2 id="root">Resource Profile: MedRecordTreatment - Examples</h2>
+
+   <!-- insert intro if present -->
+    
+
+
+
+
+
+  <p><b>No examples are currently available for the  Profile.</b></p>
+
+
+<!-- insert notes if present -->
 
 
 
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -247,6 +280,29 @@ This scenario also shows the value of medication terminologies, namely ATC. In t
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -259,7 +315,7 @@ This scenario also shows the value of medication terminologies, namely ATC. In t
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 30, 2021 09:18+0000">2021-07-30</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 30, 2021 09:30+0000">2021-07-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
