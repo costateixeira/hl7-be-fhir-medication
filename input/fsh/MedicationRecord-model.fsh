@@ -16,7 +16,7 @@ Title: "Medication Record Dispense logical model"
 * quantitydispensed 0..1 SimpleQuantity "The amound of product that was dispensed"
 * dosageInstruction 0..1 Dosage "The instructions for use" ""
 * note 0..* Annotation "Additional information about the dispensed item" ""
-* SubstitutionReason 0..1 CodeableConcept "Why was substitution made" ""
+* substitutionReason 0..1 CodeableConcept "Why was substitution made" ""
 * type 0..1 CodeableConcept "Trial fill, partial fill, emergency fill, etc." ""
 * location 0..1 Reference(location) "" ""
 * treatment 0..1 Reference "" ""
@@ -111,6 +111,7 @@ Title: "Medication Record Treatment Line logical model"
 * lifecycleStatus 1..1 CodeableConcept "" ""
 * statusReason 0..* CodeableConcept "" ""
 * lotNumber 0..1 string	"Identifier assigned to batch" ""
+* indication 0..* CodeableConcept "" ""  //extra
 
 
 //treatment as is - rzv
