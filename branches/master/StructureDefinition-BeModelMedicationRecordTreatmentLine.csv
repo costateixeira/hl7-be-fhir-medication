@@ -38,3 +38,5 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 ","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.statusReason",0,*,"",""
 "BeModelMedicationRecordTreatmentLine.lotNumber","","","",0,1,"","","","string {[]} {[]}
 ","Identifier assigned to batch","Identifier assigned to batch","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.lotNumber",0,1,"",""
+"BeModelMedicationRecordTreatmentLine.indication","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.indication",0,*,"",""
