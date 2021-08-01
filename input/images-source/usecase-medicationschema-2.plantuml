@@ -8,25 +8,25 @@ hide footbox
 
 actor "**Patient**" as P
 actor "**GP**" as GP
-Participant "** Pharmacy **\n**  System  **" as PIS
+Participant "** GP **\n**  Software  **" as GPS
 Participant "** Vault / other **\n **  System  **" as V
 
 group Identification
-P -[#A92]-> PIS : Identification / authorization
+P -[#A92]-> GPS : Identification / authorization
 end
 ...
 
 group Request Medication Summary
-PIS <- V : **Return Medication Summary**
+GPS <- V : **Return Medication Summary**
 end
 
 ...
 
 group Request Medication Summary
-GP --> PIS : Update Medication Summary
-activate PIS
-PIS -> V : Submit updated\nMedication Summary
-deactivate PIS
+GP --> GPS : Update Medication Summary
+activate GPS
+GPS -> V : Submit updated\nMedication Summary
+deactivate GPS
 activate V
 V -> V : Update version\nMedication Summary
 deactivate V
