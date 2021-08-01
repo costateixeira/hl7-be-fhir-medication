@@ -6,7 +6,7 @@ Description: "Naming System - CNK Product Codes"
 * name = "BeNSCNK"
 * date = "2020-07-24"
 * kind = #codesystem
-* title = "NamingSystem for CNK Product Codes"
+// * title = "NamingSystem for CNK Product Codes"
 * description = "Naming System - CNK Product Codes"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes"
@@ -19,7 +19,7 @@ InstanceOf: NamingSystem
 Usage: #definition
 Description: "Naming System - Prescription IDs"
 * status = #active
-* title = "NamingSystem for unique Prescription IDs in the medication record"
+// * title = "NamingSystem for unique Prescription IDs in the medication record"
 * name = "BeNSPrescriptions"
 * date = "2020-07-24"
 * kind = #identifier
@@ -36,7 +36,7 @@ InstanceOf: NamingSystem
 Usage: #definition
 Description: "Naming System - Prescription IDs"
 * status = #active
-* title = "NamingSystem for product package types"
+// * title = "NamingSystem for product package types"
 * name = "BeNSProductPackage"
 * date = "2020-07-24"
 * kind = #codesystem
