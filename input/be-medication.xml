@@ -137,9 +137,6 @@
     </resource>
 
 
-
-
-
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -147,23 +144,23 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Home Page"/>
         <generation value="html"/>
       </page>
-		  <page>
-		  	<nameUrl value="howto.html"/>
-	  		<title value="How to read this document"/>
-	  		<generation value="html"/>
-		  </page>
-		  <page>
-  			<nameUrl value="usecases-dispense.html"/>
-  			<title value="Use Cases - Dispense"/>
-	  		<generation value="markdown"/>
-		  </page>
-		  <page>
-  			<nameUrl value="medicationrecord.html"/>
-  			<title value="The Belgian Medication Record"/>
-	  		<generation value="markdown"/>
+      <page>
+        <nameUrl value="howto.html"/>
+        <title value="How to read this document"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="usecases-dispense.html"/>
+        <title value="Use Cases - Dispense"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationrecord.html"/>
+        <title value="The Belgian Medication Record"/>
+        <generation value="markdown"/>
         <page>
           <nameUrl value="medicationrecord-scenarios.html"/>
           <title value="Medication Record Scenarios"/>
@@ -208,20 +205,84 @@
             <title value="Pattern 3 - Compile a medication record"/>
             <generation value="markdown"/>
           </page>
-  		  </page>
-		  </page>
-		  <page>
-  			<nameUrl value="logical-models.html"/>
-  			<title value="Logical Models"/>
-	  		<generation value="markdown"/>
-		  </page>
-		  <page>
-  			<nameUrl value="downloads.html"/>
-  			<title value="Downloads"/>
-	  		<generation value="html"/>
-		  </page>
-    </page>
-	   <page>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="medicationrecord-usageexamples.html"/>
+        <title value="MedicationRecord - usage examples"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="example1.html"/>
+          <title value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example2a.html"/>
+          <title value="Prescribed medication is changed by another medication from a different VOS-cluster - different strength"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example2b.html"/>
+          <title value="Prescribed medication is changed by another medication from a different VOS-cluster - Different package size"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example3.html"/>
+          <title value="Dispense medication before the prescription is available"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example4.html"/>
+          <title value="Dispense of prescribed medication and of a product that can be dispensed without a prescription"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example5.html"/>
+          <title value="Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example6.html"/>
+          <title value="Refusal to dispense the prescribed medication"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example7.html"/>
+          <title value="Dispense of medication that was prescribed to take if needed, but was not taken"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example8.html"/>
+          <title value="Dispense of medication that was prescribed, but not taken till the end"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example9a.html"/>
+          <title value="Recording of anesthetic, contrast and similar medications - Checking possible interactions before surgery"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example9b.html"/>
+          <title value="Recording of anesthetic, contrast and similar medications - Product prescribed (by VOS) and dispense for exam "/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example10.html"/>
+          <title value="The recording of non-medication aka pharmaceutical products"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="logical-models.html"/>
+          <title value="Logical Models"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Downloads"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
         <nameUrl value="implementation.html"/>
         <title value="Medication Record Implementation"/>
         <generation value="markdown"/>
@@ -231,6 +292,8 @@
           <generation value="markdown"/>
         </page>
       </page>
+    </page>
+
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
