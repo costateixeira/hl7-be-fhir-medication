@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-01T11:45:55+00:00",
+  "date": "2021-08-01T12:57:22+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -536,6 +536,18 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/BeModelMedicationRecordOrder"
+        },
+        "name": "Medication Record Prescription logical model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordUsage"
         },
         "name": "Medication Record Usage logical model"
@@ -762,6 +774,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BeModelMedicationRecordSummaryView"
+        },
+        "name": "Medication Record Treatment View logical model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -851,18 +875,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/BeModelMedicationRecordPrescription"
-        },
-        "name": "Medication Record Prescription logical model"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -883,7 +895,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecord"
         },
         "name": "Medication Record logical model",
-        "description": "A collection of a patient's medication history."
+        "description": "A structure collection of a patient's medication history."
       },
       {
         "extension": [

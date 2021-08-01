@@ -1,88 +1,26 @@
 "Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
 "BeModelMedicationRecordTreatment","","","",0,*,"","","","","Medication Record Treatment logical model","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"BeModelMedicationRecordTreatment.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+"BeModelMedicationRecordTreatment.identifier","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","The business identifier(s) for the medication treatment","The business identifier(s) for the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.identifier",0,1,"",""
+"BeModelMedicationRecordTreatment.identifier.treatmentGuid","","","",0,1,"","","","Identifier {[]} {[]}
+","The Global Unique identifier(s) for the medication treatment","The Global Unique identifier(s) for the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.identifier.treatmentGuid",0,1,"",""
 "BeModelMedicationRecordTreatment.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.subject",1,1,"",""
+","The subject of the medication treatment","The subject of the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.subject",1,1,"",""
 "BeModelMedicationRecordTreatment.status","","","",1,1,"","","","code {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.status",1,1,"",""
-"BeModelMedicationRecordTreatment.intent","","","",1,1,"","","","code {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.intent",1,1,"",""
+","Status of the medication treatment","Status of the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.status",1,1,"",""
 "BeModelMedicationRecordTreatment.category","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.category",0,*,"",""
+","Category(ies) of the medication treatment","Category(ies) of the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.category",0,*,"",""
 "BeModelMedicationRecordTreatment.title","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.title",0,1,"",""
+","Short title of the medication treatment","Short title of the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.title",0,1,"",""
 "BeModelMedicationRecordTreatment.description","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.description",0,1,"",""
+","Textual description of the treatment","Textual description of the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.description",0,1,"",""
 "BeModelMedicationRecordTreatment.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.encounter",0,1,"",""
+","The encounter in which the medication treatment was created or updated","The encounter in which the medication treatment was created or updated","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.encounter",0,1,"",""
 "BeModelMedicationRecordTreatment.period","","","",0,1,"","","","Period {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.period",0,1,"",""
+","The duration of the treatment","The duration of the treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.period",0,1,"",""
 "BeModelMedicationRecordTreatment.created","","","",0,1,"","","","dateTime {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.created",0,1,"",""
+","When the treatment record was created","When the treatment record was created","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.created",0,1,"",""
 "BeModelMedicationRecordTreatment.author","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam]]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.author",0,1,"",""
-"BeModelMedicationRecordTreatment.careTeam","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam]]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.careTeam",0,*,"",""
-"BeModelMedicationRecordTreatment.supportingInfo","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.supportingInfo",0,*,"",""
-"BeModelMedicationRecordTreatment.goal","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Goal]]}
-","Desired outcome of plan","Desired outcome of plan","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.goal",0,*,"",""
-"BeModelMedicationRecordTreatment.activity","","","",0,*,"","","","BackboneElement {[]} {[]}
-","Action to occur as part of plan cpl-3: Provide a reference or detail, not both","Action to occur as part of plan cpl-3: Provide a reference or detail, not both","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for inter-element referencing","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.id",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","Additional content defined by implementations","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.extension",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.modifierExtension","","","",0,*,"","","","Extension {[]} {[]}
-","Extensions that cannot be ignored even if unrecognized","Extensions that cannot be ignored even if unrecognized","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.modifierExtension",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.outcomeCodeableConcept","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Results of the activity Binding: CarePlanActivityOutcome (example): Identifies the results of the activity.","Results of the activity Binding: CarePlanActivityOutcome (example): Identifies the results of the activity.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.outcomeCodeableConcept",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.outcomeReference","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
-","Appointment, Encounter, Procedure, etc.","Appointment, Encounter, Procedure, etc.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.outcomeReference",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.progress","","","",0,*,"","","","Annotation {[]} {[]}
-","Comments about the activity status/progress","Comments about the activity status/progress","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.progress",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.reference","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Appointment], CanonicalType[http://hl7.org/fhir/StructureDefinition/CommunicationRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/DeviceRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/NutritionOrder], CanonicalType[http://hl7.org/fhir/StructureDefinition/Task], CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/VisionPrescription], CanonicalType[http://hl7.org/fhir/StructureDefinition/RequestGroup]]}
-","Activity details defined in specific resource","Activity details defined in specific resource","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.reference",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail","","","",0,1,"","","","BackboneElement {[]} {[]}
-","In-line definition of activity","In-line definition of activity","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for inter-element referencing","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.id",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.extension","","","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","Additional content defined by implementations","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.extension",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.detail.modifierExtension","","","",0,*,"","","","Extension {[]} {[]}
-","Extensions that cannot be ignored even if unrecognized","Extensions that cannot be ignored even if unrecognized","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.modifierExtension",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.detail.kind","","","",0,1,"","","","code {[]} {[]}
-","Appointment or CommunicationRequest or DeviceRequest or MedicationRequest or NutritionOrder or Task or ServiceRequest or VisionPrescription Binding: CarePlanActivityKind (required): Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.","Appointment or CommunicationRequest or DeviceRequest or MedicationRequest or NutritionOrder or Task or ServiceRequest or VisionPrescription Binding: CarePlanActivityKind (required): Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.kind",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.instantiatesUri","","","",0,*,"","","","uri {[]} {[]}
-","Instantiates external protocol or definition","Instantiates external protocol or definition","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.instantiatesUri",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.detail.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Detail type of activity Binding: ProcedureCodes(SNOMEDCT) (example): Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter.","Detail type of activity Binding: ProcedureCodes(SNOMEDCT) (example): Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.code",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.reasonCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Why activity should be done or why activity was prohibited Binding: SNOMEDCTClinicalFindings (example): Identifies why a care plan activity is needed. Can include any health condition codes as well as such concepts as ""general wellness"", prophylaxis, surgical preparation, etc.","Why activity should be done or why activity was prohibited Binding: SNOMEDCTClinicalFindings (example): Identifies why a care plan activity is needed. Can include any health condition codes as well as such concepts as ""general wellness"", prophylaxis, surgical preparation, etc.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.reasonCode",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.detail.reasonReference","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport], CanonicalType[http://hl7.org/fhir/StructureDefinition/DocumentReference]]}
-","Why activity is needed","Why activity is needed","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.reasonReference",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.detail.goal","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Goal]]}
-","Goals this activity relates to","Goals this activity relates to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.goal",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.detail.status","","","",1,1,"","","","code {[]} {[]}
-","not-started or scheduled or in-progress or on-hold or completed or cancelled or stopped or unknown or entered-in-error Binding: CarePlanActivityStatus (required): Codes that reflect the current state of a care plan activity within its overall life cycle.","not-started or scheduled or in-progress or on-hold or completed or cancelled or stopped or unknown or entered-in-error Binding: CarePlanActivityStatus (required): Codes that reflect the current state of a care plan activity within its overall life cycle.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.status",1,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.statusReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Reason for current status","Reason for current status","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.statusReason",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.doNotPerform","","","",0,1,"","","","boolean {[]} {[]}
-","If true, activity is prohibiting action","If true, activity is prohibiting action","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.doNotPerform",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.scheduled[x]","","","",0,1,"","","","Timing {[]} {[]}
-Period {[]} {[]}string {[]} {[]}","When activity is to occur","When activity is to occur","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.scheduled[x]",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.location","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
-","Where it should happen","Where it should happen","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.location",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
-","Who will be responsible?","Who will be responsible?","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.performer",0,*,"",""
-"BeModelMedicationRecordTreatment.activity.detail.product[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication], CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance]]}","What is to be administered/supplied Binding: SNOMEDCTMedicationCodes (example): A product supplied or administered as part of a care plan activity. ","What is to be administered/supplied Binding: SNOMEDCTMedicationCodes (example): A product supplied or administered as part of a care plan activity. ","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.product[x]",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.dailyAmount","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
-","How to consume/day?","How to consume/day?","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.dailyAmount",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.quantity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
-","How much to administer/supply/consume","How much to administer/supply/consume","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.quantity",0,1,"",""
-"BeModelMedicationRecordTreatment.activity.detail.description","","","",0,1,"","","","string {[]} {[]}
-","Extra info describing activity to perform","Extra info describing activity to perform","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.activity.detail.description",0,1,"",""
+","The current author/responsible for the medication treatment plan","The current author/responsible for the medication treatment plan","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.author",0,1,"",""
 "BeModelMedicationRecordTreatment.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Comments about the plan","Comments about the plan","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.note",0,*,"",""
