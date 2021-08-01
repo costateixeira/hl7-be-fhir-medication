@@ -1,4 +1,4 @@
-## Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it
+## Example 5. Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it
 
 This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock.
 

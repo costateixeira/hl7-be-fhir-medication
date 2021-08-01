@@ -1,6 +1,6 @@
-## Prescribed medication is changed by another medication from a different VOS-cluster
+## Example 2b. Prescribed medication is changed by another medication from a different VOS-cluster
 
-### a) different package size  
+### b) different package size  
 
 This example shows a prescription that is made by brand name and the pharmacist changes the medication for one belonging to the same VOS - Cluster but different package size.
 

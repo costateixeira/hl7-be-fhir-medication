@@ -1,4 +1,4 @@
-## Dispense of medication that was prescribed, but not taken till the end
+## Example 8. Dispense of medication that was prescribed, but not taken till the end
 
 This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction.
 

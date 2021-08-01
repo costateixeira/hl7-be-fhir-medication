@@ -1,4 +1,4 @@
-## Prescribed medication is changed by another medication from a different VOS-cluster
+## Example 2a. Prescribed medication is changed by another medication from a different VOS-cluster
 
 ### a) Different strength  
 

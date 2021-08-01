@@ -1,4 +1,4 @@
-## Dispense of medication that was prescribed to take if needed, but was not taken
+## Example 6. Dispense of medication that was prescribed to take if needed, but was not taken
 
 This example shows a prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. 
 Then it is reported that the medication was not taken at all.

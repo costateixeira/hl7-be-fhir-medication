@@ -1,4 +1,4 @@
-## The recording of anesthetic, contrast and similar medications in the medication scheme
+## Example 9b. The recording of anesthetic, contrast and similar medications in the medication scheme
 
 This example shows a prescription that is made by VOS and the pharmacist dispenses the product for taking before exam.
 

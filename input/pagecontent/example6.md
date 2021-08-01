@@ -1,4 +1,4 @@
-## Refuse the dispense prescribed medication
+## Example 6. Refusal to dispense the prescribed medication
 
 This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication.
 

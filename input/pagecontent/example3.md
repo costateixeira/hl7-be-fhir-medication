@@ -1,4 +1,4 @@
-## Dispense medication before the prescription of the general practitioner
+## Example 3. Dispense medication before the prescription is available
 
 This example shows a dispense of a medication that is made before an existing prescription
 

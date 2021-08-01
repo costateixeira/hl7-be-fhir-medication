@@ -1,4 +1,4 @@
-## Dispense of prescribed medication, and dispense of a product that can be done without a prescription
+## Example 4. Dispense of prescribed medication, and dispense of a product that can be done without a prescription
 
 This example shows a dispense of two products. One that has a prescription and other that does not (and does not need one).
 

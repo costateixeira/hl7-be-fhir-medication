@@ -1,4 +1,4 @@
-## The recording of non-medication aka pharmaceutical products
+## Example 10. The recording of non-medication aka pharmaceutical products
 
 This example shows the capture of non-medication products. This is important because some of these products are known to interact with some pharmaceutical products.
 
