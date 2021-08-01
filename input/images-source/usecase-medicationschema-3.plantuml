@@ -14,23 +14,20 @@ Participant "** Pharmacy **\n **  System  ** \n**  DPP/GPD  **" as Src
 
 ...
 
-group Collect Medication Information
+group Collect Medication Information - GP
 GPS -> V
 activate GPS
 activate V
-Src -> V : Submit Medication\nDispense information
-deactivate GPS
 V -> V : Aggregate\nDispense information
+deactivate GPS
 deactivate V
 
 end
 ...
 
-group Collect Medication Information
-GPS -> V
-activate GPS
-activate V
+group Collect Medication Information - Pharmacy
 Src -> V : Submit Medication\nDispense information
+activate V
 deactivate GPS
 V -> V : Aggregate\nDispense information
 deactivate V
@@ -41,10 +38,6 @@ end
 
 group Compile Medication Summary
 V -> V : Reconcile \nMedication Information
-activate V
-...
-V -> V : Create / Update\nMedication Summary
-deactivate V
 end
 
 ...
