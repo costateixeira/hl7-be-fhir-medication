@@ -1,12 +1,12 @@
 Instance: be-ns-cnk-codes
 InstanceOf: NamingSystem
 Usage: #definition
-Title: "NamingSystem for CNK Product Codes"
 Description: "Naming System - CNK Product Codes"
 * status = #active
 * name = "BeNSCNK"
 * date = "2020-07-24"
 * kind = #codesystem
+* title = "NamingSystem for CNK Product Codes"
 * description = "Naming System - CNK Product Codes"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes"
@@ -16,10 +16,10 @@ Description: "Naming System - CNK Product Codes"
 
 Instance: be-ns-prescription-ids
 InstanceOf: NamingSystem
-Title: "NamingSystem for unique Prescription IDs in the medication record"
 Usage: #definition
 Description: "Naming System - Prescription IDs"
 * status = #active
+* title = "NamingSystem for unique Prescription IDs in the medication record"
 * name = "BeNSPrescriptions"
 * date = "2020-07-24"
 * kind = #identifier
@@ -34,9 +34,9 @@ Description: "Naming System - Prescription IDs"
 Instance: be-ns-product-package-type
 InstanceOf: NamingSystem
 Usage: #definition
-Title: "NamingSystem for product package types"
 Description: "Naming System - Prescription IDs"
 * status = #active
+* title = "NamingSystem for product package types"
 * name = "BeNSProductPackage"
 * date = "2020-07-24"
 * kind = #codesystem
