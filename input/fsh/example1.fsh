@@ -1,5 +1,5 @@
 Instance: example-1-of-medication-presc 
-InstanceOf: MedRecordPrescription
+InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
 Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
