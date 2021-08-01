@@ -3,7 +3,7 @@
   "id": "example-1-of-medication-presc",
   "meta": {
     "profile": [
-      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription"
+      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
     ]
   },
   "text": {
