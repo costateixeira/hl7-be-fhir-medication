@@ -220,6 +220,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The Medication Record uses several Medication-related FHIR resources.
 The FHIR version used for this specification is the <a href="http://hl7.org/fhir/R4">FHIR Release 4</a>.</p>
 
+<blockquote class="stu-note">
+<strong>Note that upcoming versions of FHIR are expected to introduce some meanignful changes to the resources used. </strong> <br />
+For example the <a href="http://hl7.org/fhir/medicationstatement.html">MedicationStatement</a> resource is expected to be renamed to MedicationUsage. 
+</blockquote>
+
+<p><br /></p>
+
+<ul>
+  <li>Medication Summary - is a <a href="https://www.hl7.org/fhir/documents.html">FHIR Document</a>, therefore a <a href="http://hl7.org/fhir/bundle">Bundle</a>.
+    <ul>
+      <li>The Medication Summary SHALL contain curation and organization of the medication record (typically in a summary form). This organization of the content is represented with a <a href="https://www.hl7.org/fhir/composition.html">Composition</a> resource. In addition to the Composition, the Bundle also contains some of the resources listed below.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The Medication Summary is a authored, consistent compiled representation of a patient’s medication. But the medication record may be exchanged independently of such compilation. In some cases the systems want to receive a collection of uncompiled data, for example for analytics or for creating such compilation themselves.</p>
+
+<p>Whether as a document or as a collection, the Medication Record can contain any of the following resources:</p>
+<ul>
+  <li>Known Medication allergies and relevant intolerances are represented using <a href="http://hl7.org/fhir/allergyintolerance.html">AllergyIntolerance</a> resource instances</li>
+  <li>The known medication adverse events are captured in <a href="https://www.hl7.org/fhir/adverseeevnt.html">AdverseEvent</a> resource instances. The adverse events can be associated with an allergy reaction, or just a standalone adverse event.</li>
+  <li>When one or more medications are associated with a given disease (indication), the <strong>indication</strong> can be captured via an instance of the <a href="http://hl7.org/fhir/condition.html">Condition</a> resource</li>
+  <li>A medication record describes a set of <strong>Medication Treatments</strong>. The medication treatment is a grouping artifact and a [CarePlan]((http://hl7.org/fhir/careplan.html) can be used.</li>
+  <li>A <strong>Medication Summary</strong> describes an interpreted aggregation of Medication Treatment Lines. The medication summary is also a grouping artifact and a <a href="http://hl7.org/fhir/careplan.html">CarePlan</a> can be used.</li>
+  <li>Each <strong>Medication Treatment Line</strong> represents a single line of treatment (see the <a href="functional-description.html">functional description</a> page) and is implemented as a MedicationStatement resource instance</li>
+  <li>When a medication treatment</li>
+  <li>Medication Treatment Line can be associated with information from different origins:
+    <ul>
+      <li><strong>Prescriptions</strong>, or any known change to a treatment, with the <a href="http://hl7.org/fhir/medicationrequest.html">MedicationRequest</a> resource</li>
+      <li><strong>Dispenses</strong>, with the <a href="http://hl7.org/fhir/medicationdispense.html">MedicationDispense</a> resource</li>
+      <li><strong>Administrations</strong>, ttypically informed by the patient or by a nurse or other care giver, with the <a href="http://hl7.org/fhir/medicationadministration.html">MedicationAdministration</a> resource</li>
+      <li>In some cases, a medication information can be obtained by a statement given by a patient (or related person) about the usage of the medication. This is done with the <a href="http://hl7.org/fhir/medicationstatement.html">MedicationStatement</a> resource</li>
+    </ul>
+  </li>
+  <li>A set of examples is provided in this document to show the combinations of these elements in realistic scenarios.</li>
+</ul>
+
+<p>The diagram below shows these resources and some of their content. The actual content definition is defined in the profiles section.
+<br /></p>
+
 <div>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="2004px" preserveAspectRatio="none" style="width:774px;height:2004px;" version="1.1" viewBox="0 0 774 2004" width="774px" zoomAndPan="magnify"><defs><filter height="300%" id="f12hkuzya6brt7" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><!--MD5=[d886f45c318c391feafcbc02a05548be]
 cluster PR--><polygon fill="#FFFFFF" filter="url(#f12hkuzya6brt7)" points="16,6,138,6,145,28.2969,757,28.2969,757,1997,16,1997,16,6" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="145" y1="28.2969" y2="28.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="116" x="20" y="20.9951">Patient Record</text><!--MD5=[b0961ff36b5fda95e4aabd7303763a94]
@@ -259,6 +299,20 @@ link USE to DIS--><!--MD5=[007e772574c4f6334202e459b87589a5]
 link DIS to ADM--></g></svg>
 </div>
 
+<p><br clear="ALL" />
+<br /></p>
+
+<h3 id="access-to-the-data">Access to the data</h3>
+
+<ul>
+  <li>Getting the last known documents</li>
+  <li>Asking for the system to create a document given some rules</li>
+  <li>Getting the entire record data</li>
+  <li>Custom queries</li>
+</ul>
+
+<p>see the section <a href="medicationrecord-transaction-types.html">Transaction Types</a> for more details</p>
+
 
 
 
@@ -282,7 +336,7 @@ link DIS to ADM--></g></svg>
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 1, 2021 16:55+0000">2021-08-01</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 1, 2021 17:15+0000">2021-08-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
