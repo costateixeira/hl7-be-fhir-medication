@@ -110,7 +110,6 @@ Title: "Medication Record Treatment Line logical model"
 * dayPeriod 0..* CodeableConcept "" ""
 * lifecycleStatus 1..1 CodeableConcept "" ""
 * statusReason 0..* CodeableConcept "" ""
-* lotNumber 0..1 string	"Identifier assigned to batch" ""
 * indication 0..* CodeableConcept "" ""  //extra
 
 
