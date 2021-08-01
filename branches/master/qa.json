@@ -3,7 +3,7 @@
   "name": "BEMedicationIG",
   "package-id": "hl7.be.fhir.medicationig",
   "ig-ver": "0.2.0",
-  "date": "Sun, 01 Aug, 2021 16:55:01 +0000",
+  "date": "Sun, 01 Aug, 2021 17:15:57 +0000",
   "errs": 114,
   "warnings": 107,
   "hints": 51,
