@@ -37,7 +37,7 @@ Patient
         |_ subject 
         |_ recorder 
         |_ recordDate 
-        |_ startMedicationDate 
+        |_ startMedicationDate   
         |_ endMedicationDate 
         |_ originType 
         |_ reaction 
@@ -127,7 +127,7 @@ class " **Prescription Line**  " as PREL #FFD {
 |_ requester 
 |_ reason 
 |_ groupIdentifier 
-|_ dosageInstruction 
+|_ dosageInstruction  
 |_ note 
 |_ date 
 |_ location 
@@ -141,7 +141,13 @@ class " **Schedule**  " as SCH #FFD {
 --
 |_ identifier
 |_ status
-|_ medication
+|_ statusReason 
+|_ product
+|_ encounter 
+|_ groupIdentifier 
+|_ timingQuantity 
+|_ treatment 
+|_ note 
 --
 MedicationRequest
 }
@@ -214,7 +220,7 @@ class " **Usage Statement**  " as USE #DDD {
 |_ informationSource  
 |_ reason
 |_ note  
-|_ renderedDosageInstruction
+|_ renderedDosageInstruction   
 |_ dosage  
 |_ adherence  
   |_ code  
