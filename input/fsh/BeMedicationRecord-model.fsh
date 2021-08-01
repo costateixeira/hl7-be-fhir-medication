@@ -39,6 +39,7 @@ Title: "Medication Record Prescription logical model"
 * location 0..1 string "Where the request was initially made" ""
 * treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" ""
 
+
 Logical: BeModelMedicationRecordUsage
 Title: "Medication Record Usage logical model"
 * identifier 0..* Identifier "External identifier" ""
@@ -187,12 +188,31 @@ Logical:        BeModelMedicationRecord
 Title:          "Medication Record logical model"
 Description:    "A structure collection of a patient's medication history."
 * patient 1..1 Reference "The subject of the medication record" ""
-* treatments 0..* BeModelMedicationRecordTreatment "" ""
-* treatmentLines 0..* BeModelMedicationRecordTreatmentLine "" ""
-* summaryView 0..* BeModelMedicationRecordSummaryView "" ""
-* detailedRecords 0..* BackboneElement  "" "" 
-  * orders 0..* BeModelMedicationRecordOrder  "" "" 
-  * dispenses 0..*  BeModelMedicationRecordDispense "" "" 
-  * administrations 0..*  BeModelMedicationRecordAdministration "" ""
-  * usageReports 0..*  BeModelMedicationRecordUsage "" ""
-* changeRecord 0..* Provenance  "" "" 
+* treatments 0..* BeModelMedicationRecordTreatment "The treaments that are included in this record" ""
+* treatmentLines 0..* BeModelMedicationRecordTreatmentLine "The treatment lines that are included in this record" ""
+* summaryView 0..* BeModelMedicationRecordSummaryView "The summary views that are produced from this record or entered into it" ""
+* detailedRecords 0..* BackboneElement  "Detailed records" "" 
+  * orders 0..* BeModelMedicationRecordOrder  "Explicit or implicit order for medication use or changes" "" 
+  * schedule 0..* BeModelMedicationScheduledOrder  "Scheduled administrations of the medication" "" 
+  * dispenses 0..*  BeModelMedicationRecordDispense "Registered or reported dispenses" "" 
+  * administrations 0..*  BeModelMedicationRecordAdministration "Registered or reported single administrations" ""
+  * usageReports 0..*  BeModelMedicationRecordUsage "Reported statements of medication usage" ""
+* changeRecord 0..* Provenance  "Change records and provenance for the medication record components" "" 
+
+
+
+
+Logical: BeModelMedicationScheduledOrder
+Title: "Medication Record Prescription logical model"
+Description: "Record of a single planned administration event"
+* identifier 0..1 Identifier "The business identifier(s) for the medication prescription" ""
+* patient 1..1 Reference(Patient) "The person for which the medication is prescribed." ""
+* status 1..1 code "active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)" ""
+* statusReason 0..* CodeableConcept "Reason for current status medicationRequest Status Reason Codes (Example)" ""
+* product[x] 1..1 Reference(Medication) or CodeableConcept "Medication to be taken SNOMED CT Medication Codes (Example)" ""
+* encounter 0..1 Reference(Encounter) "Encounter created as part of encounter/admission/stay" ""
+* reason 0..* Reference(Condition or Observation) "Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)" ""
+* groupIdentifier 0..1 Identifier "Composite request this is part of" ""
+* dosageInstruction 0..* Dosage "How the medication should be taken" ""
+* note 0..* Annotation "Additional Information about the prescription" ""
+* treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" ""
