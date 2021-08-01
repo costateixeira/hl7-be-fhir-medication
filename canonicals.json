@@ -119,11 +119,11 @@
     "name": "MedRecordDispense"
   },
   {
-    "id": "MedRecordPrescription",
+    "id": "MedRecordOrder",
     "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordPrescription",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder",
     "version": "0.2.0",
-    "name": "MedRecordPrescription"
+    "name": "MedRecordOrder"
   },
   {
     "id": "MedRecordTreatment",

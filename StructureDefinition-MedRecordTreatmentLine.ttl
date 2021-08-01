@@ -24,8 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"];
   fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "MedRecordTreatmentLine"];
+  fhir:StructureDefinition.title [ fhir:value "Medication Treatment Line profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-30T09:30:51+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-01T11:02:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -35,6 +36,7 @@
        fhir:ContactPoint.value [ fhir:value "http://hl7belgium.org" ]
      ]
   ];
+  fhir:StructureDefinition.description [ fhir:value "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

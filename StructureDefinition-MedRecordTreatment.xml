@@ -38,8 +38,9 @@
   <url value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"/>
   <version value="0.2.0"/>
   <name value="MedRecordTreatment"/>
+  <title value="Medication Treatment profile"/>
   <status value="active"/>
-  <date value="2021-07-30T09:30:51+00:00"/>
+  <date value="2021-08-01T11:02:49+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -47,6 +48,7 @@
       <value value="http://hl7belgium.org"/>
     </telecom>
   </contact>
+  <description value="The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
