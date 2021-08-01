@@ -3,7 +3,7 @@
 
 err = 112, warn = 103, info = 51
 IG Publisher Version: 1.1.77
-Generated Sun Aug 01 11:20:31 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Sun Aug 01 11:46:22 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 329 / 34 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types : 0 / 1 / 1
