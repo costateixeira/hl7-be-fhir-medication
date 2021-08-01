@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0aa72ae2-1515-4549-99a8-990221479457",
+  "id" : "b597373e-eeba-47dc-bc87-41f24a39d3db",
   "meta" : {
-    "lastUpdated" : "2021-08-01T12:57:22.663+00:00"
+    "lastUpdated" : "2021-08-01T14:05:51.540+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeVSMedicationSummaryTypes",
       "title" : "Medication Summary types",
       "status" : "active",
-      "date" : "2021-08-01T12:57:22+00:00",
+      "date" : "2021-08-01T14:05:51+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -36,8 +36,8 @@
         "text" : "Belgium"
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b34ed883-5b7d-4a7f-852b-b3dcf974e444",
-        "timestamp" : "2021-08-01T12:57:41+00:00",
+        "identifier" : "urn:uuid:5eaa329a-a12e-4750-b26c-5b155414de6b",
+        "timestamp" : "2021-08-01T14:06:12+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -74,7 +74,7 @@
       "name" : "SubstitutionReason",
       "title" : "medication substitution Value set",
       "status" : "active",
-      "date" : "2021-08-01T12:57:22+00:00",
+      "date" : "2021-08-01T14:05:51+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -91,8 +91,8 @@
         "text" : "Belgium"
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:20761150-a246-4c7d-bba1-54dcc18a513d",
-        "timestamp" : "2021-08-01T12:57:42+00:00",
+        "identifier" : "urn:uuid:3110668d-decc-431c-aadd-fe721b44bc8b",
+        "timestamp" : "2021-08-01T14:06:13+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
