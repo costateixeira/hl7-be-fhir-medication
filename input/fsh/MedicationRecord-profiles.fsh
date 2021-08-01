@@ -1,5 +1,7 @@
 //based on R4
 Profile: MedRecordDispense
+Title: "Medication Record - Dispense profile"
+Description: "The profile for Medication Dispense in a Medication Record - a record of a single administration event"
 Parent: MedicationDispense
 * meta.profile 1..*
 * identifier MS
@@ -20,7 +22,9 @@ Parent: MedicationDispense
 * extension[treatmentPlan].valueReference only Reference(CarePlan)
 
 
-Profile: MedRecordPrescription
+Profile: MedRecordOrder
+Title: "Medication Record - Order profile"
+Description: "The profile for Medication Order in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
 Parent: MedicationRequest
 * meta.profile 1..*
 * identifier MS
@@ -42,6 +46,8 @@ Parent: MedicationRequest
 
 
 Profile: MedRecordUsage
+Title: "Medication Record - Usage profile"
+Description: "The profile for Medication Usage in a Medication Record - a record of a single administration event"
 Parent: MedicationStatement
 * meta.profile 1..*
 * identifier MS
@@ -61,6 +67,8 @@ Parent: MedicationStatement
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
 
 Profile: MedRecordAdministration
+Title: "Medication Record - Administration profile"
+Description: "The profile for Medication Administration in a Medication Record - a record of a single administration event"
 Parent: MedicationAdministration
 * meta.profile 1..*
 * identifier MS
@@ -86,6 +94,8 @@ Parent: MedicationAdministration
 
 //based on R4
 Profile: MedRecordTreatmentLine
+Title: "Medication Treatment Line profile"
+Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
 Parent: MedicationStatement
 * meta.profile 1..*
 * identifier MS
@@ -106,6 +116,8 @@ Parent: MedicationStatement
 
 //based on R4
 Profile: MedRecordTreatment
+Title: "Medication Treatment profile"
+Description: "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"
 Parent: CarePlan
 * meta.profile 1..*
 * identifier MS
