@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HL7 Belgium Medication Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-01T14:05:51+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-01T16:53:46+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1153,6 +1153,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledOrder>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BeModelMedicationScheduledOrder" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record Prescription logical model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Record of a single planned administration event" ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1165,7 +1178,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 54;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1182,14 +1195,164 @@
        ]
      ];
      fhir:ImplementationGuide.definition.page [
-       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "implementation.html" ];
-       fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Record Implementation" ];
-       fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-fhir-resources.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Record - FHIR resources" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home Page" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "howto.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "How to read this document" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecases-dispense.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases - Dispense" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "The Belgian Medication Record" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-scenarios.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Record Scenarios" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+           fhir:ImplementationGuide.definition.page.page [
+             fhir:index 0;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-scenario-1.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Scenario 1 - concurrent medications" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 1;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-scenario-2.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Scenario 2 - medication protocols" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-definitions.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Definitions - Medication Record" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-requirements.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Requirements - Medication Record" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-patterns.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Architectural patterns - Medication Record" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+           fhir:ImplementationGuide.definition.page.page [
+             fhir:index 0;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-pattern-1.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Pattern 1 - Consult a patient's medication record" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 1;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-pattern-2.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Pattern 2 - update a patient's medication record" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 2;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-pattern-3.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Pattern 3 - Compile a medication record" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-usageexamples.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "MedicationRecord - usage examples" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example1.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example2a.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Prescribed medication is changed by another medication from a different VOS-cluster - different strength" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example2b.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Prescribed medication is changed by another medication from a different VOS-cluster - Different package size" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example3.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dispense medication before the prescription is available" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example4.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dispense of prescribed medication and of a product that can be dispensed without a prescription" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 5;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example5.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 6;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example6.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Refusal to dispense the prescribed medication" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 7;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example7.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dispense of medication that was prescribed to take if needed, but was not taken" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 8;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example8.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dispense of medication that was prescribed, but not taken till the end" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 9;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example9a.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Recording of anesthetic, contrast and similar medications - Checking possible interactions before surgery" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 10;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example9b.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Recording of anesthetic, contrast and similar medications - Product prescribed (by VOS) and dispense for exam " ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 11;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example10.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "The recording of non-medication aka pharmaceutical products" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 12;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "logical-models.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Logical Models" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 13;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "implementation.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Record Implementation" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medicationrecord-fhir-resources.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Record - FHIR resources" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
        ]
      ];
      fhir:ImplementationGuide.definition.parameter [

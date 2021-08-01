@@ -112,6 +112,13 @@
     "name": "BeModelMedicationRecordUsage"
   },
   {
+    "id": "BeModelMedicationScheduledOrder",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledOrder",
+    "version": "0.2.0",
+    "name": "BeModelMedicationScheduledOrder"
+  },
+  {
     "id": "MedRecordAdministration",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration",

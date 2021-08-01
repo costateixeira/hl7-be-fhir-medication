@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-01T14:05:51+00:00",
+  "date": "2021-08-01T16:53:46+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1081,6 +1081,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BeModelMedicationScheduledOrder"
+        },
+        "name": "Medication Record Prescription logical model",
+        "description": "Record of a single planned administration event"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -1105,14 +1118,169 @@
       }
     ],
     "page": {
-      "nameUrl": "implementation.html",
-      "title": "Medication Record Implementation",
-      "generation": "markdown",
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
       "page": [
         {
-          "nameUrl": "medicationrecord-fhir-resources.html",
-          "title": "Medication Record - FHIR resources",
+          "nameUrl": "index.html",
+          "title": "Home Page",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "howto.html",
+          "title": "How to read this document",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "usecases-dispense.html",
+          "title": "Use Cases - Dispense",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "medicationrecord.html",
+          "title": "The Belgian Medication Record",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "medicationrecord-scenarios.html",
+              "title": "Medication Record Scenarios",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "medicationrecord-scenario-1.html",
+                  "title": "Scenario 1 - concurrent medications",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "medicationrecord-scenario-2.html",
+                  "title": "Scenario 2 - medication protocols",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "medicationrecord-definitions.html",
+              "title": "Definitions - Medication Record",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "medicationrecord-requirements.html",
+              "title": "Requirements - Medication Record",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "medicationrecord-patterns.html",
+              "title": "Architectural patterns - Medication Record",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "medicationrecord-pattern-1.html",
+                  "title": "Pattern 1 - Consult a patient's medication record",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "medicationrecord-pattern-2.html",
+                  "title": "Pattern 2 - update a patient's medication record",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "medicationrecord-pattern-3.html",
+                  "title": "Pattern 3 - Compile a medication record",
+                  "generation": "markdown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameUrl": "medicationrecord-usageexamples.html",
+          "title": "MedicationRecord - usage examples",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "example1.html",
+              "title": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example2a.html",
+              "title": "Prescribed medication is changed by another medication from a different VOS-cluster - different strength",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example2b.html",
+              "title": "Prescribed medication is changed by another medication from a different VOS-cluster - Different package size",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example3.html",
+              "title": "Dispense medication before the prescription is available",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example4.html",
+              "title": "Dispense of prescribed medication and of a product that can be dispensed without a prescription",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example5.html",
+              "title": "Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example6.html",
+              "title": "Refusal to dispense the prescribed medication",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example7.html",
+              "title": "Dispense of medication that was prescribed to take if needed, but was not taken",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example8.html",
+              "title": "Dispense of medication that was prescribed, but not taken till the end",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example9a.html",
+              "title": "Recording of anesthetic, contrast and similar medications - Checking possible interactions before surgery",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example9b.html",
+              "title": "Recording of anesthetic, contrast and similar medications - Product prescribed (by VOS) and dispense for exam ",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "example10.html",
+              "title": "The recording of non-medication aka pharmaceutical products",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "logical-models.html",
+              "title": "Logical Models",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "downloads.html",
+              "title": "Downloads",
+              "generation": "html"
+            }
+          ]
+        },
+        {
+          "nameUrl": "implementation.html",
+          "title": "Medication Record Implementation",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "medicationrecord-fhir-resources.html",
+              "title": "Medication Record - FHIR resources",
+              "generation": "markdown"
+            }
+          ]
         }
       ]
     },

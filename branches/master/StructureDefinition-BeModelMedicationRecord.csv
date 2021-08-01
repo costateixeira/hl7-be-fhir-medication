@@ -3,20 +3,22 @@
 "BeModelMedicationRecord.patient","","","",1,1,"","","","Reference {[]} {[]}
 ","The subject of the medication record","The subject of the medication record","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.patient",1,1,"",""
 "BeModelMedicationRecord.treatments","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordTreatment {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.treatments",0,*,"",""
+","The treaments that are included in this record","The treaments that are included in this record","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.treatments",0,*,"",""
 "BeModelMedicationRecord.treatmentLines","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordTreatmentLine {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.treatmentLines",0,*,"",""
+","The treatment lines that are included in this record","The treatment lines that are included in this record","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.treatmentLines",0,*,"",""
 "BeModelMedicationRecord.summaryView","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordSummaryView {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.summaryView",0,*,"",""
+","The summary views that are produced from this record or entered into it","The summary views that are produced from this record or entered into it","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.summaryView",0,*,"",""
 "BeModelMedicationRecord.detailedRecords","","","",0,*,"","","","BackboneElement {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords",0,*,"",""
+","Detailed records","Detailed records","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords",0,*,"",""
 "BeModelMedicationRecord.detailedRecords.orders","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordOrder {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.orders",0,*,"",""
+","Explicit or implicit order for medication use or changes","Explicit or implicit order for medication use or changes","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.orders",0,*,"",""
+"BeModelMedicationRecord.detailedRecords.schedule","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledOrder {[]} {[]}
+","Scheduled administrations of the medication","Scheduled administrations of the medication","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.schedule",0,*,"",""
 "BeModelMedicationRecord.detailedRecords.dispenses","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordDispense {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.dispenses",0,*,"",""
+","Registered or reported dispenses","Registered or reported dispenses","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.dispenses",0,*,"",""
 "BeModelMedicationRecord.detailedRecords.administrations","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordAdministration {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.administrations",0,*,"",""
+","Registered or reported single administrations","Registered or reported single administrations","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.administrations",0,*,"",""
 "BeModelMedicationRecord.detailedRecords.usageReports","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordUsage {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.usageReports",0,*,"",""
+","Reported statements of medication usage","Reported statements of medication usage","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.usageReports",0,*,"",""
 "BeModelMedicationRecord.changeRecord","","","",0,*,"","","","Provenance {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.changeRecord",0,*,"",""
+","Change records and provenance for the medication record components","Change records and provenance for the medication record components","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.changeRecord",0,*,"",""
