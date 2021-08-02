@@ -17,6 +17,7 @@ Parent: MedicationDispense
 * quantity MS
 * dosageInstruction MS
 * substitution.reason MS
+//* substitution.reason only (extensible)
 * type MS
 * extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan)
