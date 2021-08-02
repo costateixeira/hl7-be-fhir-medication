@@ -186,6 +186,7 @@ Parent: CarePlan
 * goal MS
 
 
+/*
 Profile: MedRecord
 Parent: Bundle
 Id: MedRecord
@@ -203,5 +204,5 @@ Description: "The profile for Medication Record"
 * entry[Composition].resource only Composition
 * entry[Composition].resource.subject MS
 //TODO
-
+*/
 
