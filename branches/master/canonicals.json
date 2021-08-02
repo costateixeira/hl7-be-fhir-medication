@@ -112,11 +112,11 @@
     "name": "BeModelMedicationRecordUsage"
   },
   {
-    "id": "BeModelMedicationScheduledOrder",
+    "id": "BeModelMedicationScheduledAdministration",
     "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledOrder",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledAdministration",
     "version": "0.2.0",
-    "name": "BeModelMedicationScheduledOrder"
+    "name": "BeModelMedicationScheduledAdministration"
   },
   {
     "id": "MedRecordAdministration",
@@ -131,6 +131,20 @@
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense",
     "version": "0.2.0",
     "name": "MedRecordDispense"
+  },
+  {
+    "id": "MedRecordMedicationScheduledAdministration",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration",
+    "version": "0.2.0",
+    "name": "MedRecordMedicationScheduledAdministration"
+  },
+  {
+    "id": "MedRecordMedicationSummaryView",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView",
+    "version": "0.2.0",
+    "name": "MedRecordMedicationSummaryView"
   },
   {
     "id": "MedRecordOrder",
