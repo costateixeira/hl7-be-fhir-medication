@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HL7 Belgium Medication Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-01T17:15:57+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-02T15:58:00+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -735,6 +735,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MedRecordMedicationScheduledAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Scheduled Administration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -743,7 +756,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record Treatment Line logical model" ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -759,7 +772,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -775,7 +788,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -787,7 +800,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Naming System - Product Package Types" ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -803,7 +816,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -815,7 +828,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record Treatment View logical model" ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -828,7 +841,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record - Usage profile" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Medication Usage in a Medication Record - a record of a single administration event" ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -840,7 +853,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Naming System - CNK Product Codes" ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -856,7 +869,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -872,7 +885,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -888,7 +901,20 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledAdministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BeModelMedicationScheduledAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record Scheduled Administration logical model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Record of a single planned administration event" ]
+     ], [
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -900,7 +926,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record Treatment logical model" ]
      ], [
-       fhir:index 36;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -916,7 +942,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -932,7 +958,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -945,7 +971,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record logical model" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A structure collection of a patient's medication history." ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -961,7 +987,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 40;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -977,7 +1003,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense>
        ]
      ], [
-       fhir:index 41;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -989,7 +1015,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record Administration logical model" ]
      ], [
-       fhir:index 42;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1002,7 +1028,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "medication substitution Value set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for substituting a medication on dispense." ]
      ], [
-       fhir:index 43;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1015,7 +1041,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record - Order profile" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Medication Order in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit" ]
      ], [
-       fhir:index 44;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1031,7 +1057,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
        ]
      ], [
-       fhir:index 45;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1043,7 +1069,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Naming System - Prescription IDs" ]
      ], [
-       fhir:index 46;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1059,7 +1085,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 47;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1075,7 +1101,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 48;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1088,7 +1114,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Summary types" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - Medication Summary types" ]
      ], [
-       fhir:index 49;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1101,7 +1127,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record - Dispense profile" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Medication Dispense in a Medication Record - a record of a single administration event" ]
      ], [
-       fhir:index 50;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1117,7 +1143,20 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
        ]
      ], [
-       fhir:index 51;
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MedRecordMedicationSummaryView" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Summary View profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Medication Summary view in a Medication Record" ]
+     ], [
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1133,7 +1172,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense>
        ]
      ], [
-       fhir:index 52;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1149,20 +1188,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 53;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledOrder>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/BeModelMedicationScheduledOrder" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Record Prescription logical model" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Record of a single planned administration event" ]
-     ], [
-       fhir:index 54;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1178,7 +1204,7 @@
          fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

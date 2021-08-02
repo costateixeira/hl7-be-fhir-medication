@@ -7,9 +7,9 @@
 "BeModelMedicationRecordDispense.dispenser","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","The dispenser, if known and relevant","The dispenser, if known and relevant","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dispenser",0,*,"",""
 "BeModelMedicationRecordDispense.dispenser.actor","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
-","Reference to person that performed the recording or reporting","Reference to person that performed the recording or reporting","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dispenser.actor",1,1,"",""
+","Reference to person that made the dispense","Reference to person that made the dispense","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dispenser.actor",1,1,"",""
 "BeModelMedicationRecordDispense.dispenser.organization","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Reference to person that performed the recording or reporting","Reference to person that performed the recording or reporting","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dispenser.organization",1,1,"",""
+","Reference to the organzation from which the dispenser belongs","Reference to the organzation from which the dispenser belongs","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dispenser.organization",1,1,"",""
 "BeModelMedicationRecordDispense.date","","","",1,1,"","","","dateTime {[]} {[]}
 ","The date when the dispense ocurred (or not)","The date when the dispense ocurred (or not)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.date",1,1,"",""
 "BeModelMedicationRecordDispense.prescription","","","",0,1,"","","","BackboneElement {[]} {[]}
@@ -19,22 +19,22 @@
 "BeModelMedicationRecordDispense.prescription.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
 ","The prescription identification","The prescription identification","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.prescription.prescription",0,1,"",""
 "BeModelMedicationRecordDispense.status","","","",1,1,"","","","code {[]} {[]}
-","preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown  MedicationDispense Status Codes (Required)","preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown  MedicationDispense Status Codes (Required)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.status",1,1,"",""
+","Status of the dispense","Status of the dispense","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.status",1,1,"",""
 "BeModelMedicationRecordDispense.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Why a dispense was not performed MedicationDispense Status Reason Codes (Example)","Why a dispense was not performed MedicationDispense Status Reason Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.statusReason",0,*,"",""
+","Reason for a dispense status","Reason for a dispense status","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.statusReason",0,*,"",""
 "BeModelMedicationRecordDispense.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
 Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","The product that was dispensed - coded or not (e.g. for magistral preparations)","The product that was dispensed - coded or not (e.g. for magistral preparations)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.product[x]",1,1,"",""
 "BeModelMedicationRecordDispense.quantitydispensed","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","The amound of product that was dispensed","The amound of product that was dispensed","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.quantitydispensed",0,1,"",""
 "BeModelMedicationRecordDispense.dosageInstruction","","","",0,1,"","","","Dosage {[]} {[]}
-","The instructions for use","The instructions for use","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dosageInstruction",0,1,"",""
+","The instructions for using the product","The instructions for using the product","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.dosageInstruction",0,1,"",""
 "BeModelMedicationRecordDispense.note","","","",0,*,"","","","Annotation {[]} {[]}
-","Additional information about the dispensed item","Additional information about the dispensed item","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.note",0,*,"",""
+","Additional information about the dispensed product","Additional information about the dispensed product","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.note",0,*,"",""
 "BeModelMedicationRecordDispense.substitutionReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Why was substitution made","Why was substitution made","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.substitutionReason",0,1,"",""
 "BeModelMedicationRecordDispense.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Trial fill, partial fill, emergency fill, etc.","Trial fill, partial fill, emergency fill, etc.","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.type",0,1,"",""
+","Type of dispense","Type of dispense","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.type",0,1,"",""
 "BeModelMedicationRecordDispense.location","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/openEHR-location]]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.location",0,1,"",""
+","Location where the dispense was made","Location where the dispense was made","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.location",0,1,"",""
 "BeModelMedicationRecordDispense.treatment","","","",0,1,"","","","Reference {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.treatment",0,1,"",""
+","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.treatment",0,1,"",""

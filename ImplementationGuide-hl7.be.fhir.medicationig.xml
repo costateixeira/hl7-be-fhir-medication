@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-01T17:15:57+00:00"/>
+  <date value="2021-08-02T15:58:00+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -488,6 +488,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedRecordMedicationScheduledAdministration"/>
+      </reference>
+      <name value="Medication Scheduled Administration"/>
+      <description value="The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -591,6 +601,16 @@
       </reference>
       <name value="Example MedicationRequest - example-6-of-medication-presc"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationScheduledAdministration"/>
+      </reference>
+      <name value="Medication Record Scheduled Administration logical model"/>
+      <description value="Record of a single planned administration event"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -751,6 +771,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedRecordMedicationSummaryView"/>
+      </reference>
+      <name value="Medication Summary View profile"/>
+      <description value="The profile for Medication Summary view in a Medication Record"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
@@ -768,16 +798,6 @@
       </reference>
       <name value="Example MedicationDispense - example-2-of-medication-dispense"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/BeModelMedicationScheduledOrder"/>
-      </reference>
-      <name value="Medication Record Prescription logical model"/>
-      <description value="Record of a single planned administration event"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

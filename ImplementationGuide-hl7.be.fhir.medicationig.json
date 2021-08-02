@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-01T17:15:57+00:00",
+  "date": "2021-08-02T15:58:00+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -711,6 +711,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedRecordMedicationScheduledAdministration"
+        },
+        "name": "Medication Scheduled Administration",
+        "description": "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -845,6 +858,19 @@
         },
         "name": "Example MedicationRequest - example-6-of-medication-presc",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BeModelMedicationScheduledAdministration"
+        },
+        "name": "Medication Record Scheduled Administration logical model",
+        "description": "Record of a single planned administration event"
       },
       {
         "extension": [
@@ -1055,6 +1081,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedRecordMedicationSummaryView"
+        },
+        "name": "Medication Summary View profile",
+        "description": "The profile for Medication Summary view in a Medication Record"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -1076,19 +1115,6 @@
         },
         "name": "Example MedicationDispense - example-2-of-medication-dispense",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/BeModelMedicationScheduledOrder"
-        },
-        "name": "Medication Record Prescription logical model",
-        "description": "Record of a single planned administration event"
       },
       {
         "extension": [
