@@ -202,14 +202,14 @@ Description:    "A structure collection of a patient's medication history."
 
 
 
-Logical: BeModelMedicationScheduledOrder
-Title: "Medication Record Prescription logical model"
+Logical: BeModelMedicationScheduledAdministration
+Title: "Medication Record Scheduled Administration logical model"
 Description: "Record of a single planned administration event"
 * identifier 0..1 Identifier "The business identifier(s) for the medication prescription" ""
 * patient 1..1 Reference(Patient) "The person for which the medication is prescribed." ""
-* status 1..1 code "active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)" ""
-* statusReason 0..* CodeableConcept "Reason for current status medicationRequest Status Reason Codes (Example)" ""
-* product[x] 1..1 Reference(Medication) or CodeableConcept "Medication to be taken SNOMED CT Medication Codes (Example)" ""
+* status 1..1 code "active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown" ""
+* statusReason 0..* CodeableConcept "Reason for current status medicationRequest" ""
+* product[x] 1..1 Reference(Medication) or CodeableConcept "Medication to be taken" ""
 * encounter 0..1 Reference(Encounter) "Encounter created as part of encounter/admission/stay" ""
 * reason 0..* Reference(Condition or Observation) "Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)" ""
 * groupIdentifier 0..1 Identifier "Composite request this is part of" ""
