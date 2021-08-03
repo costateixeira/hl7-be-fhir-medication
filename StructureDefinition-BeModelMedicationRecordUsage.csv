@@ -3,13 +3,13 @@
 "BeModelMedicationRecordUsage.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","The business identifier(s) for the medication Usage","The business identifier(s) for the medication Usage","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.identifier",0,*,"",""
 "BeModelMedicationRecordUsage.status","","","",1,1,"","","","code {[]} {[]}
-","Status of the report","Status of the report","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.status",1,1,"",""
+","Status of the usage","Status of the usage","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.status",1,1,"",""
 "BeModelMedicationRecordUsage.category","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Type of medication usage","Type of medication usage","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.category",0,*,"",""
 "BeModelMedicationRecordUsage.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","What product this report relates to","What product this report relates to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.product[x]",1,1,"",""
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","What product this usage relates to","What product this usage relates to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.product[x]",1,1,"",""
 "BeModelMedicationRecordUsage.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
-","Whom this report relates to","Whom this report relates to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.subject",1,1,"",""
+","Whom this usage relates to","Whom this usage relates to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.subject",1,1,"",""
 "BeModelMedicationRecordUsage.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
 Period {[]} {[]}","The date/time or interval when the product is/was/will be taken","The date/time or interval when the product is/was/will be taken","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.effective[x]",0,1,"",""
 "BeModelMedicationRecordUsage.dateAsserted","","","",0,1,"","","","dateTime {[]} {[]}
@@ -23,7 +23,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition
 "BeModelMedicationRecordUsage.renderedDosageInstruction","","","",0,1,"","","","string {[]} {[]}
 ","Full representation of the dosage instructions","Full representation of the dosage instructions","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.renderedDosageInstruction",0,1,"",""
 "BeModelMedicationRecordUsage.dosage","","","",0,*,"","","","Dosage {[]} {[]}
-","Details of how medication is/was taken or should be taken","Details of how medication is/was taken or should be taken","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.dosage",0,*,"",""
+","Details of how product is/was taken or should be taken","Details of how product is/was taken or should be taken","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.dosage",0,*,"",""
 "BeModelMedicationRecordUsage.adherence","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Indicates if the product is being consumed or administered as instructed","Indicates if the product is being consumed or administered as instructed","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.adherence",0,1,"",""
 "BeModelMedicationRecordUsage.adherence.code","","","",1,1,"","","","CodeableConcept {[]} {[]}

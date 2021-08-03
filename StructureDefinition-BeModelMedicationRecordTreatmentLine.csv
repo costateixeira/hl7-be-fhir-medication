@@ -5,9 +5,9 @@
 "BeModelMedicationRecordTreatmentLine.basedOn","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordTreatment]]}
 ","The identifier of the treatment from which this line stems","The identifier of the treatment from which this line stems","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.basedOn",0,1,"",""
 "BeModelMedicationRecordTreatmentLine.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","For whom this treatment lines was created","For whom this treatment lines was created","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.subject",1,1,"",""
+","For whom this treatment line was created","For whom this treatment line was created","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.subject",1,1,"",""
 "BeModelMedicationRecordTreatmentLine.recorder","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Who made created the record for this treatment line","Who made created the record for this treatment line","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.recorder",1,1,"",""
+","Who created this treatment line","Who created this treatment line","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.recorder",1,1,"",""
 "BeModelMedicationRecordTreatmentLine.recordDate","","","",1,1,"","","","dateTime {[]} {[]}
 ","Datetime that the treatment line was created or updated","Datetime that the treatment line was created or updated","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.recordDate",1,1,"",""
 "BeModelMedicationRecordTreatmentLine.startMedicationDate","","","",1,1,"","","","dateTime {[]} {[]}
@@ -15,7 +15,7 @@
 "BeModelMedicationRecordTreatmentLine.endMedicationDate","","","",0,1,"","","","dateTime {[]} {[]}
 ","End date, if exists, for stopping the medication","End date, if exists, for stopping the medication","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.endMedicationDate",0,1,"",""
 "BeModelMedicationRecordTreatmentLine.originType","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","From what context this treatment line stems, whether is ambulatory prescription, patient request, etc","From what context this treatment line stems, whether is ambulatory prescription, patient request, etc","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.originType",1,1,"",""
+","From what context this treatment line stems","From what context this treatment line stems, whether is ambulatory prescription, patient request, etc","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.originType",1,1,"",""
 "BeModelMedicationRecordTreatmentLine.reaction","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Reaction to this treatment line","Reaction to this treatment line","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.reaction",0,*,"",""
 "BeModelMedicationRecordTreatmentLine.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -39,4 +39,4 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 "BeModelMedicationRecordTreatmentLine.treatment","","","",0,1,"","","","Reference {[]} {[]}
 ","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.treatment",0,1,"",""
 "BeModelMedicationRecordTreatmentLine.indication","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Concept for which the treatment exists","Concept for which the treatment exists","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.indication",0,*,"",""
+","Why the treatment exists","Why the treatment exists","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.indication",0,*,"",""

@@ -5,11 +5,11 @@
 "BeModelMedicationScheduledAdministration.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","The person for which the product is prescribed.","The person for which the product is prescribed.","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.patient",1,1,"",""
 "BeModelMedicationScheduledAdministration.status","","","",1,1,"","","","code {[]} {[]}
-","status of the medication scheduled administration","status of the medication scheduled administration","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.status",1,1,"",""
+","Status of the medication scheduled administration","status of the medication scheduled administration","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.status",1,1,"",""
 "BeModelMedicationScheduledAdministration.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Reason for current status","Reason for current status","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.statusReason",0,*,"",""
 "BeModelMedicationScheduledAdministration.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","product to be consumed","product to be consumed","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.product[x]",1,1,"",""
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","Product to be consumed","Product to be consumed","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.product[x]",1,1,"",""
 "BeModelMedicationScheduledAdministration.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Encounter in which the schedule was created","Encounter in which the schedule was created","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.encounter",0,1,"",""
 "BeModelMedicationScheduledAdministration.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
@@ -17,8 +17,8 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 "BeModelMedicationScheduledAdministration.groupIdentifier","","","",0,1,"","","","Identifier {[]} {[]}
 ","Composite request this is part of","Composite request this is part of","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.groupIdentifier",0,1,"",""
 "BeModelMedicationScheduledAdministration.dosageInstruction","","","",0,*,"","","","Dosage {[]} {[]}
-","How the medication should be taken","How the medication should be taken","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.dosageInstruction",0,*,"",""
+","How the product should be consumed","How the product should be consumed","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.dosageInstruction",0,*,"",""
 "BeModelMedicationScheduledAdministration.note","","","",0,*,"","","","Annotation {[]} {[]}
-","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.note",0,*,"",""
+","Additional Information about the scheduled administration","Additional Information about the scheduled administration","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.note",0,*,"",""
 "BeModelMedicationScheduledAdministration.treatment","","","",0,1,"","","","Reference {[]} {[]}
 ","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledAdministration.treatment",0,1,"",""
