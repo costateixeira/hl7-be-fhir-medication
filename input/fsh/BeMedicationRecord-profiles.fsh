@@ -151,6 +151,7 @@ Profile: MedRecordMedicationScheduledAdministration
 Title: "Medication Scheduled Administration"
 Description: "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"
 Parent: MedicationRequest
+* meta.profile 1..*
 * identifier MS
 * subject MS
 * status MS 
@@ -171,6 +172,7 @@ Profile: MedRecordMedicationSummaryView
 Title: "Medication Summary View profile"
 Description: "The profile for Medication Summary view in a Medication Record"
 Parent: CarePlan
+* meta.profile 1..*
 * identifier MS
 * subject MS
 * status MS // =#completed?
@@ -186,23 +188,90 @@ Parent: CarePlan
 * goal MS
 
 
-/*
+
+Profile: BePatient
+Parent: Patient
+
+Profile: MedRecordComposition
+Title: "Structure Composition for medication Record profile"
+Description: "How to organize the information in a medication Record"
+Parent: Composition
+Id: MedRecord-comp
+* meta.profile 1..*
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "type.coding.code"
+* section ^slicing.rules = #open
+* section contains
+    generalView 0..1 MS and
+    detailsRecord 0..1 MS 
+* section[generalView].entry only Reference(BePatient or MedRecordTreatmentLine or MedRecordTreatment or MedRecordMedicationSummaryView)
+* section[detailsRecord].entry only Reference(MedRecordUsage or MedRecordOrder or MedRecordDispense or MedRecordAdministration or MedRecordMedicationScheduledAdministration)
+
+
+
 Profile: MedRecord
 Parent: Bundle
 Id: MedRecord
 Title: "Medication Record profile"
 Description: "The profile for Medication Record"
 * ^version = "1.0.0"
-* type = #document
+* identifier 0..1 MS
+* type = #document (exactly)
+* type ^short = "document"
+* type ^definition = "Bundle is a document"
+* total 0..0
+* link 0..0 SU
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile conformance of the sliced element"
-* entry contains Composition 1..* MS
+* entry contains
+    Composition 1..1 and
+    Patient 1..1 and
+    MedRecordTreatment 0..* and
+    MedRecordTreatmentLine 0..* and 
+    MedRecordMedicationSummaryView 0..* and
+    MedRecordDispense 0..* and
+    MedRecordAdministration 0..* and
+    MedRecordMedicationScheduledAdministration 0..* and
+    MedRecordOrder 0..* and
+    MedRecordUsage 0..* 
 * entry[Composition] ^short = "Composition"
-* entry[Composition].resource 1..1
-* entry[Composition].resource only Composition
-* entry[Composition].resource.subject MS
-//TODO
-*/
+* entry[Composition].resource 1.. MS
+* entry[Composition].resource only MedRecordComposition
 
+* entry[Patient] ^short = "Patient for whom the record is concerned"
+* entry[Patient].resource 1.. MS
+* entry[Patient].resource only Patient
+
+* entry[MedRecordTreatment] ^short = "Treatments associated with the patient"
+* entry[MedRecordTreatment].resource 1.. MS
+* entry[MedRecordTreatment].resource only MedRecordTreatment
+
+* entry[MedRecordTreatmentLine] ^short = "Treatment lines associated with the patient"
+* entry[MedRecordTreatmentLine].resource 1.. MS
+* entry[MedRecordTreatmentLine].resource only MedRecordTreatmentLine
+
+* entry[MedRecordMedicationSummaryView] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordMedicationSummaryView].resource 1.. MS
+* entry[MedRecordMedicationSummaryView].resource only MedRecordTreatmentLine
+
+* entry[MedRecordOrder] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordOrder].resource 1.. MS
+* entry[MedRecordOrder].resource only MedRecordOrder
+
+* entry[MedRecordDispense] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordDispense].resource 1.. MS
+* entry[MedRecordDispense].resource only MedRecordDispense
+
+* entry[MedRecordAdministration] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordAdministration].resource 1.. MS
+* entry[MedRecordAdministration].resource only MedRecordAdministration
+
+* entry[MedRecordMedicationScheduledAdministration] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordMedicationScheduledAdministration].resource 1.. MS
+* entry[MedRecordMedicationScheduledAdministration].resource only MedRecordMedicationScheduledAdministration
+
+* entry[MedRecordUsage] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordUsage].resource 1.. MS
+* entry[MedRecordUsage].resource only MedRecordUsage
