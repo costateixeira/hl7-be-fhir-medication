@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-03T08:59:05+00:00"/>
+  <date value="2021-08-03T10:44:40+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -429,6 +429,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BePatient"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -491,6 +499,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/MedRecord"/>
+      </reference>
+      <name value="Medication Record profile"/>
+      <description value="The profile for Medication Record"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/MedRecordMedicationScheduledAdministration"/>
       </reference>
       <name value="Medication Scheduled Administration"/>
@@ -533,6 +551,16 @@
         <reference value="NamingSystem/be-ns-product-package-type"/>
       </reference>
       <description value="Naming System - Product Package Types"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedRecord-comp"/>
+      </reference>
+      <name value="Structure Composition for medication Record profile"/>
+      <description value="How to organize the information in a medication Record"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

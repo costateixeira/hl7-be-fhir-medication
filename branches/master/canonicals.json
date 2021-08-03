@@ -119,6 +119,27 @@
     "name": "BeModelMedicationScheduledAdministration"
   },
   {
+    "id": "BePatient",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BePatient",
+    "version": "0.2.0",
+    "name": "BePatient"
+  },
+  {
+    "id": "MedRecord",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
+    "version": "0.2.0",
+    "name": "MedRecord"
+  },
+  {
+    "id": "MedRecord-comp",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp",
+    "version": "0.2.0",
+    "name": "MedRecordComposition"
+  },
+  {
     "id": "MedRecordAdministration",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration",

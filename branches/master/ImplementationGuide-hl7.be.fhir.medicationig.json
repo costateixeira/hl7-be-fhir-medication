@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-03T08:59:05+00:00",
+  "date": "2021-08-03T10:44:40+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -634,6 +634,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BePatient"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -715,6 +726,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/MedRecord"
+        },
+        "name": "Medication Record profile",
+        "description": "The profile for Medication Record"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/MedRecordMedicationScheduledAdministration"
         },
         "name": "Medication Scheduled Administration",
@@ -769,6 +793,19 @@
           "reference": "NamingSystem/be-ns-product-package-type"
         },
         "description": "Naming System - Product Package Types"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedRecord-comp"
+        },
+        "name": "Structure Composition for medication Record profile",
+        "description": "How to organize the information in a medication Record"
       },
       {
         "extension": [

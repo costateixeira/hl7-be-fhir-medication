@@ -5,6 +5,24 @@
   "jurisdiction": "056",
   "extensions": [],
   "profiles": {
+    "Patient": [
+      {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BePatient",
+        "title": "BePatient"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
+        "title": "Medication Record profile"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp",
+        "title": "Structure Composition for medication Record profile"
+      }
+    ],
     "MedicationAdministration": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration",
@@ -71,6 +89,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
