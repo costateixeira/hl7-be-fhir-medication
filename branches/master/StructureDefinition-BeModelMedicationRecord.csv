@@ -11,7 +11,7 @@
 "BeModelMedicationRecord.summaryView","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordSummaryView {[]} {[]}
 ","The summary views that are produced from this record or entered into it","The summary views that are produced from this record or entered into it","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.summaryView",0,*,"",""
 "BeModelMedicationRecord.detailedRecords","","","",0,*,"","","","BackboneElement {[]} {[]}
-","Detailed records","Detailed records","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords",0,*,"",""
+","Detailed records","Detailed records - the most granular interactions","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords",0,*,"",""
 "BeModelMedicationRecord.detailedRecords.orders","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordOrder {[]} {[]}
 ","Explicit or implicit order for medication use or changes","Explicit or implicit order for medication use or changes","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecord.detailedRecords.orders",0,*,"",""
 "BeModelMedicationRecord.detailedRecords.schedule","","","",0,*,"","","","https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledAdministration {[]} {[]}

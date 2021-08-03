@@ -1,9 +1,9 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 116, warn = 113, info = 51
+err = 116, warn = 111, info = 51
 IG Publisher Version: 1.1.77
-Generated Mon Aug 02 15:58:37 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Tue Aug 03 08:59:36 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 388 / 35 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types : 0 / 1 / 1
@@ -40,7 +40,7 @@ Generated Mon Aug 02 15:58:37 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord : 1 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration : 2 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense : 4 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordOrder : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordSummaryView : 2 / 2 / 1
@@ -6764,8 +6764,6 @@ WARNING: StructureDefinition/BeModelMedicationRecord: StructureDefinition: Unabl
 WARNING: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 ERROR: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 ERROR: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
-WARNING: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense.json ==
 WARNING: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
