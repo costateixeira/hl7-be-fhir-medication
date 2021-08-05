@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-05T10:31:09+00:00"/>
+  <date value="2021-08-05T10:38:11+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -888,7 +888,7 @@
           <generation value="markdown"/>
           <page>
             <nameUrl value="medication-granularity.html"/>
-            <title value="Medication Granularity"/>
+            <title value="Medication Levels"/>
             <generation value="markdown"/>
           </page>
           <page>
