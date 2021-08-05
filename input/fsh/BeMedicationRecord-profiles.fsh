@@ -231,10 +231,10 @@ Description: "The profile for Medication Record"
     MedRecordTreatment 0..* and
     MedRecordTreatmentLine 0..* and 
     MedRecordMedicationSummaryView 0..* and
+    MedRecordOrder 0..* and
     MedRecordDispense 0..* and
     MedRecordAdministration 0..* and
     MedRecordMedicationScheduledAdministration 0..* and
-    MedRecordOrder 0..* and
     MedRecordUsage 0..* 
 * entry[Composition] ^short = "Composition"
 * entry[Composition].resource 1.. MS
