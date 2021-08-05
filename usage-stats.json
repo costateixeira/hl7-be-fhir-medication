@@ -5,12 +5,6 @@
   "jurisdiction": "056",
   "extensions": [],
   "profiles": {
-    "Patient": [
-      {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BePatient",
-        "title": "BePatient"
-      }
-    ],
     "Bundle": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
