@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-05T10:31:09+00:00",
+  "date": "2021-08-05T10:38:11+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1223,7 +1223,7 @@
               "page": [
                 {
                   "nameUrl": "medication-granularity.html",
-                  "title": "Medication Granularity",
+                  "title": "Medication Levels",
                   "generation": "markdown"
                 },
                 {

@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HL7 Belgium Medication Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-05T10:31:09+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-05T10:38:11+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1299,7 +1299,7 @@
            fhir:ImplementationGuide.definition.page.page [
              fhir:index 0;
              fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "medication-granularity.html" ];
-             fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Granularity" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Levels" ];
              fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
            ], [
              fhir:index 1;
