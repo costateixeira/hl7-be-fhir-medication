@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeModelMedicationRecord"];
   fhir:StructureDefinition.title [ fhir:value "Medication Record logical model"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-05T09:51:57+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-05T10:05:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
