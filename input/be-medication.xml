@@ -186,12 +186,12 @@
           <title value="Requirements - Medication Record"/>
           <generation value="markdown"/>
           <page>
-            <nameUrl value="medicationrecord-scenario-1.html"/>
+            <nameUrl value="medication-granularity.html"/>
             <title value="Medication Granularity"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <nameUrl value="medicationrecord-scenario-1.html"/>
+            <nameUrl value="medication-class-group.html"/>
             <title value="Medication Classification and grouping"/>
             <generation value="markdown"/>
           </page>
