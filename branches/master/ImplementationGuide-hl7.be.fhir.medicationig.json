@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-05T09:23:32+00:00",
+  "date": "2021-08-05T09:51:57+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -629,17 +629,6 @@
         },
         "name": "Medication Treatment Line profile",
         "description": "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/BePatient"
-        }
       },
       {
         "extension": [
