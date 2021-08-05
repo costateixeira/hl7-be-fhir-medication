@@ -1,0 +1,17 @@
+@startuml
+object Substance
+object PharmaceuticalProduct
+object PharmaceuticalMedicine
+object PharmaceuticalPackagedProduct
+
+
+Substance : The most generic prescription - > Pantoprazole
+PharmaceuticalProduct : Pantroprazole 40 mg tab
+PharmaceuticalMedicine : Pantoprazole Teva 40 mg tab 
+PharmaceuticalPackagedProduct : Pantoprazole Teva 40 mg tab box X20
+
+Substance <|--  PharmaceuticalProduct : " is based on" 
+PharmaceuticalProduct <|--  PharmaceuticalMedicine : " is based on" 
+PharmaceuticalMedicine <|--  PharmaceuticalPackagedProduct : " is based on" 
+
+@enduml
