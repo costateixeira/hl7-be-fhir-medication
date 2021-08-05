@@ -189,8 +189,6 @@ Parent: CarePlan
 
 
 
-Profile: BePatient
-Parent: Patient
 
 Profile: MedRecordComposition
 Title: "Structure Composition for medication Record profile"
@@ -202,9 +200,13 @@ Id: MedRecord-comp
 * section ^slicing.discriminator.path = "type.coding.code"
 * section ^slicing.rules = #open
 * section contains
-    generalView 0..1 MS and
+    MedRecordTreatment 0..* MS and
+    MedRecordTreatmentLine 0..* MS and
+    MedRecordMedicationSummaryView 0..* MS and
     detailsRecord 0..1 MS 
-* section[generalView].entry only Reference(BePatient or MedRecordTreatmentLine or MedRecordTreatment or MedRecordMedicationSummaryView)
+* section[MedRecordTreatment].entry only Reference(MedRecordTreatment)
+* section[MedRecordTreatmentLine].entry only Reference(MedRecordTreatmentLine)
+* section[MedRecordMedicationSummaryView].entry only Reference(MedRecordMedicationSummaryView)
 * section[detailsRecord].entry only Reference(MedRecordUsage or MedRecordOrder or MedRecordDispense or MedRecordAdministration or MedRecordMedicationScheduledAdministration)
 
 
