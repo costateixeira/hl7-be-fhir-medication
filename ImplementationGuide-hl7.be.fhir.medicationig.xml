@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-05T10:05:08+00:00"/>
+  <date value="2021-08-05T10:31:09+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -886,6 +886,16 @@
           <nameUrl value="medicationrecord-requirements.html"/>
           <title value="Requirements - Medication Record"/>
           <generation value="markdown"/>
+          <page>
+            <nameUrl value="medication-granularity.html"/>
+            <title value="Medication Granularity"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="medication-class-group.html"/>
+            <title value="Medication Classification and grouping"/>
+            <generation value="markdown"/>
+          </page>
         </page>
         <page>
           <nameUrl value="medicationrecord-patterns.html"/>

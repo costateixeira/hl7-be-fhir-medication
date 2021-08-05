@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-05T10:05:08+00:00",
+  "date": "2021-08-05T10:31:09+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1219,7 +1219,19 @@
             {
               "nameUrl": "medicationrecord-requirements.html",
               "title": "Requirements - Medication Record",
-              "generation": "markdown"
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "medication-granularity.html",
+                  "title": "Medication Granularity",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "medication-class-group.html",
+                  "title": "Medication Classification and grouping",
+                  "generation": "markdown"
+                }
+              ]
             },
             {
               "nameUrl": "medicationrecord-patterns.html",
