@@ -1,4 +1,6 @@
 @startuml
+left to right direction
+
 object Substance
 object PharmaceuticalProduct1
 object PharmaceuticalProduct2
