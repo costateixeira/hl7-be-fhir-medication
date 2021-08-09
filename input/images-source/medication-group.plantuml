@@ -1,0 +1,35 @@
+@startuml
+
+
+package "ATC A02BC Proton pump inhibitors"
+ {
+
+package "ATC A02BC04"  {
+object Rabeprazole
+
+}
+package "ATC A02BC02"  {
+object Pantoprazole
+
+}
+package "ATC A02BC01"  {
+object Omeprazole
+
+}
+package "ATC A02BC05"  {
+object Esomeprazole
+
+}
+}
+
+package "Restricted Medication Hospital A"{
+    object 1
+    object 3
+}
+
+package "Restricted Medication Hospital B"{
+    object "1" as 1b
+    object 2
+}
+
+@enduml
