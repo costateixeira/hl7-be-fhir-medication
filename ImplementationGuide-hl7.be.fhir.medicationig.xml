@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-10T11:30:07+00:00"/>
+  <date value="2021-08-10T14:43:54+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -498,6 +498,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example-15-scheduleAdministration2"/>
+      </reference>
+      <name value="Example MedicationRequest - example-15-scheduleAdministration2"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -544,6 +554,16 @@
       </reference>
       <name value="Example MedicationDispense - example-10-1-of-medication-dispense"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example-15-scheduleAdministration"/>
+      </reference>
+      <name value="Example MedicationRequest - example-15-scheduleAdministration"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -608,7 +628,7 @@
       <reference>
         <reference value="CarePlan/example-15c-of-medication-treatment"/>
       </reference>
-      <name value="Treatment for acid reflux with acidine"/>
+      <name value="Treatment for acid reflux"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"/>
     </resource>
     <resource>
