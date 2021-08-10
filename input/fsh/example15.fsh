@@ -15,7 +15,7 @@ Title:    ""
 
 * medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#00  "Acidine 75 mg (20 pieces)"
 
-* authoredOn = "2021-07-19T09:00:00+02:00"
+* authoredOn = "2021-08-10T09:00:00+02:00"
 
 * requester.identifier.value = "7c121778-5b2b-442d-9314-0a73995ab3dd"
 * requester.identifier.system = "http://physician-identifiers.com"
@@ -41,6 +41,117 @@ Title:    ""
 
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+Instance: reflux-condition
+InstanceOf: Condition
+Usage: #example
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* code = http://snomed.ct#266435005 "Gastro-oesophageal reflux disease without oesophagitis"
+
+//////////////////<<<<>>>>\\\\\\\\\\\\\\\\\\
+
+Instance: example-15-of-medication-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#00  "Acidine 75 mg (20 pieces)"
+
+* status = #active
+
+
+Instance: example-15c-of-medication-treatment 
+InstanceOf: MedRecordTreatment
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatments-identifiers.com"
+* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* created = "2021-08-10T09:00:00+02:00"
+
+* status = #active 
+* intent = #plan
+* title = "Treatment for acid reflux"
+* addresses = Reference(reflux-condition)
+
+* activity[+].detail.kind = #MedicationRequest
+* activity[=].detail.status = #completed
+* activity[=].detail.productCodeableConcept	= https://cnk.apb.be/codings/cnk_product_codes#00  "Aspirine 500 mg (36 effervescent tablets)"
+
+
+
+
+Instance: example-15-scheduleAdministration
+InstanceOf: MedRecordMedicationScheduledAdministration
+
+
+* identifier[0].system = "http://takes-identifiers.com"
+* identifier[0].value = "797148f2-2100-4a1a-ac25-0b1ae040f0e6"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#00  "Acidine 75 mg (20 pieces)"
+
+* status = #active 
+
+
+* dosageInstruction.route = http://snomed.info/sct#26643006  "Oral Route" 
+
+* dosageInstruction.doseAndRate.doseQuantity.value = 1
+* dosageInstruction.doseAndRate.doseQuantity.unit = "TAB" 
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
+* dosageInstruction.doseAndRate.doseQuantity.code = #TAB 
+
+* dosageInstruction.timing.event = "2021-08-11T10:00:00+02:00"
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: example-15-scheduleAdministration2
+InstanceOf: MedRecordMedicationScheduledAdministration
+
+
+* identifier[0].system = "http://takes-identifiers.com"
+* identifier[0].value = "d6cbba56-f05d-42fc-9674-fccc8aa2c048"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#00  "Acidine 75 mg (20 pieces)"
+
+* status = #active 
+
+
+* dosageInstruction.route = http://snomed.info/sct#26643006  "Oral Route" 
+
+* dosageInstruction.doseAndRate.doseQuantity.value = 1
+* dosageInstruction.doseAndRate.doseQuantity.unit = "TAB" 
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
+* dosageInstruction.doseAndRate.doseQuantity.code = #TAB 
+
+* dosageInstruction.timing.event = "2021-08-12T10:00:00+02:00"
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
 
 //////////////////<<<<>>>>\\\\\\\\\\\\\\\\\\
 
@@ -87,54 +198,3 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.value = "5c94b8a1-6a7e-4652-9525-c7614f768ed8"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-
-
-Instance: reflux-condition
-InstanceOf: Condition
-Usage: #example
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#266435005 "Gastro-oesophageal reflux disease without oesophagitis"
-//////////////////<<<<>>>>\\\\\\\\\\\\\\\\\\
-
-Instance: example-15c-of-medication-treatment 
-InstanceOf: MedRecordTreatment
-Usage: #example
-Description: ""
-Title:    ""
-
-* identifier[0].system = "http://treatments-identifiers.com"
-* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* created = "2021-07-19T09:00:00+02:00"
-
-* status = #active 
-* intent = #plan
-* title = "Treatment for acid reflux with acidine"
-* addresses = Reference(reflux-condition)
-
-* activity[+].detail.kind = #MedicationRequest
-* activity[=].detail.status = #completed
-* activity[=].detail.productCodeableConcept	= https://cnk.apb.be/codings/cnk_product_codes#00  "Aspirine 500 mg (36 effervescent tablets)"
-
-
-Instance: example-15-of-medication-treatmentLine 
-InstanceOf: MedRecordTreatmentLine
-Usage: #example
-Description: ""
-Title:    ""
-
-* identifier[0].system = "http://treatmentLines-identifiers.com"
-* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#00  "Acidine 75 mg (20 pieces)"
-
-* status = #active
