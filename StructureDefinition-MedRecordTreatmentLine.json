@@ -18,9 +18,9 @@
   "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
   "version": "0.2.0",
   "name": "MedRecordTreatmentLine",
-  "title": "Medication Treatment Line profile",
+  "title": "Medication Record - Treatment Line profile",
   "status": "active",
-  "date": "2021-08-11T11:16:23+00:00",
+  "date": "2021-08-11T11:27:13+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {

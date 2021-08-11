@@ -1,5 +1,5 @@
 "Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
-"BeModelMedicationRecordAdministration","","","",0,*,"","","","","Medication Record Administration logical model","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelMedicationRecordAdministration","","","",0,*,"","","","","Medication Record Administration logical model","A model for representing and reporting an administration of a product","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "BeModelMedicationRecordAdministration.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","The business identifier(s) for the medication Administration","The business identifier(s) for the medication Administration","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordAdministration.identifier",0,*,"",""
 "BeModelMedicationRecordAdministration.status","","","",1,1,"","","","code {[]} {[]}

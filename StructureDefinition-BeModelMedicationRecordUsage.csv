@@ -1,5 +1,5 @@
 "Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
-"BeModelMedicationRecordUsage","","","",0,*,"","","","","Medication Record Usage logical model","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelMedicationRecordUsage","","","",0,*,"","","","","Medication Record Usage logical model","A model for representing medication usage","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "BeModelMedicationRecordUsage.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","The business identifier(s) for the medication Usage","The business identifier(s) for the medication Usage","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.identifier",0,*,"",""
 "BeModelMedicationRecordUsage.status","","","",1,1,"","","","code {[]} {[]}

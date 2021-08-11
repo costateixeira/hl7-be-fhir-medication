@@ -6,7 +6,7 @@
   "extensions": [
     {
       "url": "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl",
-      "title": "RelatedTreatmentLine",
+      "title": "Based On Extension",
       "types": [
         "Reference"
       ]
@@ -16,13 +16,13 @@
     "Bundle": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
-        "title": "Medication Record profile"
+        "title": "Medication Record Profile"
       }
     ],
     "Composition": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp",
-        "title": "Structure Composition for medication Record profile"
+        "title": "Medication Record - Structure Composition Profile"
       }
     ],
     "MedicationAdministration": [
@@ -46,13 +46,13 @@
     "CarePlan": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment",
-        "title": "Medication Treatment profile"
+        "title": "Medication Record - Treatment profile"
       }
     ],
     "MedicationStatement": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
-        "title": "Medication Treatment Line profile"
+        "title": "Medication Record - Treatment Line profile"
       },
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage",

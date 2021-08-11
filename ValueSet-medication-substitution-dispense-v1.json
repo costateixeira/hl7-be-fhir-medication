@@ -8,9 +8,9 @@
   "url": "https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1",
   "version": "0.2.0",
   "name": "SubstitutionReason",
-  "title": "medication substitution Value set",
+  "title": "Medication Substitution Value Set",
   "status": "active",
-  "date": "2021-08-11T11:16:23+00:00",
+  "date": "2021-08-11T11:27:13+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
