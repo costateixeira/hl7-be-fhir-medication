@@ -19,7 +19,8 @@ Title: "Medication Record Dispense logical model"
 * substitutionReason 0..1 CodeableConcept "Why was substitution made" "Why was substitution made"
 * type 0..1 CodeableConcept "Type of dispense" "Type of dispense"
 * location 0..1 Reference(location) "Location where the dispense was made" "Location where the dispense was made"
-* treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+* treatmentPlan 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+* basedOn 0..1 Reference "link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose"
 
 Logical: BeModelMedicationRecordOrder
 Title: "Medication Record Prescription logical model"
@@ -38,7 +39,8 @@ Title: "Medication Record Prescription logical model"
 * note 0..* Annotation "Additional Information about the prescription" "Additional Information about the prescription"
 * date 0..1 dateTime "When prescription was initially made" "When prescription was initially made"
 * location 0..1 string "Where the prescription was initially made" "Where the prescription was initially made"
-* treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+* treatmentPlan 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+* basedOn 0..1 Reference "link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose"
 
 
 Logical: BeModelMedicationRecordUsage
@@ -59,7 +61,8 @@ Title: "Medication Record Usage logical model"
 * adherence 0..1 BackboneElement "Indicates if the product is being consumed or administered as instructed" "Indicates if the product is being consumed or administered as instructed"
   * code 1..1 CodeableConcept "Type of adherence" "Type of adherence"
   * reason 0..1 CodeableConcept "Details of the reason for the current adherence to the intended usage of the product" "Details of the reason for the current adherence to the intended usage of the product"
-* treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+* treatmentPlan 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+* basedOn 0..1 Reference "link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose"
 
 
 Logical: BeModelMedicationRecordAdministration
@@ -88,8 +91,9 @@ Title: "Medication Record Administration logical model"
   * method 0..1 CodeableConcept "How the product was administered" "How the product was administered"
   * dose 0..1 SimpleQuantity "Amount of product per dose" "Amount of product per dose"
     * rate[x] 0..1 Ratio or SimpleQuantity "Dose quantity per unit of time" "Dose quantity per unit of time" 
-* treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+* treatmentPlan 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
 * location 0..1 string "Where the administration was performed" "Where the administration was performed"
+* basedOn 0..1 Reference "link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose"
 
 
 //treatmentLine as is
@@ -114,7 +118,7 @@ Title: "Medication Record Treatment Line logical model"
 * dayPeriod 0..* CodeableConcept "Period of the day for consuming the product" "Period of the day for consuming the product"
 * lifecycleStatus 1..1 CodeableConcept "Status of the treatment line" "Status of the treatment line"
 * statusReason 0..* CodeableConcept "Reason the status" "Reason the status"
-* treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" //extra
+* treatmentPlan 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" //extra
 * indication 0..* CodeableConcept "Why the treatment exists" "Why the treatment exists"  //extra
 
 

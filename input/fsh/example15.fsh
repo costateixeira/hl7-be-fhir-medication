@@ -42,6 +42,8 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.value = "743a5985-dfe3-4806-ae72-36fff1dd5b05"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
+* extension[basedOn].valueReference = Reference(example-15-of-medication-treatmentLine)
+
 Instance: reflux-condition
 InstanceOf: Condition
 Usage: #example
@@ -197,6 +199,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
+* extension[basedOn].valueReference = Reference(example-15-of-medication-treatmentLine2)
 
 
 Instance: example-15-of-medication-treatmentLine2 

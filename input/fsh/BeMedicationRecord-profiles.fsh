@@ -52,6 +52,7 @@ Parent: MedicationRequest
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
 * basedOn 0..0
 * extension contains RelatedTreatmentLine named basedOn 0..1 MS
+* extension[basedOn].valueReference only Reference(MedicationStatement) 
 
 
 Profile: MedRecordUsage
@@ -76,6 +77,7 @@ Parent: MedicationStatement
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
 * basedOn 0..0
 * extension contains RelatedTreatmentLine named basedOn 0..1 MS
+* extension[basedOn].valueReference only Reference(MedicationStatement) 
 
 Profile: MedRecordAdministration
 Title: "Medication Record - Administration profile"
@@ -102,6 +104,7 @@ Parent: MedicationAdministration
 * extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
 * extension contains RelatedTreatmentLine named basedOn 0..1 MS
+* extension[basedOn].valueReference only Reference(MedicationStatement) 
 
 
 //based on R4
