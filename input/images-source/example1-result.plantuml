@@ -1,0 +1,16 @@
+@startuml
+
+package "Treatment"
+ {
+package "Treatment Line"  {
+
+object Prescription{
+    Amlor
+    }
+
+object Dispense{
+Amlodipin Sandoz
+    }
+                            }
+}
+@enduml
