@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-10T14:43:54+00:00",
+  "date": "2021-08-11T08:01:50+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -493,6 +493,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/total-view"
+        },
+        "name": "Patient Total Medication",
+        "description": "Overview of the patient's medication",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -647,19 +661,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-15b-of-medication-presc"
-        },
-        "name": "Example MedicationRequest - example-15b-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -788,6 +789,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/example-15-of-medication-presc2"
+        },
+        "name": "Example MedicationRequest - example-15-of-medication-presc2",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -834,6 +848,19 @@
         },
         "name": "Structure Composition for medication Record profile",
         "description": "How to organize the information in a medication Record"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/example-15-of-medication-treatmentLine2"
+        },
+        "name": "Example MedicationStatement - example-15-of-medication-treatmentLine2",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
       },
       {
         "extension": [
@@ -1105,6 +1132,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/example-15-scheduleAdministration4"
+        },
+        "name": "Example MedicationRequest - example-15-scheduleAdministration4",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/week-view"
+        },
+        "name": "Patient scheduled medication for week x",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -1144,6 +1197,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/example-15-of-medication-treatment2"
+        },
+        "name": "Treatment for preventing stroke",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -1178,6 +1244,19 @@
         },
         "name": "Medication Record - Dispense profile",
         "description": "The profile for Medication Dispense in a Medication Record - a record of a single administration event"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/example-15-scheduleAdministration3"
+        },
+        "name": "Example MedicationRequest - example-15-scheduleAdministration3",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
       },
       {
         "extension": [
