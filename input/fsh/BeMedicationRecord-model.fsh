@@ -1,5 +1,6 @@
 Logical: BeModelMedicationRecordDispense
 Title: "Medication Record Dispense logical model"
+Description: "A model for representing a product dispense"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication dispense session" "The business identifier(s) for the medication dispense session"
 * patient 1..1 Reference(Patient) "The person for which the medication is dispensed." "The person for which the medication is dispensed."
@@ -24,6 +25,7 @@ Title: "Medication Record Dispense logical model"
 
 Logical: BeModelMedicationRecordOrder
 Title: "Medication Record Prescription logical model"
+Description: "A model for representing a product order"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication prescription" "The business identifier(s) for the medication prescription"
 * patient 1..1 Reference(Patient) "The person for which the medication is prescribed." "The person for which the medication is prescribed."
@@ -45,6 +47,7 @@ Title: "Medication Record Prescription logical model"
 
 Logical: BeModelMedicationRecordUsage
 Title: "Medication Record Usage logical model"
+Description: "A model for representing medication usage"
 
 * identifier 0..* Identifier "The business identifier(s) for the medication Usage" "The business identifier(s) for the medication Usage"
 * status 1..1 code "Status of the usage" "Status of the usage"
@@ -67,6 +70,7 @@ Title: "Medication Record Usage logical model"
 
 Logical: BeModelMedicationRecordAdministration
 Title: "Medication Record Administration logical model"
+Description: "A model for representing and reporting an administration of a product"
 
 * identifier 0..* Identifier "The business identifier(s) for the medication Administration"  "The business identifier(s) for the medication Administration"
 * status 1..1 code "Status of the medication administration" "Status of the medication administration"
@@ -95,10 +99,28 @@ Title: "Medication Record Administration logical model"
 * location 0..1 string "Where the administration was performed" "Where the administration was performed"
 * basedOn 0..1 Reference "link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose"
 
+Logical: BeModelMedicationScheduledAdministration
+Title: "Medication Record Scheduled Administration logical model"
+Description: "Record of a single planned administration event."
+
+* identifier 0..1 Identifier "The business identifier(s) for the medication scheduled administration" "The business identifier(s) for the medication scheduled administration"
+* patient 1..1 Reference(Patient) "The person for which the product is prescribed." "The person for which the product is prescribed."
+* status 1..1 code "Status of the medication scheduled administration" "status of the medication scheduled administration"
+* statusReason 0..* CodeableConcept "Reason for current status" "Reason for current status"
+* product[x] 1..1 Reference(Medication) or CodeableConcept "Product to be consumed" "Product to be consumed"
+* encounter 0..1 Reference(Encounter) "Encounter in which the schedule was created" "Encounter in which the schedule was created"
+* reason 0..* Reference(Condition or Observation) "Reason or indication for ordering" "Reason or indication for ordering"
+* groupIdentifier 0..1 Identifier "Composite request this is part of" "Composite request this is part of"
+* dosageInstruction 0..* Dosage "How the product should be consumed" "How the product should be consumed"
+* note 0..* Annotation "Additional Information about the scheduled administration" "Additional Information about the scheduled administration"
+* treatmentPlan 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"
+
+
 
 //treatmentLine as is
 Logical: BeModelMedicationRecordTreatmentLine
 Title: "Medication Record Treatment Line logical model"
+Description: "A model for representing a Treatment Line"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication treatment Line" "The business identifier(s) for the medication treatment Line"
 * basedOn 0..1 Reference(BeModelMedicationRecordTreatment) "The identifier of the treatment from which this line stems" "The identifier of the treatment from which this line stems" 
@@ -125,6 +147,7 @@ Title: "Medication Record Treatment Line logical model"
 //treatment as is - rzv
 Logical: BeModelMedicationRecordTreatment
 Title: "Medication Record Treatment logical model"
+Description: "A model for representing a Treatment "
 
 * identifier 0..1 BackboneElement "The business identifier(s) for the medication treatment" "The business identifier(s) for the medication treatment" 
   * treatmentGuid 0..1 Identifier "The Global Unique identifier(s) for the medication treatment" "The Global Unique identifier(s) for the medication treatment" 
@@ -177,6 +200,7 @@ Title: "Medication Record Treatment logical model"
 
 Logical: BeModelMedicationRecordSummaryView
 Title: "Medication Record Treatment View logical model"
+Description: "A model for representing a summary view of a patient's medication"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication summary" "The business identifier(s) for the medication summary"
 * subject 1..1 Reference(Patient) "From which patient the summary is from" "From which patient the summary is from"
@@ -210,22 +234,3 @@ Description:    "A structure collection of a patient's medication history."
   * administrations 0..*  BeModelMedicationRecordAdministration "Registered or reported single administrations" "Registered or reported single administrations"
   * usageReports 0..*  BeModelMedicationRecordUsage "Reported statements of medication usage" "Reported statements of medication usage"
 * changeRecord 0..* Provenance  "Change records and provenance for the medication record components" "Change records and provenance for the medication record components" 
-
-
-
-
-Logical: BeModelMedicationScheduledAdministration
-Title: "Medication Record Scheduled Administration logical model"
-Description: "Record of a single planned administration event"
-
-* identifier 0..1 Identifier "The business identifier(s) for the medication scheduled administration" "The business identifier(s) for the medication scheduled administration"
-* patient 1..1 Reference(Patient) "The person for which the product is prescribed." "The person for which the product is prescribed."
-* status 1..1 code "Status of the medication scheduled administration" "status of the medication scheduled administration"
-* statusReason 0..* CodeableConcept "Reason for current status" "Reason for current status"
-* product[x] 1..1 Reference(Medication) or CodeableConcept "Product to be consumed" "Product to be consumed"
-* encounter 0..1 Reference(Encounter) "Encounter in which the schedule was created" "Encounter in which the schedule was created"
-* reason 0..* Reference(Condition or Observation) "Reason or indication for ordering" "Reason or indication for ordering"
-* groupIdentifier 0..1 Identifier "Composite request this is part of" "Composite request this is part of"
-* dosageInstruction 0..* Dosage "How the product should be consumed" "How the product should be consumed"
-* note 0..* Annotation "Additional Information about the scheduled administration" "Additional Information about the scheduled administration"
-* treatment 0..1 Reference "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to" "Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to"

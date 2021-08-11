@@ -1,8 +1,8 @@
 //based on R4
 Extension: RelatedTreatmentLine
 Id:        related-tl
-Title:    ""
-Description: ""
+Title:    "Based On Extension"
+Description: "Extension for connecting several resources to a single Treatment Line"
 * value[x] only Reference(MedicationStatement)
 
 Profile: MedRecordDispense
@@ -109,7 +109,7 @@ Parent: MedicationAdministration
 
 //based on R4
 Profile: MedRecordTreatmentLine
-Title: "Medication Treatment Line profile"
+Title: "Medication Record - Treatment Line profile"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
 Parent: MedicationStatement
 * meta.profile 1..*
@@ -133,7 +133,7 @@ Parent: MedicationStatement
 
 //based on R4
 Profile: MedRecordTreatment
-Title: "Medication Treatment profile"
+Title: "Medication Record - Treatment profile"
 Description: "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"
 Parent: CarePlan
 * meta.profile 1..*
@@ -163,7 +163,7 @@ Parent: CarePlan
 
 //based on R4
 Profile: MedRecordMedicationScheduledAdministration
-Title: "Medication Scheduled Administration"
+Title: "Medication Record - Scheduled Administration Profile"
 Description: "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"
 Parent: MedicationRequest
 * meta.profile 1..*
@@ -184,7 +184,7 @@ Parent: MedicationRequest
 
 //based on R4
 Profile: MedRecordMedicationSummaryView
-Title: "Medication Summary View profile"
+Title: "Medication Record - Summary View profile"
 Description: "The profile for Medication Summary view in a Medication Record"
 Parent: CarePlan
 * meta.profile 1..*
@@ -206,7 +206,7 @@ Parent: CarePlan
 
 
 Profile: MedRecordComposition
-Title: "Structure Composition for medication Record profile"
+Title: "Medication Record - Structure Composition Profile"
 Description: "How to organize the information in a medication Record"
 Parent: Composition
 Id: MedRecord-comp
@@ -229,7 +229,7 @@ Id: MedRecord-comp
 Profile: MedRecord
 Parent: Bundle
 Id: MedRecord
-Title: "Medication Record profile"
+Title: "Medication Record Profile"
 Description: "The profile for Medication Record"
 * ^version = "1.0.0"
 * identifier 0..1 MS
