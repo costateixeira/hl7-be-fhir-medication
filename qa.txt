@@ -1,9 +1,9 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 130, warn = 126, info = 66
+err = 130, warn = 125, info = 66
 IG Publisher Version: 1.1.77
-Generated Wed Aug 11 10:51:56 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Wed Aug 11 11:17:07 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 480 / 48 / 0
  /github/workspace/fsh-generated/resources/CarePlan-example-15-of-medication-treatment2 : 0 / 0 / 3
@@ -72,7 +72,7 @@ Generated Wed Aug 11 10:51:56 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatmentLine : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordUsage : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-related-tl : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-related-tl : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 1 / 1
  /github/workspace/input/be-medication : 1 / 2 / 1
@@ -8432,7 +8432,6 @@ WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.jurisdic
 INFORMATION: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[97].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == /github/workspace/fsh-generated/resources/StructureDefinition-related-tl.json ==
 WARNING: StructureDefinition/related-tl: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.be/fhir/StructureDefinition/related-tl'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types.json ==
 WARNING: ValueSet/be-vs-medication-summary-types: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1.json ==

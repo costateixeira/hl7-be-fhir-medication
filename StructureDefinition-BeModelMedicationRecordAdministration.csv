@@ -46,7 +46,9 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition
 ","Amount of product per dose","Amount of product per dose","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordAdministration.dosage.dose",0,1,"",""
 "BeModelMedicationRecordAdministration.dosage.dose.rate[x]","","","",0,1,"","","","Ratio {[]} {[]}
 Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}","Dose quantity per unit of time","Dose quantity per unit of time","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordAdministration.dosage.dose.rate[x]",0,1,"",""
-"BeModelMedicationRecordAdministration.treatment","","","",0,1,"","","","Reference {[]} {[]}
-","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordAdministration.treatment",0,1,"",""
+"BeModelMedicationRecordAdministration.treatmentPlan","","","",0,1,"","","","Reference {[]} {[]}
+","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordAdministration.treatmentPlan",0,1,"",""
 "BeModelMedicationRecordAdministration.location","","","",0,1,"","","","string {[]} {[]}
 ","Where the administration was performed","Where the administration was performed","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordAdministration.location",0,1,"",""
+"BeModelMedicationRecordAdministration.basedOn","","","",0,1,"","","","Reference {[]} {[]}
+","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordAdministration.basedOn",0,1,"",""

@@ -36,7 +36,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 ","Status of the treatment line","Status of the treatment line","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.lifecycleStatus",1,1,"",""
 "BeModelMedicationRecordTreatmentLine.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Reason the status","Reason the status","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.statusReason",0,*,"",""
-"BeModelMedicationRecordTreatmentLine.treatment","","","",0,1,"","","","Reference {[]} {[]}
-","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.treatment",0,1,"",""
+"BeModelMedicationRecordTreatmentLine.treatmentPlan","","","",0,1,"","","","Reference {[]} {[]}
+","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.treatmentPlan",0,1,"",""
 "BeModelMedicationRecordTreatmentLine.indication","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Why the treatment exists","Why the treatment exists","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.indication",0,*,"",""

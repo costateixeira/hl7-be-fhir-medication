@@ -36,5 +36,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 ","Type of dispense","Type of dispense","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.type",0,1,"",""
 "BeModelMedicationRecordDispense.location","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/openEHR-location]]}
 ","Location where the dispense was made","Location where the dispense was made","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.location",0,1,"",""
-"BeModelMedicationRecordDispense.treatment","","","",0,1,"","","","Reference {[]} {[]}
-","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.treatment",0,1,"",""
+"BeModelMedicationRecordDispense.treatmentPlan","","","",0,1,"","","","Reference {[]} {[]}
+","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.treatmentPlan",0,1,"",""
+"BeModelMedicationRecordDispense.basedOn","","","",0,1,"","","","Reference {[]} {[]}
+","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordDispense.basedOn",0,1,"",""
