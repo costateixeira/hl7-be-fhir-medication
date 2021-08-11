@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-11T14:46:57+00:00"/>
+  <date value="2021-08-11T14:54:44+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -1060,6 +1060,11 @@
           <page>
             <nameUrl value="medicationrecord-pattern-3.html"/>
             <title value="Pattern 3 - Compile a medication record"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="medicationrecord-pattern-4.html"/>
+            <title value="Pattern 4 - Creation of Treatments and Treatment Lines"/>
             <generation value="markdown"/>
           </page>
         </page>
