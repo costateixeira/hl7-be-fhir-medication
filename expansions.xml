@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bb71a34a-d1a6-4743-9a74-489acf372669"/>
+  <id value="a411dbb4-51e1-474f-8199-b3ef2525fa3d"/>
   <meta>
-    <lastUpdated value="2021-08-11T11:47:28.374+00:00"/>
+    <lastUpdated value="2021-08-11T13:19:36.288+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -57,9 +57,9 @@
         <url value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
         <version value="0.2.0"/>
         <name value="BeVSMedicationSummaryTypes"/>
-        <title value="Medication Summary Types Value Set"/>
+        <title value="ValueSet - Medication Summary Types "/>
         <status value="active"/>
-        <date value="2021-08-11T11:47:28+00:00"/>
+        <date value="2021-08-11T13:19:36+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -76,8 +76,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5b7ce6e6-a985-455a-a3fb-987d8e945805"/>
-          <timestamp value="2021-08-11T11:47:48+00:00"/>
+          <identifier value="urn:uuid:0dab875f-2dd1-4a74-9a00-c6b6094e5a40"/>
+          <timestamp value="2021-08-11T13:19:54+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -188,7 +188,7 @@
         <name value="SubstitutionReason"/>
         <title value="Medication Substitution Value Set"/>
         <status value="active"/>
-        <date value="2021-08-11T11:47:28+00:00"/>
+        <date value="2021-08-11T13:19:36+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -205,8 +205,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21be6863-e1e0-4769-a230-74f26f130cf1"/>
-          <timestamp value="2021-08-11T11:47:53+00:00"/>
+          <identifier value="urn:uuid:66192f01-ef08-4419-95c3-74e0a58aa33f"/>
+          <timestamp value="2021-08-11T13:19:58+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

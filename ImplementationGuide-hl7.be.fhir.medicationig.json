@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-11T11:47:28+00:00",
+  "date": "2021-08-11T13:19:36+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -566,7 +566,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecordOrder"
         },
         "name": "[Logical Model] - Prescription",
-        "description": "A model for representing a product order"
+        "description": "A model for representing a product order."
       },
       {
         "extension": [
@@ -579,7 +579,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecordUsage"
         },
         "name": "[Logical Model] - Usage",
-        "description": "A model for representing medication usage"
+        "description": "A model for representing medication usage."
       },
       {
         "extension": [
@@ -669,7 +669,7 @@
         "reference": {
           "reference": "ValueSet/be-vs-medication-summary-types"
         },
-        "name": "Medication Summary Types Value Set",
+        "name": "ValueSet - Medication Summary Types ",
         "description": "Valueset -  Medication Summary types"
       },
       {
@@ -735,7 +735,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecordDispense"
         },
         "name": "[Logical Model] - Dispense",
-        "description": "A model for representing a product dispense"
+        "description": "A model for representing a product dispense."
       },
       {
         "extension": [
@@ -787,7 +787,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecordTreatmentLine"
         },
         "name": "[Logical Model] - Treatment Line",
-        "description": "A model for representing a Treatment Line"
+        "description": "A model for representing a Treatment Line."
       },
       {
         "extension": [
@@ -864,7 +864,7 @@
           "reference": "StructureDefinition/MedRecord-comp"
         },
         "name": "[Profile] - Structure Composition for Medication Record",
-        "description": "How to organize the information in a medication Record"
+        "description": "The profile for how to organize the information in a medication Record"
       },
       {
         "extension": [
@@ -914,7 +914,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecordSummaryView"
         },
         "name": "[Logical Model] - Summary View",
-        "description": "A model for representing a summary view of a patient's medication"
+        "description": "A model for representing a summary view of a patient's medication."
       },
       {
         "extension": [
@@ -1004,7 +1004,7 @@
           "reference": "StructureDefinition/BeModelMedicationScheduledAdministration"
         },
         "name": "[Logical Model] - Scheduled Administration",
-        "description": "Record of a single planned administration event."
+        "description": "A model for a record of a single planned administration event."
       },
       {
         "extension": [
@@ -1017,7 +1017,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecordTreatment"
         },
         "name": "[Logical Model] - Treatment",
-        "description": "A model for representing a Treatment"
+        "description": "A model for representing a Treatment."
       },
       {
         "extension": [
@@ -1056,7 +1056,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecord"
         },
         "name": "[Logical Model] - Medication Record",
-        "description": "A structure collection of a patient's medication history."
+        "description": "A model for a structure collection of a patient's medication history."
       },
       {
         "extension": [
@@ -1095,7 +1095,7 @@
           "reference": "StructureDefinition/BeModelMedicationRecordAdministration"
         },
         "name": "[Logical Model] - Administration",
-        "description": "A model for representing and reporting an administration of a product"
+        "description": "A model for representing and reporting an administration of a product."
       },
       {
         "extension": [

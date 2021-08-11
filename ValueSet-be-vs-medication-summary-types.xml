@@ -8,9 +8,9 @@
   <url value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
   <version value="0.2.0"/>
   <name value="BeVSMedicationSummaryTypes"/>
-  <title value="Medication Summary Types Value Set"/>
+  <title value="ValueSet - Medication Summary Types "/>
   <status value="active"/>
-  <date value="2021-08-11T11:47:28+00:00"/>
+  <date value="2021-08-11T13:19:36+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
