@@ -1,4 +1,10 @@
 //based on R4
+Extension: RelatedTreatmentLine
+Id:        related-tl
+Title:    ""
+Description: ""
+* value[x] only Reference(MedicationStatement)
+
 Profile: MedRecordDispense
 Title: "Medication Record - Dispense profile"
 Description: "The profile for Medication Dispense in a Medication Record - a record of a single administration event"
@@ -20,7 +26,8 @@ Parent: MedicationDispense
 * type MS
 * extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan)
-
+* basedOn 0..0 
+* extension contains RelatedTreatmentLine named BasedOn 0..1 MS
 
 Profile: MedRecordOrder
 Title: "Medication Record - Order profile"
@@ -37,6 +44,7 @@ Parent: MedicationRequest
 * encounter MS
 * requester MS
 * reasonCode MS
+* basedOn MS
 * groupIdentifier MS
 * dosageInstruction MS
 * note MS
