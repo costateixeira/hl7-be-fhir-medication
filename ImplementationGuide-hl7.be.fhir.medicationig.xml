@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-11T08:01:50+00:00"/>
+  <date value="2021-08-11T10:51:20+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -349,6 +349,14 @@
       </reference>
       <name value="Medication Treatment profile"/>
       <description value="The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/related-tl"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

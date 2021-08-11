@@ -3,7 +3,15 @@
   "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "056",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl",
+      "title": "RelatedTreatmentLine",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
     "Bundle": [
       {
@@ -111,6 +119,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl": [
+      "MedicationAdministration",
+      "MedicationDispense",
+      "MedicationRequest",
+      "MedicationStatement"
     ]
   }
 }
