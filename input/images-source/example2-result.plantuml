@@ -5,14 +5,14 @@ package "Treatment" <<Rectangle>>
 package "Treatment Line"  <<Rectangle>> {
 
 object Dispense{
-Amlodipin Sandoz
++ product = dafalgan (paracetamol) 500 mg
++ VOS = 24901
     }
-    
+
 object Prescription{
-    Amlor
+   + product = paracetamol 1000 mg cp
+   + VOS = 24745 
     }
-
-
-                            }
+}
 }
 @enduml

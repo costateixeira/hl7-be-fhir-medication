@@ -47,12 +47,12 @@ This example shows a prescription that is made by brand name and the pharmacist 
 8. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
 
 
-Notes:  
+### Notes:  
 * The prescription starts a new treatment and treatmentline. 
 * Meanwhile, the dispense  occurs. 
 * Since the active principle is the same, the dispense also goes into the same treatment line.
 
-The final result of these interactions is:
+The final result of these interactions is:  
   <div>
 {% include example1-result.svg %}
 </div>
