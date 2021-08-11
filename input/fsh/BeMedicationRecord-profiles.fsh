@@ -26,8 +26,7 @@ Parent: MedicationDispense
 * type MS
 * extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan)
-* basedOn 0..0 
-* extension contains RelatedTreatmentLine named BasedOn 0..1 MS
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
 
 Profile: MedRecordOrder
 Title: "Medication Record - Order profile"
@@ -51,6 +50,8 @@ Parent: MedicationRequest
 * authoredOn MS
 * extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* basedOn 0..0
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
 
 
 Profile: MedRecordUsage
@@ -73,6 +74,8 @@ Parent: MedicationStatement
 * dosage MS
 * extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* basedOn 0..0
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
 
 Profile: MedRecordAdministration
 Title: "Medication Record - Administration profile"
@@ -98,6 +101,7 @@ Parent: MedicationAdministration
 * dosage MS
 * extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
 * extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
 
 
 //based on R4
