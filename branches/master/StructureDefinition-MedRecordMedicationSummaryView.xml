@@ -31,9 +31,9 @@
   <url value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"/>
   <version value="0.2.0"/>
   <name value="MedRecordMedicationSummaryView"/>
-  <title value="Medication Record - Summary View profile"/>
+  <title value="[Profile] - Summary View"/>
   <status value="active"/>
-  <date value="2021-08-11T11:27:13+00:00"/>
+  <date value="2021-08-11T11:47:28+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>

@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-11T11:27:13+00:00",
+  "date": "2021-08-11T11:47:28+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -526,7 +526,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordTreatment"
         },
-        "name": "Medication Record - Treatment profile",
+        "name": "[Profile] - Treatment",
         "description": "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"
       },
       {
@@ -565,7 +565,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordOrder"
         },
-        "name": "Medication Record Prescription logical model",
+        "name": "[Logical Model] - Prescription",
         "description": "A model for representing a product order"
       },
       {
@@ -578,7 +578,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordUsage"
         },
-        "name": "Medication Record Usage logical model",
+        "name": "[Logical Model] - Usage",
         "description": "A model for representing medication usage"
       },
       {
@@ -630,7 +630,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordAdministration"
         },
-        "name": "Medication Record - Administration profile",
+        "name": "[Profile] - Administration",
         "description": "The profile for Medication Administration in a Medication Record - a record of a single administration event"
       },
       {
@@ -656,7 +656,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordTreatmentLine"
         },
-        "name": "Medication Record - Treatment Line profile",
+        "name": "[Profile] - Treatment Line",
         "description": "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
       },
       {
@@ -734,7 +734,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordDispense"
         },
-        "name": "Medication Record Dispense logical model",
+        "name": "[Logical Model] - Dispense",
         "description": "A model for representing a product dispense"
       },
       {
@@ -760,7 +760,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecord"
         },
-        "name": "Medication Record Profile",
+        "name": "[Profile] - Medication Record",
         "description": "The profile for Medication Record"
       },
       {
@@ -773,7 +773,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordMedicationScheduledAdministration"
         },
-        "name": "Medication Record - Scheduled Administration Profile",
+        "name": "[Profile] - Scheduled Administration",
         "description": "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"
       },
       {
@@ -786,7 +786,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordTreatmentLine"
         },
-        "name": "Medication Record Treatment Line logical model",
+        "name": "[Logical Model] - Treatment Line",
         "description": "A model for representing a Treatment Line"
       },
       {
@@ -863,7 +863,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecord-comp"
         },
-        "name": "Medication Record - Structure Composition Profile",
+        "name": "[Profile] - Structure Composition for Medication Record",
         "description": "How to organize the information in a medication Record"
       },
       {
@@ -913,7 +913,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordSummaryView"
         },
-        "name": "Medication Record Treatment View logical model",
+        "name": "[Logical Model] - Summary View",
         "description": "A model for representing a summary view of a patient's medication"
       },
       {
@@ -926,7 +926,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordUsage"
         },
-        "name": "Medication Record - Usage profile",
+        "name": "[Profile] - Usage",
         "description": "The profile for Medication Usage in a Medication Record - a record of a single administration event"
       },
       {
@@ -1003,7 +1003,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationScheduledAdministration"
         },
-        "name": "Medication Record Scheduled Administration logical model",
+        "name": "[Logical Model] - Scheduled Administration",
         "description": "Record of a single planned administration event."
       },
       {
@@ -1016,7 +1016,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordTreatment"
         },
-        "name": "Medication Record Treatment logical model",
+        "name": "[Logical Model] - Treatment",
         "description": "A model for representing a Treatment"
       },
       {
@@ -1055,7 +1055,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecord"
         },
-        "name": "Medication Record logical model",
+        "name": "[Logical Model] - Medication Record",
         "description": "A structure collection of a patient's medication history."
       },
       {
@@ -1094,7 +1094,7 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordAdministration"
         },
-        "name": "Medication Record Administration logical model",
+        "name": "[Logical Model] - Administration",
         "description": "A model for representing and reporting an administration of a product"
       },
       {
@@ -1120,8 +1120,8 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordOrder"
         },
-        "name": "Medication Record - Order profile",
-        "description": "The profile for Medication Order in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
+        "name": "[Profile] - Prescription",
+        "description": "The profile for Medication Prescription in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
       },
       {
         "extension": [
@@ -1262,7 +1262,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordDispense"
         },
-        "name": "Medication Record - Dispense profile",
+        "name": "[Profile] - Dispense",
         "description": "The profile for Medication Dispense in a Medication Record - a record of a single administration event"
       },
       {
@@ -1301,7 +1301,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordMedicationSummaryView"
         },
-        "name": "Medication Record - Summary View profile",
+        "name": "[Profile] - Summary View",
         "description": "The profile for Medication Summary view in a Medication Record"
       },
       {

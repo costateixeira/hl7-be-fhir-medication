@@ -37,9 +37,9 @@
   <url value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
   <version value="0.2.0"/>
   <name value="MedRecordOrder"/>
-  <title value="Medication Record - Order profile"/>
+  <title value="[Profile] - Prescription"/>
   <status value="active"/>
-  <date value="2021-08-11T11:27:13+00:00"/>
+  <date value="2021-08-11T11:47:28+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -47,7 +47,7 @@
       <value value="http://hl7belgium.org"/>
     </telecom>
   </contact>
-  <description value="The profile for Medication Order in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"/>
+  <description value="The profile for Medication Prescription in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
