@@ -1,0 +1,30 @@
+@startuml
+
+package "Treatment" <<Rectangle>>
+ {
+package "Second Treatment Line"  <<Rectangle>> {
+
+object "New Prescription" as Prescription2  {
+product = new product 
+    }
+}
+
+package "First Treatment Line"  <<Rectangle>> {
+
+object Prescription{
+   product = amoxicillin + clavulanic acid 875 mg + 125 mg
+    }
+
+object Dispense{
+ product = Amoxiclav Sandoz 875/125
+    }
+
+  object Administration{
+ status = stopped
+    }
+
+
+}
+
+}
+@enduml

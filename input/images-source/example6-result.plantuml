@@ -1,0 +1,24 @@
+@startuml
+
+package "Treatment" <<Rectangle>>
+ {
+package "Second Treatment Line"  <<Rectangle>> {
+
+object "New Prescription" as Prescription2  {
+product = new product 
+    }
+}
+
+package "First Treatment Line"  <<Rectangle>> {
+
+object Dispense{
+ # Refused
+    }
+
+object Prescription{
+   product = ibuprofen 400 mg cp
+    }
+}
+
+}
+@enduml
