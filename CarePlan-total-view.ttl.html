@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\Example MedicationRequest - example-15b-of-medication-presc - TTL Representation - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\Patient Total Medication - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,8 +49,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.37"}
-    h3,h4,h5,h6{--heading-prefix:"7.37"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.31"}
+    h3,h4,h5,h6{--heading-prefix:"7.31"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -183,7 +183,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example MedicationRequest - example-15b-of-medication-presc</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Patient Total Medication</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -207,20 +207,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="MedicationRequest-example-15b-of-medication-presc.html">Narrative Content</a>
+    <a href="CarePlan-total-view.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="MedicationRequest-example-15b-of-medication-presc.xml.html">XML</a>
+      <a href="CarePlan-total-view.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="MedicationRequest-example-15b-of-medication-presc.json.html">JSON</a>
+      <a href="CarePlan-total-view.json.html">JSON</a>
     </li>
   
 
@@ -233,9 +233,9 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Example MedicationRequest - example-15b-of-medication-presc - TTL Representation</h2>
+<h2 id="root">: Patient Total Medication - TTL Representation</h2>
 
-<p><a href="MedicationRequest-example-15b-of-medication-presc.ttl" no-download="true">Raw ttl</a> | <a href="MedicationRequest-example-15b-of-medication-presc.ttl" download>Download</a></p>
+<p><a href="CarePlan-total-view.ttl" no-download="true">Raw ttl</a> | <a href="CarePlan-total-view.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -246,87 +246,87 @@
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:MedicationRequest;
+ a fhir:CarePlan;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;example-15b-of-medication-presc&quot;];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.meta">fhir:Resource.meta</a> [
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;total-view&quot;];
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder&quot;;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder&gt;     ]
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView&gt;     ]
   ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Based On&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: f1ef61db-472f-4f84-a6fa-9914f43525b1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;span title=\&quot;Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}\&quot;&gt;Aspirine 500 mg (36 effervescent tablets)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: May 1, 2020, 7:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;span&gt;GP2&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ba9efa2a-8b0e-4c64-8a35-3e2c059b1899&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Patient Total Medication&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Overview of the patient's medication&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: Aug 10, 2021, 8:00:00 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Kind&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scheduled[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Product[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;DailyAmount&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td&gt;Do , ?ngen-6?&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}\&quot;&gt;Aspirine 500 mg (36 effervescent tablets)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1 TAB&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Kind&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scheduled[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Product[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;DailyAmount&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td&gt;Do , ?ngen-6?&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}\&quot;&gt;Acidine 75 mg (20 pieces)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1 TAB&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.extension">fhir:DomainResource.extension</a> [
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.identifier">fhir:CarePlan.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/event-basedOn&quot; ];
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueReference</a> [
-       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:Reference.identifier</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://treatment-identifiers.com&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;5c94b8a1-6a7e-4652-9525-c7614f768ed8&quot; ]       ]     ]
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://summaries-identifiers.com&quot; ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ba9efa2a-8b0e-4c64-8a35-3e2c059b1899&quot; ]
   ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.identifier">fhir:MedicationRequest.identifier</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://prescription-identifiers.com&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f1ef61db-472f-4f84-a6fa-9914f43525b1&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">fhir:MedicationRequest.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">fhir:MedicationRequest.intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;order&quot;];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication[x]">fhir:MedicationRequest.medicationCodeableConcept</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://cnk.apb.be/codings/cnk_product_codes&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;00&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Aspirine 500 mg (36 effervescent tablets)&quot; ]     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">fhir:MedicationRequest.subject</a> [
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">fhir:CarePlan.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">fhir:CarePlan.intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;plan&quot;];
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.title">fhir:CarePlan.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient Total Medication&quot;];
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.description">fhir:CarePlan.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Overview of the patient's medication&quot;];
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.subject">fhir:CarePlan.subject</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:Reference.identifier</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;64110219106&quot; ]     ]
   ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.encounter">fhir:MedicationRequest.encounter</a> [
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:Reference.identifier</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://encounter-identifiers.com&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;7b0febb8-4117-4019-9f7f-bb920912548e&quot; ]     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.authoredOn">fhir:MedicationRequest.authoredOn</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-05-01T09:00:00+02:00&quot;^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.requester">fhir:MedicationRequest.requester</a> [
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:Reference.identifier</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://physician-identifiers.com&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;db0f310a-e2fe-4aca-93cc-c3fd41dc272a&quot; ]     ];
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;GP2&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.dosageInstruction">fhir:MedicationRequest.dosageInstruction</a> [
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.created">fhir:CarePlan.created</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-08-10T10:00:00+02:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity">fhir:CarePlan.activity</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.timing">fhir:Dosage.timing</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">fhir:Timing.repeat</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">fhir:Timing.repeat.frequency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">fhir:Timing.repeat.period</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">fhir:Timing.repeat.periodUnit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;d&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.when">fhir:Timing.repeat.when</a> [
-           <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;MORN&quot;;
-           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0         ]       ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.route">fhir:Dosage.route</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         a sct:26643006;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;26643006&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Oral Route&quot; ]       ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate">fhir:Dosage.doseAndRate</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate.dose[x]">fhir:Dosage.doseAndRate.doseQuantity</a> [
+     <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail">fhir:CarePlan.activity.detail</a> [
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.kind">fhir:CarePlan.activity.detail.kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;MedicationRequest&quot; ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.status">fhir:CarePlan.activity.detail.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.scheduled[x]">fhir:CarePlan.activity.detail.scheduledTiming</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">fhir:Timing.repeat</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">fhir:Timing.repeat.frequency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">fhir:Timing.repeat.period</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">fhir:Timing.repeat.periodUnit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;d&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.when">fhir:Timing.repeat.when</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;MORN&quot;;
+             <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0           ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.product[x]">fhir:CarePlan.activity.detail.productCodeableConcept</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://cnk.apb.be/codings/cnk_product_codes&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;00&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Aspirine 500 mg (36 effervescent tablets)&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.dailyAmount">fhir:CarePlan.activity.detail.dailyAmount</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;TAB&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;TAB&quot; ]       ]     ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;TAB&quot; ]       ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail">fhir:CarePlan.activity.detail</a> [
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.kind">fhir:CarePlan.activity.detail.kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;MedicationRequest&quot; ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.status">fhir:CarePlan.activity.detail.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot; ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.scheduled[x]">fhir:CarePlan.activity.detail.scheduledTiming</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">fhir:Timing.repeat</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">fhir:Timing.repeat.frequency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">fhir:Timing.repeat.period</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">fhir:Timing.repeat.periodUnit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;d&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.dayOfWeek">fhir:Timing.repeat.dayOfWeek</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;wed&quot;;
+             <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0           ], [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;thu&quot;;
+             <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1           ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.when">fhir:Timing.repeat.when</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;MORN&quot;;
+             <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0           ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.product[x]">fhir:CarePlan.activity.detail.productCodeableConcept</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://cnk.apb.be/codings/cnk_product_codes&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;00&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Acidine 75 mg (20 pieces)&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.dailyAmount">fhir:CarePlan.activity.detail.dailyAmount</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;TAB&quot; ]       ]     ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -363,7 +363,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 10, 2021 14:43+0000">2021-08-10</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 11, 2021 08:01+0000">2021-08-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

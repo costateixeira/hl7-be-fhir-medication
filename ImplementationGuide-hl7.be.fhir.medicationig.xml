@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-10T14:43:54+00:00"/>
+  <date value="2021-08-11T08:01:50+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -321,6 +321,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/total-view"/>
+      </reference>
+      <name value="Patient Total Medication"/>
+      <description value="Overview of the patient&#39;s medication"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
@@ -439,16 +450,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/example-15b-of-medication-presc"/>
-      </reference>
-      <name value="Example MedicationRequest - example-15b-of-medication-presc"/>
-      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
@@ -547,6 +548,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example-15-of-medication-presc2"/>
+      </reference>
+      <name value="Example MedicationRequest - example-15-of-medication-presc2"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
@@ -583,6 +594,16 @@
       </reference>
       <name value="Structure Composition for medication Record profile"/>
       <description value="How to organize the information in a medication Record"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/example-15-of-medication-treatmentLine2"/>
+      </reference>
+      <name value="Example MedicationStatement - example-15-of-medication-treatmentLine2"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -789,6 +810,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example-15-scheduleAdministration4"/>
+      </reference>
+      <name value="Example MedicationRequest - example-15-scheduleAdministration4"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/week-view"/>
+      </reference>
+      <name value="Patient scheduled medication for week x"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
@@ -819,6 +860,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/example-15-of-medication-treatment2"/>
+      </reference>
+      <name value="Treatment for preventing stroke"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
@@ -846,6 +897,16 @@
       </reference>
       <name value="Medication Record - Dispense profile"/>
       <description value="The profile for Medication Dispense in a Medication Record - a record of a single administration event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example-15-scheduleAdministration3"/>
+      </reference>
+      <name value="Example MedicationRequest - example-15-scheduleAdministration3"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

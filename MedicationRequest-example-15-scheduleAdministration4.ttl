@@ -6,19 +6,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationRequest/example-15b-of-medication-presc> a fhir:MedicationRequest;
+<https://www.hl7belgium.be/fhir/MedicationRequest/example-15-scheduleAdministration4> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-15b-of-medication-presc"];
+  fhir:Resource.id [ fhir:value "example-15-scheduleAdministration4"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder";
+       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration";
        fhir:index 0;
-       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
+       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Based On</b>: <span></span></p><p><b>identifier</b>: id: f1ef61db-472f-4f84-a6fa-9914f43525b1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span title=\"Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}\">Aspirine 500 mg (36 effervescent tablets)</span></p><p><b>subject</b>: <span></span></p><p><b>encounter</b>: <span></span></p><p><b>authoredOn</b>: May 1, 2020, 7:00:00 AM</p><p><b>requester</b>: <span>GP2</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Based On</b>: <span></span></p><p><b>identifier</b>: id: c2074776-06d5-4705-9715-20d986b82ea3</p><p><b>status</b>: active</p><p><b>intent</b>: instance-order</p><p><b>medication</b>: <span title=\"Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}\">Aspirine 500 mg (36 effervescent tablets)</span></p><p><b>subject</b>: <span></span></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,17 +26,17 @@
      fhir:Extension.valueReference [
        fhir:Reference.identifier [
          fhir:Identifier.system [ fhir:value "http://treatment-identifiers.com" ];
-         fhir:Identifier.value [ fhir:value "5c94b8a1-6a7e-4652-9525-c7614f768ed8" ]
+         fhir:Identifier.value [ fhir:value "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d" ]
        ]
      ]
   ];
   fhir:MedicationRequest.identifier [
      fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://prescription-identifiers.com" ];
-     fhir:Identifier.value [ fhir:value "f1ef61db-472f-4f84-a6fa-9914f43525b1" ]
+     fhir:Identifier.system [ fhir:value "http://takes-identifiers.com" ];
+     fhir:Identifier.value [ fhir:value "c2074776-06d5-4705-9715-20d986b82ea3" ]
   ];
   fhir:MedicationRequest.status [ fhir:value "active"];
-  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.intent [ fhir:value "instance-order"];
   fhir:MedicationRequest.medicationCodeableConcept [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -51,31 +51,12 @@
        fhir:Identifier.value [ fhir:value "64110219106" ]
      ]
   ];
-  fhir:MedicationRequest.encounter [
-     fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "http://encounter-identifiers.com" ];
-       fhir:Identifier.value [ fhir:value "7b0febb8-4117-4019-9f7f-bb920912548e" ]
-     ]
-  ];
-  fhir:MedicationRequest.authoredOn [ fhir:value "2020-05-01T09:00:00+02:00"^^xsd:dateTime];
-  fhir:MedicationRequest.requester [
-     fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "http://physician-identifiers.com" ];
-       fhir:Identifier.value [ fhir:value "db0f310a-e2fe-4aca-93cc-c3fd41dc272a" ]
-     ];
-     fhir:Reference.display [ fhir:value "GP2" ]
-  ];
   fhir:MedicationRequest.dosageInstruction [
      fhir:index 0;
      fhir:Dosage.timing [
-       fhir:Timing.repeat [
-         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ];
-         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
-         fhir:Timing.repeat.periodUnit [ fhir:value "d" ];
-         fhir:Timing.repeat.when [
-           fhir:value "MORN";
-           fhir:index 0
-         ]
+       fhir:Timing.event [
+         fhir:value "2021-08-03T10:00:00+02:00"^^xsd:dateTime;
+         fhir:index 0
        ]
      ];
      fhir:Dosage.route [
@@ -100,7 +81,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationRequest/example-15b-of-medication-presc.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/MedicationRequest/example-15-scheduleAdministration4.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

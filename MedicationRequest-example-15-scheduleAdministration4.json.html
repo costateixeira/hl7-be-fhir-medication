@@ -1,5 +1,3 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\ - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\Example MedicationRequest - example-15-scheduleAdministration4 - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,8 +49,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"7.58"}
+    h3,h4,h5,h6{--heading-prefix:"7.58"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -185,7 +183,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example MedicationRequest - example-15-scheduleAdministration4</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -197,10 +195,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 
-<div style="counter-reset: section 10" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  
 
 
 
@@ -210,20 +207,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="MedicationRequest-example-15b-of-medication-presc.html">Narrative Content</a>
+    <a href="MedicationRequest-example-15-scheduleAdministration4.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="MedicationRequest-example-15b-of-medication-presc.xml.html">XML</a>
+      <a href="MedicationRequest-example-15-scheduleAdministration4.xml.html">XML</a>
     </li>
   
 
 
   
-    <li>
-      <a href="MedicationRequest-example-15b-of-medication-presc.json.html">JSON</a>
+    <li class="active">
+      <a href="#">JSON</a>
     </li>
   
 
@@ -233,14 +230,102 @@
 </ul>
 
 
-  <a name="root"> </a>
-  <h2 id="root">: MedicationRequest/example-15b-of-medication-presc - Change History</h2>
-  <p>History of changes for example-15b-of-medication-presc .</p>
+<a name="root"> </a>
 
+
+<h2 id="root">: Example MedicationRequest - example-15-scheduleAdministration4 - JSON Representation</h2>
+
+<p><a href="MedicationRequest-example-15-scheduleAdministration4.json" no-download="true">Raw json</a> | <a href="MedicationRequest-example-15-scheduleAdministration4.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
   
 
-</div>
 
+
+  <pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resourceType</a>" : "MedicationRequest",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">id</a>" : "example-15-scheduleAdministration4",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Based On&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: c2074776-06d5-4705-9715-20d986b82ea3&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: instance-order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;span title=\&quot;Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}\&quot;&gt;Aspirine 500 mg (36 effervescent tablets)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/event-basedOn",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://treatment-identifiers.com",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+        }
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://takes-identifiers.com",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "c2074776-06d5-4705-9715-20d986b82ea3"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">intent</a>" : "instance-order",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication[x]">medicationCodeableConcept</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://cnk.apb.be/codings/cnk_product_codes",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "00",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Aspirine 500 mg (36 effervescent tablets)"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "64110219106"
+    }
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.dosageInstruction">dosageInstruction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.timing">timing</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">event</a>" : [
+          "2021-08-03T10:00:00+02:00"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.route">route</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "26643006",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Oral Route"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate">doseAndRate</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate.dose[x]">doseQuantity</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 1,
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "TAB",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "TAB"
+          }
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -248,29 +333,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -283,7 +345,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 10, 2021 14:43+0000">2021-08-10</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 11, 2021 08:01+0000">2021-08-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
