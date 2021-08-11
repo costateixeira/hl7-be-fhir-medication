@@ -1,6 +1,6 @@
 Logical: BeModelMedicationRecordDispense
 Title: "[Logical Model] - Dispense"
-Description: "A model for representing a product dispense"
+Description: "A model for representing a product dispense."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication dispense session" "The business identifier(s) for the medication dispense session"
 * patient 1..1 Reference(Patient) "The person for which the medication is dispensed." "The person for which the medication is dispensed."
@@ -25,7 +25,7 @@ Description: "A model for representing a product dispense"
 
 Logical: BeModelMedicationRecordOrder
 Title: "[Logical Model] - Prescription"
-Description: "A model for representing a product order"
+Description: "A model for representing a product order."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication prescription" "The business identifier(s) for the medication prescription"
 * patient 1..1 Reference(Patient) "The person for which the medication is prescribed." "The person for which the medication is prescribed."
@@ -47,7 +47,7 @@ Description: "A model for representing a product order"
 
 Logical: BeModelMedicationRecordUsage
 Title: "[Logical Model] - Usage"
-Description: "A model for representing medication usage"
+Description: "A model for representing medication usage."
 
 * identifier 0..* Identifier "The business identifier(s) for the medication Usage" "The business identifier(s) for the medication Usage"
 * status 1..1 code "Status of the usage" "Status of the usage"
@@ -70,7 +70,7 @@ Description: "A model for representing medication usage"
 
 Logical: BeModelMedicationRecordAdministration
 Title: "[Logical Model] - Administration"
-Description: "A model for representing and reporting an administration of a product"
+Description: "A model for representing and reporting an administration of a product."
 
 * identifier 0..* Identifier "The business identifier(s) for the medication Administration"  "The business identifier(s) for the medication Administration"
 * status 1..1 code "Status of the medication administration" "Status of the medication administration"
@@ -101,7 +101,7 @@ Description: "A model for representing and reporting an administration of a prod
 
 Logical: BeModelMedicationScheduledAdministration
 Title: "[Logical Model] - Scheduled Administration"
-Description: "Record of a single planned administration event."
+Description: "A model for a record of a single planned administration event."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication scheduled administration" "The business identifier(s) for the medication scheduled administration"
 * patient 1..1 Reference(Patient) "The person for which the product is prescribed." "The person for which the product is prescribed."
@@ -120,7 +120,7 @@ Description: "Record of a single planned administration event."
 //treatmentLine as is
 Logical: BeModelMedicationRecordTreatmentLine
 Title: "[Logical Model] - Treatment Line"
-Description: "A model for representing a Treatment Line"
+Description: "A model for representing a Treatment Line."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication treatment Line" "The business identifier(s) for the medication treatment Line"
 * basedOn 0..1 Reference(BeModelMedicationRecordTreatment) "The identifier of the treatment from which this line stems" "The identifier of the treatment from which this line stems" 
@@ -147,7 +147,7 @@ Description: "A model for representing a Treatment Line"
 //treatment as is - rzv
 Logical: BeModelMedicationRecordTreatment
 Title: "[Logical Model] - Treatment"
-Description: "A model for representing a Treatment "
+Description: "A model for representing a Treatment."
 
 * identifier 0..1 BackboneElement "The business identifier(s) for the medication treatment" "The business identifier(s) for the medication treatment" 
   * treatmentGuid 0..1 Identifier "The Global Unique identifier(s) for the medication treatment" "The Global Unique identifier(s) for the medication treatment" 
@@ -200,7 +200,7 @@ Description: "A model for representing a Treatment "
 
 Logical: BeModelMedicationRecordSummaryView
 Title: "[Logical Model] - Summary View"
-Description: "A model for representing a summary view of a patient's medication"
+Description: "A model for representing a summary view of a patient's medication."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication summary" "The business identifier(s) for the medication summary"
 * subject 1..1 Reference(Patient) "From which patient the summary is from" "From which patient the summary is from"
@@ -220,7 +220,7 @@ Description: "A model for representing a summary view of a patient's medication"
 
 Logical: BeModelMedicationRecord
 Title: "[Logical Model] - Medication Record"
-Description: "A structure collection of a patient's medication history."
+Description: "A model for a structure collection of a patient's medication history."
 
 * identifier 0..1 Identifier "The business identifier(s) for the Medication Record" "The business identifier(s) for the Medication Record" 
 * patient 1..1 Reference "The subject of the medication record" "The subject of the medication record"

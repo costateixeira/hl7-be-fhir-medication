@@ -206,7 +206,7 @@ Parent: CarePlan
 
 Profile: MedRecordComposition
 Title: "[Profile] - Structure Composition for Medication Record"
-Description: "How to organize the information in a medication Record"
+Description: "The profile for how to organize the information in a medication Record"
 Parent: Composition
 Id: MedRecord-comp
 * meta.profile 1..*

@@ -75,7 +75,7 @@ Description: "CodeSystem - Medication Summary types"
 
 ValueSet: BeVSMedicationSummaryTypes
 Id: be-vs-medication-summary-types
-Title: "Medication Summary Types Value Set"
+Title: "ValueSet - Medication Summary Types "
 Description:  "Valueset -  Medication Summary types"
 * include codes from system BeCSMedicationSummaryTypes
 
