@@ -1,5 +1,5 @@
 Logical: BeModelMedicationRecordDispense
-Title: "Medication Record Dispense logical model"
+Title: "[Logical Model] - Dispense"
 Description: "A model for representing a product dispense"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication dispense session" "The business identifier(s) for the medication dispense session"
@@ -24,7 +24,7 @@ Description: "A model for representing a product dispense"
 * basedOn 0..1 Reference "link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose"
 
 Logical: BeModelMedicationRecordOrder
-Title: "Medication Record Prescription logical model"
+Title: "[Logical Model] - Prescription"
 Description: "A model for representing a product order"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication prescription" "The business identifier(s) for the medication prescription"
@@ -46,7 +46,7 @@ Description: "A model for representing a product order"
 
 
 Logical: BeModelMedicationRecordUsage
-Title: "Medication Record Usage logical model"
+Title: "[Logical Model] - Usage"
 Description: "A model for representing medication usage"
 
 * identifier 0..* Identifier "The business identifier(s) for the medication Usage" "The business identifier(s) for the medication Usage"
@@ -69,7 +69,7 @@ Description: "A model for representing medication usage"
 
 
 Logical: BeModelMedicationRecordAdministration
-Title: "Medication Record Administration logical model"
+Title: "[Logical Model] - Administration"
 Description: "A model for representing and reporting an administration of a product"
 
 * identifier 0..* Identifier "The business identifier(s) for the medication Administration"  "The business identifier(s) for the medication Administration"
@@ -100,7 +100,7 @@ Description: "A model for representing and reporting an administration of a prod
 * basedOn 0..1 Reference "link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose"
 
 Logical: BeModelMedicationScheduledAdministration
-Title: "Medication Record Scheduled Administration logical model"
+Title: "[Logical Model] - Scheduled Administration"
 Description: "Record of a single planned administration event."
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication scheduled administration" "The business identifier(s) for the medication scheduled administration"
@@ -119,7 +119,7 @@ Description: "Record of a single planned administration event."
 
 //treatmentLine as is
 Logical: BeModelMedicationRecordTreatmentLine
-Title: "Medication Record Treatment Line logical model"
+Title: "[Logical Model] - Treatment Line"
 Description: "A model for representing a Treatment Line"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication treatment Line" "The business identifier(s) for the medication treatment Line"
@@ -146,7 +146,7 @@ Description: "A model for representing a Treatment Line"
 
 //treatment as is - rzv
 Logical: BeModelMedicationRecordTreatment
-Title: "Medication Record Treatment logical model"
+Title: "[Logical Model] - Treatment"
 Description: "A model for representing a Treatment "
 
 * identifier 0..1 BackboneElement "The business identifier(s) for the medication treatment" "The business identifier(s) for the medication treatment" 
@@ -199,7 +199,7 @@ Description: "A model for representing a Treatment "
 
 
 Logical: BeModelMedicationRecordSummaryView
-Title: "Medication Record Treatment View logical model"
+Title: "[Logical Model] - Summary View"
 Description: "A model for representing a summary view of a patient's medication"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication summary" "The business identifier(s) for the medication summary"
@@ -218,9 +218,9 @@ Description: "A model for representing a summary view of a patient's medication"
 
 
 
-Logical:        BeModelMedicationRecord
-Title:          "Medication Record logical model"
-Description:    "A structure collection of a patient's medication history."
+Logical: BeModelMedicationRecord
+Title: "[Logical Model] - Medication Record"
+Description: "A structure collection of a patient's medication history."
 
 * identifier 0..1 Identifier "The business identifier(s) for the Medication Record" "The business identifier(s) for the Medication Record" 
 * patient 1..1 Reference "The subject of the medication record" "The subject of the medication record"

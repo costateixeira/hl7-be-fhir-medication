@@ -6,7 +6,7 @@ Description: "Extension for connecting several resources to a single Treatment L
 * value[x] only Reference(MedicationStatement)
 
 Profile: MedRecordDispense
-Title: "Medication Record - Dispense profile"
+Title: "[Profile] - Dispense"
 Description: "The profile for Medication Dispense in a Medication Record - a record of a single administration event"
 Parent: MedicationDispense
 * meta.profile 1..*
@@ -29,8 +29,8 @@ Parent: MedicationDispense
 * extension contains RelatedTreatmentLine named basedOn 0..1 MS
 
 Profile: MedRecordOrder
-Title: "Medication Record - Order profile"
-Description: "The profile for Medication Order in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
+Title: "[Profile] - Prescription"
+Description: "The profile for Medication Prescription in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
 Parent: MedicationRequest
 * meta.profile 1..*
 * identifier MS
@@ -56,7 +56,7 @@ Parent: MedicationRequest
 
 
 Profile: MedRecordUsage
-Title: "Medication Record - Usage profile"
+Title: "[Profile] - Usage"
 Description: "The profile for Medication Usage in a Medication Record - a record of a single administration event"
 Parent: MedicationStatement
 * meta.profile 1..*
@@ -80,7 +80,7 @@ Parent: MedicationStatement
 * extension[basedOn].valueReference only Reference(MedicationStatement) 
 
 Profile: MedRecordAdministration
-Title: "Medication Record - Administration profile"
+Title: "[Profile] - Administration"
 Description: "The profile for Medication Administration in a Medication Record - a record of a single administration event"
 Parent: MedicationAdministration
 * meta.profile 1..*
@@ -109,7 +109,7 @@ Parent: MedicationAdministration
 
 //based on R4
 Profile: MedRecordTreatmentLine
-Title: "Medication Record - Treatment Line profile"
+Title: "[Profile] - Treatment Line"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
 Parent: MedicationStatement
 * meta.profile 1..*
@@ -133,7 +133,7 @@ Parent: MedicationStatement
 
 //based on R4
 Profile: MedRecordTreatment
-Title: "Medication Record - Treatment profile"
+Title: "[Profile] - Treatment"
 Description: "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"
 Parent: CarePlan
 * meta.profile 1..*
@@ -160,10 +160,9 @@ Parent: CarePlan
 * replaces MS
 
 
-
 //based on R4
 Profile: MedRecordMedicationScheduledAdministration
-Title: "Medication Record - Scheduled Administration Profile"
+Title: "[Profile] - Scheduled Administration"
 Description: "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"
 Parent: MedicationRequest
 * meta.profile 1..*
@@ -184,7 +183,7 @@ Parent: MedicationRequest
 
 //based on R4
 Profile: MedRecordMedicationSummaryView
-Title: "Medication Record - Summary View profile"
+Title: "[Profile] - Summary View"
 Description: "The profile for Medication Summary view in a Medication Record"
 Parent: CarePlan
 * meta.profile 1..*
@@ -206,7 +205,9 @@ Parent: CarePlan
 
 
 Profile: MedRecordComposition
-Title: "Medication Record - Structure Composition Profile"
+Title: "Medication Record -  Profile"
+Title: "[Profile] - Structure Composition for Medication Record"
+
 Description: "How to organize the information in a medication Record"
 Parent: Composition
 Id: MedRecord-comp
@@ -229,7 +230,7 @@ Id: MedRecord-comp
 Profile: MedRecord
 Parent: Bundle
 Id: MedRecord
-Title: "Medication Record Profile"
+Title: "[Profile] - Medication Record"
 Description: "The profile for Medication Record"
 * ^version = "1.0.0"
 * identifier 0..1 MS
