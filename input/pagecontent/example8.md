@@ -75,3 +75,14 @@ This example shows a prescription that is made by VOS and the pharmacist dispens
 6. Status (not-taking) - [adherence.code](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.code) 
    
 7. Reason (Medication stopped - side effect) - [adherence.reason](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.reason)
+
+
+### Notes:  
+* The prescription starts a new treatment and treatmentline. 
+* New prescription after feedback from administration
+* Since the new prescription is for the same purpose, but only a new drug, the treatment stays the same but a new treatment line is created.
+
+The final result of these interactions is:  
+  <div>
+{% include example8-result.svg %}
+</div>
