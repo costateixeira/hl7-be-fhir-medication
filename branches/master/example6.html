@@ -274,6 +274,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>do we add quantity? in IHE, we do Medication=X, QTY = 0</li>
 </ol>
 
+<h3 id="notes">Notes:</h3>
+<ul>
+  <li>The prescription starts a new treatment and treatmentline.</li>
+  <li>As the dispense is rejected, a new prescription should emerge from this.</li>
+  <li>Since the new prescription is for the same purpose, but only a new drug, the treatment stays the same but a new treatment line is created.</li>
+</ul>
+
+<p>The final result of these interactions is:</p>
+<div>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="127px" preserveAspectRatio="none" style="width:530px;height:127px;" version="1.1" viewBox="0 0 530 127" width="530px" zoomAndPan="magnify"><defs><filter height="300%" id="f1lq5118k3s6ou" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><!--MD5=[423e2be1c1e63287cdd41d84043bf6a3]
+cluster Treatment--><rect fill="#FFFFFF" filter="url(#f1lq5118k3s6ou)" height="108" style="stroke:#000000;stroke-width:1.5;" width="511" x="7" y="7" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="82" x="221.5" y="21.9951">Treatment</text><!--MD5=[c4bd43d716bd2655714dff4817fc8345]
+cluster Second Treatment Line--><rect fill="#FFFFFF" filter="url(#f1lq5118k3s6ou)" height="73" style="stroke:#000000;stroke-width:1.5;" width="200" x="310" y="34" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="184" x="318" y="48.9951">Second Treatment Line</text><!--MD5=[c71e1473202cfc53dde5cb135fb5d342]
+cluster First Treatment Line--><rect fill="#FFFFFF" filter="url(#f1lq5118k3s6ou)" height="73" style="stroke:#000000;stroke-width:1.5;" width="287" x="15" y="34" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="160" x="78.5" y="48.9951">First Treatment Line</text><rect fill="#FEFECE" filter="url(#f1lq5118k3s6ou)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="123" x="353.5" y="61" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="105" x="362.5" y="74.1387">New Prescription</text><line style="stroke:#A80036;stroke-width:1.5;" x1="354.5" x2="475.5" y1="78.9688" y2="78.9688" /><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="111" x="359.5" y="92.251">product = new product</text><rect fill="#FEFECE" filter="url(#f1lq5118k3s6ou)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="72" x="222" y="61" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="229" y="74.1387">Dispense</text><line style="stroke:#A80036;stroke-width:1.5;" x1="223" x2="293" y1="78.9688" y2="78.9688" /><polygon fill="none" points="233,84.9688,237,88.9688,233,92.9688,229,88.9688" style="stroke:#B38D22;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="40" x="242" y="92.251">Refused</text><rect fill="#FEFECE" filter="url(#f1lq5118k3s6ou)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="163" x="23.5" y="61" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="75" x="67.5" y="74.1387">Prescription</text><line style="stroke:#A80036;stroke-width:1.5;" x1="24.5" x2="185.5" y1="78.9688" y2="78.9688" /><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="151" x="29.5" y="92.251">product = ibuprofen 400 mg cp</text></g></svg>
+</div>
 
 
 
@@ -297,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 11, 2021 15:03+0000">2021-08-11</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 11, 2021 15:22+0000">2021-08-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
