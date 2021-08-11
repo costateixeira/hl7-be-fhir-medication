@@ -252,7 +252,7 @@
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Based On&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 69eb6358-6eb6-40e4-972f-33d22c3392c5&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;span title=&quot;Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}&quot;&gt;Acidine 75 mg (20 pieces)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: Aug 10, 2021, 7:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;span&gt;GP&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Based On&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;RelatedTreatmentLine&lt;/b&gt;: &lt;a href=&quot;MedicationStatement-example-15-of-medication-treatmentLine.html&quot;&gt;Generated Summary: id: 581998d0-8630-4ec0-8233-1cf5807fca41; status: active; &lt;span title=&quot;Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}&quot;&gt;Acidine 75 mg (20 pieces)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 69eb6358-6eb6-40e4-972f-33d22c3392c5&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;span title=&quot;Codes: {https://cnk.apb.be/codings/cnk_product_codes 00}&quot;&gt;Acidine 75 mg (20 pieces)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: Aug 10, 2021, 7:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;span&gt;GP&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/event-basedOn&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
@@ -260,6 +260,12 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://treatment-identifiers.com&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;743a5985-dfe3-4806-ae72-36fff1dd5b05&quot;/&gt;
       &lt;/identifier&gt;
+    &lt;/valueReference&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://www.hl7belgium.be/fhir/StructureDefinition/related-tl&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MedicationStatement/example-15-of-medication-treatmentLine&quot;/&gt;
     &lt;/valueReference&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.identifier">identifier</a>&gt;
@@ -352,7 +358,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 11, 2021 10:51+0000">2021-08-11</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 11, 2021 11:16+0000">2021-08-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -30,5 +30,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition
 ","Type of adherence","Type of adherence","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.adherence.code",1,1,"",""
 "BeModelMedicationRecordUsage.adherence.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Details of the reason for the current adherence to the intended usage of the product","Details of the reason for the current adherence to the intended usage of the product","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.adherence.reason",0,1,"",""
-"BeModelMedicationRecordUsage.treatment","","","",0,1,"","","","Reference {[]} {[]}
-","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.treatment",0,1,"",""
+"BeModelMedicationRecordUsage.treatmentPlan","","","",0,1,"","","","Reference {[]} {[]}
+","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.treatmentPlan",0,1,"",""
+"BeModelMedicationRecordUsage.basedOn","","","",0,1,"","","","Reference {[]} {[]}
+","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.basedOn",0,1,"",""

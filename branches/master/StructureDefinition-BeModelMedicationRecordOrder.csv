@@ -28,5 +28,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 ","When prescription was initially made","When prescription was initially made","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordOrder.date",0,1,"",""
 "BeModelMedicationRecordOrder.location","","","",0,1,"","","","string {[]} {[]}
 ","Where the prescription was initially made","Where the prescription was initially made","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordOrder.location",0,1,"",""
-"BeModelMedicationRecordOrder.treatment","","","",0,1,"","","","Reference {[]} {[]}
-","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordOrder.treatment",0,1,"",""
+"BeModelMedicationRecordOrder.treatmentPlan","","","",0,1,"","","","Reference {[]} {[]}
+","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordOrder.treatmentPlan",0,1,"",""
+"BeModelMedicationRecordOrder.basedOn","","","",0,1,"","","","Reference {[]} {[]}
+","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordOrder.basedOn",0,1,"",""
