@@ -18,9 +18,9 @@
   "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense",
   "version": "0.2.0",
   "name": "MedRecordDispense",
-  "title": "Medication Record - Dispense profile",
+  "title": "[Profile] - Dispense",
   "status": "active",
-  "date": "2021-08-11T11:27:13+00:00",
+  "date": "2021-08-11T11:47:28+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {

@@ -34,9 +34,9 @@
   <url value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
   <version value="0.2.0"/>
   <name value="MedRecordTreatmentLine"/>
-  <title value="Medication Record - Treatment Line profile"/>
+  <title value="[Profile] - Treatment Line"/>
   <status value="active"/>
-  <date value="2021-08-11T11:27:13+00:00"/>
+  <date value="2021-08-11T11:47:28+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>

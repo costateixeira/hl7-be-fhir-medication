@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-11T11:27:13+00:00"/>
+  <date value="2021-08-11T11:47:28+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -347,7 +347,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecordTreatment"/>
       </reference>
-      <name value="Medication Record - Treatment profile"/>
+      <name value="[Profile] - Treatment"/>
       <description value="The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"/>
     </resource>
     <resource>
@@ -377,7 +377,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecordOrder"/>
       </reference>
-      <name value="Medication Record Prescription logical model"/>
+      <name value="[Logical Model] - Prescription"/>
       <description value="A model for representing a product order"/>
     </resource>
     <resource>
@@ -387,7 +387,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecordUsage"/>
       </reference>
-      <name value="Medication Record Usage logical model"/>
+      <name value="[Logical Model] - Usage"/>
       <description value="A model for representing medication usage"/>
     </resource>
     <resource>
@@ -427,7 +427,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecordAdministration"/>
       </reference>
-      <name value="Medication Record - Administration profile"/>
+      <name value="[Profile] - Administration"/>
       <description value="The profile for Medication Administration in a Medication Record - a record of a single administration event"/>
     </resource>
     <resource>
@@ -447,7 +447,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecordTreatmentLine"/>
       </reference>
-      <name value="Medication Record - Treatment Line profile"/>
+      <name value="[Profile] - Treatment Line"/>
       <description value="The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"/>
     </resource>
     <resource>
@@ -507,7 +507,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecordDispense"/>
       </reference>
-      <name value="Medication Record Dispense logical model"/>
+      <name value="[Logical Model] - Dispense"/>
       <description value="A model for representing a product dispense"/>
     </resource>
     <resource>
@@ -527,7 +527,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecord"/>
       </reference>
-      <name value="Medication Record Profile"/>
+      <name value="[Profile] - Medication Record"/>
       <description value="The profile for Medication Record"/>
     </resource>
     <resource>
@@ -537,7 +537,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecordMedicationScheduledAdministration"/>
       </reference>
-      <name value="Medication Record - Scheduled Administration Profile"/>
+      <name value="[Profile] - Scheduled Administration"/>
       <description value="The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"/>
     </resource>
     <resource>
@@ -547,7 +547,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecordTreatmentLine"/>
       </reference>
-      <name value="Medication Record Treatment Line logical model"/>
+      <name value="[Logical Model] - Treatment Line"/>
       <description value="A model for representing a Treatment Line"/>
     </resource>
     <resource>
@@ -606,7 +606,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecord-comp"/>
       </reference>
-      <name value="Medication Record - Structure Composition Profile"/>
+      <name value="[Profile] - Structure Composition for Medication Record"/>
       <description value="How to organize the information in a medication Record"/>
     </resource>
     <resource>
@@ -644,7 +644,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecordSummaryView"/>
       </reference>
-      <name value="Medication Record Treatment View logical model"/>
+      <name value="[Logical Model] - Summary View"/>
       <description value="A model for representing a summary view of a patient&#39;s medication"/>
     </resource>
     <resource>
@@ -654,7 +654,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecordUsage"/>
       </reference>
-      <name value="Medication Record - Usage profile"/>
+      <name value="[Profile] - Usage"/>
       <description value="The profile for Medication Usage in a Medication Record - a record of a single administration event"/>
     </resource>
     <resource>
@@ -713,7 +713,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationScheduledAdministration"/>
       </reference>
-      <name value="Medication Record Scheduled Administration logical model"/>
+      <name value="[Logical Model] - Scheduled Administration"/>
       <description value="Record of a single planned administration event."/>
     </resource>
     <resource>
@@ -723,7 +723,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecordTreatment"/>
       </reference>
-      <name value="Medication Record Treatment logical model"/>
+      <name value="[Logical Model] - Treatment"/>
       <description value="A model for representing a Treatment"/>
     </resource>
     <resource>
@@ -753,7 +753,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecord"/>
       </reference>
-      <name value="Medication Record logical model"/>
+      <name value="[Logical Model] - Medication Record"/>
       <description value="A structure collection of a patient&#39;s medication history."/>
     </resource>
     <resource>
@@ -783,7 +783,7 @@
       <reference>
         <reference value="StructureDefinition/BeModelMedicationRecordAdministration"/>
       </reference>
-      <name value="Medication Record Administration logical model"/>
+      <name value="[Logical Model] - Administration"/>
       <description value="A model for representing and reporting an administration of a product"/>
     </resource>
     <resource>
@@ -803,8 +803,8 @@
       <reference>
         <reference value="StructureDefinition/MedRecordOrder"/>
       </reference>
-      <name value="Medication Record - Order profile"/>
-      <description value="The profile for Medication Order in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"/>
+      <name value="[Profile] - Prescription"/>
+      <description value="The profile for Medication Prescription in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -912,7 +912,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecordDispense"/>
       </reference>
-      <name value="Medication Record - Dispense profile"/>
+      <name value="[Profile] - Dispense"/>
       <description value="The profile for Medication Dispense in a Medication Record - a record of a single administration event"/>
     </resource>
     <resource>
@@ -942,7 +942,7 @@
       <reference>
         <reference value="StructureDefinition/MedRecordMedicationSummaryView"/>
       </reference>
-      <name value="Medication Record - Summary View profile"/>
+      <name value="[Profile] - Summary View"/>
       <description value="The profile for Medication Summary view in a Medication Record"/>
     </resource>
     <resource>

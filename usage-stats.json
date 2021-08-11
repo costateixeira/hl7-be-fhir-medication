@@ -16,19 +16,19 @@
     "Bundle": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
-        "title": "Medication Record Profile"
+        "title": "[Profile] - Medication Record"
       }
     ],
     "Composition": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp",
-        "title": "Medication Record - Structure Composition Profile"
+        "title": "[Profile] - Structure Composition for Medication Record"
       }
     ],
     "MedicationAdministration": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration",
-        "title": "Medication Record - Administration profile"
+        "title": "[Profile] - Administration"
       }
     ],
     "MedicationDispense": [
@@ -40,23 +40,23 @@
     "MedicationRequest": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder",
-        "title": "Medication Record - Order profile"
+        "title": "[Profile] - Prescription"
       }
     ],
     "CarePlan": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment",
-        "title": "Medication Record - Treatment profile"
+        "title": "[Profile] - Treatment"
       }
     ],
     "MedicationStatement": [
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
-        "title": "Medication Record - Treatment Line profile"
+        "title": "[Profile] - Treatment Line"
       },
       {
         "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage",
-        "title": "Medication Record - Usage profile"
+        "title": "[Profile] - Usage"
       }
     ]
   },
