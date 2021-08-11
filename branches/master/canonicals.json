@@ -196,6 +196,13 @@
     "name": "BeMedicationDispense"
   },
   {
+    "id": "related-tl",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl",
+    "version": "0.2.0",
+    "name": "RelatedTreatmentLine"
+  },
+  {
     "id": "be-vs-medication-summary-types",
     "type": "ValueSet",
     "url": "https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types",
