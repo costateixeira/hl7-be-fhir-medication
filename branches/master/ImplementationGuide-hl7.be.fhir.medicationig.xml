@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-11T11:47:28+00:00"/>
+  <date value="2021-08-11T13:19:36+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -378,7 +378,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecordOrder"/>
       </reference>
       <name value="[Logical Model] - Prescription"/>
-      <description value="A model for representing a product order"/>
+      <description value="A model for representing a product order."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -388,7 +388,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecordUsage"/>
       </reference>
       <name value="[Logical Model] - Usage"/>
-      <description value="A model for representing medication usage"/>
+      <description value="A model for representing medication usage."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -457,7 +457,7 @@
       <reference>
         <reference value="ValueSet/be-vs-medication-summary-types"/>
       </reference>
-      <name value="Medication Summary Types Value Set"/>
+      <name value="ValueSet - Medication Summary Types "/>
       <description value="Valueset -  Medication Summary types"/>
     </resource>
     <resource>
@@ -508,7 +508,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecordDispense"/>
       </reference>
       <name value="[Logical Model] - Dispense"/>
-      <description value="A model for representing a product dispense"/>
+      <description value="A model for representing a product dispense."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -548,7 +548,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecordTreatmentLine"/>
       </reference>
       <name value="[Logical Model] - Treatment Line"/>
-      <description value="A model for representing a Treatment Line"/>
+      <description value="A model for representing a Treatment Line."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -607,7 +607,7 @@
         <reference value="StructureDefinition/MedRecord-comp"/>
       </reference>
       <name value="[Profile] - Structure Composition for Medication Record"/>
-      <description value="How to organize the information in a medication Record"/>
+      <description value="The profile for how to organize the information in a medication Record"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -645,7 +645,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecordSummaryView"/>
       </reference>
       <name value="[Logical Model] - Summary View"/>
-      <description value="A model for representing a summary view of a patient&#39;s medication"/>
+      <description value="A model for representing a summary view of a patient&#39;s medication."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -714,7 +714,7 @@
         <reference value="StructureDefinition/BeModelMedicationScheduledAdministration"/>
       </reference>
       <name value="[Logical Model] - Scheduled Administration"/>
-      <description value="Record of a single planned administration event."/>
+      <description value="A model for a record of a single planned administration event."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -724,7 +724,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecordTreatment"/>
       </reference>
       <name value="[Logical Model] - Treatment"/>
-      <description value="A model for representing a Treatment"/>
+      <description value="A model for representing a Treatment."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -754,7 +754,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecord"/>
       </reference>
       <name value="[Logical Model] - Medication Record"/>
-      <description value="A structure collection of a patient&#39;s medication history."/>
+      <description value="A model for a structure collection of a patient&#39;s medication history."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -784,7 +784,7 @@
         <reference value="StructureDefinition/BeModelMedicationRecordAdministration"/>
       </reference>
       <name value="[Logical Model] - Administration"/>
-      <description value="A model for representing and reporting an administration of a product"/>
+      <description value="A model for representing and reporting an administration of a product."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

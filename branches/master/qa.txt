@@ -1,9 +1,9 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 122, warn = 117, info = 66
+err = 122, warn = 119, info = 66
 IG Publisher Version: 1.1.77
-Generated Wed Aug 11 11:48:07 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Wed Aug 11 13:20:12 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 479 / 40 / 0
  /github/workspace/fsh-generated/resources/CarePlan-example-15-of-medication-treatment2 : 0 / 0 / 3
@@ -73,9 +73,9 @@ Generated Wed Aug 11 11:48:07 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordUsage : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-related-tl : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 1 / 1
- /github/workspace/input/be-medication : 1 / 2 / 1
+ /github/workspace/input/be-medication : 1 / 3 / 1
  /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1 : 2 / 2 / 3
  /github/workspace/input/models/structuredefinition-be-model-medication-record : 36 / 1 / 1
  /github/workspace/input/models/structuredefinition-be-model-medicationdispense : 12 / 1 / 1
@@ -8417,12 +8417,14 @@ INFORMATION: StructureDefinition/be-medicationdispense: StructureDefinition.snap
 == /github/workspace/fsh-generated/resources/StructureDefinition-related-tl.json ==
 WARNING: StructureDefinition/related-tl: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types.json ==
+WARNING: ValueSet/be-vs-medication-summary-types: ValueSet.title: value should not start or finish with whitespace
 WARNING: ValueSet/be-vs-medication-summary-types: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1.json ==
 WARNING: ValueSet/medication-substitution-dispense-v1: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/input/be-medication.xml ==
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 ERROR: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition: ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed
+WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[20].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.page.page[4].page[10].title: value should not start or finish with whitespace
 == /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1.json ==
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions

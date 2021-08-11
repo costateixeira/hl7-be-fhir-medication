@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedRecordComposition"];
   fhir:StructureDefinition.title [ fhir:value "[Profile] - Structure Composition for Medication Record"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-11T11:47:28+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-11T13:19:36+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -36,7 +36,7 @@
        fhir:ContactPoint.value [ fhir:value "http://hl7belgium.org" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "How to organize the information in a medication Record"];
+  fhir:StructureDefinition.description [ fhir:value "The profile for how to organize the information in a medication Record"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
