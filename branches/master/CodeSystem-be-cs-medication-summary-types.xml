@@ -8,9 +8,9 @@
   <url value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
   <version value="0.2.0"/>
   <name value="BeCSMedicationSummaryTypes"/>
-  <title value="Medication Summary types"/>
+  <title value="Medication Summary Types Code System"/>
   <status value="active"/>
-  <date value="2021-08-11T11:16:23+00:00"/>
+  <date value="2021-08-11T11:27:13+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>

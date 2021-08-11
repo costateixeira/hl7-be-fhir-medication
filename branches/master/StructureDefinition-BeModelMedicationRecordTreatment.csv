@@ -1,5 +1,5 @@
 "Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
-"BeModelMedicationRecordTreatment","","","",0,*,"","","","","Medication Record Treatment logical model","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelMedicationRecordTreatment","","","",0,*,"","","","","Medication Record Treatment logical model","A model for representing a Treatment ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "BeModelMedicationRecordTreatment.identifier","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","The business identifier(s) for the medication treatment","The business identifier(s) for the medication treatment","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatment.identifier",0,1,"",""
 "BeModelMedicationRecordTreatment.identifier.treatmentGuid","","","",0,1,"","","","Identifier {[]} {[]}

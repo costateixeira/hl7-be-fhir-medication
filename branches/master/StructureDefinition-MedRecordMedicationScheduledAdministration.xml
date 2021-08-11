@@ -32,9 +32,9 @@
   <url value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
   <version value="0.2.0"/>
   <name value="MedRecordMedicationScheduledAdministration"/>
-  <title value="Medication Scheduled Administration"/>
+  <title value="Medication Record - Scheduled Administration Profile"/>
   <status value="active"/>
-  <date value="2021-08-11T11:16:23+00:00"/>
+  <date value="2021-08-11T11:27:13+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>

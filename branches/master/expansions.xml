@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="63f526de-2182-42cb-a8f9-b4efaa68b25e"/>
+  <id value="0d87c2f2-6dd7-47be-9b9f-d0bd8b3a361b"/>
   <meta>
-    <lastUpdated value="2021-08-11T11:16:23.288+00:00"/>
+    <lastUpdated value="2021-08-11T11:27:13.565+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-be-cs-medication-summary-types.html">Medication Summary types v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-be-cs-medication-summary-types.html">Medication Summary Types Code System v0.2.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
               <a href="CodeSystem-be-cs-medication-summary-types.html">
@@ -57,9 +57,9 @@
         <url value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
         <version value="0.2.0"/>
         <name value="BeVSMedicationSummaryTypes"/>
-        <title value="Medication Summary types"/>
+        <title value="Medication Summary Types Value Set"/>
         <status value="active"/>
-        <date value="2021-08-11T11:16:23+00:00"/>
+        <date value="2021-08-11T11:27:13+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -76,8 +76,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b74698f9-8d6b-4d5b-9083-09f46c94aae7"/>
-          <timestamp value="2021-08-11T11:16:45+00:00"/>
+          <identifier value="urn:uuid:4731854b-3040-4a25-8d08-b2a3ac799ed3"/>
+          <timestamp value="2021-08-11T11:27:37+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -186,9 +186,9 @@
         <url value="https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1"/>
         <version value="0.2.0"/>
         <name value="SubstitutionReason"/>
-        <title value="medication substitution Value set"/>
+        <title value="Medication Substitution Value Set"/>
         <status value="active"/>
-        <date value="2021-08-11T11:16:23+00:00"/>
+        <date value="2021-08-11T11:27:13+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -205,8 +205,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7c133064-a98c-42f5-84ae-6b471c00a34b"/>
-          <timestamp value="2021-08-11T11:16:51+00:00"/>
+          <identifier value="urn:uuid:0148aefb-5ead-4c65-98ac-148eed39a611"/>
+          <timestamp value="2021-08-11T11:27:41+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

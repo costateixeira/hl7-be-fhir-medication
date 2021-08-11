@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-11T11:16:23+00:00",
+  "date": "2021-08-11T11:27:13+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -526,7 +526,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordTreatment"
         },
-        "name": "Medication Treatment profile",
+        "name": "Medication Record - Treatment profile",
         "description": "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"
       },
       {
@@ -538,7 +538,9 @@
         ],
         "reference": {
           "reference": "StructureDefinition/related-tl"
-        }
+        },
+        "name": "Based On Extension",
+        "description": "Extension for connecting several resources to a single Treatment Line"
       },
       {
         "extension": [
@@ -563,7 +565,8 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordOrder"
         },
-        "name": "Medication Record Prescription logical model"
+        "name": "Medication Record Prescription logical model",
+        "description": "A model for representing a product order"
       },
       {
         "extension": [
@@ -575,7 +578,8 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordUsage"
         },
-        "name": "Medication Record Usage logical model"
+        "name": "Medication Record Usage logical model",
+        "description": "A model for representing medication usage"
       },
       {
         "extension": [
@@ -652,7 +656,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordTreatmentLine"
         },
-        "name": "Medication Treatment Line profile",
+        "name": "Medication Record - Treatment Line profile",
         "description": "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
       },
       {
@@ -665,7 +669,7 @@
         "reference": {
           "reference": "ValueSet/be-vs-medication-summary-types"
         },
-        "name": "Medication Summary types",
+        "name": "Medication Summary Types Value Set",
         "description": "Valueset -  Medication Summary types"
       },
       {
@@ -730,7 +734,8 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordDispense"
         },
-        "name": "Medication Record Dispense logical model"
+        "name": "Medication Record Dispense logical model",
+        "description": "A model for representing a product dispense"
       },
       {
         "extension": [
@@ -755,7 +760,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecord"
         },
-        "name": "Medication Record profile",
+        "name": "Medication Record Profile",
         "description": "The profile for Medication Record"
       },
       {
@@ -768,7 +773,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordMedicationScheduledAdministration"
         },
-        "name": "Medication Scheduled Administration",
+        "name": "Medication Record - Scheduled Administration Profile",
         "description": "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"
       },
       {
@@ -781,7 +786,8 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordTreatmentLine"
         },
-        "name": "Medication Record Treatment Line logical model"
+        "name": "Medication Record Treatment Line logical model",
+        "description": "A model for representing a Treatment Line"
       },
       {
         "extension": [
@@ -857,7 +863,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecord-comp"
         },
-        "name": "Structure Composition for medication Record profile",
+        "name": "Medication Record - Structure Composition Profile",
         "description": "How to organize the information in a medication Record"
       },
       {
@@ -907,7 +913,8 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordSummaryView"
         },
-        "name": "Medication Record Treatment View logical model"
+        "name": "Medication Record Treatment View logical model",
+        "description": "A model for representing a summary view of a patient's medication"
       },
       {
         "extension": [
@@ -997,7 +1004,7 @@
           "reference": "StructureDefinition/BeModelMedicationScheduledAdministration"
         },
         "name": "Medication Record Scheduled Administration logical model",
-        "description": "Record of a single planned administration event"
+        "description": "Record of a single planned administration event."
       },
       {
         "extension": [
@@ -1009,7 +1016,8 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordTreatment"
         },
-        "name": "Medication Record Treatment logical model"
+        "name": "Medication Record Treatment logical model",
+        "description": "A model for representing a Treatment"
       },
       {
         "extension": [
@@ -1086,7 +1094,8 @@
         "reference": {
           "reference": "StructureDefinition/BeModelMedicationRecordAdministration"
         },
-        "name": "Medication Record Administration logical model"
+        "name": "Medication Record Administration logical model",
+        "description": "A model for representing and reporting an administration of a product"
       },
       {
         "extension": [
@@ -1098,7 +1107,7 @@
         "reference": {
           "reference": "ValueSet/medication-substitution-dispense-v1"
         },
-        "name": "medication substitution Value set",
+        "name": "Medication Substitution Value Set",
         "description": "Value set for substituting a medication on dispense."
       },
       {
@@ -1201,7 +1210,7 @@
         "reference": {
           "reference": "CodeSystem/be-cs-medication-summary-types"
         },
-        "name": "Medication Summary types",
+        "name": "Medication Summary Types Code System",
         "description": "CodeSystem - Medication Summary types"
       },
       {
@@ -1292,7 +1301,7 @@
         "reference": {
           "reference": "StructureDefinition/MedRecordMedicationSummaryView"
         },
-        "name": "Medication Summary View profile",
+        "name": "Medication Record - Summary View profile",
         "description": "The profile for Medication Summary view in a Medication Record"
       },
       {
