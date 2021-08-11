@@ -215,6 +215,11 @@
             <title value="Pattern 3 - Compile a medication record"/>
             <generation value="markdown"/>
           </page>
+          <page>
+            <nameUrl value="medicationrecord-pattern-4.html"/>
+            <title value="Pattern 4 - Creation of Treatments and Treatment Lines"/>
+            <generation value="markdown"/>
+          </page>
         </page>
       </page>
       <page>
