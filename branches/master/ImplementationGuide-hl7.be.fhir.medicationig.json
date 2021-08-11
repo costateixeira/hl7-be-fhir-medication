@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-11T14:46:57+00:00",
+  "date": "2021-08-11T14:54:44+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1439,6 +1439,11 @@
                 {
                   "nameUrl": "medicationrecord-pattern-3.html",
                   "title": "Pattern 3 - Compile a medication record",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "medicationrecord-pattern-4.html",
+                  "title": "Pattern 4 - Creation of Treatments and Treatment Lines",
                   "generation": "markdown"
                 }
               ]
