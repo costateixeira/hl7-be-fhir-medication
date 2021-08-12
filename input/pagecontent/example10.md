@@ -41,3 +41,8 @@ This example shows the capture of non-medication products. This is important bec
 4. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
    
 5. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
+
+
+
+### Notes:  
+* These originate treatment and treatmentlines? 
