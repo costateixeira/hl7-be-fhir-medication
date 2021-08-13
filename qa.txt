@@ -3,7 +3,7 @@
 
 err = 122, warn = 122, info = 66
 IG Publisher Version: 1.1.77
-Generated Fri Aug 13 17:21:33 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Fri Aug 13 17:40:33 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 484 / 40 / 0
  /github/workspace/fsh-generated/resources/CarePlan-example-15-of-medication-treatment2 : 0 / 0 / 3
@@ -76,8 +76,8 @@ Generated Fri Aug 13 17:21:33 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 1 / 1
  /github/workspace/input/be-medication : 1 / 4 / 1
+ /github/workspace/input/examples/ExampleScenario-example-1-scenario : 0 / 1 / 1
  /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1 : 2 / 2 / 3
- /github/workspace/input/examples/example-1-scenario : 0 / 1 / 1
  /github/workspace/input/models/structuredefinition-be-model-medication-record : 36 / 1 / 1
  /github/workspace/input/models/structuredefinition-be-model-medicationdispense : 12 / 1 / 1
  /github/workspace/input/vocabulary/be-ns-nihdi-organization : 0 / 1 / 1
@@ -8514,6 +8514,8 @@ ERROR: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definit
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[23].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[62].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.page.page[4].page[10].title: value should not start or finish with whitespace
+== /github/workspace/input/examples/ExampleScenario-example-1-scenario.xml ==
+WARNING: ExampleScenario/example-1-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1.json ==
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
@@ -8521,8 +8523,6 @@ WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.id
 INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated
-== /github/workspace/input/examples/example-1-scenario.xml ==
-WARNING: ExampleScenario/example-1-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/input/models/structuredefinition-be-model-medication-record.json ==
 ERROR: StructureDefinition.differential.element[0].min: Error parsing JSON: the primitive value must be a number
 ERROR: StructureDefinition.differential.element[1].min: Error parsing JSON: the primitive value must be a number
