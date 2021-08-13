@@ -135,7 +135,14 @@
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
-
+      <resource>
+         <reference>
+            <reference value="ExampleScenario/scenario-allergy" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ExampleScenario - Suspected Allergy" />
+         <description value="Suspected Allergy, then refuted" />
+      </resource>
 
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
