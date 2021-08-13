@@ -29,7 +29,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 4_1-medication-dispense 
+Instance: 4-1-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -68,7 +68,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 4_2-medication-dispense 
+Instance: 4-2-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
