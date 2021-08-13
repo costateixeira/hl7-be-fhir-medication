@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-13T16:21:34+00:00",
+  "date": "2021-08-13T17:20:53+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -493,6 +493,48 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/example-1-scenario"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "ExampleScenario - Suspected Allergy",
+        "description": "Suspected Allergy, then refuted"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/8-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 8-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/10-2-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 10-2-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CarePlan"
           }
         ],
@@ -507,14 +549,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
+            "valueString": "MedicationDispense"
           }
         ],
         "reference": {
-          "reference": "MedicationRequest/example-5-of-medication-presc"
+          "reference": "MedicationDispense/6-1-medication-dispense"
         },
-        "name": "Example MedicationRequest - example-5-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+        "name": "Example MedicationDispense - 6-1-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -550,9 +592,48 @@
           }
         ],
         "reference": {
+          "reference": "MedicationDispense/3-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 3-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
           "reference": "MedicationDispense/example-3-2-of-medication-dispense"
         },
         "name": "Example MedicationDispense - example-3-2-of-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/6-medication-presc"
+        },
+        "name": "Example MedicationRequest - 6-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/5-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 5-medication-dispense",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
@@ -585,40 +666,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
+            "valueString": "MedicationRequest"
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-10-2-of-medication-dispense"
+          "reference": "MedicationRequest/3-medication-presc"
         },
-        "name": "Example MedicationDispense - example-10-2-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/example-3-of-medication-dispense"
-        },
-        "name": "Example MedicationDispense - example-3-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/example-4-1-of-medication-dispense"
-        },
-        "name": "Example MedicationDispense - example-4-1-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+        "name": "Example MedicationRequest - 3-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -632,19 +687,6 @@
         },
         "name": "[Profile] - Administration",
         "description": "The profile for Medication Administration in a Medication Record - a record of a single administration event"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/example-7-of-medication-usage"
-        },
-        "name": "Example MedicationStatement - example-7-of-medication-usage",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
       },
       {
         "extension": [
@@ -669,8 +711,21 @@
         "reference": {
           "reference": "ValueSet/be-vs-medication-summary-types"
         },
-        "name": "ValueSet - Medication Summary Types ",
+        "name": "[Value Set] - Medication Summary Types ",
         "description": "Valueset -  Medication Summary types"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/4-2-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 4-2-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -689,39 +744,13 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-3-of-medication-presc"
-        },
-        "name": "Example MedicationRequest - example-3-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-2-of-medication-presc"
-        },
-        "name": "Example MedicationRequest - example-2-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationStatement"
           }
         ],
         "reference": {
-          "reference": "MedicationStatement/example-8-of-medication-usage"
+          "reference": "MedicationStatement/7-medication-usage"
         },
-        "name": "Example MedicationStatement - example-8-of-medication-usage",
+        "name": "Example MedicationStatement - 7-medication-usage",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
       },
       {
@@ -736,6 +765,19 @@
         },
         "name": "[Logical Model] - Dispense",
         "description": "A model for representing a product dispense."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/1-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 1-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -793,14 +835,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
+            "valueString": "MedicationRequest"
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-5-of-medication-dispense"
+          "reference": "MedicationRequest/1-medication-presc"
         },
-        "name": "Example MedicationDispense - example-5-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+        "name": "Example MedicationRequest - 1-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/7-medication-presc"
+        },
+        "name": "Example MedicationRequest - 7-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -823,9 +878,9 @@
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-10-1-of-medication-dispense"
+          "reference": "MedicationDispense/7-medication-dispense"
         },
-        "name": "Example MedicationDispense - example-10-1-of-medication-dispense",
+        "name": "Example MedicationDispense - 7-medication-dispense",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
@@ -883,14 +938,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationAdministration"
+            "valueString": "MedicationRequest"
           }
         ],
         "reference": {
-          "reference": "MedicationAdministration/example-8-of-medication-administration"
+          "reference": "MedicationRequest/4-medication-presc"
         },
-        "name": "Example MedicationAdministration - example-8-of-medication-administration",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
+        "name": "Example MedicationRequest - 4-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -958,19 +1013,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/example-7-of-medication-dispense"
-        },
-        "name": "Example MedicationDispense - example-7-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -978,19 +1020,6 @@
           "reference": "MedicationRequest/example-3-2-of-medication-presc"
         },
         "name": "Example MedicationRequest - example-3-2-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-6-of-medication-presc"
-        },
-        "name": "Example MedicationRequest - example-6-of-medication-presc",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
@@ -1023,27 +1052,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
+            "valueString": "MedicationStatement"
           }
         ],
         "reference": {
-          "reference": "MedicationRequest/example-7-of-medication-presc"
+          "reference": "MedicationStatement/8-medication-usage"
         },
-        "name": "Example MedicationRequest - example-7-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+        "name": "Example MedicationStatement - 8-medication-usage",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
+            "valueString": "MedicationRequest"
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-6-1-of-medication-dispense"
+          "reference": "MedicationRequest/8-medication-presc"
         },
-        "name": "Example MedicationDispense - example-6-1-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+        "name": "Example MedicationRequest - 8-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -1066,9 +1095,9 @@
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-8-of-medication-dispense"
+          "reference": "MedicationDispense/2-medication-dispense"
         },
-        "name": "Example MedicationDispense - example-8-of-medication-dispense",
+        "name": "Example MedicationDispense - 2-medication-dispense",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
@@ -1107,7 +1136,7 @@
         "reference": {
           "reference": "ValueSet/medication-substitution-dispense-v1"
         },
-        "name": "Medication Substitution Value Set",
+        "name": "[Value Set] - Medication Substitution",
         "description": "Value set for substituting a medication on dispense."
       },
       {
@@ -1122,19 +1151,6 @@
         },
         "name": "[Profile] - Prescription",
         "description": "The profile for Medication Prescription in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-8-of-medication-presc"
-        },
-        "name": "Example MedicationRequest - example-8-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -1178,27 +1194,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
+            "valueString": "MedicationRequest"
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-4-2-of-medication-dispense"
+          "reference": "MedicationRequest/5-medication-presc"
         },
-        "name": "Example MedicationDispense - example-4-2-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/example-10-3-of-medication-dispense"
-        },
-        "name": "Example MedicationDispense - example-10-3-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+        "name": "Example MedicationRequest - 5-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -1210,7 +1213,7 @@
         "reference": {
           "reference": "CodeSystem/be-cs-medication-summary-types"
         },
-        "name": "Medication Summary Types Code System",
+        "name": "[Code System] - Medication Summary Types ",
         "description": "CodeSystem - Medication Summary types"
       },
       {
@@ -1282,14 +1285,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
+            "valueString": "MedicationDispense"
           }
         ],
         "reference": {
-          "reference": "MedicationRequest/example-4-of-medication-presc"
+          "reference": "MedicationDispense/10-3-medication-dispense"
         },
-        "name": "Example MedicationRequest - example-4-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+        "name": "Example MedicationDispense - 10-3-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/10-1-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 10-1-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1303,6 +1319,19 @@
         },
         "name": "[Profile] - Summary View",
         "description": "The profile for Medication Summary view in a Medication Record"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/2-medication-presc"
+        },
+        "name": "Example MedicationRequest - 2-medication-presc",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -1325,36 +1354,23 @@
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-2-of-medication-dispense"
+          "reference": "MedicationDispense/4-1-medication-dispense"
         },
-        "name": "Example MedicationDispense - example-2-of-medication-dispense",
+        "name": "Example MedicationDispense - 4-1-medication-dispense",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
+            "valueString": "MedicationAdministration"
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/example-1-of-medication-dispense"
+          "reference": "MedicationAdministration/8-medication-administration"
         },
-        "name": "Example MedicationDispense - example-1-of-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-1-of-medication-presc"
-        },
-        "name": "Example MedicationRequest - example-1-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+        "name": "Example MedicationAdministration - 8-medication-administration",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
       }
     ],
     "page": {
