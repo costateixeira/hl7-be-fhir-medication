@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedRecordUsage"];
   fhir:StructureDefinition.title [ fhir:value "[Profile] - Usage"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-13T10:38:15+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-13T16:21:34+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
