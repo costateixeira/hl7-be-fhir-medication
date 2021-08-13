@@ -5,4 +5,4 @@ A certain patient has medication prescribed and several views are necessary:
 2. takes per week
 3. takes per day
 
------
+------
