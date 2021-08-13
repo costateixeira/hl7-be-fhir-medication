@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for BEMedicationIG</h1>
- <p>Generated Fri Aug 13 17:21:32 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Aug 13 17:40:32 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.be.fhir.medicationig, Canonical = https://www.hl7belgium.be/fhir</td></tr>
@@ -257,11 +257,11 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_be-medication"><b>/github/workspace/input/be-medication</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_examples_ExampleScenario-example-1-scenario"><b>/github/workspace/input/examples/ExampleScenario-example-1-scenario</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_examples_MedicationDispense_medication-dispense-example-1"><b>/github/workspace/input/examples/MedicationDispense/medication-dispense-example-1</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>2</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_input_examples_example-1-scenario"><b>/github/workspace/input/examples/example-1-scenario</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_models_structuredefinition-be-model-medication-record"><b>/github/workspace/input/models/structuredefinition-be-model-medication-record</b></a></td><td><b>36</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -10796,6 +10796,19 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_input_examples_ExampleScenario-example-1-scenario"> </a>
+<h2><a href="ExampleScenario-example-1-scenario.html">/github/workspace/input/examples/ExampleScenario-example-1-scenario.xml</a></h2>
+ <ul style="font-size: 7px"><li>ExampleScenario: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/examplescenario.html">ExampleScenario</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExampleScenario.jurisdiction[0]</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_input_examples_MedicationDispense_medication-dispense-example-1"> </a>
 <h2><a href="MedicationDispense-medication-dispense-example-1.html">/github/workspace/input/examples/MedicationDispense/medication-dispense-example-1.json</a></h2>
  <ul style="font-size: 7px"><li>MedicationDispense: Validated against <i>this.</i><a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></li></ul>
@@ -10821,19 +10834,6 @@
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationDispense.quantity (l86/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_input_examples_example-1-scenario"> </a>
-<h2><a href="ExampleScenario-example-1-scenario.html">/github/workspace/input/examples/example-1-scenario.xml</a></h2>
- <ul style="font-size: 7px"><li>ExampleScenario: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/examplescenario.html">ExampleScenario</a></li></ul>
-
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ExampleScenario.jurisdiction[0]</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]</b></td>
    </tr>
 </table>
 <hr/>
