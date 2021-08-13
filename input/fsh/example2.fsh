@@ -1,5 +1,5 @@
 
-Instance: example-2-of-medication-presc 
+Instance: 2-medication-presc 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist changes the medication for one belonging to another VOS - Cluster but same medication (diffence in the strength)."
@@ -30,7 +30,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: example-2-of-medication-dispense 
+Instance: 2-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist changes the medication for one belonging to another VOS - Cluster but same medication (diffence in the strength)."

@@ -1,4 +1,4 @@
-Instance: example-4-of-medication-presc 
+Instance: 4-medication-presc 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a dispense of two products. One that has a prescription and other that does not (and does not need one)"
@@ -29,7 +29,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: example-4-1-of-medication-dispense 
+Instance: 4_1-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -68,7 +68,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: example-4-2-of-medication-dispense 
+Instance: 4_2-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"

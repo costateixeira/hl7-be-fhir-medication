@@ -137,7 +137,7 @@
     </resource>
       <resource>
          <reference>
-            <reference value="ExampleScenario/scenario-allergy" />
+            <reference value="ExampleScenario/example-1-scenario" />
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="ExampleScenario - Suspected Allergy" />
