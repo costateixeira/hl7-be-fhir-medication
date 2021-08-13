@@ -67,7 +67,7 @@ Description: "ValueSet - Medication Summary types"
 
 CodeSystem: BeCSMedicationSummaryTypes
 Id: be-cs-medication-summary-types
-Title: "Medication Summary Types Code System"
+Title: "[Code System] - Medication Summary Types "
 Description: "CodeSystem - Medication Summary types"
 * #kmehr-ms-5.6 "Belgian Medication Schema v5.6 - 09/2018"
 * #kmehr-ms-5.5 "Belgian Medication Schema v5.5 - 12-2017"
@@ -75,7 +75,7 @@ Description: "CodeSystem - Medication Summary types"
 
 ValueSet: BeVSMedicationSummaryTypes
 Id: be-vs-medication-summary-types
-Title: "ValueSet - Medication Summary Types "
+Title: "[Value Set] - Medication Summary Types "
 Description:  "Valueset -  Medication Summary types"
 * include codes from system BeCSMedicationSummaryTypes
 
@@ -89,7 +89,7 @@ Alias: ACT =  http://terminology.hl7.org/CodeSystem/v3-ActReason
 
 ValueSet: SubstitutionReason
 Id: medication-substitution-dispense-v1
-Title: "Medication Substitution Value Set"
+Title: "[Value Set] - Medication Substitution"
 Description:   "Value set for substituting a medication on dispense."
 * include codes from valueset v3.SubstanceAdminSubstitutionReason
 * ACT#UNABLE  "unable to use"
