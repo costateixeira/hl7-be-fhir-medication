@@ -20,7 +20,7 @@
   <actor>
     <actorId value="SPEC"/>
     <type value="person"/>
-    <name value="Dr. Lenoir&#xA;(Specialist)"/>
+    <name value="Dr. Lenoir \n (Specialist)"/>
   </actor>
   <instance>
     <resourceId value="noel-allergy.v0"/>
