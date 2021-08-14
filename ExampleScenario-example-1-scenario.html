@@ -218,15 +218,16 @@
       																Pre-Conditions
       															
    </h4>
-   <p>The patient visits their GP and shows signs of inflammation. The GP will check for
-      possible allergies, while presently there are no allergies registered for the patient.
+   <p>The patient visits their GP and is prescribed Amlor for hypertension. The GP prescribes
+      Amlor, but at the pharmacy there is no Amlor and amlodipin Sandoz is dispensed
    </p>
    <h4><a name="postconditions"></a>
       																Post Conditions
       															
    </h4>
-   <p>The patient's allergy information in the central vault is updated with a refuted allergy
-      (which may or not be shown in the patient record).
+   <p>A new treatment and treatmentLine are created, inside the new treatment line, a prescription
+      and dispense are contained and is possible to see which medication is associated with
+      each
    </p>
    <p></p>
 </div> 
@@ -279,7 +280,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 14, 2021 08:30+0000">2021-08-14</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 14, 2021 08:36+0000">2021-08-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
