@@ -22,24 +22,14 @@
     <name value="Vault"/>
   </actor>
   <actor>
-    <actorId value="GPSOFT"/>
-    <type value="entity"/>
-    <name value="GP Software"/>
-  </actor>
-  <actor>
     <actorId value="PHARM"/>
     <type value="person"/>
     <name value="Pharmacist"/>
   </actor>
-  <actor>
-    <actorId value="PHARMSOFT"/>
-    <type value="entity"/>
-    <name value="Pharmacy Software"/>
-  </actor>
   <instance>
-    <resourceId value="noel-allergy.v0"/>
-    <resourceType value="AllergyIntolerance"/>
-    <name value="Allergy Record"/>
+    <resourceId value="1-medication-presc"/>
+    <resourceType value="MedRecordOrder"/>
+    <name value="New Prescription"/>
   </instance>
   <instance>
     <resourceId value="EB"/>
@@ -47,17 +37,22 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="EB"/>
-    <resourceType value="Bundle"/>
-    <name value="Empty Bundle"/>
+    <resourceId value="1-medication-treatmentLine"/>
+    <resourceType value="MedRecordTreatmentLine"/>
+    <name value="New Treatment Line"/>
   </instance>
   <instance>
-    <resourceId value="noel-allergy.v1"/>
-    <resourceType value="AllergyIntolerance"/>
-    <name value="Updated Allergy Recor"/>
+    <resourceId value="1-medication-treatment"/>
+    <resourceType value="MedRecordTreatment"/>
+    <name value="New Treatment"/>
+  </instance>
+  <instance>
+    <resourceId value="1-medication-dispense"/>
+    <resourceType value="MedRecordDispense"/>
+    <name value="New dispense"/>
   </instance>
   <process>
-    <title value="Change Brand Prescription"/>
+    <title value="Change Branded Prescription"/>
     <description value="description"/>
     <preConditions value="The patient visits their GP and is prescribed Amlor for hypertension. The GP prescribes Amlor, but at the pharmacy there is no Amlor and amlodipin Sandoz is dispensed"/>
     <postConditions value="A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each"/>
@@ -79,24 +74,35 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="noel-allergy.v0"/>
+          <resourceId value="1-medication-presc"/>
         </request>
       </operation>
     </step>
     <step>
       <operation>
         <number value="3"/>
-        <name value="Create new treatment and treatment Line"/>
+        <name value="Create new treatment"/>
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="noel-allergy.v0"/>
+          <resourceId value="1-medication-treatment"/>
         </request>
       </operation>
     </step>
     <step>
       <operation>
         <number value="4"/>
+        <name value="Create new treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="1-medication-treatmentLine"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="5"/>
         <name value="Get patient&#39;s Prescriptions"/>
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
@@ -107,24 +113,13 @@
     </step>
     <step>
       <operation>
-        <number value="5"/>
+        <number value="6"/>
         <name value="Create new dispense"/>
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="noel-allergy.v1"/>
+          <resourceId value="1-medication-dispense"/>
         </request>
-      </operation>
-    </step>
-    <step>
-      <operation>
-        <number value="6"/>
-        <name value="Update treatment Line"/>
-        <initiator value="GP"/>
-        <receiver value="VAULT"/>
-        <response>
-          <resourceId value="noel-allergy.v1"/>
-        </response>
       </operation>
     </step>
   </process>
