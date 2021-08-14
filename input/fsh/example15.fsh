@@ -47,6 +47,7 @@ Title:    ""
 Instance: reflux-condition
 InstanceOf: Condition
 Usage: #example
+Title: "Reflux Condition"
 
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
