@@ -121,7 +121,3 @@ Title:    ""
 * intent = #plan
 * title = "Treatment for Hypertension"
 * addresses = Reference(hypertension-condition)
-
-* activity[+].detail.kind = #MedicationRequest
-* activity[=].detail.status = #completed
-* activity[=].detail.productCodeableConcept	= https://cnk.apb.be/codings/cnk_product_codes#2399640  "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
