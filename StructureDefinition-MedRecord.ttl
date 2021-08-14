@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedRecord"];
   fhir:StructureDefinition.title [ fhir:value "[Profile] - Medication Record"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-14T09:10:14+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-14T09:38:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
