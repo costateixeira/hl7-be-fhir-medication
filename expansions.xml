@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9e84acca-bf44-4795-bed7-76059186f2f4"/>
+  <id value="5a790662-8854-4c6f-b4cd-845771c4e77c"/>
   <meta>
-    <lastUpdated value="2021-08-13T17:39:49.192+00:00"/>
+    <lastUpdated value="2021-08-14T08:30:23.666+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -59,7 +59,7 @@
         <name value="BeVSMedicationSummaryTypes"/>
         <title value="[Value Set] - Medication Summary Types "/>
         <status value="active"/>
-        <date value="2021-08-13T17:39:49+00:00"/>
+        <date value="2021-08-14T08:30:23+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -76,8 +76,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f7f84c97-a39e-40d9-b7a7-732f7173648e"/>
-          <timestamp value="2021-08-13T17:40:12+00:00"/>
+          <identifier value="urn:uuid:dab63ff4-3394-4b31-96ab-b368f7fbdc83"/>
+          <timestamp value="2021-08-14T08:30:44+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -188,7 +188,7 @@
         <name value="SubstitutionReason"/>
         <title value="[Value Set] - Medication Substitution"/>
         <status value="active"/>
-        <date value="2021-08-13T17:39:49+00:00"/>
+        <date value="2021-08-14T08:30:23+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -205,8 +205,8 @@
           <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a92dcae2-1ac1-4576-ac7c-ee8bb6783c48"/>
-          <timestamp value="2021-08-13T17:40:17+00:00"/>
+          <identifier value="urn:uuid:1ef2c65b-c8ea-46f6-953f-cbd16c2d94d0"/>
+          <timestamp value="2021-08-14T08:30:48+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

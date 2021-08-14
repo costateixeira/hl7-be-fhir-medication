@@ -18,7 +18,7 @@
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-1-scenario",
     "version": "0.2.0",
-    "name": "AllergyScenario"
+    "name": "ChangedmedicationScenario"
   },
   {
     "id": "hl7.be.fhir.medicationig",
