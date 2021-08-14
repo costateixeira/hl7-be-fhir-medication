@@ -59,6 +59,14 @@
     <step>
       <operation>
         <number value="1"/>
+        <name value="Goes to appointment"/>
+        <initiator value="PATIENT"/>
+        <receiver value="GP"/>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="2"/>
         <name value="Get Patient&#39;s Medication"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
@@ -69,7 +77,7 @@
     </step>
     <step>
       <operation>
-        <number value="2"/>
+        <number value="3"/>
         <name value="Create new prescription"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
@@ -80,7 +88,7 @@
     </step>
     <step>
       <operation>
-        <number value="3"/>
+        <number value="4"/>
         <name value="Create new treatment"/>
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
@@ -91,7 +99,7 @@
     </step>
     <step>
       <operation>
-        <number value="4"/>
+        <number value="5"/>
         <name value="Create new treatment Line"/>
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
@@ -102,18 +110,18 @@
     </step>
     <step>
       <operation>
-        <number value="5"/>
+        <number value="6"/>
         <name value="Get patient&#39;s Prescriptions"/>
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <response>
-          <resourceId value="noel-allergy.v0"/>
+          <resourceId value="EB"/>
         </response>
       </operation>
     </step>
     <step>
       <operation>
-        <number value="6"/>
+        <number value="7"/>
         <name value="Create new dispense"/>
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
