@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-14T09:38:00+00:00",
+  "date": "2021-08-14T09:56:01+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -770,6 +770,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/1-medication-treatmentLine"
+        },
+        "name": "Example MedicationStatement - 1-medication-treatmentLine",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -1117,6 +1130,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/1-medication-treatment"
+        },
+        "name": "Treatment for Hypertension",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1371,6 +1397,17 @@
         },
         "name": "Example MedicationAdministration - 8-medication-administration",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/hypertension-condition"
+        }
       }
     ],
     "page": {

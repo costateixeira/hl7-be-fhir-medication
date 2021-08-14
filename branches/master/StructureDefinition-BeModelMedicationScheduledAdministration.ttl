@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeModelMedicationScheduledAdministration"];
   fhir:StructureDefinition.title [ fhir:value "[Logical Model] - Scheduled Administration"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-14T09:38:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-14T09:56:01+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
