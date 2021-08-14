@@ -1,12 +1,12 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 124, warn = 125, info = 69
+err = 124, warn = 125, info = 68
 IG Publisher Version: 1.1.77
-Generated Sat Aug 14 09:56:46 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Sat Aug 14 10:09:26 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 500 / 43 / 0
- /github/workspace/fsh-generated/resources/CarePlan-1-medication-treatment : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/CarePlan-1-medication-treatment : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-example-15-of-medication-treatment2 : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-example-15c-of-medication-treatment : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-total-view : 2 / 0 / 4
@@ -8503,7 +8503,6 @@ ERROR: /github/workspace/output/MedicationDispense-4-2-medication-dispense.json.
             }
             feedbackurl = feedbackurl + '
 == /github/workspace/fsh-generated/resources/CarePlan-1-medication-treatment.json ==
-INFORMATION: CarePlan/1-medication-treatment: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/CarePlan-example-15-of-medication-treatment2.json ==
 INFORMATION: CarePlan/example-15-of-medication-treatment2: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/CarePlan-example-15c-of-medication-treatment.json ==
