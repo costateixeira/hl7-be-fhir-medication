@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "BeCSMedicationSummaryTypes"];
   fhir:CodeSystem.title [ fhir:value "[Code System] - Medication Summary Types "];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-08-14T08:53:14+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-08-14T09:10:14+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Belgium"];
   fhir:CodeSystem.contact [
      fhir:index 0;
