@@ -28,7 +28,7 @@
   </actor>
   <instance>
     <resourceId value="1-medication-presc"/>
-    <resourceType value="MedRecordOrder"/>
+    <resourceType value="MedicationRequest"/>
     <name value="New Prescription"/>
   </instance>
   <instance>
@@ -38,17 +38,17 @@
   </instance>
   <instance>
     <resourceId value="1-medication-treatmentLine"/>
-    <resourceType value="MedRecordTreatmentLine"/>
+    <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line"/>
   </instance>
   <instance>
     <resourceId value="1-medication-treatment"/>
-    <resourceType value="MedRecordTreatment"/>
+    <resourceType value="CarePlan"/>
     <name value="New Treatment"/>
   </instance>
   <instance>
     <resourceId value="1-medication-dispense"/>
-    <resourceType value="MedRecordDispense"/>
+    <resourceType value="MedicationDispense"/>
     <name value="New dispense"/>
   </instance>
   <process>
