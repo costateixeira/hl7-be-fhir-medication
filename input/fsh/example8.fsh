@@ -1,4 +1,4 @@
-Instance: 8-prescription 
+Instance: 8-prescription
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."
@@ -27,7 +27,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 8-dispense 
+Instance: 8-dispense
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."
@@ -66,7 +66,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 8-administration 
+Instance: 8-administration
 InstanceOf: MedRecordAdministration
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."

@@ -28,7 +28,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 7-dispense 
+Instance: 7-dispense
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. 
@@ -69,7 +69,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 7-usage 
+Instance: 7-usage
 InstanceOf: MedRecordUsage
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. 
@@ -95,7 +95,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 7-treatmentLine 
+Instance: 7-treatmentLine
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -115,7 +115,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 7-treatment 
+Instance: 7-treatment
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""
