@@ -25,7 +25,7 @@
      fhir:Extension.valueReference [
        fhir:Reference.identifier [
          fhir:Identifier.system [ fhir:value "http://treatment-identifiers.com" ];
-         fhir:Identifier.value [ fhir:value "b40abc28-9454-405b-bc81-7571a9a05f3a" ]
+         fhir:Identifier.value [ fhir:value "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d" ]
        ]
      ]
   ];
