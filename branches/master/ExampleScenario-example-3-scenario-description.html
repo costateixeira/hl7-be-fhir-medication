@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\ExampleScenario 3 - Change VOS - Description - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\ExampleScenario 3 - Dispense medication before the prescription is available - Description - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -181,7 +181,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExampleScenario 3 - Change VOS</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExampleScenario 3 - Dispense medication before the prescription is available</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -309,7 +309,7 @@
                      <td></td>
                      <td>Dr. Durant</td>
                      <td>Vault</td>
-                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-medication-presc">New Prescription</a></td>
+                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-prescription">Original Prescription</a></td>
                      <td></td>
                   </tr>
                   <tr><a href="#4"></a><td><a name="p2">4</a></td>
@@ -317,7 +317,7 @@
                      <td></td>
                      <td>Vault</td>
                      <td>Vault</td>
-                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-medication-treatment">New Treatment</a></td>
+                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-treatment">New Treatment</a></td>
                      <td></td>
                   </tr>
                   <tr><a href="#5"></a><td><a name="p2">5</a></td>
@@ -325,7 +325,7 @@
                      <td></td>
                      <td>Vault</td>
                      <td>Vault</td>
-                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-medication-treatmentLine">New Treatment Line</a></td>
+                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-treatmentLine">New Treatment Line</a></td>
                      <td></td>
                   </tr>
                   <tr><a href="#6"></a><td><a name="p2">6</a></td>
@@ -337,30 +337,38 @@
                      <td><a href="ExampleScenario-example-3-scenario-resources.html#EB">Empty Bundle</a></td>
                   </tr>
                   <tr><a href="#7"></a><td><a name="p2">7</a></td>
-                     <td>Refuse one dispense</td>
+                     <td>Dispense original dispense</td>
                      <td></td>
                      <td>Pharmacist</td>
                      <td>Vault</td>
-                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-medication-dispense">New dispense</a></td>
+                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-dispense">Dispense of product prescribed</a></td>
                      <td></td>
                   </tr>
                   <tr><a href="#8"></a><td><a name="p2">8</a></td>
-                     <td>Dispense new product</td>
+                     <td>Dispense ancilliary product</td>
                      <td></td>
                      <td>Pharmacist</td>
                      <td>Vault</td>
-                     <td><a href="ExampleScenario-example-3-scenario-resources.html#"></a></td>
+                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-2-dispense">Ancilliary Dispense of a product</a></td>
                      <td></td>
                   </tr>
                   <tr><a href="#9"></a><td><a name="p2">9</a></td>
-                     <td>Goes to appointment</td>
+                     <td>Report of situation</td>
+                     <td></td>
+                     <td>Pharmacist</td>
+                     <td>Dr. Durant</td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr><a href="#10"></a><td><a name="p2">10</a></td>
+                     <td>Goes to new appointment</td>
                      <td></td>
                      <td>Pia Peters</td>
                      <td>Dr. Durant</td>
                      <td></td>
                      <td></td>
                   </tr>
-                  <tr><a href="#10"></a><td><a name="p2">10</a></td>
+                  <tr><a href="#11"></a><td><a name="p2">11</a></td>
                      <td>Get Patient's Medication</td>
                      <td></td>
                      <td>Dr. Durant</td>
@@ -368,13 +376,13 @@
                      <td></td>
                      <td><a href="ExampleScenario-example-3-scenario-resources.html#EB">Empty Bundle</a></td>
                   </tr>
-                  <tr><a href="#11"></a><td><a name="p2">11</a></td>
+                  <tr><a href="#12"></a><td><a name="p2">12</a></td>
                      <td>Create new prescription</td>
                      <td></td>
                      <td>Dr. Durant</td>
                      <td>Vault</td>
                      <td></td>
-                     <td><a href="ExampleScenario-example-3-scenario-resources.html#"></a></td>
+                     <td><a href="ExampleScenario-example-3-scenario-resources.html#3-2-prescription">New Prescription</a></td>
                   </tr>
                </tbody>
             </table>
@@ -427,7 +435,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 10:32+0000">2021-08-16</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 16:41+0000">2021-08-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
