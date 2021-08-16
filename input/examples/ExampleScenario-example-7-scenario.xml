@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="example-7-scenario"/>
+  <name value="DispensePrescriptionAndIsolatedDispense"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-09-11T00:00:00.000+01:00"/>
+  <actor>
+    <actorId value="PATIENT"/>
+    <type value="person"/>
+    <name value="Pia Peters"/>
+  </actor>
+  <actor>
+    <actorId value="GP"/>
+    <type value="person"/>
+    <name value="Dr. Durant"/>
+  </actor>
+  <actor>
+    <actorId value="VAULT"/>
+    <type value="entity"/>
+    <name value="Vault"/>
+  </actor>
+  <actor>
+    <actorId value="PHARM"/>
+    <type value="person"/>
+    <name value="Pharmacist"/>
+  </actor>
+  <instance>
+    <resourceId value="7-medication-presc"/>
+    <resourceType value="MedicationRequest"/>
+    <name value="New prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="EB"/>
+    <resourceType value="Bundle"/>
+    <name value="Empty Bundle"/>
+  </instance>
+  <instance>
+    <resourceId value="7-medication-treatmentLine"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="New Treatment Line based on prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="7-medication-treatment"/>
+    <resourceType value="CarePlan"/>
+    <name value="New Treatment based on prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="7-medication-dispense"/>
+    <resourceType value="MedicationDispense"/>
+    <name value="Dispense"/>
+  </instance>
+  <instance>
+    <resourceId value="7-medication-usage"/>
+    <resourceType value="MedicationDispense"/>
+    <name value="Usage report"/>
+  </instance>
+  <process>
+    <title value="Change brand from prescription on dispense because of out of stock"/>
+    <description value="description"/>
+    <preConditions value="The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication."/>
+    <postConditions value="It is possible to capture that the original prescription was and that the dispense was refused"/>
+    <step>
+      <operation>
+        <number value="1"/>
+        <name value="Goes to appointment"/>
+        <initiator value="PATIENT"/>
+        <receiver value="GP"/>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="2"/>
+        <name value="Get Patient&#39;s Medication"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <response>
+          <resourceId value="EB"/>
+        </response>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="3"/>
+        <name value="Create new prescription"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-medication-presc"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="4"/>
+        <name value="Create new treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-medication-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="5"/>
+        <name value="Create new treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-medication-treatmentLine"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="6"/>
+        <name value="Get patient&#39;s Prescriptions"/>
+        <initiator value="PHARM"/>
+        <receiver value="VAULT"/>
+        <response>
+          <resourceId value="EB"/>
+        </response>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="7"/>
+        <name value="Dispense"/>
+        <initiator value="PHARM"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-medication-dispense"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="7"/>
+        <name value="Usage Report of non-usage"/>
+        <initiator value="PATIENT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-medication-usage"/>
+        </request>
+      </operation>
+    </step>
+  </process>
+</ExampleScenario>

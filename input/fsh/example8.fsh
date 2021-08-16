@@ -94,7 +94,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * request.identifier.system = "http://prescription-identifiers.com"
 * request.identifier.value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
  
-* extension[treatmentPlan].valueReference.identifier.value = "b40abc28-9454-405b-bc81-7571a9a05f3a"
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 Instance: 8-medication-usage 
@@ -119,5 +119,57 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * informationSource.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * informationSource.identifier.value = "64110219106"
 
-* extension[treatmentPlan].valueReference.identifier.value = "b40abc28-9454-405b-bc81-7571a9a05f3a"
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+
+Instance: pharyngitis-condition
+InstanceOf: Condition
+Usage: #example
+Title: "Pharyngitis Condition"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* code = http://snomed.ct#62315008 "Diarrhea (finding)"
+
+
+Instance: 8-medication-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#6734  "ciprofloxacine oral 500 mg"
+
+* status = #active
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: 8-medication-treatment 
+InstanceOf: MedRecordTreatment
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatments-identifiers.com"
+* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* created = "2021-07-19T13:00:00+02:00"
+
+* status = #active 
+* intent = #plan
+* title = "Treament of pharyngitis"
+* addresses = Reference(pharyngitis-condition)
