@@ -85,8 +85,7 @@ InstanceOf: Bundle
 Usage: #example
 Title: "Empty Bundle"
 
-* type = #document
-
+* type = #searchset 
 
 
 Instance: hyperlipidemia-condition
