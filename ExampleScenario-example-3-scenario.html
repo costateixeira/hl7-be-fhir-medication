@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\ExampleScenario 3 - Change VOS - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\ExampleScenario 3 - Dispense medication before the prescription is available - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -181,7 +181,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExampleScenario 3 - Change VOS</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExampleScenario 3 - Dispense medication before the prescription is available</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -218,10 +218,11 @@
       																Pre-Conditions
       															
    </h4>
-   <p>The patient visits their GP and is prescribed paracetamol 1000 mg cp (TID) for headaches.
-      In the pharmacy, the pharmacist understands the the patient has problems swallowing
-      the pill itself, so it trades the 1000 mg strength, for 500 mg and indicates that
-      the patient should take 2x500 mg every 8h and not 1x1000mg every 8 hours.
+   <p>After a GP visit, the patient Pia Peters (75 years) is prescribed diclofenac for arthritis.While
+      making the dispense, the pharmacist understands that the patient has a history of
+      stomachal ulcers. Since diclofenac creates stomachal irritations, the pharmacy also
+      dispenses a stomach protector to prevent any case of stomach irritation or bleeding
+      and advises to tell the information to the GP.
    </p>
    <h4><a name="postconditions"></a>
       																Post Conditions
@@ -229,7 +230,7 @@
    </h4>
    <p>A new treatment and treatmentLine are created, inside the new treatment line, a prescription
       and dispense are contained and is possible to see which medication is associated with
-      each
+      each.
    </p>
    <p></p>
 </div> 
@@ -282,7 +283,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 10:32+0000">2021-08-16</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 16:41+0000">2021-08-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

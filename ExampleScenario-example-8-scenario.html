@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\ - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.38"}
-    h3,h4,h5,h6{--heading-prefix:"7.38"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.39"}
+    h3,h4,h5,h6{--heading-prefix:"7.39"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -181,7 +181,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b></b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -218,17 +218,18 @@
       																Pre-Conditions
       															
    </h4>
-   <p>The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches.
-      The pharmacist, after a conversation with the patient, got to know that he was doing
-      Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril,
-      the pharmacist chose to refuse the dispense of the medication.
+   <p>After a GP visit, the patient Pia Peters is prescribed amoxicillin + clavulanic acid
+      875 mg + 125 mg for a pharyngitis for the conclusion of the package. The pharmacist,
+      dispensed Amoxiclav Sandoz 875/125.  However, after 1 take, the patient stopped doing
+      the medication because the patient had an alergic reaction.  
    </p>
    <h4><a name="postconditions"></a>
       																Post Conditions
       															
    </h4>
-   <p>It is possible to capture that the original prescription was and that the dispense
-      was refused
+   <p>A grouping of the prescription, dispense, and administration are coupled together
+      within a treatment line, the new prescription should start a new treatment line under
+      the same treatment.
    </p>
    <p></p>
 </div> 
@@ -281,7 +282,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 10:32+0000">2021-08-16</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 16:41+0000">2021-08-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
