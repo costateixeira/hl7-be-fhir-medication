@@ -27,12 +27,12 @@
     <name value="Pharmacist"/>
   </actor>
   <instance>
-    <resourceId value="5-medication-dispense"/>
+    <resourceId value="5-dispense"/>
     <resourceType value="MedicationDispense"/>
     <name value="Dispense for Prescription"/>
   </instance>
   <instance>
-    <resourceId value="5-medication-presc"/>
+    <resourceId value="5-prescription"/>
     <resourceType value="MedicationRequest"/>
     <name value="New prescription"/>
   </instance>
@@ -42,12 +42,12 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="5-medication-treatmentLine"/>
+    <resourceId value="5-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="5-medication-treatment"/>
+    <resourceId value="5-treatment"/>
     <resourceType value="CarePlan"/>
     <name value="New Treatment based on prescription"/>
   </instance>
@@ -82,7 +82,7 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="5-medication-presc"/>
+          <resourceId value="5-prescription"/>
         </request>
       </operation>
     </step>
@@ -93,7 +93,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="5-medication-treatment"/>
+          <resourceId value="5-treatment"/>
         </request>
       </operation>
     </step>
@@ -104,7 +104,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="5-medication-treatmentLine"/>
+          <resourceId value="5-treatmentLine"/>
         </request>
       </operation>
     </step>
@@ -126,7 +126,7 @@
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="5-medication-dispense"/>
+          <resourceId value="5-dispense"/>
         </request>
       </operation>
     </step>

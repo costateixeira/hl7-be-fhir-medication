@@ -27,7 +27,7 @@
     <name value="Pharmacist"/>
   </actor>
   <instance>
-    <resourceId value="2a-medication-presc"/>
+    <resourceId value="2a-prescription"/>
     <resourceType value="MedicationRequest"/>
     <name value="New Prescription"/>
   </instance>
@@ -37,17 +37,17 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="2a-medication-treatmentLine"/>
+    <resourceId value="2a-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line"/>
   </instance>
   <instance>
-    <resourceId value="2a-medication-treatment"/>
+    <resourceId value="2a-treatment"/>
     <resourceType value="CarePlan"/>
     <name value="New Treatment"/>
   </instance>
   <instance>
-    <resourceId value="2a-medication-dispense"/>
+    <resourceId value="2a-dispense"/>
     <resourceType value="MedicationDispense"/>
     <name value="New dispense"/>
   </instance>
@@ -82,7 +82,7 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="2a-medication-presc"/>
+          <resourceId value="2a-prescription"/>
         </request>
       </operation>
     </step>
@@ -93,7 +93,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="2a-medication-treatment"/>
+          <resourceId value="2a-treatment"/>
         </request>
       </operation>
     </step>
@@ -104,7 +104,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="2a-medication-treatmentLine"/>
+          <resourceId value="2a-treatmentLine"/>
         </request>
       </operation>
     </step>
@@ -126,7 +126,7 @@
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="2a-medication-dispense"/>
+          <resourceId value="2a-dispense"/>
         </request>
       </operation>
     </step>

@@ -140,7 +140,7 @@
             <reference value="ExampleScenario/example-1-scenario" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="ExampleScenario - Change VOS" />
+         <name value="ExampleScenario 1 - Changing brand name in the same VOS" />
          <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
       </resource>
       <resource>
@@ -148,16 +148,16 @@
            <reference value="ExampleScenario/example-2-scenario" />
         </reference>
         <fhirVersion value="4.0.1" />
-        <name value="ExampleScenario 2 - Change VOS" />
-        <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+        <name value="ExampleScenario 2 - Changing by another medication from a different VOS" />
+        <description value="Prescribed medication is changed by another medication from a different VOS-cluster" />
      </resource>
      <resource>
       <reference>
          <reference value="ExampleScenario/example-3-scenario" />
       </reference>
       <fhirVersion value="4.0.1" />
-      <name value="ExampleScenario 3 - Change VOS" />
-      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+      <name value="ExampleScenario 3 - Dispense medication before the prescription is available" />
+      <description value="This example shows a dispense of a medication that is made before an existing prescription" />
    </resource>
 
    <resource>
@@ -165,8 +165,8 @@
        <reference value="ExampleScenario/example-4-scenario" />
     </reference>
     <fhirVersion value="4.0.1" />
-    <name value="ExampleScenario 4 - Change VOS" />
-    <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+    <name value="ExampleScenario 4 - Dispense of prescribed medication and of a product without a prescription" />
+    <description value="This example shows a dispense of two products. One that has a prescription and other that does not (and does not need one)." />
  </resource>
 
  <resource>
@@ -174,17 +174,35 @@
      <reference value="ExampleScenario/example-5-scenario" />
   </reference>
   <fhirVersion value="4.0.1" />
-  <name value="ExampleScenario 5 - Change VOS" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <name value="ExampleScenario 5 - Dispense of new brand medication because the old is unavailable" />
+  <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock." />
 </resource>
 <resource>
   <reference>
      <reference value="ExampleScenario/example-6-scenario" />
   </reference>
   <fhirVersion value="4.0.1" />
-  <name value="ExampleScenario 6 - Change VOS" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <name value="ExampleScenario 6 - Refusal to dispense the prescribed medication" />
+  <description value="This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication." />
 </resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-7-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 7 - Dispense of medication that was prescribed to take if needed, but was not taken" />
+  <description value="This example shows a prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. 
+  Then it is reported that the medication was not taken at all." />
+</resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-8-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end" />
+  <description value="This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction." />
+</resource>
+<!--     \\\\\\\\\\\\\\\\                    End of resources            \\\\\\\\\\\\\\\\\         -->
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

@@ -74,16 +74,6 @@ Title:    "Prescribed medication is changed by another medication from a differe
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: headache-condition
-InstanceOf: Condition
-Usage: #example
-Title: "Headache"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#25064002 "Acute headache"
-
 
 Instance: 2a-medication-treatmentLine 
 InstanceOf: MedRecordTreatmentLine

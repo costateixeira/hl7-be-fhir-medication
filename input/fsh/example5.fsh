@@ -1,4 +1,4 @@
-Instance: 5-medication-presc 
+Instance: 5-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock."
@@ -24,7 +24,7 @@ Title: "Dispense of new brand medication that is given because the old is unavai
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 5-medication-dispense 
+Instance: 5-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock."
@@ -66,7 +66,7 @@ Title:    "Dispense of new brand medication that is given because the old is una
 
 
 
-Instance: 5-medication-treatmentLine 
+Instance: 5-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -86,7 +86,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 5-medication-treatment 
+Instance: 5-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""

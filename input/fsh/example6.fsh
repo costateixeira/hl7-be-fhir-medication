@@ -1,4 +1,4 @@
-Instance: 6-medication-presc 
+Instance: 6-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication."
@@ -29,7 +29,7 @@ Title: "Refuse the dispense prescribed medication"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 6-medication-dispense 
+Instance: 6-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication."
@@ -75,7 +75,7 @@ WhenhandedOver serves as date for the encounter
 */ 
 
 
-Instance: 6-medication-treatmentLine 
+Instance: 6-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -95,7 +95,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 6-medication-treatment 
+Instance: 6-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""

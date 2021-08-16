@@ -17,11 +17,6 @@
     <name value="Dr. Durant"/>
   </actor>
   <actor>
-    <actorId value="NU"/>
-    <type value="person"/>
-    <name value="Nurse"/>
-  </actor>
-  <actor>
     <actorId value="VAULT"/>
     <type value="entity"/>
     <name value="Vault"/>
@@ -32,7 +27,7 @@
     <name value="Pharmacist"/>
   </actor>
   <instance>
-    <resourceId value="8-medication-presc"/>
+    <resourceId value="8-prescription"/>
     <resourceType value="MedicationRequest"/>
     <name value="New prescription"/>
   </instance>
@@ -42,30 +37,30 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="8-medication-treatmentLine"/>
+    <resourceId value="8-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="8-medication-treatment"/>
+    <resourceId value="8-treatment"/>
     <resourceType value="CarePlan"/>
     <name value="New Treatment based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="8-medication-dispense"/>
+    <resourceId value="8-dispense"/>
     <resourceType value="MedicationDispense"/>
     <name value="Dispense"/>
   </instance>
   <instance>
-    <resourceId value="8-medication-administration"/>
-    <resourceType value="MedicationDispense"/>
+    <resourceId value="8-administration"/>
+    <resourceType value="MedicationAdministration"/>
     <name value="Administration Report of a adverse reaction"/>
   </instance>
   <process>
-    <title value="Change brand from prescription on dispense because of out of stock"/>
+    <title value="Dispense of medication that was prescribed, but not taken till the end"/>
     <description value="description"/>
-    <preConditions value="The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication."/>
-    <postConditions value="It is possible to capture that the original prescription was and that the dispense was refused"/>
+    <preConditions value="After a GP visit, the patient Pia Peters is prescribed amoxicillin + clavulanic acid 875 mg + 125 mg for a pharyngitis for the conclusion of the package. The pharmacist, dispensed Amoxiclav Sandoz 875/125.  However, after 1 take, the patient stopped doing the medication because the patient had an alergic reaction.  "/>
+    <postConditions value="A grouping of the prescription, dispense, and administration are coupled together within a treatment line, the new prescription should start a new treatment line under the same treatment."/>
     <step>
       <operation>
         <number value="1"/>
@@ -92,7 +87,7 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="7-medication-presc"/>
+          <resourceId value="8-prescription"/>
         </request>
       </operation>
     </step>
@@ -103,7 +98,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="7-medication-treatment"/>
+          <resourceId value="8-treatment"/>
         </request>
       </operation>
     </step>
@@ -114,7 +109,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="7-medication-treatmentLine"/>
+          <resourceId value="8-treatmentLine"/>
         </request>
       </operation>
     </step>
@@ -136,24 +131,19 @@
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="7-medication-dispense"/>
+          <resourceId value="8-dispense"/>
         </request>
-      </operation>
-    </step>
-    <step>
-      <operation>
-        <number value="7"/>
-        <name value="Starts Administration"/>
-        <initiator value="NU"/>
-        <receiver value="PATIENT"/>
       </operation>
     </step>
     <step>
       <operation>
         <number value="8"/>
         <name value="Report Adverse Reaction and stops administration"/>
-        <initiator value="NU"/>
+        <initiator value="PATIENT"/>
         <receiver value="VAULT"/>
+        <request>
+          <resourceId value="8-administration"/>
+        </request>
       </operation>
     </step>
   </process>

@@ -44,15 +44,6 @@ Title:    ""
 
 * extension[basedOn].valueReference = Reference(example-15-of-medication-treatmentLine)
 
-Instance: reflux-condition
-InstanceOf: Condition
-Usage: #example
-Title: "Reflux Condition"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#266435005 "Gastro-oesophageal reflux disease without oesophagitis"
 
 
 Instance: example-15-of-medication-treatmentLine 

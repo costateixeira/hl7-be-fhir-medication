@@ -1,4 +1,4 @@
-Instance: 1-medication-presc 
+Instance: 1-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
@@ -27,7 +27,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 1-medication-dispense 
+Instance: 1-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Title: "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
@@ -71,19 +71,7 @@ Description: "This example shows a prescription that is made by brand name and t
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-
-Instance: hypertension-condition
-InstanceOf: Condition
-Usage: #example
-Title: "Hypertension"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#38341003 "Hypertensive disorder"
-
-
-Instance: 1-medication-treatmentLine 
+Instance: 1-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -103,7 +91,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 1-medication-treatment 
+Instance: 1-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""

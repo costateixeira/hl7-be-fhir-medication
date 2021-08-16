@@ -27,17 +27,17 @@
     <name value="Pharmacist"/>
   </actor>
   <instance>
-    <resourceId value="4-1-medication-dispense"/>
+    <resourceId value="4-1-dispense"/>
     <resourceType value="MedicationDispense"/>
     <name value="Dispense for Prescription"/>
   </instance>
   <instance>
-    <resourceId value="4-1-medication-presc"/>
+    <resourceId value="4-1-prescription"/>
     <resourceType value="MedicationRequest"/>
     <name value="New prescription"/>
   </instance>
   <instance>
-    <resourceId value="4-2-medication-dispense"/>
+    <resourceId value="4-2-dispense"/>
     <resourceType value="MedicationDispense"/>
     <name value="Isolated dispense"/>
   </instance>
@@ -47,30 +47,30 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="4-1-medication-treatmentLine"/>
+    <resourceId value="4-1-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="4-1-medication-treatment"/>
+    <resourceId value="4-1-treatment"/>
     <resourceType value="CarePlan"/>
     <name value="New Treatment based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="4-2-medication-treatmentLine"/>
+    <resourceId value="4-2-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line based on dispense"/>
   </instance>
   <instance>
-    <resourceId value="4-2-medication-treatment"/>
+    <resourceId value="4-2-treatment"/>
     <resourceType value="CarePlan"/>
     <name value="New Treatment based on dispense"/>
   </instance>
   <process>
-    <title value="Change VOS from prescription on dispense"/>
+    <title value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription"/>
     <description value="description"/>
     <preConditions value="The patient visits their GP and is prescribed Rosuvastatin 10 mg cp for cholesterol. After reaching the pharmacy, Crestor 10 is dispensed facing that prescription. Additionally, Dafalgan compr. 20x 500mg (OTC) is also dispensed due to a complaint of a minor toothache."/>
-    <postConditions value="A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each. Additionally, a new treatment and treatment line are created based on the dispense of Dafalgan."/>
+    <postConditions value="This should result in two treatment lines. One with prescription and dispense and one with only dispense."/>
     <step>
       <operation>
         <number value="1"/>
@@ -97,7 +97,7 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="4-medication-presc"/>
+          <resourceId value="4-prescription"/>
         </request>
       </operation>
     </step>
@@ -108,7 +108,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="4-1-medication-treatment"/>
+          <resourceId value="4-1-treatment"/>
         </request>
       </operation>
     </step>
@@ -119,7 +119,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="4-1-medication-treatmentLine"/>
+          <resourceId value="4-1-treatmentLine"/>
         </request>
       </operation>
     </step>
@@ -141,7 +141,7 @@
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="4-1-medication-dispense"/>
+          <resourceId value="4-1-dispense"/>
         </request>
       </operation>
     </step>
@@ -152,7 +152,7 @@
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="4-2-medication-dispense"/>
+          <resourceId value="4-2-dispense"/>
         </request>
       </operation>
     </step>
@@ -163,7 +163,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="4-2-medication-treatment"/>
+          <resourceId value="4-2-treatment"/>
         </request>
       </operation>
     </step>
@@ -174,7 +174,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="4-2-medication-treatmentLine"/>
+          <resourceId value="4-2-treatmentLine"/>
         </request>
       </operation>
     </step>

@@ -1,4 +1,4 @@
-Instance: 8-medication-presc 
+Instance: 8-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."
@@ -27,7 +27,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 8-medication-dispense 
+Instance: 8-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."
@@ -66,7 +66,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 8-medication-administration 
+Instance: 8-administration 
 InstanceOf: MedRecordAdministration
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."
@@ -97,7 +97,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 8-medication-usage 
+Instance: 8-usage 
 InstanceOf: MedRecordUsage
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."
@@ -123,19 +123,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-
-Instance: pharyngitis-condition
-InstanceOf: Condition
-Usage: #example
-Title: "Pharyngitis Condition"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#62315008 "Diarrhea (finding)"
-
-
-Instance: 8-medication-treatmentLine 
+Instance: 8-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -155,7 +143,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 8-medication-treatment 
+Instance: 8-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""

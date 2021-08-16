@@ -1,4 +1,4 @@
-Instance: 4-medication-presc 
+Instance: 4-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a dispense of two products. One that has a prescription and other that does not (and does not need one)"
@@ -29,7 +29,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 4-1-medication-dispense 
+Instance: 4-1-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -68,7 +68,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 4-2-medication-dispense 
+Instance: 4-2-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -106,18 +106,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 //new treatmentLine here since its another issue
 
 
-Instance: hyperlipidemia-condition
-InstanceOf: Condition
-Usage: #example
-Title: "Hyperlipidemia"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#55822004 "Hyperlipidemia (disorder)"
-
-
-Instance: 4-1-medication-treatmentLine 
+Instance: 4-1-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -137,7 +126,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 4-1-medication-treatment 
+Instance: 4-1-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""
@@ -157,18 +146,8 @@ Title:    ""
 * addresses = Reference(hyperlipidemia-condition)
 
 
-Instance: toothache-condition
-InstanceOf: Condition
-Usage: #example
-Title: "Toothache"
 
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#27355003 "Toothache (finding)"
-
-
-Instance: 4-2-medication-treatmentLine 
+Instance: 4-2-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -188,7 +167,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 4-2-medication-treatment 
+Instance: 4-2-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""

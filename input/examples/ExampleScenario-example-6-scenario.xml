@@ -27,7 +27,7 @@
     <name value="Pharmacist"/>
   </actor>
   <instance>
-    <resourceId value="6-medication-presc"/>
+    <resourceId value="6-prescription"/>
     <resourceType value="MedicationRequest"/>
     <name value="New prescription"/>
   </instance>
@@ -37,22 +37,22 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="6-medication-treatmentLine"/>
+    <resourceId value="6-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="6-medication-treatment"/>
+    <resourceId value="6-treatment"/>
     <resourceType value="CarePlan"/>
     <name value="New Treatment based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="6-medication-dispense"/>
+    <resourceId value="6-dispense"/>
     <resourceType value="MedicationDispense"/>
     <name value="Refused Dispense"/>
   </instance>
   <process>
-    <title value="Change brand from prescription on dispense because of out of stock"/>
+    <title value="Refuse the dispense prescribed medication"/>
     <description value="description"/>
     <preConditions value="The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication."/>
     <postConditions value="It is possible to capture that the original prescription was and that the dispense was refused"/>
@@ -82,7 +82,7 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="6-medication-presc"/>
+          <resourceId value="6-prescription"/>
         </request>
       </operation>
     </step>
@@ -93,7 +93,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="6-medication-treatment"/>
+          <resourceId value="6-treatment"/>
         </request>
       </operation>
     </step>
@@ -104,7 +104,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="6-medication-treatmentLine"/>
+          <resourceId value="6-treatmentLine"/>
         </request>
       </operation>
     </step>
@@ -126,7 +126,7 @@
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="6-medication-dispense"/>
+          <resourceId value="6-dispense"/>
         </request>
       </operation>
     </step>

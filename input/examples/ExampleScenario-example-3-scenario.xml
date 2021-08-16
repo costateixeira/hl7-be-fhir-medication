@@ -27,9 +27,9 @@
     <name value="Pharmacist"/>
   </actor>
   <instance>
-    <resourceId value="3-medication-dispense"/>
+    <resourceId value="3-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="New dispense"/>
+    <name value="Dispense of product prescribed"/>
   </instance>
   <instance>
     <resourceId value="EB"/>
@@ -37,25 +37,35 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="3-medication-treatmentLine"/>
+    <resourceId value="3-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
     <name value="New Treatment Line"/>
   </instance>
   <instance>
-    <resourceId value="3-medication-treatment"/>
+    <resourceId value="3-treatment"/>
     <resourceType value="CarePlan"/>
     <name value="New Treatment"/>
   </instance>
   <instance>
-    <resourceId value="3-medication-presc"/>
+    <resourceId value="3-prescription"/>
+    <resourceType value="MedicationRequest"/>
+    <name value="Original Prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="3-2-dispense"/>
+    <resourceType value="MedicationDispense"/>
+    <name value="Ancilliary Dispense of a product"/>
+  </instance>
+  <instance>
+    <resourceId value="3-2-prescription"/>
     <resourceType value="MedicationRequest"/>
     <name value="New Prescription"/>
   </instance>
   <process>
-    <title value="Change VOS from prescription on dispense"/>
+    <title value="Dispense of medication before a existing prescription"/>
     <description value="description"/>
-    <preConditions value="The patient visits their GP and is prescribed paracetamol 1000 mg cp (TID) for headaches. In the pharmacy, the pharmacist understands the the patient has problems swallowing the pill itself, so it trades the 1000 mg strength, for 500 mg and indicates that the patient should take 2x500 mg every 8h and not 1x1000mg every 8 hours."/>
-    <postConditions value="A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each"/>
+    <preConditions value="After a GP visit, the patient Pia Peters (75 years) is prescribed diclofenac for arthritis.While making the dispense, the pharmacist understands that the patient has a history of stomachal ulcers. Since diclofenac creates stomachal irritations, the pharmacy also dispenses a stomach protector to prevent any case of stomach irritation or bleeding and advises to tell the information to the GP."/>
+    <postConditions value="A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each."/>
     <step>
       <operation>
         <number value="1"/>
@@ -82,7 +92,7 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="3-medication-presc"/>
+          <resourceId value="3-prescription"/>
         </request>
       </operation>
     </step>
@@ -93,7 +103,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="3-medication-treatment"/>
+          <resourceId value="3-treatment"/>
         </request>
       </operation>
     </step>
@@ -104,7 +114,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="3-medication-treatmentLine"/>
+          <resourceId value="3-treatmentLine"/>
         </request>
       </operation>
     </step>
@@ -122,36 +132,44 @@
     <step>
       <operation>
         <number value="7"/>
-        <name value="Refuse one dispense"/>
+        <name value="Dispense original dispense"/>
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="3-medication-dispense"/>
+          <resourceId value="3-dispense"/>
         </request>
       </operation>
     </step>
     <step>
       <operation>
         <number value="8"/>
-        <name value="Dispense new product"/>
+        <name value="Dispense ancilliary product"/>
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="3-2-medication-dispense"/>
+          <resourceId value="3-2-dispense"/>
         </request>
       </operation>
     </step>
     <step>
       <operation>
         <number value="9"/>
-        <name value="Goes to appointment"/>
-        <initiator value="PATIENT"/>
+        <name value="Report of situation"/>
+        <initiator value="PHARM"/>
         <receiver value="GP"/>
       </operation>
     </step>
     <step>
       <operation>
         <number value="10"/>
+        <name value="Goes to new appointment"/>
+        <initiator value="PATIENT"/>
+        <receiver value="GP"/>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="11"/>
         <name value="Get Patient&#39;s Medication"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
@@ -162,12 +180,12 @@
     </step>
     <step>
       <operation>
-        <number value="11"/>
+        <number value="12"/>
         <name value="Create new prescription"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <response>
-          <resourceId value="3-2-medication-presc"/>
+          <resourceId value="3-2-prescription"/>
         </response>
       </operation>
     </step>
