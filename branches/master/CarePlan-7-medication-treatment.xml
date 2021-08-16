@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="7-medication-treatment"/>
+  <meta>
+    <profile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0d462dac-513a-4fb0-a2fe-fb7f53b27c5d</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>title</b>: Diarrhea Prevention</p><p><b>subject</b>: <span></span></p><p><b>created</b>: Jul 19, 2021, 11:00:00 AM</p><p><b>addresses</b>: <a href="Condition-diarrhea-condition.html">Generated Summary: <span title="Codes: {http://snomed.ct 62315008}">Diarrhea (finding)</span></a></p></div>
+  </text>
+  <identifier>
+    <system value="http://treatments-identifiers.com"/>
+    <value value="0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="plan"/>
+  <title value="Diarrhea Prevention"/>
+  <subject>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="64110219106"/>
+    </identifier>
+  </subject>
+  <created value="2021-07-19T13:00:00+02:00"/>
+  <addresses>
+    <reference value="Condition/diarrhea-condition"/>
+  </addresses>
+</CarePlan>

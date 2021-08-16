@@ -56,6 +56,20 @@
     "name": "DispensePrescriptionAndIsolatedDispense"
   },
   {
+    "id": "example-7-scenario",
+    "type": "ExampleScenario",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-7-scenario",
+    "version": "0.2.0",
+    "name": "DispensePrescriptionAndIsolatedDispense"
+  },
+  {
+    "id": "example-8-scenario",
+    "type": "ExampleScenario",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-8-scenario",
+    "version": "0.2.0",
+    "name": "DispensePrescriptionAndIsolatedDispense"
+  },
+  {
     "id": "hl7.be.fhir.medicationig",
     "type": "ImplementationGuide",
     "url": "https://www.hl7belgium.be/fhir/ImplementationGuide/hl7.be.fhir.medicationig",

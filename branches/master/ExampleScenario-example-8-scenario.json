@@ -1,0 +1,195 @@
+{
+  "resourceType": "ExampleScenario",
+  "id": "example-8-scenario",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>https://www.hl7belgium.be/fhir/ExampleScenario/example-8-scenario</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: DispensePrescriptionAndIsolatedDispense</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href=\"http://hl7belgium.org\">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}\">Belgium</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: NU</p><p><b>type</b>: person</p><p><b>name</b>: Nurse</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 8-medication-presc</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: New prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 8-medication-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 8-medication-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 8-medication-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 8-medication-administration</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Administration Report of a adverse reaction</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Change brand from prescription on dispense because of out of stock</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication.</p><p><b>postConditions</b>: It is possible to capture that the original prescription was and that the dispense was refused</p><blockquote><p><b>step</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>1</td><td>Goes to appointment</td><td>PATIENT</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Get Patient's Medication</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Create new prescription</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>7-medication-presc</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Create new treatment</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>7-medication-treatment</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 5</p><p><b>name</b>: Create new treatment Line</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>7-medication-treatmentLine</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 6</p><p><b>name</b>: Get patient's Prescriptions</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 7</p><p><b>name</b>: Dispense</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>7-medication-dispense</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>7</td><td>Starts Administration</td><td>NU</td><td>PATIENT</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>8</td><td>Report Adverse Reaction and stops administration</td><td>NU</td><td>VAULT</td></tr></table></blockquote></blockquote></div>"
+  },
+  "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-8-scenario",
+  "version": "0.2.0",
+  "name": "DispensePrescriptionAndIsolatedDispense",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-09-11T00:00:00.000+01:00",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7belgium.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        }
+      ],
+      "text": "Belgium"
+    }
+  ],
+  "actor": [
+    {
+      "actorId": "PATIENT",
+      "type": "person",
+      "name": "Pia Peters"
+    },
+    {
+      "actorId": "GP",
+      "type": "person",
+      "name": "Dr. Durant"
+    },
+    {
+      "actorId": "NU",
+      "type": "person",
+      "name": "Nurse"
+    },
+    {
+      "actorId": "VAULT",
+      "type": "entity",
+      "name": "Vault"
+    },
+    {
+      "actorId": "PHARM",
+      "type": "person",
+      "name": "Pharmacist"
+    }
+  ],
+  "instance": [
+    {
+      "resourceId": "8-medication-presc",
+      "resourceType": "MedicationRequest",
+      "name": "New prescription"
+    },
+    {
+      "resourceId": "EB",
+      "resourceType": "Bundle",
+      "name": "Empty Bundle"
+    },
+    {
+      "resourceId": "8-medication-treatmentLine",
+      "resourceType": "MedicationStatement",
+      "name": "New Treatment Line based on prescription"
+    },
+    {
+      "resourceId": "8-medication-treatment",
+      "resourceType": "CarePlan",
+      "name": "New Treatment based on prescription"
+    },
+    {
+      "resourceId": "8-medication-dispense",
+      "resourceType": "MedicationDispense",
+      "name": "Dispense"
+    },
+    {
+      "resourceId": "8-medication-administration",
+      "resourceType": "MedicationDispense",
+      "name": "Administration Report of a adverse reaction"
+    }
+  ],
+  "process": [
+    {
+      "title": "Change brand from prescription on dispense because of out of stock",
+      "description": "description",
+      "preConditions": "The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication.",
+      "postConditions": "It is possible to capture that the original prescription was and that the dispense was refused",
+      "step": [
+        {
+          "operation": {
+            "number": "1",
+            "name": "Goes to appointment",
+            "initiator": "PATIENT",
+            "receiver": "GP"
+          }
+        },
+        {
+          "operation": {
+            "number": "2",
+            "name": "Get Patient's Medication",
+            "initiator": "GP",
+            "receiver": "VAULT",
+            "response": {
+              "resourceId": "EB"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "3",
+            "name": "Create new prescription",
+            "initiator": "GP",
+            "receiver": "VAULT",
+            "request": {
+              "resourceId": "7-medication-presc"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "4",
+            "name": "Create new treatment",
+            "initiator": "VAULT",
+            "receiver": "VAULT",
+            "request": {
+              "resourceId": "7-medication-treatment"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "5",
+            "name": "Create new treatment Line",
+            "initiator": "VAULT",
+            "receiver": "VAULT",
+            "request": {
+              "resourceId": "7-medication-treatmentLine"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "6",
+            "name": "Get patient's Prescriptions",
+            "initiator": "PHARM",
+            "receiver": "VAULT",
+            "response": {
+              "resourceId": "EB"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "7",
+            "name": "Dispense",
+            "initiator": "PHARM",
+            "receiver": "VAULT",
+            "request": {
+              "resourceId": "7-medication-dispense"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "7",
+            "name": "Starts Administration",
+            "initiator": "NU",
+            "receiver": "PATIENT"
+          }
+        },
+        {
+          "operation": {
+            "number": "8",
+            "name": "Report Adverse Reaction and stops administration",
+            "initiator": "NU",
+            "receiver": "VAULT"
+          }
+        }
+      ]
+    }
+  ]
+}
