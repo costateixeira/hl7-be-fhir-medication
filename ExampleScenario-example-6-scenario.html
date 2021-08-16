@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\ - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\ExampleScenario 6 - Change VOS - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"7.37"}
+    h3,h4,h5,h6{--heading-prefix:"7.37"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -185,7 +181,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExampleScenario 6 - Change VOS</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -197,49 +193,51 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  
 
-
-
-
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="MedicationDispense-6-1-medication-dispense.html">Narrative Content</a>
-  </li>
-
-
-  
-    <li>
-      <a href="MedicationDispense-6-1-medication-dispense.xml.html">XML</a>
+<!-- Option 1: Separate html per tab -->
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="ExampleScenario-example-6-scenario.html">Sequence</a>
     </li>
-  
-
-
-  
     <li>
-      <a href="MedicationDispense-6-1-medication-dispense.json.html">JSON</a>
+      <a href="ExampleScenario-example-6-scenario-description.html">Detailed Description</a>
     </li>
-  
-
-
-
-
-</ul>
-
+    <li>
+      <a href="ExampleScenario-example-6-scenario-resources.html">Resources</a>
+    </li>
+  </ul>
 
   <a name="root"> </a>
-  <h2 id="root">: MedicationDispense/6-1-medication-dispense - Change History</h2>
-  <p>History of changes for 6-1-medication-dispense .</p>
+  <h2 id="root">ExampleScenario: DispensePrescriptionAndIsolatedDispense</h2>
 
+  <div xmlns:fhir="http://hl7.org/fhir" id="sequence" class="tab-pane fade in active">
+   <p></p>
+   <h4><a name="preconditions"></a>
+      																Pre-Conditions
+      															
+   </h4>
+   <p>The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches.
+      The pharmacist, after a conversation with the patient, got to know that he was doing
+      Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril,
+      the pharmacist chose to refuse the dispense of the medication.
+   </p>
+   <h4><a name="postconditions"></a>
+      																Post Conditions
+      															
+   </h4>
+   <p>It is possible to capture that the original prescription was and that the dispense
+      was refused
+   </p>
+   <p></p>
+</div> 
+  <br/>
+<!--  <img alt="Scenario diagram" src="ExampleScenario-example-6-scenario.svg"/> -->
+  <object type="image/svg+xml" data="ExampleScenario-example-6-scenario.svg"></object>
   
-
-</div>
+  
+  <a name="root"> </a>
 
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
@@ -283,7 +281,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 09:39+0000">2021-08-16</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 10:05+0000">2021-08-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

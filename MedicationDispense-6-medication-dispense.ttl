@@ -5,9 +5,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationDispense/6-1-medication-dispense> a fhir:MedicationDispense;
+<https://www.hl7belgium.be/fhir/MedicationDispense/6-medication-dispense> a fhir:MedicationDispense;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "6-1-medication-dispense"];
+  fhir:Resource.id [ fhir:value "6-medication-dispense"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense";
@@ -105,7 +105,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationDispense/6-1-medication-dispense.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/MedicationDispense/6-medication-dispense.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+{
+  "resourceType": "CarePlan",
+  "id": "6-medication-treatment",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0d462dac-513a-4fb0-a2fe-fb7f53b27c5d</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>title</b>: Treatment for Hyperlipidemia</p><p><b>subject</b>: <span></span></p><p><b>created</b>: Jul 19, 2021, 11:00:00 AM</p><p><b>addresses</b>: <a href=\"Condition-headache-condition.html\">Generated Summary: <span title=\"Codes: {http://snomed.ct 25064002}\">Acute headache</span></a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://treatments-identifiers.com",
+      "value": "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "title": "Treatment for Hyperlipidemia",
+  "subject": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "64110219106"
+    }
+  },
+  "created": "2021-07-19T13:00:00+02:00",
+  "addresses": [
+    {
+      "reference": "Condition/headache-condition"
+    }
+  ]
+}

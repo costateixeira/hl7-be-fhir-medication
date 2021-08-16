@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationDispense",
-  "id": "6-1-medication-dispense",
+  "id": "6-medication-dispense",
   "meta": {
     "profile": [
       "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"

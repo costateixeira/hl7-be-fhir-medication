@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\Example MedicationDispense - 6-1-medication-dispense - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\ExampleScenario 6 - Change VOS - Resources - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.41"}
-    h3,h4,h5,h6{--heading-prefix:"7.41"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.37"}
+    h3,h4,h5,h6{--heading-prefix:"7.37"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -181,7 +181,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example MedicationDispense - 6-1-medication-dispense</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExampleScenario 6 - Change VOS</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -196,59 +196,116 @@
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 
-  
-
-
-
-
-
-
-<ul class="nav nav-tabs">
-
-  <li class="active">
-    <a href="#">Narrative Content</a>
-  </li>
-
-
-  
+<!-- Option 1: Separate html per tab -->
+  <ul class="nav nav-tabs">
     <li>
-      <a href="MedicationDispense-6-1-medication-dispense.xml.html">XML</a>
+      <a href="ExampleScenario-example-6-scenario.html">Sequence</a>
     </li>
-  
-
-
-  
     <li>
-      <a href="MedicationDispense-6-1-medication-dispense.json.html">JSON</a>
+      <a href="ExampleScenario-example-6-scenario-description.html">Detailed Description</a>
     </li>
+    <li class="active">
+      <a href="ExampleScenario-example-6-scenario-resources.html">Resources</a>
+    </li>
+  </ul>
   
-
-
-
-
-</ul>
-
-
   <a name="root"> </a>
+  <h2 id="root">ExampleScenario: DispensePrescriptionAndIsolatedDispense - Resources</h2>
+
+  <div xmlns:fhir="http://hl7.org/fhir" id="resources">
+   <p></p>
+   <h3>MedicationRequest</h3>
+   <div style="min-width:400px">
+      <table class="grid table-bordered" style="width:100%">
+         <tbody>
+            <tr>
+               <th>Artifact</th>
+               <th>Version</th>
+               <th>Description</th>
+            </tr>
+            <tr>
+               <td rowspan="1"><a name="" href="./MedicationRequest-6-medication-presc.html"><b>New prescription</b></a></td>
+               <td>(0)</td>
+               <td><b></b></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <p></p>
+   <h3>Bundle</h3>
+   <div style="min-width:400px">
+      <table class="grid table-bordered" style="width:100%">
+         <tbody>
+            <tr>
+               <th>Artifact</th>
+               <th>Version</th>
+               <th>Description</th>
+            </tr>
+            <tr>
+               <td rowspan="1"><a name="" href="./Bundle-EB.html"><b>Empty Bundle</b></a></td>
+               <td>(0)</td>
+               <td><b></b></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <p></p>
+   <h3>MedicationStatement</h3>
+   <div style="min-width:400px">
+      <table class="grid table-bordered" style="width:100%">
+         <tbody>
+            <tr>
+               <th>Artifact</th>
+               <th>Version</th>
+               <th>Description</th>
+            </tr>
+            <tr>
+               <td rowspan="1"><a name="" href="./MedicationStatement-6-medication-treatmentLine.html"><b>New Treatment Line based on prescription</b></a></td>
+               <td>(0)</td>
+               <td><b></b></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <p></p>
+   <h3>CarePlan</h3>
+   <div style="min-width:400px">
+      <table class="grid table-bordered" style="width:100%">
+         <tbody>
+            <tr>
+               <th>Artifact</th>
+               <th>Version</th>
+               <th>Description</th>
+            </tr>
+            <tr>
+               <td rowspan="1"><a name="" href="./CarePlan-6-medication-treatment.html"><b>New Treatment based on prescription</b></a></td>
+               <td>(0)</td>
+               <td><b></b></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <p></p>
+   <h3>MedicationDispense</h3>
+   <div style="min-width:400px">
+      <table class="grid table-bordered" style="width:100%">
+         <tbody>
+            <tr>
+               <th>Artifact</th>
+               <th>Version</th>
+               <th>Description</th>
+            </tr>
+            <tr>
+               <td rowspan="1"><a name="" href="./MedicationDispense-6-medication-dispense.html"><b>Refused Dispense</b></a></td>
+               <td>(0)</td>
+               <td><b></b></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div> 
 
 
-  <h2 id="root">Example MedicationDispense: Example MedicationDispense - 6-1-medication-dispense</h2>
-
-
-
-  <!-- insert intro if present -->
-  
-
-
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Based On</b>: <span/></p><p><b>identifier</b>: id: f219aa4e-5d10-4f3d-840d-a15e0dff2957</p><p><b>status</b>: declined</p><p><b>statusReason</b>: <span title="Codes: {http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason sddi}">Drug interacts with another drug</span></p><p><b>medication</b>: <span title="Codes: {https://vos-identifier.be/vos_product_codes 16279}">ibuproféne oral 400 mg</span></p><p><b>subject</b>: <span/></p><blockquote><p><b>performer</b></p><p><b>function</b>: <span title="Codes: ">dispenser</span></p><p><b>actor</b>: <span>Pharmacist</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: <span title="Codes: ">dispensingOrg</span></p><p><b>actor</b>: <span>Pharmacy X</span></p></blockquote><p><b>authorizingPrescription</b>: <span/></p><p><b>quantity</b>: 0 Box</p><p><b>whenHandedOver</b>: Jul 19, 2021, 11:00:00 AM</p></div>
-
-  <!-- insert notes if present -->
-  
-
-
-
-</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -256,6 +313,29 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -268,7 +348,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 09:39+0000">2021-08-16</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 10:05+0000">2021-08-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-16T09:39:15+00:00"/>
+  <date value="2021-08-16T10:05:00+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -327,24 +327,8 @@
         <reference value="ExampleScenario/example-1-scenario"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="ExampleScenario - Suspected Allergy"/>
-      <description value="Suspected Allergy, then refuted"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/example-4-scenario"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/example-3-scenario"/>
-      </reference>
+      <name value="ExampleScenario - Change VOS"/>
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -353,6 +337,31 @@
       <reference>
         <reference value="ExampleScenario/example-2-scenario"/>
       </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ExampleScenario 2 - Change VOS"/>
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/example-3-scenario"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ExampleScenario 3 - Change VOS"/>
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/example-4-scenario"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ExampleScenario 4 - Change VOS"/>
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -361,6 +370,20 @@
       <reference>
         <reference value="ExampleScenario/example-5-scenario"/>
       </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ExampleScenario 5 - Change VOS"/>
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/example-6-scenario"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ExampleScenario 6 - Change VOS"/>
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -410,16 +433,6 @@
       <name value="Patient Total Medication"/>
       <description value="Overview of the patient&#39;s medication"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationDispense"/>
-      </extension>
-      <reference>
-        <reference value="MedicationDispense/6-1-medication-dispense"/>
-      </reference>
-      <name value="Example MedicationDispense - 6-1-medication-dispense"/>
-      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -825,6 +838,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/6-medication-treatmentLine"/>
+      </reference>
+      <name value="Example MedicationStatement - 6-medication-treatmentLine"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -1054,6 +1077,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/6-medication-treatment"/>
+      </reference>
+      <name value="Treatment for Hyperlipidemia"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
@@ -1139,6 +1172,16 @@
       </reference>
       <name value="[Profile] - Summary View"/>
       <description value="The profile for Medication Summary view in a Medication Record"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/6-medication-dispense"/>
+      </reference>
+      <name value="Example MedicationDispense - 6-medication-dispense"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

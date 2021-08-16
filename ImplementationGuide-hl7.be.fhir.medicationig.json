@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-16T09:39:15+00:00",
+  "date": "2021-08-16T10:05:00+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -502,30 +502,8 @@
         "fhirVersion": [
           "4.0.1"
         ],
-        "name": "ExampleScenario - Suspected Allergy",
-        "description": "Suspected Allergy, then refuted"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExampleScenario"
-          }
-        ],
-        "reference": {
-          "reference": "ExampleScenario/example-4-scenario"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExampleScenario"
-          }
-        ],
-        "reference": {
-          "reference": "ExampleScenario/example-3-scenario"
-        }
+        "name": "ExampleScenario - Change VOS",
+        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
       },
       {
         "extension": [
@@ -536,7 +514,44 @@
         ],
         "reference": {
           "reference": "ExampleScenario/example-2-scenario"
-        }
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "ExampleScenario 2 - Change VOS",
+        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/example-3-scenario"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "ExampleScenario 3 - Change VOS",
+        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/example-4-scenario"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "ExampleScenario 4 - Change VOS",
+        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
       },
       {
         "extension": [
@@ -547,7 +562,28 @@
         ],
         "reference": {
           "reference": "ExampleScenario/example-5-scenario"
-        }
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "ExampleScenario 5 - Change VOS",
+        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/example-6-scenario"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "ExampleScenario 6 - Change VOS",
+        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
       },
       {
         "extension": [
@@ -612,19 +648,6 @@
         "name": "Patient Total Medication",
         "description": "Overview of the patient's medication",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/6-1-medication-dispense"
-        },
-        "name": "Example MedicationDispense - 6-1-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1155,6 +1178,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/6-medication-treatmentLine"
+        },
+        "name": "Example MedicationStatement - 6-medication-treatmentLine",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1453,6 +1489,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/6-medication-treatment"
+        },
+        "name": "Treatment for Hyperlipidemia",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
@@ -1563,6 +1612,19 @@
         },
         "name": "[Profile] - Summary View",
         "description": "The profile for Medication Summary view in a Medication Record"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/6-medication-dispense"
+        },
+        "name": "Example MedicationDispense - 6-medication-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
