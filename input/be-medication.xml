@@ -140,10 +140,51 @@
             <reference value="ExampleScenario/example-1-scenario" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="ExampleScenario - Suspected Allergy" />
-         <description value="Suspected Allergy, then refuted" />
+         <name value="ExampleScenario - Change VOS" />
+         <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
       </resource>
+      <resource>
+        <reference>
+           <reference value="ExampleScenario/example-2-scenario" />
+        </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="ExampleScenario 2 - Change VOS" />
+        <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+     </resource>
+     <resource>
+      <reference>
+         <reference value="ExampleScenario/example-3-scenario" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ExampleScenario 3 - Change VOS" />
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+   </resource>
 
+   <resource>
+    <reference>
+       <reference value="ExampleScenario/example-4-scenario" />
+    </reference>
+    <fhirVersion value="4.0.1" />
+    <name value="ExampleScenario 4 - Change VOS" />
+    <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+ </resource>
+
+ <resource>
+  <reference>
+     <reference value="ExampleScenario/example-5-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 5 - Change VOS" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-6-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 6 - Change VOS" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

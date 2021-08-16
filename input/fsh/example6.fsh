@@ -29,7 +29,7 @@ Title: "Refuse the dispense prescribed medication"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 6-1-medication-dispense 
+Instance: 6-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication."
@@ -75,19 +75,7 @@ WhenhandedOver serves as date for the encounter
 */ 
 
 
-
-Instance: hyperlipidemia-condition
-InstanceOf: Condition
-Usage: #example
-Title: "Hyperlipidemia"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* code = http://snomed.ct#55822004 "Hyperlipidemia (disorder)"
-
-
-Instance: 4-1-medication-treatmentLine 
+Instance: 6-medication-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -99,7 +87,7 @@ Title:    ""
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 
-* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#28035  "rosuvastatine oral 10 mg"
+* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#16279  "ibuproféne oral 400 mg"
 
 * status = #active
 
@@ -107,7 +95,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 4-1-medication-treatment 
+Instance: 6-medication-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""
@@ -124,4 +112,4 @@ Title:    ""
 * status = #active 
 * intent = #plan
 * title = "Treatment for Hyperlipidemia"
-* addresses = Reference(hyperlipidemia-condition)
+* addresses = Reference(headache-condition)
