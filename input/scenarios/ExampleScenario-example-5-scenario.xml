@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ExampleScenario xmlns="http://hl7.org/fhir">
-  <id value="example-1-scenario"/>
-  <name value="ChangedmedicationScenario"/>
+  <id value="example-5-scenario"/>
+  <name value="DispensePrescriptionAndIsolatedDispense"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-11T00:00:00.000+01:00"/>
@@ -27,9 +27,14 @@
     <name value="Pharmacist"/>
   </actor>
   <instance>
-    <resourceId value="1-medication-presc"/>
+    <resourceId value="5-medication-dispense"/>
+    <resourceType value="MedicationDispense"/>
+    <name value="Dispense for Prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="5-medication-presc"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New Prescription"/>
+    <name value="New prescription"/>
   </instance>
   <instance>
     <resourceId value="EB"/>
@@ -37,25 +42,20 @@
     <name value="Empty Bundle"/>
   </instance>
   <instance>
-    <resourceId value="1-medication-treatmentLine"/>
+    <resourceId value="5-medication-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
-    <name value="New Treatment Line"/>
+    <name value="New Treatment Line based on prescription"/>
   </instance>
   <instance>
-    <resourceId value="1-medication-treatment"/>
+    <resourceId value="5-medication-treatment"/>
     <resourceType value="CarePlan"/>
-    <name value="New Treatment"/>
-  </instance>
-  <instance>
-    <resourceId value="1-medication-dispense"/>
-    <resourceType value="MedicationDispense"/>
-    <name value="New dispense"/>
+    <name value="New Treatment based on prescription"/>
   </instance>
   <process>
-    <title value="Change Branded Prescription"/>
+    <title value="Change brand from prescription on dispense because of out of stock"/>
     <description value="description"/>
-    <preConditions value="The patient visits their GP and is prescribed Amlor for hypertension. The GP prescribes Amlor, but at the pharmacy there is no Amlor and amlodipin Sandoz is dispensed"/>
-    <postConditions value="A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each"/>
+    <preConditions value="The patient visits their GP and is prescribed dafalgan Forte 1000 mg cp (TID) for headaches. When reaching the pharmacy for dispense, the pharmacy does not have dafalgan Forte now but dispenses Paracetabs Forte 1000 mg instead."/>
+    <postConditions value="It is possible to capture that the original prescription was dafalgan but the dispense was Paracetabs"/>
     <step>
       <operation>
         <number value="1"/>
@@ -82,7 +82,7 @@
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="1-medication-presc"/>
+          <resourceId value="5-medication-presc"/>
         </request>
       </operation>
     </step>
@@ -93,7 +93,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="1-medication-treatment"/>
+          <resourceId value="5-medication-treatment"/>
         </request>
       </operation>
     </step>
@@ -104,7 +104,7 @@
         <initiator value="VAULT"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="1-medication-treatmentLine"/>
+          <resourceId value="5-medication-treatmentLine"/>
         </request>
       </operation>
     </step>
@@ -122,11 +122,11 @@
     <step>
       <operation>
         <number value="7"/>
-        <name value="Create new dispense"/>
+        <name value="Dispense new product"/>
         <initiator value="PHARM"/>
         <receiver value="VAULT"/>
         <request>
-          <resourceId value="1-medication-dispense"/>
+          <resourceId value="5-medication-dispense"/>
         </request>
       </operation>
     </step>

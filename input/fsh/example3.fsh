@@ -165,7 +165,7 @@ Title:    ""
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 
-* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#2399640  "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
+* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#9050  "diclofenac oral 50 mg"
 
 * status = #active
 

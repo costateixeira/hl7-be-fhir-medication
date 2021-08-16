@@ -7,14 +7,14 @@
   <experimental value="false"/>
   <date value="2019-09-11T00:00:00.000+01:00"/>
   <actor>
-    <actorId value="GP"/>
-    <type value="person"/>
-    <name value="Dr. Durant"/>
-  </actor>
-  <actor>
     <actorId value="PATIENT"/>
     <type value="person"/>
     <name value="Pia Peters"/>
+  </actor>
+  <actor>
+    <actorId value="GP"/>
+    <type value="person"/>
+    <name value="Dr. Durant"/>
   </actor>
   <actor>
     <actorId value="VAULT"/>

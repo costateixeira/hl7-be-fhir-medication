@@ -105,3 +105,104 @@ Title: "Dispense medication before the prescription of the general practitioner"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 //new treatmentLine here since its another issue
 
+
+Instance: hyperlipidemia-condition
+InstanceOf: Condition
+Usage: #example
+Title: "Hyperlipidemia"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* code = http://snomed.ct#55822004 "Hyperlipidemia (disorder)"
+
+
+Instance: 4-1-medication-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#28035  "rosuvastatine oral 10 mg"
+
+* status = #active
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: 4-1-medication-treatment 
+InstanceOf: MedRecordTreatment
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatments-identifiers.com"
+* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* created = "2021-07-19T13:00:00+02:00"
+
+* status = #active 
+* intent = #plan
+* title = "Treatment for Hyperlipidemia"
+* addresses = Reference(hyperlipidemia-condition)
+
+
+Instance: toothache-condition
+InstanceOf: Condition
+Usage: #example
+Title: "Toothache"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* code = http://snomed.ct#27355003 "Toothache (finding)"
+
+
+Instance: 4-2-medication-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#28035  "rosuvastatine oral 10 mg"
+
+* status = #active
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: 4-2-medication-treatment 
+InstanceOf: MedRecordTreatment
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatments-identifiers.com"
+* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* created = "2021-07-19T13:00:00+02:00"
+
+* status = #active 
+* intent = #plan
+* title = "Treatment for Toothache"
+* addresses = Reference(toothache-condition)
