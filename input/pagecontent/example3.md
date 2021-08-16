@@ -81,5 +81,6 @@ This example shows a dispense of a medication that is made before an existing pr
 
 ### Notes:  
 * The dispense starts a new treatment and treatmentline??? 
-* So, if the prescription occurs, it is connected to the same prescription line. 
-* dispense can be linked to the posterior prescription
+* So, if the prescription occurs, it is connected to the same prescription line throuhht the treatmentLine.
+* But what if the prescription is a different drug? 
+* 

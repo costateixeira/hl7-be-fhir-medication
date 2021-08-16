@@ -70,7 +70,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 
 
 
-Instance: example-3-2-of-medication-dispense 
+Instance: 3-2-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -109,7 +109,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 
 
 
-Instance: example-3-2-of-medication-presc 
+Instance: 3-2-medication-presc 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -139,3 +139,55 @@ Title: "Dispense medication before the prescription of the general practitioner"
 
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+
+Instance: arthritis-condition
+InstanceOf: Condition
+Usage: #example
+Title: "Arthritis"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* code = http://snomed.ct#11939005 "Acute arthritis (disorder)"
+
+
+Instance: 3-medication-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#2399640  "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
+
+* status = #active
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: 3-medication-treatment 
+InstanceOf: MedRecordTreatment
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatments-identifiers.com"
+* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* created = "2021-07-19T13:00:00+02:00"
+
+* status = #active 
+* intent = #plan
+* title = "Treatment for Arthritis"
+* addresses = Reference(arthritis-condition)
