@@ -3,11 +3,11 @@
 <ExampleScenario xmlns="http://hl7.org/fhir">
   <id value="example-3-scenario"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>https://www.hl7belgium.be/fhir/ExampleScenario/example-3-scenario</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: ChangedmedicationDifferentVOSScenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href="http://hl7belgium.org">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: <span title="Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}">Belgium</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Dispense of product prescribed</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Original Prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-2-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Ancilliary Dispense of a product</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-2-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: New Prescription</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Dispense of medication before a existing prescription</p><p><b>description</b>: description</p><p><b>preConditions</b>: After a GP visit, the patient Pia Peters (75 years) is prescribed diclofenac for arthritis.While making the dispense, the pharmacist understands that the patient has a history of stomachal ulcers. Since diclofenac creates stomachal irritations, the pharmacy also dispenses a stomach protector to prevent any case of stomach irritation or bleeding and advises to tell the information to the GP.</p><p><b>postConditions</b>: A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each.</p><blockquote><p><b>step</b></p><h3>Operations</h3><table class="grid"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>1</td><td>Goes to appointment</td><td>PATIENT</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Get Patient's Medication</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Create new prescription</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-prescription</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Create new treatment</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatment</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 5</p><p><b>name</b>: Create new treatment Line</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatmentLine</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 6</p><p><b>name</b>: Get patient's Prescriptions</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 7</p><p><b>name</b>: Dispense original dispense</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-dispense</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 8</p><p><b>name</b>: Dispense ancilliary product</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-2-dispense</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class="grid"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>9</td><td>Report of situation</td><td>PHARM</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class="grid"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>10</td><td>Goes to new appointment</td><td>PATIENT</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 11</p><p><b>name</b>: Get Patient's Medication</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 12</p><p><b>name</b>: Create new prescription</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-2-prescription</td></tr></table></blockquote></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>https://www.hl7belgium.be/fhir/ExampleScenario/example-3-scenario</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: DispenseBeforePrescription</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href="http://hl7belgium.org">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: <span title="Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}">Belgium</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Dispense of product prescribed</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Original Prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-2-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Ancilliary Dispense of a product</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 3-2-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: New Prescription</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Dispense of medication before a existing prescription</p><p><b>description</b>: description</p><p><b>preConditions</b>: After a GP visit, the patient Pia Peters (75 years) is prescribed diclofenac for arthritis.While making the dispense, the pharmacist understands that the patient has a history of stomachal ulcers. Since diclofenac creates stomachal irritations, the pharmacy also dispenses a stomach protector to prevent any case of stomach irritation or bleeding and advises to tell the information to the GP.</p><p><b>postConditions</b>: A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each.</p><blockquote><p><b>step</b></p><h3>Operations</h3><table class="grid"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>1</td><td>Goes to appointment</td><td>PATIENT</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Get Patient's Medication</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Create new prescription</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-prescription</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Create new treatment</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatment</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 5</p><p><b>name</b>: Create new treatment Line</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatmentLine</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 6</p><p><b>name</b>: Get patient's Prescriptions</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 7</p><p><b>name</b>: Dispense original dispense</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-dispense</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 8</p><p><b>name</b>: Dispense ancilliary product</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-2-dispense</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 9</p><p><b>name</b>: Update treatment</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatment</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 10</p><p><b>name</b>: Update treatment Line</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatmentLine</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class="grid"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>11</td><td>Report of situation</td><td>PHARM</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class="grid"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>12</td><td>Goes to new appointment</td><td>PATIENT</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 13</p><p><b>name</b>: Get Patient's Medication</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 14</p><p><b>name</b>: Create new prescription</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-2-prescription</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 15</p><p><b>name</b>: Update treatment</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatment</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 16</p><p><b>name</b>: Update treatment Line</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>3-treatmentLine</td></tr></table></blockquote></blockquote></blockquote></div>
   </text>
   <url value="https://www.hl7belgium.be/fhir/ExampleScenario/example-3-scenario"/>
   <version value="0.2.0"/>
-  <name value="ChangedmedicationDifferentVOSScenario"/>
+  <name value="DispenseBeforePrescription"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-11T00:00:00.000+01:00"/>
@@ -173,6 +173,28 @@
     <step>
       <operation>
         <number value="9"/>
+        <name value="Update treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="10"/>
+        <name value="Update treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatmentLine"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="11"/>
         <name value="Report of situation"/>
         <initiator value="PHARM"/>
         <receiver value="GP"/>
@@ -180,7 +202,7 @@
     </step>
     <step>
       <operation>
-        <number value="10"/>
+        <number value="12"/>
         <name value="Goes to new appointment"/>
         <initiator value="PATIENT"/>
         <receiver value="GP"/>
@@ -188,7 +210,7 @@
     </step>
     <step>
       <operation>
-        <number value="11"/>
+        <number value="13"/>
         <name value="Get Patient&#39;s Medication"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
@@ -199,13 +221,35 @@
     </step>
     <step>
       <operation>
-        <number value="12"/>
+        <number value="14"/>
         <name value="Create new prescription"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <response>
           <resourceId value="3-2-prescription"/>
         </response>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="15"/>
+        <name value="Update treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="16"/>
+        <name value="Update treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatmentLine"/>
+        </request>
       </operation>
     </step>
   </process>
