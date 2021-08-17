@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-16T16:55:59+00:00",
+  "date": "2021-08-17T08:16:10+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -616,6 +616,23 @@
         ],
         "name": "ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end",
         "description": "This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/1-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 1 - Dispense ",
+        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1279,19 +1296,6 @@
         },
         "name": "Example MedicationStatement - 8-treatmentLine",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/1-dispense"
-        },
-        "name": "Example MedicationDispense - 1-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [

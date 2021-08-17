@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-16T16:55:59+00:00"/>
+  <date value="2021-08-17T08:16:10+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -406,6 +406,18 @@
       <fhirVersion value="4.0.1"/>
       <name value="ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end"/>
       <description value="This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/1-dispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example 1 - Dispense "/>
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -913,16 +925,6 @@
       </reference>
       <name value="Example MedicationStatement - 8-treatmentLine"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationDispense"/>
-      </extension>
-      <reference>
-        <reference value="MedicationDispense/1-dispense"/>
-      </reference>
-      <name value="Example MedicationDispense - 1-dispense"/>
-      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
