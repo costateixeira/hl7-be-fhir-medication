@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-17T13:29:16+00:00"/>
+  <date value="2021-08-17T14:00:28+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -415,7 +415,7 @@
         <reference value="MedicationDispense/1-dispense"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Example 1 - Dispense "/>
+      <name value="Example 1 - Dispense"/>
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
     </resource>
@@ -550,6 +550,30 @@
       <name value="Example 3 - Treatment Line"/>
       <description value="Dispense medication before the prescription of the general practitioner"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/3-2-dispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example 3 - Dispense 2"/>
+      <description value="Dispense medication before the prescription of the general practitioner"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/3-2-prescription"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example 3 - prescription 2"/>
+      <description value="Dispense medication before the prescription of the general practitioner"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1337,26 +1361,6 @@
         <reference value="NamingSystem/be-ns-prescription-ids"/>
       </reference>
       <description value="Naming System - Prescription IDs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationDispense"/>
-      </extension>
-      <reference>
-        <reference value="MedicationDispense/3-2-dispense"/>
-      </reference>
-      <name value="Example MedicationDispense - 3-2-dispense"/>
-      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/3-2-prescription"/>
-      </reference>
-      <name value="Example MedicationRequest - 3-2-prescription"/>
-      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
