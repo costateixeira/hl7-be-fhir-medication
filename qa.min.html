@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for BEMedicationIG</h1>
- <p>Generated Mon Aug 16 16:56:40 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Tue Aug 17 08:16:57 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.be.fhir.medicationig, Canonical = https://www.hl7belgium.be/fhir</td></tr>
@@ -45,7 +45,7 @@
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>650</b></td><td><b>66</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>650</b></td><td><b>65</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_CarePlan-total-view"><b>/github/workspace/fsh-generated/resources/CarePlan-total-view</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -273,7 +273,7 @@
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-medication-substitution-dispense-v1"><b>/github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_input_be-medication"><b>/github/workspace/input/be-medication</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_input_be-medication"><b>/github/workspace/input/be-medication</b></a></td><td><b>1</b></td><td><b>5</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_input_examples_ExampleScenario-example-1-scenario"><b>/github/workspace/input/examples/ExampleScenario-example-1-scenario</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -444,9 +444,6 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/8-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/1-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/7-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -13119,7 +13116,7 @@
      <td><b>MedicationDispense.context.identifier.type.coding[0] (l59/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl813" class="flip" onclick="flip('l813')">Show Reasoning</span><div id="l813" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
+     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl812" class="flip" onclick="flip('l812')">Show Reasoning</span><div id="l812" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationDispense.quantity (l125/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
@@ -14034,7 +14031,10 @@
      <td><b>ImplementationGuide.definition</b></td><td><b>error</b></td><td title="ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed"><b>ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[33].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[15].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[34].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.definition.resource[87].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
@@ -15060,6 +15060,9 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ValueSet-be-vs-medication-summary-types.html">/github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.be.fhir.medicationig.html">/github/workspace/input/be-medication.xml</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ImplementationGuide-hl7.be.fhir.medicationig.html">/github/workspace/input/be-medication.xml</a></td><td><b>value should not start or finish with whitespace</b></td>

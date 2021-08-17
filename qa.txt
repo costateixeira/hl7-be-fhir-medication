@@ -3,9 +3,9 @@
 
 err = 139, warn = 155, info = 82
 IG Publisher Version: 1.1.77
-Generated Mon Aug 16 16:56:40 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Tue Aug 17 08:16:57 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
- Build Errors : 650 / 66 / 0
+ Build Errors : 650 / 65 / 0
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-2a-medication-treatment : 0 / 0 / 2
@@ -101,7 +101,7 @@ Generated Mon Aug 16 16:56:40 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/StructureDefinition-related-tl : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 1 / 1
- /github/workspace/input/be-medication : 1 / 4 / 1
+ /github/workspace/input/be-medication : 1 / 5 / 1
  /github/workspace/input/examples/ExampleScenario-example-1-scenario : 0 / 1 / 1
  /github/workspace/input/examples/ExampleScenario-example-2-scenario : 0 / 1 / 1
  /github/workspace/input/examples/ExampleScenario-example-3-scenario : 0 / 1 / 1
@@ -159,7 +159,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/6-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/8-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/8-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/1-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/7-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/8-usage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/1-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -11315,7 +11314,8 @@ WARNING: ValueSet/medication-substitution-dispense-v1: ValueSet.jurisdiction[0]:
 == /github/workspace/input/be-medication.xml ==
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 ERROR: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition: ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed
-WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[33].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[15].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[34].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[87].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.page.page[4].page[10].title: value should not start or finish with whitespace
 == /github/workspace/input/examples/ExampleScenario-example-1-scenario.xml ==
