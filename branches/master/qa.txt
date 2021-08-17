@@ -3,7 +3,7 @@
 
 err = 141, warn = 104, info = 82
 IG Publisher Version: 1.1.77
-Generated Tue Aug 17 11:54:00 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Tue Aug 17 13:29:59 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 650 / 14 / 0
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
@@ -29,6 +29,14 @@ Generated Tue Aug 17 11:54:00 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/Condition-pharyngitis-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-reflux-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-toothache-condition : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-1-scenario : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-2-scenario : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-3-scenario : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-4-scenario : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-5-scenario : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-6-scenario : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-7-scenario : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-8-scenario : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationAdministration-8-administration : 1 / 1 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-1-dispense : 1 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-10-1-dispense : 0 / 2 / 4
@@ -102,14 +110,6 @@ Generated Tue Aug 17 11:54:00 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 1 / 1
  /github/workspace/input/be-medication : 1 / 5 / 1
- /github/workspace/input/examples/ExampleScenario-example-1-scenario : 0 / 1 / 1
- /github/workspace/input/examples/ExampleScenario-example-2-scenario : 0 / 1 / 1
- /github/workspace/input/examples/ExampleScenario-example-3-scenario : 0 / 1 / 1
- /github/workspace/input/examples/ExampleScenario-example-4-scenario : 0 / 1 / 1
- /github/workspace/input/examples/ExampleScenario-example-5-scenario : 0 / 1 / 1
- /github/workspace/input/examples/ExampleScenario-example-6-scenario : 0 / 1 / 1
- /github/workspace/input/examples/ExampleScenario-example-7-scenario : 0 / 1 / 1
- /github/workspace/input/examples/ExampleScenario-example-8-scenario : 0 / 1 / 1
  /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1 : 2 / 2 / 3
  /github/workspace/input/models/structuredefinition-be-model-medication-record : 36 / 1 / 1
  /github/workspace/input/models/structuredefinition-be-model-medicationdispense : 12 / 1 / 1
@@ -10984,6 +10984,22 @@ INFORMATION: Condition/pharyngitis-condition: Condition.code.coding[0]: Code Sys
 INFORMATION: Condition/reflux-condition: Condition.code.coding[0]: Code System URI 'http://snomed.ct' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/Condition-toothache-condition.json ==
 INFORMATION: Condition/toothache-condition: Condition.code.coding[0]: Code System URI 'http://snomed.ct' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-1-scenario.json ==
+WARNING: ExampleScenario/example-1-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-2-scenario.json ==
+WARNING: ExampleScenario/example-2-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-3-scenario.json ==
+WARNING: ExampleScenario/example-3-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-4-scenario.json ==
+WARNING: ExampleScenario/example-4-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-5-scenario.json ==
+WARNING: ExampleScenario/example-5-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-6-scenario.json ==
+WARNING: ExampleScenario/example-6-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-7-scenario.json ==
+WARNING: ExampleScenario/example-7-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/ExampleScenario-example-8-scenario.json ==
+WARNING: ExampleScenario/example-8-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/MedicationAdministration-8-administration.json ==
 ERROR: MedicationAdministration/8-administration: MedicationAdministration: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationAdministration])
 INFORMATION: MedicationAdministration/8-administration: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
@@ -11269,22 +11285,6 @@ WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.defin
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[76].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[101].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.page.page[4].page[10].title: value should not start or finish with whitespace
-== /github/workspace/input/examples/ExampleScenario-example-1-scenario.xml ==
-WARNING: ExampleScenario/example-1-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/input/examples/ExampleScenario-example-2-scenario.xml ==
-WARNING: ExampleScenario/example-2-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/input/examples/ExampleScenario-example-3-scenario.xml ==
-WARNING: ExampleScenario/example-3-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/input/examples/ExampleScenario-example-4-scenario.xml ==
-WARNING: ExampleScenario/example-4-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/input/examples/ExampleScenario-example-5-scenario.xml ==
-WARNING: ExampleScenario/example-5-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/input/examples/ExampleScenario-example-6-scenario.xml ==
-WARNING: ExampleScenario/example-6-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/input/examples/ExampleScenario-example-7-scenario.xml ==
-WARNING: ExampleScenario/example-7-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/input/examples/ExampleScenario-example-8-scenario.xml ==
-WARNING: ExampleScenario/example-8-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1.json ==
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
