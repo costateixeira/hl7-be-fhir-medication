@@ -1,27 +1,34 @@
 @startuml
 
+hide stereotype
+hide circle
+skinparam linetype polyline
+skinparam roundCorner 10
 
-package "ATC A02BC Proton pump inhibitors"
- {
 
-package "ATC A02BC04"  {
-object Rabeprazole
 
-}
-package "ATC A02BC02"  {
-object Pantoprazole
 
-}
-package "ATC A02BC01"  {
-object Omeprazole
 
-}
-package "ATC A02BC05"  {
-object Esomeprazole
 
-}
+rectangle "A02BC Proton pump inhibitors" {
+
+class "**    Rabeprazole    **" {
+A02BC04    
 }
 
+class "**    Pantoprazole    **" {
+A02BC02
+}
+
+class "**    Omeprazole    **" {
+    A02BC01
+}
+
+class "**    Esomeprazole**    "{
+A02BC05    
+}
+
+/'
 package "Restricted Medication Hospital A"{
     object 1
     object 3
@@ -31,5 +38,7 @@ package "Restricted Medication Hospital B"{
     object "1" as 1b
     object 2
 }
+'/
 
+}
 @enduml
