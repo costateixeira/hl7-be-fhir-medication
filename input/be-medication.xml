@@ -307,14 +307,7 @@
 </resource>
 
 
-<resource>
-  <reference>
-     <reference value="MedicationDispense/1-dispense" />
-  </reference>
-  <fhirVersion value="4.0.1" />
-  <name value="Example 4 - Dispense" />
-  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
-</resource>
+
 <resource>
   <reference>
      <reference value="MedicationRequest/4-prescription" />
@@ -325,21 +318,52 @@
 </resource>
 <resource>
   <reference>
-     <reference value="CarePlan/4-treatment" />
+     <reference value="MedicationDispense/4-1-dispense" />
   </reference>
   <fhirVersion value="4.0.1" />
-  <name value="Example 4 - Treatment" />
+  <name value="Example 4 - Dispense 1" />
   <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
 </resource>
 <resource>
   <reference>
-     <reference value="MedicationStatement/4-treatmentLine" />
+     <reference value="MedicationDispense/4-2-dispense" />
   </reference>
   <fhirVersion value="4.0.1" />
-  <name value="Example 4 - Treatment Line" />
+  <name value="Example 4 - Dispense 2 (no Prescription)" />
   <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
 </resource>
-
+<resource>
+  <reference>
+     <reference value="CarePlan/4-1-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment 1" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/4-1-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment Line 1" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/4-2-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment 2" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/4-2-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment Line 2" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
 
 
 <resource>
