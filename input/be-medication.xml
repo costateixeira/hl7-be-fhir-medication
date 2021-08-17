@@ -245,7 +245,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 2a - Dispense" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
 </resource>
 <resource>
   <reference>
@@ -253,7 +253,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 2a - prescription" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
 </resource>
 <resource>
   <reference>
@@ -261,7 +261,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 2a - Treatment" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
 </resource>
 <resource>
   <reference>
@@ -269,7 +269,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 2a - Treatment Line" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
 </resource>
 
 
@@ -279,7 +279,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 3 - Dispense" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
 </resource>
 <resource>
   <reference>
@@ -287,7 +287,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 3 - prescription" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
 </resource>
 <resource>
   <reference>
@@ -295,7 +295,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 3 - Treatment" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
 </resource>
 <resource>
   <reference>
@@ -303,7 +303,7 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 3 - Treatment Line" />
-  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
 </resource>
 
 
@@ -454,6 +454,14 @@
 </resource>
 <resource>
   <reference>
+     <reference value="MedicationStatement/7-usage" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 7 - Usage" />
+  <description value="Dispense of medication that was prescribed to take if needed, but was not taken" />
+</resource>
+<resource>
+  <reference>
      <reference value="CarePlan/7-treatment" />
   </reference>
   <fhirVersion value="4.0.1" />
@@ -472,6 +480,15 @@
 
 
 
+
+<resource>
+  <reference>
+     <reference value="MedicationRequest/8-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - prescription" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
 <resource>
   <reference>
      <reference value="MedicationDispense/8-dispense" />
@@ -482,10 +499,18 @@
 </resource>
 <resource>
   <reference>
-     <reference value="MedicationRequest/8-prescription" />
+     <reference value="MedicationAdministration/8-administration" />
   </reference>
   <fhirVersion value="4.0.1" />
-  <name value="Example 8 - prescription" />
+  <name value="Example 8 - Administration" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/8-usage" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - Usage" />
   <description value="Dispense of medication that was prescribed, but not taken till the end" />
 </resource>
 <resource>
@@ -534,14 +559,7 @@
 
 
 
-<resource>
-  <reference>
-     <reference value="MedicationDispense/15-dispense" />
-  </reference>
-  <fhirVersion value="4.0.1" />
-  <name value="Example 15 - Dispense 1" />
-  <description value="Medication summary" />
-</resource>
+
 <resource>
   <reference>
      <reference value="MedicationRequest/15-prescription" />
@@ -580,14 +598,6 @@
   </reference>
   <fhirVersion value="4.0.1" />
   <name value="Example 15 - Scheduled Administration 2" />
-  <description value="Medication summary" />
-</resource>
-<resource>
-  <reference>
-     <reference value="MedicationDispense/15-dispense-2" />
-  </reference>
-  <fhirVersion value="4.0.1" />
-  <name value="Example 15 - Dispense 2" />
   <description value="Medication summary" />
 </resource>
 <resource>

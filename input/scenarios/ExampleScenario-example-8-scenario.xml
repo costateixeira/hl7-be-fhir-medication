@@ -54,7 +54,12 @@
   <instance>
     <resourceId value="8-administration"/>
     <resourceType value="MedicationAdministration"/>
-    <name value="Administration Report of a adverse reaction"/>
+    <name value="Drug administration"/>
+  </instance>
+  <instance>
+    <resourceId value="8-usage"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Report of non taking drug"/>
   </instance>
   <process>
     <title value="Dispense of medication that was prescribed, but not taken till the end"/>
@@ -138,11 +143,22 @@
     <step>
       <operation>
         <number value="8"/>
-        <name value="Report Adverse Reaction and stops administration"/>
+        <name value="Stopping the taking of drug due to an adverse event"/>
         <initiator value="PATIENT"/>
         <receiver value="VAULT"/>
         <request>
           <resourceId value="8-administration"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="9"/>
+        <name value="Report the stopage of the taking"/>
+        <initiator value="PATIENT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="8-usage"/>
         </request>
       </operation>
     </step>
