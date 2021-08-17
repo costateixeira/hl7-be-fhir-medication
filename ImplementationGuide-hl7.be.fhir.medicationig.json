@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-17T13:29:16+00:00",
+  "date": "2021-08-17T14:00:28+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -630,7 +630,7 @@
         "fhirVersion": [
           "4.0.1"
         ],
-        "name": "Example 1 - Dispense ",
+        "name": "Example 1 - Dispense",
         "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
@@ -820,6 +820,40 @@
         "name": "Example 3 - Treatment Line",
         "description": "Dispense medication before the prescription of the general practitioner",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/3-2-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 3 - Dispense 2",
+        "description": "Dispense medication before the prescription of the general practitioner",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/3-2-prescription"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 3 - prescription 2",
+        "description": "Dispense medication before the prescription of the general practitioner",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -1905,32 +1939,6 @@
           "reference": "NamingSystem/be-ns-prescription-ids"
         },
         "description": "Naming System - Prescription IDs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/3-2-dispense"
-        },
-        "name": "Example MedicationDispense - 3-2-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/3-2-prescription"
-        },
-        "name": "Example MedicationRequest - 3-2-prescription",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
