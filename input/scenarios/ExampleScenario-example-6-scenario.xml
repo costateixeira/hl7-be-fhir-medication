@@ -2,7 +2,7 @@
 
 <ExampleScenario xmlns="http://hl7.org/fhir">
   <id value="example-6-scenario"/>
-  <name value="DispensePrescriptionAndIsolatedDispense"/>
+  <name value="RefusalOfDispense"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-11T00:00:00.000+01:00"/>
