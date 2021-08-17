@@ -214,7 +214,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: 15-treatment2
+Instance: 15-treatment-2
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""
