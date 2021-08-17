@@ -12,7 +12,7 @@
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-08-17T15:28:11+00:00"/>
+  <date value="2021-08-17T15:40:39+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -406,6 +406,17 @@
       <fhirVersion value="4.0.1"/>
       <name value="ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end"/>
       <description value="This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/example-13-scenario"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ExampleScenario 13 - Dispense of OTC medication for acute symptons"/>
+      <description value="This example shows dispense of medication OTC and how treatment resources should be handled"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1361,14 +1372,6 @@
         <reference value="NamingSystem/be-ns-prescription-ids"/>
       </reference>
       <description value="Naming System - Prescription IDs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/example-13-scenario"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
