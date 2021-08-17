@@ -18,14 +18,14 @@
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-1-scenario",
     "version": "0.2.0",
-    "name": "ChangedmedicationScenario"
+    "name": "ChangedmedicationSameVOSScenario"
   },
   {
     "id": "example-13-scenario",
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-13-scenario",
     "version": "0.2.0",
-    "name": "MedicationStopped"
+    "name": "MedicationOTC"
   },
   {
     "id": "example-2-scenario",
@@ -39,7 +39,7 @@
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-3-scenario",
     "version": "0.2.0",
-    "name": "ChangedmedicationDifferentVOSScenario"
+    "name": "DispenseBeforePrescription"
   },
   {
     "id": "example-4-scenario",
@@ -53,28 +53,28 @@
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-5-scenario",
     "version": "0.2.0",
-    "name": "DispensePrescriptionAndIsolatedDispense"
+    "name": "DispenseNewBrandOldUnavailable"
   },
   {
     "id": "example-6-scenario",
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-6-scenario",
     "version": "0.2.0",
-    "name": "DispensePrescriptionAndIsolatedDispense"
+    "name": "RefusalOfDispense"
   },
   {
     "id": "example-7-scenario",
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-7-scenario",
     "version": "0.2.0",
-    "name": "DispensePrescriptionAndIsolatedDispense"
+    "name": "MedicationNotTaken"
   },
   {
     "id": "example-8-scenario",
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-8-scenario",
     "version": "0.2.0",
-    "name": "DispensePrescriptionAndIsolatedDispense"
+    "name": "MedicationStopped"
   },
   {
     "id": "hl7.be.fhir.medicationig",
