@@ -1,0 +1,28 @@
+@startuml
+
+package "Treatment" <<Rectangle>>
+ {
+package "Treatment Line" as t1  <<Rectangle>> {
+
+object "Dispense" as d2  {
+product = Dafalgan compr. 20x 500mg 
+    }
+}
+
+
+
+}
+package "Treatment" as t2 <<Rectangle>>
+ {
+package "Treatment Line"  <<Rectangle>> {
+
+object Dispense{
+product = Crestor compr. pellic. 28x 10mg
+    }
+
+object Prescription{
+   product = rosuvastatine oral 10 mg
+    }
+}
+ }
+@enduml

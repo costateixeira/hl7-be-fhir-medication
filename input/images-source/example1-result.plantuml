@@ -1,0 +1,18 @@
+@startuml
+
+package "Treatment" <<Rectangle>>
+ {
+package "Treatment Line"  <<Rectangle>> {
+
+object Dispense{
+Amlodipin Sandoz
+    }
+    
+object Prescription{
+    Amlor
+    }
+
+
+                            }
+}
+@enduml
