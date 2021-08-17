@@ -204,6 +204,14 @@
   <name value="ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end" />
   <description value="This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction." />
 </resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-13-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 13 - Dispense of OTC medication for acute symptons" />
+  <description value="This example shows dispense of medication OTC and how treatment resources should be handled" />
+</resource>
 <!--  start of singular resources         -->
 <resource>
   <reference>
