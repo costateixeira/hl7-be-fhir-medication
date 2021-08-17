@@ -210,7 +210,7 @@
      <reference value="MedicationDispense/1-dispense" />
   </reference>
   <fhirVersion value="4.0.1" />
-  <name value="Example 1 - Dispense " />
+  <name value="Example 1 - Dispense" />
   <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
 </resource>
 <resource>
@@ -305,7 +305,22 @@
   <name value="Example 3 - Treatment Line" />
   <description value="Dispense medication before the prescription of the general practitioner" />
 </resource>
-
+<resource>
+  <reference>
+     <reference value="MedicationDispense/3-2-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - Dispense 2" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/3-2-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - prescription 2" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
 
 
 <resource>
