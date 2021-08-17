@@ -1,4 +1,4 @@
-Instance: example-15a-of-medication-presc 
+Instance: 15-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: ""
@@ -46,7 +46,7 @@ Title:    ""
 
 
 
-Instance: example-15-of-medication-treatmentLine 
+Instance: 15-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -66,7 +66,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: example-15c-of-medication-treatment 
+Instance: 15-treatment 
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""
@@ -90,7 +90,7 @@ Title:    ""
 * activity[=].detail.productCodeableConcept	= https://cnk.apb.be/codings/cnk_product_codes#00  "Aspirine 500 mg (36 effervescent tablets)"
 
 
-Instance: example-15-scheduleAdministration
+Instance: 15-scheduleAdministration
 InstanceOf: MedRecordMedicationScheduledAdministration
 
 
@@ -118,7 +118,7 @@ InstanceOf: MedRecordMedicationScheduledAdministration
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: example-15-scheduleAdministration2
+Instance: 15-scheduleAdministration-2
 InstanceOf: MedRecordMedicationScheduledAdministration
 
 
@@ -150,7 +150,7 @@ InstanceOf: MedRecordMedicationScheduledAdministration
 //////////////////<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\\\\\\\\\\\\\\\\\\
 
 
-Instance: example-15-of-medication-presc2 
+Instance: 15-prescription-2 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: ""
@@ -194,7 +194,7 @@ Title:    ""
 * extension[basedOn].valueReference = Reference(example-15-of-medication-treatmentLine2)
 
 
-Instance: example-15-of-medication-treatmentLine2 
+Instance: 15-treatmentLine-2 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
 Description: ""
@@ -214,7 +214,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: example-15-of-medication-treatment2
+Instance: 15-treatment2
 InstanceOf: MedRecordTreatment
 Usage: #example
 Description: ""
@@ -237,7 +237,7 @@ Title:    ""
 * activity[=].detail.productCodeableConcept	= https://cnk.apb.be/codings/cnk_product_codes#00  "Aspirine 500 mg (36 effervescent tablets)"
 
 
-Instance: example-15-scheduleAdministration3
+Instance: 15-scheduleAdministration-3
 InstanceOf: MedRecordMedicationScheduledAdministration
 
 
@@ -265,7 +265,7 @@ InstanceOf: MedRecordMedicationScheduledAdministration
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
 
-Instance: example-15-scheduleAdministration4
+Instance: 15-scheduleAdministration-4
 InstanceOf: MedRecordMedicationScheduledAdministration
 
 
