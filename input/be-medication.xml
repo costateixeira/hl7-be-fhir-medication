@@ -213,6 +213,64 @@
   <name value="Example 1 - Dispense " />
   <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
 </resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/1-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - prescription" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/1-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - Treatment" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/1-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - Treatment Line" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+
+
+<resource>
+  <reference>
+     <reference value="MedicationDispense/2a-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - Dispense" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/2a-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - prescription" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/2a-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - Treatment" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/2a-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - Treatment Line" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
 <!--     \\\\\\\\\\\\\\\\                    End of resources            \\\\\\\\\\\\\\\\\         -->
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
