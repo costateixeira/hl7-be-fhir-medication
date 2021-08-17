@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 635, errors = 141, warn = 101, info = 82 -->
+<!-- broken links = 639, errors = 142, warn = 103, info = 82 -->
 <head>
   <title>BEMedicationIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for BEMedicationIG</h1>
- <p>Generated Tue Aug 17 14:01:22 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Aug 17 14:43:28 UTC 2021, FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = <a href="https://www.hl7belgium.be/fhir">https://www.hl7belgium.be/fhir</a> (<a href="https://www.hl7belgium.be/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.be.fhir.medicationig, Canonical = https://www.hl7belgium.be/fhir</td></tr>
@@ -38,14 +38,14 @@
  <br/><br/>The copyrightYear parameter ('2019+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.hl7belgium.be/fhir (Problem #1 with package-list.json at https://www.hl7belgium.be/fhir: www.hl7belgium.be)</td></tr>
- <tr><td>Summary:</td><td> broken links = 635, errors = 141, warn = 101, info = 82</td></tr>
+ <tr><td>Summary:</td><td> broken links = 639, errors = 142, warn = 103, info = 82</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>650</b></td><td><b>12</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>655</b></td><td><b>13</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-EB"><b>/github/workspace/fsh-generated/resources/Bundle-EB</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -359,6 +359,9 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_be-medication"><b>/github/workspace/input/be-medication</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_examples_ExampleScenario-example-13-scenario"><b>/github/workspace/input/examples/ExampleScenario-example-13-scenario</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_examples_MedicationDispense_medication-dispense-example-1"><b>/github/workspace/input/examples/MedicationDispense/medication-dispense-example-1</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>2</b></td>
    </tr>
@@ -381,6 +384,12 @@
  <table class="grid">
    <tr style="background-color: #ffcccc">
      <td><b>ImplementationGuide.definition.parameter[26].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ExampleScenario/example-13-scenario.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ExampleScenario/example-13-scenario.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Condition/headache-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -652,6 +661,25 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Condition-reflux-condition.xml.html">Condition-reflux-condition.xml.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-example-13-scenario.change.history.html">ExampleScenario-example-13-scenario.change.history.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -5534,6 +5562,25 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-example-13-scenario.html">ExampleScenario-example-13-scenario.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="logical-models.html">logical-models.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -7491,6 +7538,25 @@
             feedbackurl = feedbackurl + '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-example-13-scenario-resources.html">ExampleScenario-example-13-scenario-resources.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationRequest-15-prescription-2.change.history.html">MedicationRequest-15-prescription-2.change.history.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
@@ -7663,6 +7729,25 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-BeModelMedicationRecordDispense-definitions.html">StructureDefinition-BeModelMedicationRecordDispense-definitions.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
+              default:
+                  console.log(&quot;Parameter value not supported&quot;);
+                  break;
+                case &quot;pageTitle&quot;:
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case &quot;sectionId&quot;:
+                  parameterValue = id;
+                  break;
+                case &quot;sectionName&quot;:
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-example-13-scenario-description.html">ExampleScenario-example-13-scenario-description.html</a></b></td><td><b>error</b></td><td><b>Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to &quot;not supported&quot;
               default:
@@ -13351,7 +13436,7 @@
      <td><b>MedicationDispense.context.identifier.type.coding[0] (l59/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl777" class="flip" onclick="flip('l777')">Show Reasoning</span><div id="l777" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
+     <td><b><a href="">MedicationDispense.performer[0].actor (l110/c24)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #apotheek-onder-de-toren matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl783" class="flip" onclick="flip('l783')">Show Reasoning</span><div id="l783" style="display: none"><p>&nbsp;</p><ul><li>MedicationDispense.contained[0].ofType(Organization): The extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])</li>, <li>MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationDispense.quantity (l125/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
@@ -14272,13 +14357,26 @@
      <td><b>ImplementationGuide.definition</b></td><td><b>error</b></td><td title="ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed"><b>ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[78].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[79].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[101].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[102].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.definition.page.page[4].page[10].title</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_examples_ExampleScenario-example-13-scenario"> </a>
+<h2><a href="ExampleScenario-example-13-scenario.html">/github/workspace/input/examples/ExampleScenario-example-13-scenario.xml</a></h2>
+ <ul style="font-size: 7px"><li>ExampleScenario: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/examplescenario.html">ExampleScenario</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ExampleScenario.jurisdiction[0]</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]</b></td>
    </tr>
 </table>
 <hr/>
