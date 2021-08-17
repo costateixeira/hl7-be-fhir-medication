@@ -135,6 +135,8 @@
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
+    <!--  start of scenarios resources         -->
+
       <resource>
          <reference>
             <reference value="ExampleScenario/example-1-scenario" />
@@ -201,6 +203,15 @@
   <fhirVersion value="4.0.1" />
   <name value="ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end" />
   <description value="This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction." />
+</resource>
+<!--  start of singular resources         -->
+<resource>
+  <reference>
+     <reference value="MedicationDispense/1-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - Dispense " />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
 </resource>
 <!--     \\\\\\\\\\\\\\\\                    End of resources            \\\\\\\\\\\\\\\\\         -->
     <page>
