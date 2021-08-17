@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeModelMedicationRecordTreatmentLine"];
   fhir:StructureDefinition.title [ fhir:value "[Logical Model] - Treatment Line"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-17T11:47:31+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-17T11:53:10+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
