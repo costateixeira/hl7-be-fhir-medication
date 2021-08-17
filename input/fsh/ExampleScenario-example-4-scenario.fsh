@@ -73,17 +73,17 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * process[=].step[=].process[=].step[=].operation.initiator = "PATIENT"
 * process[=].step[=].process[=].step[=].operation.receiver = "GP"
 
-* process[=].step[+].operation.name = "Get Patient's Medication"
-* process[=].step[=].operation.number = "2"
-* process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.response.resourceId = "EB"
+* process[=].step[=].process[=].step[+].operation.name = "Get Patient's Medication"
+* process[=].step[=].process[=].step[=].operation.number = "2"
+* process[=].step[=].process[=].step[=].operation.initiator = "GP"
+* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].process[=].step[=].operation.response.resourceId = "EB"
 
-* process[=].step[+].operation.name = "Create new prescription"
-* process[=].step[=].operation.number = "3"
-* process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "4-prescription"
+* process[=].step[=].process[=].step[+].operation.name = "Create new prescription"
+* process[=].step[=].process[=].step[=].operation.number = "3"
+* process[=].step[=].process[=].step[=].operation.initiator = "GP"
+* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-prescription"
 
 * process[=].step[+].process[+].title = "Collect info"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
@@ -92,7 +92,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-treatment"
 
-* process[=].step[+].process[+].title = "Collect info"
+* process[=].step[=].process[+].title = "Collect info"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment Line"
 * process[=].step[=].process[=].step[=].operation.number = "5"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
@@ -135,7 +135,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 
 
 
-* process[=].step[+].process[+].title = "Collect info"
+* process[=].step[=].process[+].title = "Collect info"
 * process[=].step[=].process[=].step[+].operation.name = "Additional treatment"
 * process[=].step[=].process[=].step[=].operation.number = "11"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
