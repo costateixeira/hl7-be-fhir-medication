@@ -1,46 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<OperationOutcome xmlns="http://hl7.org/fhir">
-  <text>
-    <status value="extensions"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>All OK</p>
-      <table class="grid">
-        <tr>
-          <td>
-            <b>Severity</b>
-          </td>
-          <td>
-            <b>Location</b>
-          </td>
-          <td>
-            <b>Code</b>
-          </td>
-          <td>
-            <b>Details</b>
-          </td>
-          <td>
-            <b>Diagnostics</b>
-          </td>
-        </tr>
-        <tr>
-          <td>INFORMATION</td>
-          <td/>
-          <td>Informational Note</td>
-          <td>All OK</td>
-          <td/>
-        </tr>
-      </table>
-    </div>
-  </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
-    <valueString value="fsh-generated/resources/ExampleScenario-example-13-scenario.json"/>
-  </extension>
-  <issue>
-    <severity value="information"/>
-    <code value="informational"/>
-    <details>
-      <text value="All OK"/>
-    </details>
-  </issue>
-</OperationOutcome>
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="example-13-scenario"/>
+  <name value="MedicationStopped"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-09-11T00:00:00.000+01:00"/>
+  <actor>
+    <actorId value="PATIENT"/>
+    <type value="person"/>
+    <name value="Pia Peters"/>
+  </actor>
+  <actor>
+    <actorId value="GP"/>
+    <type value="person"/>
+    <name value="Dr. Durant"/>
+  </actor>
+  <actor>
+    <actorId value="VAULT"/>
+    <type value="entity"/>
+    <name value="Vault"/>
+  </actor>
+  <actor>
+    <actorId value="PHARM"/>
+    <type value="person"/>
+    <name value="Pharmacist"/>
+  </actor>
+  <instance>
+    <resourceId value="8-prescription"/>
+    <resourceType value="MedicationRequest"/>
+    <name value="New prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="EB"/>
+    <resourceType value="Bundle"/>
+    <name value="Empty Bundle"/>
+  </instance>
+  <instance>
+    <resourceId value="8-treatmentLine"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="New Treatment Line based on prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="8-treatment"/>
+    <resourceType value="CarePlan"/>
+    <name value="New Treatment based on prescription"/>
+  </instance>
+  <instance>
+    <resourceId value="8-dispense"/>
+    <resourceType value="MedicationDispense"/>
+    <name value="Dispense"/>
+  </instance>
+  <process>
+    <title value="Dispense of medication that was prescribed, but not taken till the end"/>
+    <description value="description"/>
+    <preConditions value="After a GP visit, the patient Pia Peters is prescribed amoxicillin + clavulanic acid 875 mg + 125 mg for a pharyngitis for the conclusion of the package. The pharmacist, dispensed Amoxiclav Sandoz 875/125.  However, after 1 take, the patient stopped doing the medication because the patient had an alergic reaction.  "/>
+    <postConditions value="A grouping of the prescription, dispense, and administration are coupled together within a treatment line, the new prescription should start a new treatment line under the same treatment."/>
+    <step>
+      <process>
+        <title value="group 1"/>
+        <description value="group 1"/>
+        <step>
+          <operation>
+            <number value="1"/>
+            <name value="Goes to appointment"/>
+            <initiator value="PATIENT"/>
+            <receiver value="GP"/>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="2"/>
+            <name value="Get Patient&#39;s Medication"/>
+            <initiator value="GP"/>
+            <receiver value="VAULT"/>
+            <response>
+              <resourceId value="EB"/>
+            </response>
+          </operation>
+        </step>
+      </process>
+    </step>
+    <step>
+      <process>
+        <title value="group 2"/>
+        <description value="group 2"/>
+        <step>
+          <operation>
+            <number value="3"/>
+            <name value="Create new treatment"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="8-treatment"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="4"/>
+            <name value="Create new treatment Line"/>
+            <initiator value="PHARM"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="8-treatmentLine"/>
+            </request>
+          </operation>
+        </step>
+      </process>
+    </step>
+  </process>
+</ExampleScenario>
