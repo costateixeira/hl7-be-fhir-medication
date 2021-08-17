@@ -94,3 +94,14 @@ Title: "Prescribed medication is changed by another medication from a different 
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "2a-dispense"
 
+* process[=].step[+].operation.name = "Update treatment"
+* process[=].step[=].operation.number = "4"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "2a-treatment"
+
+* process[=].step[+].operation.name = "Update treatment Line"
+* process[=].step[=].operation.number = "5"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "2a-treatmentLine"

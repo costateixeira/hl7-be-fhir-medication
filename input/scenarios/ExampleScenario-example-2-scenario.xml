@@ -130,5 +130,27 @@
         </request>
       </operation>
     </step>
+    <step>
+      <operation>
+        <number value="4"/>
+        <name value="Update treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="2a-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="5"/>
+        <name value="Update treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="2a-treatmentLine"/>
+        </request>
+      </operation>
+    </step>
   </process>
 </ExampleScenario>

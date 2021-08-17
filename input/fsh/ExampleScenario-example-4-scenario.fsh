@@ -108,20 +108,34 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "4-1-dispense"
 
-* process[=].step[+].operation.name = "Additional dispense"
+* process[=].step[+].operation.name = "Update treatment"
 * process[=].step[=].operation.number = "8"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "4-1-treatment"
+
+* process[=].step[+].operation.name = "Update treatment Line"
+* process[=].step[=].operation.number = "9"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "4-1-treatmentLine"
+
+
+* process[=].step[+].operation.name = "Additional dispense"
+* process[=].step[=].operation.number = "10"
 * process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "4-2-dispense"
 
+
 * process[=].step[+].operation.name = "Additional treatment"
-* process[=].step[=].operation.number = "8"
+* process[=].step[=].operation.number = "11"
 * process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "4-2-treatment"
 
 * process[=].step[+].operation.name = "Additional Treatment Line"
-* process[=].step[=].operation.number = "9"
+* process[=].step[=].operation.number = "12"
 * process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "4-2-treatmentLine"

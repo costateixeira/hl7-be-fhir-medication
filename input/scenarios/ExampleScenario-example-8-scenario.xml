@@ -68,7 +68,7 @@
     <postConditions value="A grouping of the prescription, dispense, and administration are coupled together within a treatment line, the new prescription should start a new treatment line under the same treatment."/>
     <step>
       <process>
-        <title value="group 1"/>
+        <title value="Initial Contact"/>
         <step>
           <operation>
             <number value="1"/>
@@ -103,7 +103,7 @@
     </step>
     <step>
       <process>
-        <title value="group 2"/>
+        <title value="Treatment resources Creation"/>
         <step>
           <operation>
             <number value="4"/>
@@ -130,7 +130,7 @@
     </step>
     <step>
       <process>
-        <title value="group 3"/>
+        <title value="Dispense"/>
         <step>
           <operation>
             <number value="6"/>
@@ -179,7 +179,7 @@
     </step>
     <step>
       <process>
-        <title value="group 4"/>
+        <title value="Treatment Resources Update"/>
         <step>
           <operation>
             <number value="10"/>

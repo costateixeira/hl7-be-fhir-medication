@@ -137,12 +137,56 @@
     </step>
     <step>
       <operation>
-        <number value="7"/>
+        <number value="8"/>
+        <name value="Update treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="9"/>
+        <name value="Update treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-treatmentLine"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="10"/>
         <name value="Usage Report of non-usage"/>
         <initiator value="PATIENT"/>
         <receiver value="VAULT"/>
         <request>
           <resourceId value="7-usage"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="11"/>
+        <name value="Update treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="12"/>
+        <name value="Update treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="7-treatmentLine"/>
         </request>
       </operation>
     </step>

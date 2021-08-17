@@ -7,7 +7,7 @@ Title: "Dispense of new brand medication that is given because the old is unavai
 * status = #draft
 * experimental = false
 * date = "2019-09-11T00:00:00.000+01:00"
-* name = "DispensePrescriptionAndIsolatedDispense"
+* name = "DispenseNewBrandOldUnavailable"
 //* publisher = "DZOP"
 
 * actor[+].actorId = "PATIENT"
@@ -94,3 +94,15 @@ Title: "Dispense of new brand medication that is given because the old is unavai
 * process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "5-dispense"
+
+* process[=].step[+].operation.name = "Update treatment"
+* process[=].step[=].operation.number = "8"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "5-treatment"
+
+* process[=].step[+].operation.name = "Update treatment Line"
+* process[=].step[=].operation.number = "9"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "5-treatmentLine"

@@ -8,7 +8,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 * status = #draft
 * experimental = false
 * date = "2019-09-11T00:00:00.000+01:00"
-* name = "DispensePrescriptionAndIsolatedDispense"
+* name = "MedicationNotTaken"
 //* publisher = "DZOP"
 
 * actor[+].actorId = "PATIENT"
@@ -99,8 +99,33 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "7-dispense"
 
+* process[=].step[+].operation.name = "Update treatment"
+* process[=].step[=].operation.number = "8"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "7-treatment"
+
+* process[=].step[+].operation.name = "Update treatment Line"
+* process[=].step[=].operation.number = "9"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "7-treatmentLine"
+
+
 * process[=].step[+].operation.name = "Usage Report of non-usage"
-* process[=].step[=].operation.number = "7"
+* process[=].step[=].operation.number = "10"
 * process[=].step[=].operation.initiator = "PATIENT"
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "7-usage"
+
+* process[=].step[+].operation.name = "Update treatment"
+* process[=].step[=].operation.number = "11"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "7-treatment"
+
+* process[=].step[+].operation.name = "Update treatment Line"
+* process[=].step[=].operation.number = "12"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "7-treatmentLine"

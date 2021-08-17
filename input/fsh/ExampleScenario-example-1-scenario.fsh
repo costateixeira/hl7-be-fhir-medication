@@ -7,7 +7,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * status = #draft
 * experimental = false
 * date = "2019-09-11T00:00:00.000+01:00"
-* name = "ChangedmedicationScenario"
+* name = "ChangedmedicationSameVOSScenario"
 //* publisher = "DZOP"
 
 * actor[+].actorId = "PATIENT"
@@ -94,3 +94,14 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].operation.request.resourceId = "1-dispense"
 
+* process[=].step[+].operation.name = "Update treatment"
+* process[=].step[=].operation.number = "8"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "1-treatment"
+
+* process[=].step[+].operation.name = "Update treatment Line"
+* process[=].step[=].operation.number = "9"
+* process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].operation.request.resourceId = "1-treatmentLine"

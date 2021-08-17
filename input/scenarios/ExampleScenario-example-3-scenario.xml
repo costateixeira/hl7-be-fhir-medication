@@ -154,6 +154,28 @@
     <step>
       <operation>
         <number value="9"/>
+        <name value="Update treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="10"/>
+        <name value="Update treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatmentLine"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="11"/>
         <name value="Report of situation"/>
         <initiator value="PHARM"/>
         <receiver value="GP"/>
@@ -161,7 +183,7 @@
     </step>
     <step>
       <operation>
-        <number value="10"/>
+        <number value="12"/>
         <name value="Goes to new appointment"/>
         <initiator value="PATIENT"/>
         <receiver value="GP"/>
@@ -169,7 +191,7 @@
     </step>
     <step>
       <operation>
-        <number value="11"/>
+        <number value="13"/>
         <name value="Get Patient&#39;s Medication"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
@@ -180,13 +202,35 @@
     </step>
     <step>
       <operation>
-        <number value="12"/>
+        <number value="14"/>
         <name value="Create new prescription"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <response>
           <resourceId value="3-2-prescription"/>
         </response>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="15"/>
+        <name value="Update treatment"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatment"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="16"/>
+        <name value="Update treatment Line"/>
+        <initiator value="VAULT"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="3-treatmentLine"/>
+        </request>
       </operation>
     </step>
   </process>
