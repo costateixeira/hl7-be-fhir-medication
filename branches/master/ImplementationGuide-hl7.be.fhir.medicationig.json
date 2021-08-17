@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-17T08:27:58+00:00",
+  "date": "2021-08-17T10:58:12+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -699,7 +699,7 @@
           "4.0.1"
         ],
         "name": "Example 2a - Dispense",
-        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "Prescribed medication is changed by another medication from a different VOS-cluster - Different strength",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
@@ -716,7 +716,7 @@
           "4.0.1"
         ],
         "name": "Example 2a - prescription",
-        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "Prescribed medication is changed by another medication from a different VOS-cluster - Different strength",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
@@ -733,7 +733,7 @@
           "4.0.1"
         ],
         "name": "Example 2a - Treatment",
-        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "Prescribed medication is changed by another medication from a different VOS-cluster - Different strength",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
       },
       {
@@ -750,7 +750,194 @@
           "4.0.1"
         ],
         "name": "Example 2a - Treatment Line",
-        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "Prescribed medication is changed by another medication from a different VOS-cluster - Different strength",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/3-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 3 - Dispense",
+        "description": "Dispense medication before the prescription of the general practitioner",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/3-prescription"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 3 - prescription",
+        "description": "Dispense medication before the prescription of the general practitioner",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/3-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 3 - Treatment",
+        "description": "Dispense medication before the prescription of the general practitioner",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/3-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 3 - Treatment Line",
+        "description": "Dispense medication before the prescription of the general practitioner",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/4-prescription"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 4 - prescription",
+        "description": "Dispense of prescribed medication, and dispense of a product that can be done without a prescription",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/4-1-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 4 - Dispense 1",
+        "description": "Dispense of prescribed medication, and dispense of a product that can be done without a prescription",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/4-2-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 4 - Dispense 2 (no Prescription)",
+        "description": "Dispense of prescribed medication, and dispense of a product that can be done without a prescription",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/4-1-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 4 - Treatment 1",
+        "description": "Dispense of prescribed medication, and dispense of a product that can be done without a prescription",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/4-1-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 4 - Treatment Line 1",
+        "description": "Dispense of prescribed medication, and dispense of a product that can be done without a prescription",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/4-2-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 4 - Treatment 2",
+        "description": "Dispense of prescribed medication, and dispense of a product that can be done without a prescription",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/4-2-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 4 - Treatment Line 2",
+        "description": "Dispense of prescribed medication, and dispense of a product that can be done without a prescription",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
       },
       {
@@ -763,32 +950,29 @@
         "reference": {
           "reference": "MedicationDispense/5-dispense"
         },
-        "name": "Example MedicationDispense - 5-dispense",
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 5 - Dispense",
+        "description": "Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
+            "valueString": "MedicationRequest"
           }
         ],
         "reference": {
-          "reference": "Condition/headache-condition"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/10-2-medication-dispense"
+          "reference": "MedicationRequest/5-prescription"
         },
-        "name": "Example MedicationDispense - 10-2-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 5 - prescription",
+        "description": "Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -798,11 +982,133 @@
           }
         ],
         "reference": {
-          "reference": "CarePlan/total-view"
+          "reference": "CarePlan/5-treatment"
         },
-        "name": "Patient Total Medication",
-        "description": "Overview of the patient's medication",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 5 - Treatment",
+        "description": "Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/5-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 5 - Treatment Line",
+        "description": "Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/6-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 6 - Dispense",
+        "description": "Refuse the dispense prescribed medication",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/6-prescription"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 6 - prescription",
+        "description": "Refuse the dispense prescribed medication",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/6-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 6 - Treatment",
+        "description": "Refuse the dispense prescribed medication",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/6-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 6 - Treatment Line",
+        "description": "Refuse the dispense prescribed medication",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/7-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 7 - Dispense",
+        "description": "Dispense of medication that was prescribed to take if needed, but was not taken",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/7-prescription"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 7 - prescription",
+        "description": "Dispense of medication that was prescribed to take if needed, but was not taken",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -814,8 +1120,29 @@
         "reference": {
           "reference": "MedicationStatement/7-usage"
         },
-        "name": "Example MedicationStatement - 7-usage",
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 7 - Usage",
+        "description": "Dispense of medication that was prescribed to take if needed, but was not taken",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/7-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 7 - Treatment",
+        "description": "Dispense of medication that was prescribed to take if needed, but was not taken",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
       },
       {
         "extension": [
@@ -825,10 +1152,382 @@
           }
         ],
         "reference": {
-          "reference": "MedicationStatement/3-treatmentLine"
+          "reference": "MedicationStatement/7-treatmentLine"
         },
-        "name": "Example MedicationStatement - 3-treatmentLine",
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 7 - Treatment Line",
+        "description": "Dispense of medication that was prescribed to take if needed, but was not taken",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/8-prescription"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 8 - prescription",
+        "description": "Dispense of medication that was prescribed, but not taken till the end",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/8-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 8 - Dispense",
+        "description": "Dispense of medication that was prescribed, but not taken till the end",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationAdministration"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationAdministration/8-administration"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 8 - Administration",
+        "description": "Dispense of medication that was prescribed, but not taken till the end",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/8-usage"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 8 - Usage",
+        "description": "Dispense of medication that was prescribed, but not taken till the end",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/8-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 8 - Treatment",
+        "description": "Dispense of medication that was prescribed, but not taken till the end",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/8-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 8 - Treatment Line",
+        "description": "Dispense of medication that was prescribed, but not taken till the end",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/10-1-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 10 - Dispense 1",
+        "description": "The recording of non-medication aka pharmaceutical products",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/10-2-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 10 - Dispense 2",
+        "description": "The recording of non-medication aka pharmaceutical products",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/10-3-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 10 - Dispense 3",
+        "description": "The recording of non-medication aka pharmaceutical products",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/15-prescription"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - prescription 1",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/15-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Treatment 1",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/15-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Treatment Line 1",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/15-scheduleAdministration"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Scheduled Administration 1",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/15-scheduleAdministration-2"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Scheduled Administration 2",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/15-prescription-2"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - prescription 2",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/15-treatment-2"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Treatment 2",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/15-treatmentLine-2"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Treatment Line 2",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/15-scheduleAdministration-3"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Scheduled Administration 3",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/15-scheduleAdministration-4"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Scheduled Administration 4",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/total-view"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Total View of Medication",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/week-view"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 15 - Week View of Medication",
+        "description": "Medication summary",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/headache-condition"
+        }
       },
       {
         "extension": [
@@ -860,58 +1559,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/4-prescription"
-        },
-        "name": "Example MedicationRequest - 4-prescription",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationAdministration"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationAdministration/8-administration"
-        },
-        "name": "Example MedicationAdministration - 8-administration",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/5-treatmentLine"
-        },
-        "name": "Example MedicationStatement - 5-treatmentLine",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/4-1-treatment"
-        },
-        "name": "Treatment for Hyperlipidemia",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -933,19 +1580,6 @@
         },
         "name": "[Logical Model] - Usage",
         "description": "A model for representing medication usage."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/8-dispense"
-        },
-        "name": "Example MedicationDispense - 8-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1038,38 +1672,12 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/7-treatment"
-        },
-        "name": "Diarrhea Prevention",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
         "reference": {
           "reference": "Condition/toothache-condition"
         }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-15-scheduleAdministration2"
-        },
-        "name": "Example MedicationRequest - example-15-scheduleAdministration2",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
       },
       {
         "extension": [
@@ -1083,32 +1691,6 @@
         },
         "name": "[Profile] - Medication Record",
         "description": "The profile for Medication Record"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/4-1-dispense"
-        },
-        "name": "Example MedicationDispense - 4-1-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/4-2-dispense"
-        },
-        "name": "Example MedicationDispense - 4-2-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1140,64 +1722,12 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-15-of-medication-presc2"
-        },
-        "name": "Example MedicationRequest - example-15-of-medication-presc2",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/6-dispense"
-        },
-        "name": "Example MedicationDispense - 6-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-15-scheduleAdministration"
-        },
-        "name": "Example MedicationRequest - example-15-scheduleAdministration",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
         "reference": {
           "reference": "Condition/diarrhea-condition"
         }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/3-dispense"
-        },
-        "name": "Example MedicationDispense - 3-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1223,32 +1753,6 @@
         },
         "name": "[Profile] - Structure Composition for Medication Record",
         "description": "The profile for how to organize the information in a medication Record"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/example-15-of-medication-treatmentLine2"
-        },
-        "name": "Example MedicationStatement - example-15-of-medication-treatmentLine2",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/4-2-treatment"
-        },
-        "name": "Treatment for Toothache",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
       },
       {
         "extension": [
@@ -1291,19 +1795,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/example-15c-of-medication-treatment"
-        },
-        "name": "Treatment for acid reflux",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "NamingSystem"
           }
         ],
@@ -1311,45 +1802,6 @@
           "reference": "NamingSystem/be-ns-cnk-codes"
         },
         "description": "Naming System - CNK Product Codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/7-treatmentLine"
-        },
-        "name": "Example MedicationStatement - 7-treatmentLine",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/6-treatmentLine"
-        },
-        "name": "Example MedicationStatement - 6-treatmentLine",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/8-treatment"
-        },
-        "name": "Treament of pharyngitis",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
       },
       {
         "extension": [
@@ -1376,45 +1828,6 @@
         },
         "name": "[Logical Model] - Treatment",
         "description": "A model for representing a Treatment."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/8-treatmentLine"
-        },
-        "name": "Example MedicationStatement - 8-treatmentLine",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/7-prescription"
-        },
-        "name": "Example MedicationRequest - 7-prescription",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/8-usage"
-        },
-        "name": "Example MedicationStatement - 8-usage",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
       },
       {
         "extension": [
@@ -1514,110 +1927,6 @@
           }
         ],
         "reference": {
-          "reference": "MedicationRequest/3-prescription"
-        },
-        "name": "Example MedicationRequest - 3-prescription",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/6-prescription"
-        },
-        "name": "Example MedicationRequest - 6-prescription",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/7-dispense"
-        },
-        "name": "Example MedicationDispense - 7-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-15-scheduleAdministration4"
-        },
-        "name": "Example MedicationRequest - example-15-scheduleAdministration4",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/5-treatment"
-        },
-        "name": "Treatment for headache",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/week-view"
-        },
-        "name": "Patient scheduled medication for week x",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/5-prescription"
-        },
-        "name": "Example MedicationRequest - 5-prescription",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/4-2-treatmentLine"
-        },
-        "name": "Example MedicationStatement - 4-2-treatmentLine",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
           "reference": "MedicationRequest/3-2-prescription"
         },
         "name": "Example MedicationRequest - 3-2-prescription",
@@ -1640,45 +1949,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/example-15-of-medication-treatment2"
-        },
-        "name": "Treatment for preventing stroke",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-15a-of-medication-presc"
-        },
-        "name": "Example MedicationRequest - example-15a-of-medication-presc",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/example-15-of-medication-treatmentLine"
-        },
-        "name": "Example MedicationStatement - example-15-of-medication-treatmentLine",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1692,77 +1962,12 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/example-15-scheduleAdministration3"
-        },
-        "name": "Example MedicationRequest - example-15-scheduleAdministration3",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/8-prescription"
-        },
-        "name": "Example MedicationRequest - 8-prescription",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/10-3-medication-dispense"
-        },
-        "name": "Example MedicationDispense - 10-3-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
         "reference": {
           "reference": "Condition/arthritis-condition"
         }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/6-treatment"
-        },
-        "name": "Treatment for Hyperlipidemia",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/10-1-medication-dispense"
-        },
-        "name": "Example MedicationDispense - 10-1-medication-dispense",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1789,32 +1994,6 @@
         },
         "name": "Example MedicationDispense - example-minimal-dispense",
         "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/4-1-treatmentLine"
-        },
-        "name": "Example MedicationStatement - 4-1-treatmentLine",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/3-treatment"
-        },
-        "name": "Treatment for Arthritis",
-        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
       },
       {
         "extension": [
