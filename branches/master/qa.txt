@@ -1,11 +1,11 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 141, warn = 101, info = 82
+err = 142, warn = 103, info = 82
 IG Publisher Version: 1.1.77
-Generated Tue Aug 17 14:01:23 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Tue Aug 17 14:43:29 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
- Build Errors : 650 / 12 / 0
+ Build Errors : 655 / 13 / 0
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-15-treatment : 0 / 0 / 3
@@ -110,6 +110,7 @@ Generated Tue Aug 17 14:01:23 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 1 / 1
  /github/workspace/input/be-medication : 1 / 4 / 1
+ /github/workspace/input/examples/ExampleScenario-example-13-scenario : 0 / 1 / 1
  /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1 : 2 / 2 / 3
  /github/workspace/input/models/structuredefinition-be-model-medication-record : 36 / 1 / 1
  /github/workspace/input/models/structuredefinition-be-model-medicationdispense : 12 / 1 / 1
@@ -118,6 +119,8 @@ Generated Tue Aug 17 14:01:23 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ExampleScenario/example-13-scenario.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ExampleScenario/example-13-scenario.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/headache-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/headache-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/hyperlipidemia-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -315,6 +318,23 @@ ERROR: /github/workspace/output/NamingSystem-be-ns-cnk-codes.xml.html: Invalid l
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/Condition-reflux-condition.xml.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/ExampleScenario-example-13-scenario.change.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -4683,6 +4703,23 @@ ERROR: /github/workspace/output/MedicationDispense-10-2-dispense.xml.html: Inval
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/ExampleScenario-example-13-scenario.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/logical-models.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -6434,6 +6471,23 @@ ERROR: /github/workspace/output/Condition-headache-condition.change.history.html
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-resources.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-15-prescription-2.change.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -6588,6 +6642,23 @@ ERROR: /github/workspace/output/MedicationStatement-8-usage.ttl.html: Invalid li
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecordDispense-definitions.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-description.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -11279,9 +11350,11 @@ WARNING: ValueSet/medication-substitution-dispense-v1: ValueSet.jurisdiction[0]:
 == /github/workspace/input/be-medication.xml ==
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 ERROR: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition: ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed
-WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[78].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[101].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[79].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[102].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.page.page[4].page[10].title: value should not start or finish with whitespace
+== /github/workspace/input/examples/ExampleScenario-example-13-scenario.xml ==
+WARNING: ExampleScenario/example-13-scenario: ExampleScenario.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1.json ==
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions

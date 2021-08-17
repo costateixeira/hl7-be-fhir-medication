@@ -21,6 +21,13 @@
     "name": "ChangedmedicationScenario"
   },
   {
+    "id": "example-13-scenario",
+    "type": "ExampleScenario",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-13-scenario",
+    "version": "0.2.0",
+    "name": "MedicationStopped"
+  },
+  {
     "id": "example-2-scenario",
     "type": "ExampleScenario",
     "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-2-scenario",
