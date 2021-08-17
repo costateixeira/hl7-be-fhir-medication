@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<ImplementationGuide xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+  <id value="riziv-medicationrecord"/>
+  <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
+    <valueString value="resources-spreadsheet.xml"/>
+  </extension>-->
+  <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/riziv-medicationrecord"/>
+  <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+  <version value="0.1.0-test"/>
+  <name value="MedicationRecord"/>
+  <title value="MedicationRecord"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <!-- Or whatever URL and/or email address(es) are appropriate -->
+      <system value="url"/>
+      <value value="http://hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <description value="Medication Record"/>
+  <jurisdiction>     
+    <!-- This will drive SNOMED release used -->
+    <coding>
+      <!-- This is the code for universal -->
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <!-- Change to this if the IG is country-specific
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      -->
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.be.riziv-medicationrecord"/>
+  <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
+  <license value="CC0-1.0"/>
+  <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+
+    <grouping id="medicationrecord">
+      <name value="Medication Record"/>
+      <description value="Medication Record / Medication Schema"/>
+    </grouping>
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-medication-record"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Medication Record"/>
+      <description value="Medication Record - summary or detailed information about the usage of medication by a patient"/>
+      <groupingId value="medicationrecord"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-medication-summary-types"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - Medication Summary Types"/>
+      <description value="The different types of Medication Summary"/>
+      <groupingId value="medicationrecord"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-medication-summary-types"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Medication Summary Types"/>
+      <description value="The different types of Medication Summary"/>
+      <groupingId value="medicationrecord"/>
+    </resource>
+
+
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="howto.html"/>
+        <title value="How to read this document"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="medicationrecord.html"/>
+        <title value="Medication Record Functionality"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="medicationrecord-definitions.html"/>
+          <title value="Definitions - Medication Record"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="functional-description.html"/>
+          <title value="Functional Overview"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-data-model.html"/>
+          <title value="Medication Record - Data Model"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-scenarios.html"/>
+          <title value="Medication Record Scenarios"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="medicationrecord-scenario-1.html"/>
+            <title value="Scenario 1 - concurrent medications"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="medicationrecord-scenario-2.html"/>
+            <title value="Scenario 2 - medication protocols"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+      </page>
+
+      <page>
+        <nameUrl value="medicationrecord-requirements.html"/>
+        <title value="Requirements - Medication Record"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationrecord-patterns.html"/>
+        <title value="Architectural patterns - Medication Record"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="medicationrecord-pattern-1.html"/>
+          <title value="Pattern 1 - Consult a patient's medication record"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-pattern-2.html"/>
+          <title value="Pattern 2 - update a patient's medication record"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-pattern-3.html"/>
+          <title value="Pattern 3 - Compile a medication record"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+
+
+      <page>
+        <nameUrl value="medicationrecord-usageexamples.html"/>
+        <title value="MedicationRecord - usage examples"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="example1.html"/>
+          <title value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example2a.html"/>
+          <title value="Prescribed medication is changed by another medication from a different VOS-cluster - different strength"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example2b.html"/>
+          <title value="Prescribed medication is changed by another medication from a different VOS-cluster - Different package size"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example3.html"/>
+          <title value="Dispense medication before the prescription is available"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example4.html"/>
+          <title value="Dispense of prescribed medication and of a product that can be dispensed without a prescription"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example5.html"/>
+          <title value="Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example6.html"/>
+          <title value="Refusal to dispense the prescribed medication"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example7.html"/>
+          <title value="Dispense of medication that was prescribed to take if needed, but was not taken"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example8.html"/>
+          <title value="Dispense of medication that was prescribed, but not taken till the end"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example9a.html"/>
+          <title value="Recording of anesthetic, contrast and similar medications - Checking possible interactions before surgery"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example9b.html"/>
+          <title value="Recording of anesthetic, contrast and similar medications - Product prescribed (by VOS) and dispense for exam "/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="example10.html"/>
+          <title value="The recording of non-medication aka pharmaceutical products"/>
+          <generation value="markdown"/>
+        </page>
+
+
+
+      </page>
+
+
+
+      <page>
+        <nameUrl value="implementation.html"/>
+        <title value="Medication Record Implementation"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="medicationrecord-fhir-resources.html"/>
+          <title value="Medication Record - FHIR resources"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-transaction-types.html"/>
+          <title value="Medication Record - Types of transactions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="artifacts.html"/>
+          <title value="Artifact Index"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+
+
+
+
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2021+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input\history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input\scenarios"/>
+    </parameter>
+    <parameter>
+      <code value="path-binary"/>
+      <value value="input\cql"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="templates\liquid"/>
+    </parameter>
+    <parameter>
+      <code value="apply-jurisdiction"/>
+      <value value="true"/>
+    </parameter>    
+    <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <parameter>
+      <code value="excludexml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludejson"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludettl"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>-->
+  </definition>
+</ImplementationGuide>

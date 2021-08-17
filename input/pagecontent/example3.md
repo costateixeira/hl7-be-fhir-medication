@@ -78,9 +78,3 @@ This example shows a dispense of a medication that is made before an existing pr
 1. Identification of Prescription - [authorizingPrescription](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription)
 
 
-
-### Notes:  
-* The dispense starts a new treatment and treatmentline??? 
-* So, if the prescription occurs, it is connected to the same prescription line throuhht the treatmentLine.
-* But what if the prescription is a different drug? 
-* 

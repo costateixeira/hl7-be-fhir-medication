@@ -1,4 +1,4 @@
-Instance: 3-prescription 
+Instance: example-3-of-medication-presc 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -29,7 +29,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 3-dispense 
+Instance: example-3-of-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -70,7 +70,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 
 
 
-Instance: 3-2-dispense 
+Instance: example-3-2-of-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -109,7 +109,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 
 
 
-Instance: 3-2-prescription 
+Instance: example-3-2-of-medication-presc 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a dispense of a medication that is made before an existing prescription"
@@ -139,43 +139,3 @@ Title: "Dispense medication before the prescription of the general practitioner"
 
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
-
-
-Instance: 3-treatmentLine 
-InstanceOf: MedRecordTreatmentLine
-Usage: #example
-Description: ""
-Title:    ""
-
-* identifier[0].system = "http://treatmentLines-identifiers.com"
-* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#9050  "diclofenac oral 50 mg"
-
-* status = #active
-
-* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
-* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
-
-
-Instance: 3-treatment 
-InstanceOf: MedRecordTreatment
-Usage: #example
-Description: ""
-Title:    ""
-
-* identifier[0].system = "http://treatments-identifiers.com"
-* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* created = "2021-07-19T13:00:00+02:00"
-
-* status = #active 
-* intent = #plan
-* title = "Treatment for Arthritis"
-* addresses = Reference(arthritis-condition)

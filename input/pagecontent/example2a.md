@@ -45,15 +45,3 @@ This example shows a prescription that is made by VOS and the pharmacist changes
 7. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
    
 8. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
-
-
-### Notes:  
-* The prescription starts a new treatment and treatmentline. 
-* Meanwhile, the dispense  occurs. 
-* Since the active principle is the same, the dispense also goes into the same treatment line.
-* However, each medication should have a different VOS-grouping as a medication group.
-
-The final result of these interactions is:  
-  <div>
-{% include example2-result.svg %}
-</div>

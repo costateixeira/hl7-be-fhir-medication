@@ -40,12 +40,3 @@ This example shows a prescription that is made by VOS and the pharmacist refuses
 6. ?? do we add the code/reference of the medication that was not dispensed ??
 7. do we add quantity? in IHE, we do Medication=X, QTY = 0
    
-### Notes:  
-* The prescription starts a new treatment and treatmentline. 
-* As the dispense is rejected, a new prescription should emerge from this. 
-* Since the new prescription is for the same purpose, but only a new drug, the treatment stays the same but a new treatment line is created.
-
-The final result of these interactions is:  
-  <div>
-{% include example6-result.svg %}
-</div>

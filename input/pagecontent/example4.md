@@ -55,14 +55,3 @@ This example shows a dispense of two products. One that has a prescription and o
 5. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
    
 6. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
-
-
-### Notes:  
-* The prescription starts a new treatment and treatmentline. 
-* Meanwhile, the dispense  occurs and is added to the same treatmentLine.
-* Since the dispense is not related, starts a new treatment and TreatmentLine
-
-The final result of these interactions is:  
-  <div>
-{% include example4-result.svg %}
-</div>

@@ -1,0 +1,179 @@
+@startuml
+hide stereotype
+hide circle
+skinparam linetype polyline
+'!pragma graphviz_dot smetana
+
+package "Patient Record" as PR {
+
+  package " Medication Record   " as MR #FCF7FF {
+    class "**Patient**" as p #EEE {
+--
+|_ name 0..1
+|_ identifier 0..*   
+'--
+'Patient  
+        }
+    class " **Medication Summary** " as MS #DEF {
+        --
+        |_ identifier
+        |_ type
+        |_ period
+        |_ indication
+        |_ recorder
+        |_ record_date
+        |_ last_updated
+        |_ criteria
+'        --
+'        CarePlan
+    }
+
+
+    class " **Medication Treatment Line ** " as MTL #DDF {
+        --
+        |_ identifier
+        |_ dosage
+        |_ status
+        |_ period
+        |_ indication
+        |_ origin_type
+        |_ medication
+          |_ name
+          |_ code
+          |_ class
+        |_ based_on
+'        --
+'        MedicationStatement
+    }
+
+    class " **Medication Treatment**  " as MT #DFD {
+        --
+        |_ identifier
+        |_ type
+        |_ period
+        |_ indication
+        |_ recorder
+        |_ record_date
+        |_ last_updated
+'        --
+'        CarePlan
+    }
+
+
+
+
+    class " **Medication Protocol**  " as MP #EFE {
+    --
+    |_ identifier
+    |_ title
+    |_ reference
+'    --
+'    PlanDefinition
+    }
+
+
+class " **Medication** \n  **Allergy/Intolerance**  " as MAL #FED {
+--
+|_ code
+|_ clinical_status
+|_ verification_status  
+|_ recorder
+|_ record_date
+|_ reactions
+'--
+'BeAllergyIntolerance
+}
+
+class " **Prescription**  " as PRE #FFD {
+--
+|_ identifier
+|_ status
+|_ medication
+'--
+'MedicationRequest
+}
+
+class " **Dispense**  " as DIS #DDE {
+--
+|_ identifier
+|_ status
+|_ medication
+'--
+'MedicationDispense
+}
+
+class " **Administration**  " as ADM #DFE {
+--
+|_ identifier
+|_ status
+|_ medication
+'--
+'MedicationAdministration
+}
+
+class " **Usage Statement**  " as USE #DDD {
+--
+|_ identifier
+|_ status
+|_ medication
+'--
+'MedicationStatement
+}
+
+
+
+
+class " **Medication** \n  **Event**  " as ADE #FDD {
+--
+|_ code
+|_ clinical_status
+|_ verification_status  
+|_ recorder
+|_ record_date
+|_ reactions
+'--
+'AdverseEvent
+}
+
+
+
+class " **Condition** \n **Indication** " as IND #FEF {
+--
+|_ code
+|_ clinical_status
+|_ verification_status   
+|_ recorder
+|_ record_date
+'--
+'Condition
+}
+
+
+MS -r-* MTL
+p -r- MT : "         "
+MT -d-o MTL
+MT -r- MP : "     "
+
+p -d- MS
+MP -d[hidden]- MTL
+
+p -u- MAL
+MT -u[hidden]- MAL
+MS -u[hidden]- MAL
+MAL -r- ADE : "       "
+
+
+MTL -d- DIS
+MTL -d- PRE
+MTL -d- ADM
+MTL -r- USE : "   "
+ADE -r[hidden]- IND : "          "
+
+PRE -r[hidden]- DIS : "           "
+DIS -r[hidden]- ADM : "         "
+
+
+
+  }
+}
+@enduml

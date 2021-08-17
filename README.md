@@ -1,12 +1,18 @@
-# Medication
-Medication ImplementationGuide
+Empty IG
+---
+This is an empty IG
+<br> </br>
+###
+### Publication
+This ImplementationGuide is published in the following locations:
 
-This is a draft publication by the HL7 Belgium Medication work group. 
-The continuous Build is published in  
+Continuous Build: __http://build.fhir.org/ig/hl7-be/riziv-medication-record/index.html__  
+Canonical / permanent URL: 
+<br> </br>
 
-https://hl7-be.github.io/hl7-be-fhir-medication/
+### Issues
+Issues and change requests are managed here:  
 
-Not to be used for any other purpose.,
+Issues:  __https://github.com/hl7-be/riziv-medication-record/issues__  
+Kanban board:  __https://github.com/hl7-be/riziv-medication-record/projects/1__  
 
-This work will be merged onto another repository for publication.
- 

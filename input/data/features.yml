@@ -1,14 +1,26 @@
----
-feedback:
-  - active: true
-    type: "googleform"   
-    label: "Feedback"   
-    formUrl: https://docs.google.com/forms/d/e/1FAIpQLSfFeLMvb7wmUDGa181obPb04Igny75iqSy2jMSp6Wg40LKWjw/viewform?usp=pp_url
-    dashboard: 
-      url: https://github.com/hl7-be/hl7-be-fhir-medication/projects/1
-      label: "Issues"    
-    parameters:
-    - fieldId: "1353807103"
-      variableName: "pageTitle"
-    - fieldId: "247644557"
-      variableName: "sectionName"
+#---
+#feedback:
+#  - active: true
+#    type: "googleform"   
+#    label: "Issue"
+#    formUrl: https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url
+#    dashboard: 
+#       url: https://github.com/openhie/hiv-ig/projects/1
+#       label: "Issues"
+#    parameters:
+#    - name: "'entry.1353807103'"
+#      value: encodeURIComponent($(document).attr('title'))
+#    - name: "'entry.247644557'"
+#      value: document.getElementById(id).textContent
+#  - active: true
+#    type: "googleform"   
+#    label: "Issue"
+#    formUrl: https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url
+#    dashboard: 
+#       url: https://github.com/openhie/hiv-ig/projects/1
+#       label: "Issues"
+#    parameters:
+#    - name: "'entry.1353807103'"
+#      value: encodeURIComponent($(document).attr('title'))
+#    - name: "'entry.247644557'"
+#      value: document.getElementById(id).textContent

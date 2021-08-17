@@ -1,8 +1,8 @@
-Instance: 1-prescription 
+Instance: example-1-of-medication-presc 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
-Title: "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -27,11 +27,11 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 1-dispense 
+Instance: example-1-of-medication-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
-Title: "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
+Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 
 * identifier[0].system = "http://dispense-identifiers.com"
 * identifier[0].value = "f219aa4e-5d10-4f3d-840d-a15e0dff2957"
@@ -71,41 +71,3 @@ Description: "This example shows a prescription that is made by brand name and t
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: 1-treatmentLine 
-InstanceOf: MedRecordTreatmentLine
-Usage: #example
-Description: ""
-Title:    ""
-
-* identifier[0].system = "http://treatmentLines-identifiers.com"
-* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#2399640  "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
-
-* status = #active
-
-* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
-* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
-
-
-Instance: 1-treatment 
-InstanceOf: MedRecordTreatment
-Usage: #example
-Description: ""
-Title:    ""
-
-* identifier[0].system = "http://treatments-identifiers.com"
-* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
-
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
-
-* created = "2021-07-19T13:00:00+02:00"
-
-* status = #active 
-* intent = #plan
-* title = "Treatment for Hypertension"
-* addresses = Reference(hypertension-condition)
