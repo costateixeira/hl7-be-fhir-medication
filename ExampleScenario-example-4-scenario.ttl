@@ -136,7 +136,7 @@
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "4-prescription" ]
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "4-1-prescription" ]
              ]
            ]
          ]

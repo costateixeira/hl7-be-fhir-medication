@@ -135,7 +135,7 @@
                     "initiator": "GP",
                     "receiver": "VAULT",
                     "request": {
-                      "resourceId": "4-prescription"
+                      "resourceId": "4-1-prescription"
                     }
                   }
                 }
