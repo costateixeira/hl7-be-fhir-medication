@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment",
-  "version": "0.2.0",
+  "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment",
+  "version": "0.1.0-test",
   "name": "MedRecordTreatment",
-  "title": "[Profile] - Treatment",
+  "title": "Medication Treatment profile",
   "status": "active",
-  "date": "2021-08-18T10:03:10+00:00",
+  "date": "2021-08-18T14:31:38+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -37,11 +37,10 @@
     {
       "coding": [
         {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "056"
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
         }
-      ],
-      "text": "Belgium"
+      ]
     }
   ],
   "fhirVersion": "4.0.1",

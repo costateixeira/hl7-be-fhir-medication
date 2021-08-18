@@ -1,62 +1,50 @@
 {
-  "package": "hl7.be.fhir.medicationig",
-  "version": "0.2.0",
+  "package": "hl7.fhir.be.riziv-medicationrecord",
+  "version": "0.1.0-test",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "056",
+  "jurisdiction": "BE",
   "extensions": [
     {
-      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl",
-      "title": "Based On Extension",
+      "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/treatmentPlan",
+      "title": "Based On",
       "types": [
         "Reference"
       ]
     }
   ],
   "profiles": {
-    "Bundle": [
-      {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
-        "title": "[Profile] - Medication Record"
-      }
-    ],
-    "Composition": [
-      {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp",
-        "title": "[Profile] - Structure Composition for Medication Record"
-      }
-    ],
     "MedicationAdministration": [
       {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration",
-        "title": "[Profile] - Administration"
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration",
+        "title": "Medication Record - Administration profile"
       }
     ],
     "MedicationDispense": [
       {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",
-        "title": "BeMedicationDispense"
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense",
+        "title": "Medication Record - Dispense profile"
       }
     ],
     "MedicationRequest": [
       {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder",
-        "title": "[Profile] - Prescription"
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder",
+        "title": "Medication Record - Order profile"
       }
     ],
     "CarePlan": [
       {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment",
-        "title": "[Profile] - Treatment"
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment",
+        "title": "Medication Treatment profile"
       }
     ],
     "MedicationStatement": [
       {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
-        "title": "[Profile] - Treatment Line"
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine",
+        "title": "Medication Treatment Line profile"
       },
       {
-        "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage",
-        "title": "[Profile] - Usage"
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage",
+        "title": "Medication Record - Usage profile"
       }
     ]
   },
@@ -68,7 +56,6 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
-      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -77,23 +64,8 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/event-basedOn": [
-      "MedicationAdministration",
-      "MedicationDispense",
-      "MedicationRequest",
-      "MedicationStatement"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/geolocation": [
-      "MedicationDispense.contained"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -110,17 +82,13 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/translation": [
-      "MedicationDispense.dosageInstruction.text",
-      "MedicationDispense.medicationCodeableConcept.coding.display"
-    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl": [
+    "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/treatmentPlan": [
       "MedicationAdministration",
       "MedicationDispense",
       "MedicationRequest",

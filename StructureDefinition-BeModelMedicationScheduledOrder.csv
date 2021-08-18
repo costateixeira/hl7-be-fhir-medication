@@ -1,0 +1,24 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeModelMedicationScheduledOrder","","","",0,*,"","","","","Medication Record Prescription logical model","Record of a single planned administration event","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelMedicationScheduledOrder.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication prescription","The business identifier(s) for the medication prescription","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.identifier",0,1,"",""
+"BeModelMedicationScheduledOrder.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.patient",1,1,"",""
+"BeModelMedicationScheduledOrder.status","","","",1,1,"","","","code {[]} {[]}
+","active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)","active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.status",1,1,"",""
+"BeModelMedicationScheduledOrder.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason for current status medicationRequest Status Reason Codes (Example)","Reason for current status medicationRequest Status Reason Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.statusReason",0,*,"",""
+"BeModelMedicationScheduledOrder.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","Medication to be taken SNOMED CT Medication Codes (Example)","Medication to be taken SNOMED CT Medication Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.product[x]",1,1,"",""
+"BeModelMedicationScheduledOrder.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Encounter created as part of encounter/admission/stay","Encounter created as part of encounter/admission/stay","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.encounter",0,1,"",""
+"BeModelMedicationScheduledOrder.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)","Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.reason",0,*,"",""
+"BeModelMedicationScheduledOrder.groupIdentifier","","","",0,1,"","","","Identifier {[]} {[]}
+","Composite request this is part of","Composite request this is part of","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.groupIdentifier",0,1,"",""
+"BeModelMedicationScheduledOrder.dosageInstruction","","","",0,*,"","","","Dosage {[]} {[]}
+","How the medication should be taken","How the medication should be taken","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.dosageInstruction",0,*,"",""
+"BeModelMedicationScheduledOrder.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.note",0,*,"",""
+"BeModelMedicationScheduledOrder.treatment","","","",0,1,"","","","Reference {[]} {[]}
+","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to","","","","","","","","","",,,,,"",,,,"BeModelMedicationScheduledOrder.treatment",0,1,"",""
