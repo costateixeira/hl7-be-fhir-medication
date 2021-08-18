@@ -119,7 +119,7 @@
             <initiator value="GP"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="4-prescription"/>
+              <resourceId value="4-1-prescription"/>
             </request>
           </operation>
         </step>
