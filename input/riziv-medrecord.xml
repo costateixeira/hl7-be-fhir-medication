@@ -639,11 +639,6 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="usecases-dispense.html"/>
-        <title value="Use Cases - Dispense"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="medicationrecord.html"/>
         <title value="Medication Record Functionality"/>
         <generation value="markdown"/>
