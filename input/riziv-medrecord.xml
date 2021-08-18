@@ -79,6 +79,549 @@
       <groupingId value="medicationrecord"/>
     </resource>
 
+      <resource>
+         <reference>
+            <reference value="ExampleScenario/example-1-scenario" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ExampleScenario 1 - Changing brand name in the same VOS" />
+         <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+      </resource>
+      <resource>
+        <reference>
+           <reference value="ExampleScenario/example-2-scenario" />
+        </reference>
+        <fhirVersion value="4.0.1" />
+        <name value="ExampleScenario 2 - Changing by another medication from a different VOS" />
+        <description value="Prescribed medication is changed by another medication from a different VOS-cluster" />
+     </resource>
+     <resource>
+      <reference>
+         <reference value="ExampleScenario/example-3-scenario" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="ExampleScenario 3 - Dispense medication before the prescription is available" />
+      <description value="This example shows a dispense of a medication that is made before an existing prescription" />
+   </resource>
+
+   <resource>
+    <reference>
+       <reference value="ExampleScenario/example-4-scenario" />
+    </reference>
+    <fhirVersion value="4.0.1" />
+    <name value="ExampleScenario 4 - Dispense of prescribed medication and of a product without a prescription" />
+    <description value="This example shows a dispense of two products. One that has a prescription and other that does not (and does not need one)." />
+ </resource>
+
+ <resource>
+  <reference>
+     <reference value="ExampleScenario/example-5-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 5 - Dispense of new brand medication because the old is unavailable" />
+  <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock." />
+</resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-6-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 6 - Refusal to dispense the prescribed medication" />
+  <description value="This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication." />
+</resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-7-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 7 - Dispense of medication that was prescribed to take if needed, but was not taken" />
+  <description value="This example shows a prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. 
+  Then it is reported that the medication was not taken at all." />
+</resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-8-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end" />
+  <description value="This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction." />
+</resource>
+<resource>
+  <reference>
+     <reference value="ExampleScenario/example-13-scenario" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="ExampleScenario 13 - Dispense of OTC medication for acute symptons" />
+  <description value="This example shows dispense of medication OTC and how treatment resources should be handled" />
+</resource>
+<!--  start of singular resources         -->
+<resource>
+  <reference>
+     <reference value="MedicationDispense/1-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - Dispense" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/1-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - prescription" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/1-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - Treatment" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/1-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 1 - Treatment Line" />
+  <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+</resource>
+
+
+<resource>
+  <reference>
+     <reference value="MedicationDispense/2a-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - Dispense" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/2a-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - prescription" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/2a-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - Treatment" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/2a-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 2a - Treatment Line" />
+  <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
+</resource>
+
+
+<resource>
+  <reference>
+     <reference value="MedicationDispense/3-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - Dispense" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/3-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - prescription" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/3-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - Treatment" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/3-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - Treatment Line" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/3-2-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - Dispense 2" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/3-2-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 3 - prescription 2" />
+  <description value="Dispense medication before the prescription of the general practitioner" />
+</resource>
+
+
+<resource>
+  <reference>
+     <reference value="MedicationRequest/4-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - prescription" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/4-1-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Dispense 1" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/4-2-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Dispense 2 (no Prescription)" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/4-1-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment 1" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/4-1-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment Line 1" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/4-2-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment 2" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/4-2-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 4 - Treatment Line 2" />
+  <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
+</resource>
+
+
+<resource>
+  <reference>
+     <reference value="MedicationDispense/5-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 5 - Dispense" />
+  <description value="Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/5-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 5 - prescription" />
+  <description value="Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/5-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 5 - Treatment" />
+  <description value="Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/5-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 5 - Treatment Line" />
+  <description value="Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it" />
+</resource>
+
+
+
+<resource>
+  <reference>
+     <reference value="MedicationDispense/6-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 6 - Dispense" />
+  <description value="Refuse the dispense prescribed medication" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/6-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 6 - prescription" />
+  <description value="Refuse the dispense prescribed medication" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/6-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 6 - Treatment" />
+  <description value="Refuse the dispense prescribed medication" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/6-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 6 - Treatment Line" />
+  <description value="Refuse the dispense prescribed medication" />
+</resource>
+
+
+
+<resource>
+  <reference>
+     <reference value="MedicationDispense/7-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 7 - Dispense" />
+  <description value="Dispense of medication that was prescribed to take if needed, but was not taken" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/7-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 7 - prescription" />
+  <description value="Dispense of medication that was prescribed to take if needed, but was not taken" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/7-usage" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 7 - Usage" />
+  <description value="Dispense of medication that was prescribed to take if needed, but was not taken" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/7-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 7 - Treatment" />
+  <description value="Dispense of medication that was prescribed to take if needed, but was not taken" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/7-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 7 - Treatment Line" />
+  <description value="Dispense of medication that was prescribed to take if needed, but was not taken" />
+</resource>
+
+
+
+
+
+<resource>
+  <reference>
+     <reference value="MedicationRequest/8-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - prescription" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/8-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - Dispense" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationAdministration/8-administration" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - Administration" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/8-usage" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - Usage" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/8-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - Treatment" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/8-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 8 - Treatment Line" />
+  <description value="Dispense of medication that was prescribed, but not taken till the end" />
+</resource>
+
+
+
+<resource>
+  <reference>
+     <reference value="MedicationDispense/10-1-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 10 - Dispense 1" />
+  <description value="The recording of non-medication aka pharmaceutical products" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/10-2-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 10 - Dispense 2" />
+  <description value="The recording of non-medication aka pharmaceutical products" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/10-3-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 10 - Dispense 3" />
+  <description value="The recording of non-medication aka pharmaceutical products" />
+</resource>
+
+
+
+
+<resource>
+  <reference>
+     <reference value="MedicationRequest/15-prescription" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - prescription 1" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/15-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Treatment 1" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/15-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Treatment Line 1" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/15-scheduleAdministration" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Scheduled Administration 1" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/15-scheduleAdministration-2" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Scheduled Administration 2" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/15-prescription-2" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - prescription 2" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/15-treatment-2" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Treatment 2" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/15-treatmentLine-2" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Treatment Line 2" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/15-scheduleAdministration-3" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Scheduled Administration 3" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationRequest/15-scheduleAdministration-4" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Scheduled Administration 4" />
+  <description value="Medication summary" />
+</resource>
+
+<resource>
+  <reference>
+     <reference value="CarePlan/total-view" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Total View of Medication" />
+  <description value="Medication summary" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/week-view" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 15 - Week View of Medication" />
+  <description value="Medication summary" />
+</resource>
 
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
@@ -94,6 +637,11 @@
         <nameUrl value="howto.html"/>
         <title value="How to read this document"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="usecases-dispense.html"/>
+        <title value="Use Cases - Dispense"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="medicationrecord.html"/>
@@ -149,6 +697,16 @@
           <nameUrl value="medicationrecord-pattern-2.html"/>
           <title value="Pattern 2 - update a patient's medication record"/>
           <generation value="markdown"/>
+          <page>
+            <nameUrl value="medication-granularity.html"/>
+            <title value="Medication Levels"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="medication-class-group.html"/>
+            <title value="Medication Classification and grouping"/>
+            <generation value="markdown"/>
+          </page>
         </page>
         <page>
           <nameUrl value="medicationrecord-pattern-3.html"/>
