@@ -5,46 +5,58 @@
   "jurisdiction": "BE",
   "extensions": [
     {
-      "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/treatmentPlan",
-      "title": "Based On",
+      "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/related-tl",
+      "title": "Based On Extension",
       "types": [
         "Reference"
       ]
     }
   ],
   "profiles": {
+    "Bundle": [
+      {
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord",
+        "title": "[Profile] - Medication Record"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp",
+        "title": "[Profile] - Structure Composition for Medication Record"
+      }
+    ],
     "MedicationAdministration": [
       {
         "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration",
-        "title": "Medication Record - Administration profile"
+        "title": "[Profile] - Administration"
       }
     ],
     "MedicationDispense": [
       {
         "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense",
-        "title": "Medication Record - Dispense profile"
+        "title": "[Profile] - Dispense"
       }
     ],
     "MedicationRequest": [
       {
         "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder",
-        "title": "Medication Record - Order profile"
+        "title": "[Profile] - Prescription"
       }
     ],
     "CarePlan": [
       {
         "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment",
-        "title": "Medication Treatment profile"
+        "title": "[Profile] - Treatment"
       }
     ],
     "MedicationStatement": [
       {
         "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine",
-        "title": "Medication Treatment Line profile"
+        "title": "[Profile] - Treatment Line"
       },
       {
         "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage",
-        "title": "Medication Record - Usage profile"
+        "title": "[Profile] - Usage"
       }
     ]
   },
@@ -64,8 +76,17 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/event-basedOn": [
+      "MedicationAdministration",
+      "MedicationDispense",
+      "MedicationRequest",
+      "MedicationStatement"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -88,7 +109,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/treatmentPlan": [
+    "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/related-tl": [
       "MedicationAdministration",
       "MedicationDispense",
       "MedicationRequest",

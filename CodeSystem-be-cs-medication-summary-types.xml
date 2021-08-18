@@ -8,9 +8,9 @@
   <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types"/>
   <version value="0.1.0-test"/>
   <name value="BeCSMedicationSummaryTypes"/>
-  <title value="Medication Summary types"/>
+  <title value="[Code System] - Medication Summary Types "/>
   <status value="active"/>
-  <date value="2021-08-18T14:31:38+00:00"/>
+  <date value="2021-08-18T16:05:42+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>

@@ -15,9 +15,9 @@
   fhir:ValueSet.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
   fhir:ValueSet.name [ fhir:value "SubstitutionReason"];
-  fhir:ValueSet.title [ fhir:value "medication substitution Value set"];
+  fhir:ValueSet.title [ fhir:value "[Value Set] - Medication Substitution"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-08-18T14:31:38+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-08-18T16:05:42+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Belgium"];
   fhir:ValueSet.contact [
      fhir:index 0;
