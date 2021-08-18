@@ -1,13 +1,14 @@
 ﻿BEMedicationIG : Validation Results
 =========================================
 
-err = 141, warn = 104, info = 82
+err = 146, warn = 116, info = 90
 IG Publisher Version: 1.1.77
-Generated Wed Aug 18 09:15:46 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Wed Aug 18 10:04:03 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
- Build Errors : 654 / 12 / 0
+ Build Errors : 684 / 18 / 0
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-15-treatment : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-15-treatment-2 : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-2a-treatment : 0 / 0 / 2
@@ -43,6 +44,9 @@ Generated Wed Aug 18 09:15:46 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/MedicationDispense-10-1-dispense : 0 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-10-2-dispense : 0 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-10-3-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense : 1 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense-2 : 1 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense-3 : 1 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-2a-dispense : 4 / 2 / 5
  /github/workspace/fsh-generated/resources/MedicationDispense-3-2-dispense : 1 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-3-dispense : 1 / 2 / 4
@@ -72,6 +76,8 @@ Generated Wed Aug 18 09:15:46 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
  /github/workspace/fsh-generated/resources/MedicationRequest-7-prescription : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationRequest-8-prescription : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationStatement-1-treatmentLine : 1 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationStatement-13-treatmentLine : 1 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationStatement-13-treatmentLine-2 : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationStatement-15-treatmentLine : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationStatement-15-treatmentLine-2 : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationStatement-2a-treatmentLine : 1 / 0 / 3
@@ -121,6 +127,7 @@ Generated Wed Aug 18 09:15:46 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medic
 ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/headache-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/headache-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/13-dispense-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/hyperlipidemia-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/hyperlipidemia-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/medication-dispense-hospital.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -133,11 +140,16 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-product-package-type.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/reflux-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/reflux-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/13-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-cnk-codes.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/13-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/13-treatmentLine-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/13-dispense-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-dispense-communitypharmacy-1med.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-prescription-ids.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/arthritis-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/arthritis-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/13-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-minimal-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/pharyngitis-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/pharyngitis-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -825,6 +837,23 @@ ERROR: /github/workspace/output/Condition-hypertension-condition.change.history.
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.xml.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-15-scheduleAdministration-2.change.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -962,6 +991,23 @@ ERROR: /github/workspace/output/MedicationRequest-15-prescription-2.xml.html: In
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationDispense-medication-dispense-hospital.change.history.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.xml.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -1233,6 +1279,23 @@ ERROR: /github/workspace/output/StructureDefinition-MedRecordOrder-examples.html
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense.xml.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/medicationrecord-usageexamples.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -1268,6 +1331,23 @@ ERROR: /github/workspace/output/CarePlan-week-view.html: Invalid literal declara
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationDispense-example-dispense-communitypharmacy-1med.json.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/CarePlan-13-treatment.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -1709,6 +1789,23 @@ ERROR: /github/workspace/output/ExampleScenario-example-5-scenario-resources.htm
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-related-tl.profile.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -1999,6 +2096,23 @@ ERROR: /github/workspace/output/StructureDefinition-MedRecordTreatment-examples.
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-MedRecordTreatment.profile.ttl.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/CarePlan-13-treatment.ttl.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -2763,6 +2877,23 @@ ERROR: /github/workspace/output/MedicationStatement-15-treatmentLine.change.hist
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.ttl.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-MedRecordTreatment.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -2798,6 +2929,23 @@ ERROR: /github/workspace/output/MedicationDispense-example-minimal-dispense.chan
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-15-scheduleAdministration-4.json.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense.change.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -3223,6 +3371,23 @@ ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecordAdmin
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecordOrder-definitions.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -3681,7 +3846,41 @@ ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationScheduledAd
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense.json.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-MedRecordTreatmentLine-mappings.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.xml.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -3784,6 +3983,23 @@ ERROR: /github/workspace/output/MedicationDispense-3-dispense.json.html: Invalid
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-MedRecordMedicationSummaryView.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.change.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -4124,6 +4340,23 @@ ERROR: /github/workspace/output/MedicationDispense-3-2-dispense.json.html: Inval
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-MedRecordDispense-definitions.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/CarePlan-13-treatment.xml.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -5041,6 +5274,40 @@ ERROR: /github/workspace/output/StructureDefinition-MedRecordUsage.html: Invalid
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.ttl.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-be-model-medication-dispense-mappings.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -5263,6 +5530,23 @@ ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecordUsage
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-15-scheduleAdministration-3.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense.ttl.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -6622,6 +6906,23 @@ ERROR: /github/workspace/output/CarePlan-2a-treatment.html: Invalid literal decl
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.json.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationStatement-8-usage.ttl.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -7082,6 +7383,23 @@ ERROR: /github/workspace/output/StructureDefinition-MedRecord-definitions.html: 
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationScheduledAdministration.profile.history.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.ttl.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -7948,6 +8266,23 @@ ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecordTreat
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.json.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationDispense-1-dispense.ttl.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -8051,6 +8386,40 @@ ERROR: /github/workspace/output/Condition-toothache-condition.ttl.html: Invalid 
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario.change.history.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/CarePlan-13-treatment.change.history.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.change.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -8510,6 +8879,23 @@ ERROR: /github/workspace/output/CarePlan-2a-treatment.json.html: Invalid literal
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-15-prescription-2.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.ttl.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -9019,6 +9405,23 @@ ERROR: /github/workspace/output/Condition-toothache-condition.json.html: Invalid
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.change.history.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationDispense-3-2-dispense.xml.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -9088,6 +9491,23 @@ ERROR: /github/workspace/output/MedicationDispense-3-2-dispense.html: Invalid li
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/CarePlan-3-treatment.ttl.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -9342,6 +9762,23 @@ ERROR: /github/workspace/output/MedicationRequest-15-scheduleAdministration.ttl.
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.xml.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/StructureDefinition-MedRecord-examples.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -9479,6 +9916,23 @@ ERROR: /github/workspace/output/MedicationRequest-15-scheduleAdministration.json
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-6-prescription.ttl.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.json.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -9751,6 +10205,23 @@ ERROR: /github/workspace/output/StructureDefinition-MedRecordOrder.profile.xml.h
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/ExampleScenario-example-5-scenario.change.history.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.change.history.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -10328,6 +10799,23 @@ ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecordAdmin
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/CarePlan-13-treatment.json.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-4-prescription.json.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -10550,6 +11038,23 @@ ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecordTreat
             }
             feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/example10.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.json.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
               default:
@@ -10804,6 +11309,23 @@ ERROR: /github/workspace/output/medicationrecord-patterns.html: Invalid literal 
                   break;
             }
             feedbackurl = feedbackurl + '
+ERROR: /github/workspace/output/MedicationDispense-13-dispense.html: Invalid literal declaration following text:  */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '
 ERROR: /github/workspace/output/MedicationRequest-15-prescription.html: Invalid literal declaration following text:  */
 
             switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
@@ -11010,6 +11532,7 @@ ERROR: /github/workspace/output/CarePlan-7-treatment.change.history.html: Invali
             feedbackurl = feedbackurl + '
 == /github/workspace/fsh-generated/resources/Bundle-EB.json ==
 == /github/workspace/fsh-generated/resources/CarePlan-1-treatment.json ==
+== /github/workspace/fsh-generated/resources/CarePlan-13-treatment.json ==
 == /github/workspace/fsh-generated/resources/CarePlan-15-treatment.json ==
 INFORMATION: CarePlan/15-treatment: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/CarePlan-15-treatment-2.json ==
@@ -11096,6 +11619,24 @@ INFORMATION: MedicationDispense/10-3-dispense: MedicationDispense.medication.ofT
 WARNING: MedicationDispense/10-3-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: MedicationDispense/10-3-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/10-3-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense.json ==
+ERROR: MedicationDispense/13-dispense: MedicationDispense: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
+INFORMATION: MedicationDispense/13-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/13-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/13-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/13-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense-2.json ==
+ERROR: MedicationDispense/13-dispense-2: MedicationDispense: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
+INFORMATION: MedicationDispense/13-dispense-2: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/13-dispense-2: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/13-dispense-2: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/13-dispense-2: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense-3.json ==
+ERROR: MedicationDispense/13-dispense-3: MedicationDispense: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
+INFORMATION: MedicationDispense/13-dispense-3: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/13-dispense-3: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/13-dispense-3: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/13-dispense-3: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationDispense-2a-dispense.json ==
 ERROR: MedicationDispense/2a-dispense: MedicationDispense: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
 INFORMATION: MedicationDispense/2a-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
@@ -11234,6 +11775,12 @@ INFORMATION: MedicationRequest/8-prescription: MedicationRequest.medication.ofTy
 == /github/workspace/fsh-generated/resources/MedicationStatement-1-treatmentLine.json ==
 ERROR: MedicationStatement/1-treatmentLine: MedicationStatement: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
 INFORMATION: MedicationStatement/1-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationStatement-13-treatmentLine.json ==
+ERROR: MedicationStatement/13-treatmentLine: MedicationStatement: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
+INFORMATION: MedicationStatement/13-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationStatement-13-treatmentLine-2.json ==
+ERROR: MedicationStatement/13-treatmentLine-2: MedicationStatement: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
+INFORMATION: MedicationStatement/13-treatmentLine-2: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationStatement-15-treatmentLine.json ==
 ERROR: MedicationStatement/15-treatmentLine: MedicationStatement: The extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
 INFORMATION: MedicationStatement/15-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
@@ -11352,8 +11899,8 @@ WARNING: ValueSet/medication-substitution-dispense-v1: ValueSet.jurisdiction[0]:
 == /github/workspace/input/be-medication.xml ==
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 ERROR: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition: ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed
-WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[79].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[102].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[80].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.resource[107].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.be.fhir.medicationig: ImplementationGuide.definition.page.page[4].page[10].title: value should not start or finish with whitespace
 == /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1.json ==
 ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
