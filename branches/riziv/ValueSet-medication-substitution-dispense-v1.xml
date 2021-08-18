@@ -8,9 +8,9 @@
   <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1"/>
   <version value="0.1.0-test"/>
   <name value="SubstitutionReason"/>
-  <title value="medication substitution Value set"/>
+  <title value="[Value Set] - Medication Substitution"/>
   <status value="active"/>
-  <date value="2021-08-18T14:31:38+00:00"/>
+  <date value="2021-08-18T16:05:42+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>

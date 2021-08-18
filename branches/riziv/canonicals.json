@@ -7,6 +7,69 @@
     "name": "BeCSMedicationSummaryTypes"
   },
   {
+    "id": "example-1-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-1-scenario",
+    "version": "0.1.0-test",
+    "name": "ChangedmedicationSameVOSScenario"
+  },
+  {
+    "id": "example-13-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-13-scenario",
+    "version": "0.1.0-test",
+    "name": "MedicationOTC"
+  },
+  {
+    "id": "example-2-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-2-scenario",
+    "version": "0.1.0-test",
+    "name": "ChangedmedicationDifferentVOSScenario"
+  },
+  {
+    "id": "example-3-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-3-scenario",
+    "version": "0.1.0-test",
+    "name": "DispenseBeforePrescription"
+  },
+  {
+    "id": "example-4-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-4-scenario",
+    "version": "0.1.0-test",
+    "name": "DispensePrescriptionAndIsolatedDispense"
+  },
+  {
+    "id": "example-5-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-5-scenario",
+    "version": "0.1.0-test",
+    "name": "DispenseNewBrandOldUnavailable"
+  },
+  {
+    "id": "example-6-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-6-scenario",
+    "version": "0.1.0-test",
+    "name": "RefusalOfDispense"
+  },
+  {
+    "id": "example-7-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-7-scenario",
+    "version": "0.1.0-test",
+    "name": "MedicationNotTaken"
+  },
+  {
+    "id": "example-8-scenario",
+    "type": "ExampleScenario",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-8-scenario",
+    "version": "0.1.0-test",
+    "name": "MedicationStopped"
+  },
+  {
     "id": "hl7.fhir.be.riziv-medicationrecord",
     "type": "ImplementationGuide",
     "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/hl7.fhir.be.riziv-medicationrecord",
@@ -70,11 +133,25 @@
     "name": "BeModelMedicationRecordUsage"
   },
   {
-    "id": "BeModelMedicationScheduledOrder",
+    "id": "BeModelMedicationScheduledAdministration",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledOrder",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledAdministration",
     "version": "0.1.0-test",
-    "name": "BeModelMedicationScheduledOrder"
+    "name": "BeModelMedicationScheduledAdministration"
+  },
+  {
+    "id": "MedRecord",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord",
+    "version": "0.1.0-test",
+    "name": "MedRecord"
+  },
+  {
+    "id": "MedRecord-comp",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp",
+    "version": "0.1.0-test",
+    "name": "MedRecordComposition"
   },
   {
     "id": "MedRecordAdministration",
@@ -89,6 +166,20 @@
     "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense",
     "version": "0.1.0-test",
     "name": "MedRecordDispense"
+  },
+  {
+    "id": "MedRecordMedicationScheduledAdministration",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration",
+    "version": "0.1.0-test",
+    "name": "MedRecordMedicationScheduledAdministration"
+  },
+  {
+    "id": "MedRecordMedicationSummaryView",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView",
+    "version": "0.1.0-test",
+    "name": "MedRecordMedicationSummaryView"
   },
   {
     "id": "MedRecordOrder",
@@ -126,11 +217,11 @@
     "name": "BeModelMedicationRecord"
   },
   {
-    "id": "treatmentPlan",
+    "id": "related-tl",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/treatmentPlan",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/related-tl",
     "version": "0.1.0-test",
-    "name": "TreatmentPlan"
+    "name": "RelatedTreatmentLine"
   },
   {
     "id": "be-vs-medication-summary-types",

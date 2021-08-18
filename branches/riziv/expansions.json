@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3d9cfdf6-1c0b-4e5a-bf97-3e7cb157494e",
+  "id" : "5c535703-5064-4688-a610-9c9032de515e",
   "meta" : {
-    "lastUpdated" : "2021-08-18T14:31:38.207+00:00"
+    "lastUpdated" : "2021-08-18T16:05:42.232+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,14 +12,14 @@
       "id" : "be-vs-medication-summary-types",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-medication-summary-types.html\">Medication Summary types v0.1.0-test (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-medication-summary-types.html\"><code>http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.466\">kmehr-ms-5.6</a></td><td>Belgian Medication Schema v5.6 - 09/2018</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.465\">kmehr-ms-5.5</a></td><td>Belgian Medication Schema v5.5 - 12-2017</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-medication-summary-types.html\">[Code System] - Medication Summary Types  v0.1.0-test (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-medication-summary-types.html\"><code>http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.466\">kmehr-ms-5.6</a></td><td>Belgian Medication Schema v5.6 - 09/2018</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.465\">kmehr-ms-5.5</a></td><td>Belgian Medication Schema v5.5 - 12-2017</td><td/></tr></table></div>"
       },
       "url" : "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types",
       "version" : "0.1.0-test",
       "name" : "BeVSMedicationSummaryTypes",
-      "title" : "Medication Summary types",
+      "title" : "[Value Set] - Medication Summary Types ",
       "status" : "active",
-      "date" : "2021-08-18T14:31:38+00:00",
+      "date" : "2021-08-18T16:05:42+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:acc4b4a8-3aa8-4dbb-ab28-b6182217fd57",
-        "timestamp" : "2021-08-18T14:31:54+00:00",
+        "identifier" : "urn:uuid:1a14157a-4f40-4654-b577-48d5c70875ce",
+        "timestamp" : "2021-08-18T16:06:05+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -71,9 +71,9 @@
       "url" : "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1",
       "version" : "0.1.0-test",
       "name" : "SubstitutionReason",
-      "title" : "medication substitution Value set",
+      "title" : "[Value Set] - Medication Substitution",
       "status" : "active",
-      "date" : "2021-08-18T14:31:38+00:00",
+      "date" : "2021-08-18T16:05:42+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -89,8 +89,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:204dd11c-3229-485c-bde6-cf3c8634c61d",
-        "timestamp" : "2021-08-18T14:31:55+00:00",
+        "identifier" : "urn:uuid:0788142b-cb10-4548-afef-773383cef52b",
+        "timestamp" : "2021-08-18T16:06:10+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

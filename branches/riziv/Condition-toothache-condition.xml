@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="toothache-condition"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {http://snomed.ct 27355003}">Toothache (finding)</span></p><p><b>subject</b>: <span></span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://snomed.ct"/>
+      <code value="27355003"/>
+      <display value="Toothache (finding)"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="64110219106"/>
+    </identifier>
+  </subject>
+</Condition>

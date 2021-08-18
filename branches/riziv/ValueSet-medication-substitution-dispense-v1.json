@@ -8,9 +8,9 @@
   "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1",
   "version": "0.1.0-test",
   "name": "SubstitutionReason",
-  "title": "medication substitution Value set",
+  "title": "[Value Set] - Medication Substitution",
   "status": "active",
-  "date": "2021-08-18T14:31:38+00:00",
+  "date": "2021-08-18T16:05:42+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {

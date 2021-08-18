@@ -15,9 +15,9 @@
   fhir:CodeSystem.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
   fhir:CodeSystem.name [ fhir:value "BeCSMedicationSummaryTypes"];
-  fhir:CodeSystem.title [ fhir:value "Medication Summary types"];
+  fhir:CodeSystem.title [ fhir:value "[Code System] - Medication Summary Types "];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-08-18T14:31:38+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-08-18T16:05:42+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Belgium"];
   fhir:CodeSystem.contact [
      fhir:index 0;
