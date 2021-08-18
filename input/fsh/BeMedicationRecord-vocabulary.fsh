@@ -14,13 +14,6 @@ Description:  "Valueset -  Medication Summary types"
 * include codes from system BeCSMedicationSummaryTypes
 
 
-ValueSet: SubstitutionReason
-Id: medication-substitution-dispense-v1
-Title: "medication substitution Value set"
-Description:   "Value set for substituting a medication on dispense."
-* include codes from valueset v3.SubstanceAdminSubstitutionReason
-* ACT#UNABLE  "unable to use"
-
 // *************
 
 // @Name: Include Entire Value Set
