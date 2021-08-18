@@ -1,15 +1,12 @@
-Extension: TreatmentPlan
-Id: treatmentPlan
-Title: "Based On"
-Description: "The Medication Treatment that this resource belongs to or is based on"
-* value[x] 1..
-* value[x] only Reference (MedRecordTreatment)
-
-
-
 //based on R4
+Extension: RelatedTreatmentLine
+Id:        related-tl
+Title:    "Based On Extension"
+Description: "Extension for connecting several resources to a single Treatment Line"
+* value[x] only Reference(MedicationStatement)
+
 Profile: MedRecordDispense
-Title: "Medication Record - Dispense profile"
+Title: "[Profile] - Dispense"
 Description: "The profile for Medication Dispense in a Medication Record - a record of a single administration event"
 Parent: MedicationDispense
 * meta.profile 1..*
@@ -27,13 +24,13 @@ Parent: MedicationDispense
 * dosageInstruction MS
 * substitution.reason MS
 * type MS
-* extension contains treatmentPlan named treatmentPlan 0..1 MS
-//* extension[treatmentPlan].valueReference only Reference(CarePlan)
-
+* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
+* extension[treatmentPlan].valueReference only Reference(CarePlan)
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
 
 Profile: MedRecordOrder
-Title: "Medication Record - Order profile"
-Description: "The profile for Medication Order in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
+Title: "[Profile] - Prescription"
+Description: "The profile for Medication Prescription in a Medication Record - a record of a order or request for a medication or a change of medication, implicit or explicit"
 Parent: MedicationRequest
 * meta.profile 1..*
 * identifier MS
@@ -46,16 +43,20 @@ Parent: MedicationRequest
 * encounter MS
 * requester MS
 * reasonCode MS
+* basedOn MS
 * groupIdentifier MS
 * dosageInstruction MS
 * note MS
 * authoredOn MS
-* extension contains treatmentPlan named treatmentPlan 0..1 MS
-//* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
+* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* basedOn 0..0
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
+* extension[basedOn].valueReference only Reference(MedicationStatement) 
 
 
 Profile: MedRecordUsage
-Title: "Medication Record - Usage profile"
+Title: "[Profile] - Usage"
 Description: "The profile for Medication Usage in a Medication Record - a record of a single administration event"
 Parent: MedicationStatement
 * meta.profile 1..*
@@ -72,11 +73,14 @@ Parent: MedicationStatement
 * reasonCode MS
 * reasonReference MS
 * dosage MS
-* extension contains treatmentPlan named treatmentPlan 0..1 MS
-//* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
+* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* basedOn 0..0
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
+* extension[basedOn].valueReference only Reference(MedicationStatement) 
 
 Profile: MedRecordAdministration
-Title: "Medication Record - Administration profile"
+Title: "[Profile] - Administration"
 Description: "The profile for Medication Administration in a Medication Record - a record of a single administration event"
 Parent: MedicationAdministration
 * meta.profile 1..*
@@ -97,13 +101,15 @@ Parent: MedicationAdministration
 * device MS
 * note MS 
 * dosage MS
-* extension contains treatmentPlan named treatmentPlan 0..1 MS
-//* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
+* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains RelatedTreatmentLine named basedOn 0..1 MS
+* extension[basedOn].valueReference only Reference(MedicationStatement) 
 
 
 //based on R4
 Profile: MedRecordTreatmentLine
-Title: "Medication Treatment Line profile"
+Title: "[Profile] - Treatment Line"
 Description: "The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"
 Parent: MedicationStatement
 * meta.profile 1..*
@@ -121,11 +127,13 @@ Parent: MedicationStatement
 * dosage MS //dosageAmmount + peridocity + dayperiod + route + instructionforUse
 * category MS //medicationType
 * note MS //everything else (origintype, lotnumber and reaction)
+* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
+* extension[treatmentPlan].valueReference only Reference(CarePlan) 
 
 
 //based on R4
 Profile: MedRecordTreatment
-Title: "Medication Treatment profile"
+Title: "[Profile] - Treatment"
 Description: "The profile for Medication Treatment in a Medication Record - a set of treatment lines/items"
 Parent: CarePlan
 * meta.profile 1..*
@@ -150,3 +158,136 @@ Parent: CarePlan
 * description MS
 * instantiatesUri MS
 * replaces MS
+
+
+//based on R4
+Profile: MedRecordMedicationScheduledAdministration
+Title: "[Profile] - Scheduled Administration"
+Description: "The profile for Medication Scheduled Administration in a Medication Record - a set of schedules takes for a certain drug, based on a previous prescription"
+Parent: MedicationRequest
+* meta.profile 1..*
+* identifier MS
+* subject MS
+* status MS 
+* statusReason MS
+* medicationCodeableConcept MS
+* medicationReference MS
+* encounter MS
+* reasonCode MS
+* groupIdentifier MS
+* dosageInstruction MS
+* note MS
+* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
+* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* intent = #instance-order
+
+//based on R4
+Profile: MedRecordMedicationSummaryView
+Title: "[Profile] - Summary View"
+Description: "The profile for Medication Summary view in a Medication Record"
+Parent: CarePlan
+* meta.profile 1..*
+* identifier MS
+* subject MS
+* status MS // =#completed?
+* intent MS // =plan?
+* category MS
+* title MS
+* description MS
+* encounter MS
+* period MS
+* created MS
+* author MS
+* supportingInfo MS
+* goal MS
+* activity MS
+
+
+
+Profile: MedRecordComposition
+Title: "[Profile] - Structure Composition for Medication Record"
+Description: "The profile for how to organize the information in a medication Record"
+Parent: Composition
+Id: MedRecord-comp
+* meta.profile 1..*
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "type.coding.code"
+* section ^slicing.rules = #open
+* section contains
+    MedRecordTreatment 0..* MS and
+    MedRecordTreatmentLine 0..* MS and
+    MedRecordMedicationSummaryView 0..* MS and
+    detailsRecord 0..1 MS 
+* section[MedRecordTreatment].entry only Reference(MedRecordTreatment)
+* section[MedRecordTreatmentLine].entry only Reference(MedRecordTreatmentLine)
+* section[MedRecordMedicationSummaryView].entry only Reference(MedRecordMedicationSummaryView)
+* section[detailsRecord].entry only Reference(MedRecordUsage or MedRecordOrder or MedRecordDispense or MedRecordAdministration or MedRecordMedicationScheduledAdministration)
+
+
+
+Profile: MedRecord
+Parent: Bundle
+Id: MedRecord
+Title: "[Profile] - Medication Record"
+Description: "The profile for Medication Record"
+* ^version = "1.0.0"
+* identifier 0..1 MS
+* type = #document (exactly)
+* type ^short = "document"
+* type ^definition = "Bundle is a document"
+* total 0..0
+* link 0..0 SU
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+* entry contains
+    Composition 1..1 and
+    Patient 1..1 and
+    MedRecordTreatment 0..* and
+    MedRecordTreatmentLine 0..* and 
+    MedRecordMedicationSummaryView 0..* and
+    MedRecordOrder 0..* and
+    MedRecordDispense 0..* and
+    MedRecordAdministration 0..* and
+    MedRecordMedicationScheduledAdministration 0..* and
+    MedRecordUsage 0..* 
+* entry[Composition] ^short = "Composition"
+* entry[Composition].resource 1.. MS
+* entry[Composition].resource only MedRecordComposition
+
+* entry[Patient] ^short = "Patient for whom the record is concerned"
+* entry[Patient].resource 1.. MS
+* entry[Patient].resource only Patient
+
+* entry[MedRecordTreatment] ^short = "Treatments associated with the patient"
+* entry[MedRecordTreatment].resource 1.. MS
+* entry[MedRecordTreatment].resource only MedRecordTreatment
+
+* entry[MedRecordTreatmentLine] ^short = "Treatment lines associated with the patient"
+* entry[MedRecordTreatmentLine].resource 1.. MS
+* entry[MedRecordTreatmentLine].resource only MedRecordTreatmentLine
+
+* entry[MedRecordMedicationSummaryView] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordMedicationSummaryView].resource 1.. MS
+* entry[MedRecordMedicationSummaryView].resource only MedRecordTreatmentLine
+
+* entry[MedRecordOrder] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordOrder].resource 1.. MS
+* entry[MedRecordOrder].resource only MedRecordOrder
+
+* entry[MedRecordDispense] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordDispense].resource 1.. MS
+* entry[MedRecordDispense].resource only MedRecordDispense
+
+* entry[MedRecordAdministration] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordAdministration].resource 1.. MS
+* entry[MedRecordAdministration].resource only MedRecordAdministration
+
+* entry[MedRecordMedicationScheduledAdministration] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordMedicationScheduledAdministration].resource 1.. MS
+* entry[MedRecordMedicationScheduledAdministration].resource only MedRecordMedicationScheduledAdministration
+
+* entry[MedRecordUsage] ^short = "Medication summaries associated with the patient"
+* entry[MedRecordUsage].resource 1.. MS
+* entry[MedRecordUsage].resource only MedRecordUsage

@@ -3,12 +3,17 @@
 temp
 template
 output
-fsh-generated
 input-cache
+fsh-generated
+
+
+# Local folders #
+#####################
+LocalStuff
 
 # Don't commit this because it's so large #
 ###########################################
-/input-cache/publisher.jar
+/input-cache/org.hl7.fhir.publisher.jar
 
 # Windows generated files #
 ###########################

@@ -1,4 +1,4 @@
-Instance: example-5-of-medication-presc 
+Instance: 5-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock."
@@ -24,7 +24,7 @@ Title: "Dispense of new brand medication that is given because the old is unavai
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-Instance: example-5-of-medication-dispense 
+Instance: 5-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock."
@@ -66,3 +66,41 @@ Title:    "Dispense of new brand medication that is given because the old is una
 
 
 
+Instance: 5-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#24745  "paracetamol oral 1G"
+
+* status = #active
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: 5-treatment 
+InstanceOf: MedRecordTreatment
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatments-identifiers.com"
+* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* created = "2021-07-19T13:00:00+02:00"
+
+* status = #active 
+* intent = #plan
+* title = "Treatment for headache"
+* addresses = Reference(headache-condition)

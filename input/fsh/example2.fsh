@@ -1,5 +1,5 @@
 
-Instance: example-2-of-medication-presc 
+Instance: 2a-prescription 
 InstanceOf: MedRecordOrder
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist changes the medication for one belonging to another VOS - Cluster but same medication (diffence in the strength)."
@@ -30,8 +30,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
-
-Instance: example-2-of-medication-dispense 
+Instance: 2a-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows a prescription that is made by VOS and the pharmacist changes the medication for one belonging to another VOS - Cluster but same medication (diffence in the strength)."
@@ -60,7 +59,7 @@ Title:    "Prescribed medication is changed by another medication from a differe
 * substitution.wasSubstituted = true
 * substitution.reason.coding.display = "unable to use"
 * substitution.reason.coding.code = #UNABLE
-* substitution.reason.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+* substitution.reason.coding.system = "medication-substitution-dispense-v1"
 
 * performer[+].actor.identifier.value = "7c3aa173-3185-4001-a661-df36a7492798"
 * performer[=].actor.identifier.system = "http://dispenser-identifiers.com"
@@ -74,3 +73,43 @@ Title:    "Prescribed medication is changed by another medication from a differe
 
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: 2a-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#24745  "paracetamol oral 1G"
+
+* status = #active
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+
+Instance: 2a-treatment 
+InstanceOf: MedRecordTreatment
+Usage: #example
+Description: ""
+Title:    ""
+
+* identifier[0].system = "http://treatments-identifiers.com"
+* identifier[0].value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* created = "2021-07-19T13:00:00+02:00"
+
+* status = #active 
+* intent = #plan
+* title = "Treatment for headache"
+* addresses = Reference(headache-condition)

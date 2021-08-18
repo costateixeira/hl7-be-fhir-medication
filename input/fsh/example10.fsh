@@ -1,4 +1,4 @@
-Instance: example-10-1-of-medication-dispense 
+Instance: 10-1-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows the capture of non-medication products. This is important because some of these products are known to interact with some pharmaceutical products."
@@ -35,7 +35,7 @@ Title: "The recording of non-medication aka pharmaceutical products"
 //extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 //treatmentLine?
 
-Instance: example-10-2-of-medication-dispense 
+Instance: 10-2-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows the capture of non-medication products. This is important because some of these products are known to interact with some pharmaceutical products."
@@ -73,7 +73,7 @@ Title: "The recording of non-medication aka pharmaceutical products"
 //extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 //treatmentLine?
 
-Instance: example-10-3-of-medication-dispense 
+Instance: 10-3-dispense 
 InstanceOf: MedRecordDispense
 Usage: #example
 Description: "This example shows the capture of non-medication products. This is important because some of these products are known to interact with some pharmaceutical products."
