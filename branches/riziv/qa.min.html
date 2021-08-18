@@ -1,0 +1,1041 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 19, warn = 73, info = 39 -->
+<head>
+  <title>MedicationRecord : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for MedicationRecord</h1>
+ <p>Generated Wed Aug 18 14:32:08 UTC 2021, FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = <a href="http://hl7belgium.org/fhir/riziv-medicationrecord">http://hl7belgium.org/fhir/riziv-medicationrecord</a> (<a href="http://hl7belgium.org/fhir/riziv-medicationrecord/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.riziv-medicationrecord, Canonical = http://hl7belgium.org/fhir/riziv-medicationrecord</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0-test: <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.be.riziv-medicationrecord</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0-test</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7belgium.org/fhir/riziv-medicationrecord</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.fhir.be.riziv.template#0.0.1 -&gt; hl7.be.fhir.template#0.0.1 -&gt; fhir.base.template#0.2.2</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7belgium.org/fhir/riziv-medicationrecord (Problem #1 with package-list.json at http://hl7belgium.org/fhir/riziv-medicationrecord: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 19, warn = 73, info = 39</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>32</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationAdministration-example-8-of-medication-administration"><b>/github/workspace/fsh-generated/resources/MedicationAdministration-example-8-of-medication-administration</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-1-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-10-1-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-10-2-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-10-3-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-2-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-3-2-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-3-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-4-1-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-4-2-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-5-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-6-1-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-7-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-8-of-medication-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecord"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordAdministration"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordDispense"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordOrder"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordOrder</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordSummaryView"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordSummaryView</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordTreatment"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatment</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordTreatmentLine"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatmentLine</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordUsage"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordUsage</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationScheduledOrder"><b>/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationScheduledOrder</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordTreatment"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatment</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordTreatmentLine"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatmentLine</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_models_BeModelMedicationRecord"><b>/github/workspace/input/models/BeModelMedicationRecord</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_riziv-medrecord"><b>/github/workspace/input/riziv-medrecord</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-5-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-3-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordOrder.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordUsage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-10-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-3-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-4-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/example-7-of-medication-usage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-3-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-2-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/example-8-of-medication-usage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordDispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordTreatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-5-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-10-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationAdministration/example-8-of-medication-administration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordSummaryView.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-7-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-3-2-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-6-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordTreatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-7-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-6-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-8-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordAdministration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-8-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-4-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-10-3-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-4-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-1-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/github/workspace/output/medicationrecord-data-model.html#fac1630d-5205-40c9-a574-cda9fe968f84">medicationrecord-data-model.html#/html/body/div/div/div/div/div/p/img at Line 263, column 5</a></b></td><td><b>error</b></td><td><b>The image source 'medrecord-schema.png' cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationAdministration-example-8-of-medication-administration"> </a>
+<h2><a href="MedicationAdministration-example-8-of-medication-administration.html">/github/workspace/fsh-generated/resources/MedicationAdministration-example-8-of-medication-administration.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationAdministration: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a> and <i>this.</i><a href="StructureDefinition-MedRecordAdministration.html">Medication Record - Administration profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationAdministration.medication.ofType(CodeableConcept).coding[0] (l46/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationAdministration.performer[0].function.coding[0] (l64/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-1-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l82/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l98/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-10-1-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-10-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l24/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l49/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l65/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l33/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-10-2-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-10-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l24/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l49/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l65/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l33/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-10-3-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-10-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l24/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l49/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l65/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l33/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-2-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l82/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l98/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-3-2-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-3-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l60/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l76/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-3-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l68/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l84/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-4-1-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-4-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l68/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l84/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-4-2-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-4-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l60/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l76/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-5-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-5-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l29/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l76/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l92/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l38/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-6-1-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-6-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l44/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l77/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l93/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l53/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-7-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-7-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l68/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l84/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-8-of-medication-dispense"> </a>
+<h2><a href="MedicationDispense-example-8-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a> and <i>this.</i><a href="StructureDefinition-MedRecordDispense.html">Medication Record - Dispense profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[0].function.coding[0] (l68/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.performer[1].function.coding[0] (l84/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l44/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecord"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecord.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordAdministration"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecordAdministration.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordDispense"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecordDispense.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[18].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_PROFILE_WRONG_TARGET"><b>Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[18].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_PROFILE_WRONG_TARGET"><b>Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordOrder"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecordOrder.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordOrder.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordSummaryView"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecordSummaryView.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordSummaryView.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordTreatment"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecordTreatment.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatment.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordTreatmentLine"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecordTreatmentLine.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatmentLine.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationRecordUsage"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationRecordUsage.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordUsage.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-BeModelMedicationScheduledOrder"> </a>
+<h2><a href="StructureDefinition-BeModelMedicationScheduledOrder.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationScheduledOrder.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordTreatment"> </a>
+<h2><a href="StructureDefinition-MedRecordTreatment.html">/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatment.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-MedRecordTreatmentLine"> </a>
+<h2><a href="StructureDefinition-MedRecordTreatmentLine.html">/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatmentLine.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_models_BeModelMedicationRecord"> </a>
+<h2><a href="StructureDefinition-be-model-medication-record.html">/github/workspace/input/models/BeModelMedicationRecord.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[18].type[0].targetProfile[0]</b></td><td><b>warning</b></td><td title=""><b>Unable to resolve profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/medication-indication</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[21].type[0].targetProfile[0]</b></td><td><b>warning</b></td><td title=""><b>Unable to resolve profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/medication-indication</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_riziv-medrecord"> </a>
+<h2><a href="ImplementationGuide-hl7.fhir.be.riziv-medicationrecord.html">/github/workspace/input/riziv-medrecord.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.page.page[5].page[10].title</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile</li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile</li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace</li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient</li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="SD_ED_TYPE_PROFILE_WRONG_TARGET"> </a>
+<h2>SD_ED_TYPE_PROFILE_WRONG_TARGET</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordDispense.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense.json</a></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordDispense.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense.json</a></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-MedRecordDispense.html">/github/workspace/fsh-generated/resources/StructureDefinition-MedRecordDispense.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationAdministration-example-8-of-medication-administration.html">/github/workspace/fsh-generated/resources/MedicationAdministration-example-8-of-medication-administration.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-10-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-10-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-10-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-10-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-10-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-10-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-3-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-3-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-4-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-4-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-4-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-4-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-5-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-5-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-6-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-6-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-7-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-7-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-8-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-8-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecord.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordAdministration.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordDispense.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordOrder.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordOrder.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordSummaryView.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordSummaryView.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordTreatment.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatment.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordTreatmentLine.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatmentLine.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationRecordUsage.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordUsage.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BeModelMedicationScheduledOrder.html">/github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationScheduledOrder.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationAdministration-example-8-of-medication-administration.html">/github/workspace/fsh-generated/resources/MedicationAdministration-example-8-of-medication-administration.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-10-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-10-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-10-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-10-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-10-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-10-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-3-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-3-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-3-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-4-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-4-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-4-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-4-2-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-5-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-5-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-6-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-6-1-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-7-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-7-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-8-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-8-of-medication-dispense.html">/github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-1-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-1-of-medication-presc.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-2-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-2-of-medication-presc.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-3-2-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-3-2-of-medication-presc.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-3-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-3-of-medication-presc.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-4-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-4-of-medication-presc.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-5-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-5-of-medication-presc.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-6-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-6-of-medication-presc.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-7-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-7-of-medication-presc.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example-8-of-medication-presc.html">/github/workspace/fsh-generated/resources/MedicationRequest-example-8-of-medication-presc.json</a></td><td><b>Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationStatement-example-7-of-medication-usage.html">/github/workspace/fsh-generated/resources/MedicationStatement-example-7-of-medication-usage.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationStatement-example-8-of-medication-usage.html">/github/workspace/fsh-generated/resources/MedicationStatement-example-8-of-medication-usage.json</a></td><td><b>Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.be.riziv-medicationrecord.html">/github/workspace/input/riziv-medrecord.xml</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+</body>
+</html>

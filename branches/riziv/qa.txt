@@ -1,0 +1,233 @@
+﻿MedicationRecord : Validation Results
+=========================================
+
+err = 19, warn = 73, info = 39
+IG Publisher Version: 1.1.77
+Generated Wed Aug 18 14:32:08 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
+
+ Build Errors : 1 / 32 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationAdministration-example-8-of-medication-administration : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-1-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-2-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-3-2-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-3-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-4-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-5-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-6-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-7-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-8-of-medication-presc : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationStatement-example-7-of-medication-usage : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationStatement-example-8-of-medication-usage : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordOrder : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordSummaryView : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatment : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatmentLine : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordUsage : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationScheduledOrder : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordAdministration : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordDispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordOrder : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatment : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatmentLine : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordUsage : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-treatmentPlan : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 0 / 1
+ /github/workspace/input/models/BeModelMedicationRecord : 0 / 2 / 1
+ /github/workspace/input/riziv-medrecord : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-5-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-3-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordOrder.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordUsage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-10-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-3-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-4-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/example-7-of-medication-usage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-3-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-2-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/example-8-of-medication-usage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordDispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordTreatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-5-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-10-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationAdministration/example-8-of-medication-administration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordSummaryView.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-7-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-3-2-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-6-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordTreatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-7-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-6-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-8-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeModelMedicationRecordAdministration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-8-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-4-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-10-3-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-4-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-2-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-1-of-medication-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/example-1-of-medication-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/medicationrecord-data-model.html#/html/body/div/div/div/div/div/p/img at Line 263, column 5: The image source 'medrecord-schema.png' cannot be resolved
+== /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types.json ==
+== /github/workspace/fsh-generated/resources/MedicationAdministration-example-8-of-medication-administration.json ==
+INFORMATION: MedicationAdministration/example-8-of-medication-administration: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationAdministration/example-8-of-medication-administration: MedicationAdministration.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-1-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-1-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-1-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-1-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-10-1-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-10-1-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-10-1-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-10-1-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-10-1-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-10-2-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-10-2-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-10-2-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-10-2-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-10-2-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-10-3-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-10-3-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-10-3-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-10-3-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-10-3-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-2-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-2-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-3-2-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-3-2-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-3-2-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-3-2-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-3-2-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-3-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-3-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-3-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-3-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-3-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-4-1-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-4-1-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-4-1-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-4-1-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-4-1-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-4-2-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-4-2-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-4-2-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-4-2-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-4-2-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-5-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-5-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-5-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-5-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-5-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-6-1-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-6-1-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-6-1-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-6-1-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-6-1-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-7-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-7-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-7-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-7-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-7-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationDispense-example-8-of-medication-dispense.json ==
+INFORMATION: MedicationDispense/example-8-of-medication-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-8-of-medication-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-8-of-medication-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-8-of-medication-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-1-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-1-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-2-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-2-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-3-2-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-3-2-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-3-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-3-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-4-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-4-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-5-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-5-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-6-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-6-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-7-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-7-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationRequest-example-8-of-medication-presc.json ==
+INFORMATION: MedicationRequest/example-8-of-medication-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationStatement-example-7-of-medication-usage.json ==
+INFORMATION: MedicationStatement/example-7-of-medication-usage: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/MedicationStatement-example-8-of-medication-usage.json ==
+INFORMATION: MedicationStatement/example-8-of-medication-usage: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord.json ==
+ERROR: StructureDefinition/BeModelMedicationRecord: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/BeModelMedicationRecord: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration.json ==
+ERROR: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/BeModelMedicationRecordAdministration: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense.json ==
+ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.differential.element[18].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)
+ERROR: StructureDefinition/BeModelMedicationRecordDispense: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension], which is not a Resource (which is required because the BeModelMedicationRecordDispense.location element has type Reference)
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordOrder.json ==
+ERROR: StructureDefinition/BeModelMedicationRecordOrder: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/BeModelMedicationRecordOrder: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/BeModelMedicationRecordOrder: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordSummaryView.json ==
+ERROR: StructureDefinition/BeModelMedicationRecordSummaryView: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/BeModelMedicationRecordSummaryView: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/BeModelMedicationRecordSummaryView: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatment.json ==
+ERROR: StructureDefinition/BeModelMedicationRecordTreatment: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/BeModelMedicationRecordTreatment: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/BeModelMedicationRecordTreatment: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordTreatmentLine.json ==
+ERROR: StructureDefinition/BeModelMedicationRecordTreatmentLine: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/BeModelMedicationRecordTreatmentLine: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/BeModelMedicationRecordTreatmentLine: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordUsage.json ==
+ERROR: StructureDefinition/BeModelMedicationRecordUsage: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/BeModelMedicationRecordUsage: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/BeModelMedicationRecordUsage: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationScheduledOrder.json ==
+ERROR: StructureDefinition/BeModelMedicationScheduledOrder: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/BeModelMedicationScheduledOrder: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordAdministration.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordDispense.json ==
+INFORMATION: StructureDefinition/MedRecordDispense: StructureDefinition.snapshot.element[40].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordOrder.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatment.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatmentLine.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordUsage.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-treatmentPlan.json ==
+== /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types.json ==
+== /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1.json ==
+== /github/workspace/input/models/BeModelMedicationRecord.json ==
+WARNING: StructureDefinition/be-model-medication-record: StructureDefinition.differential.element[18].type[0].targetProfile[0]: Unable to resolve profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/medication-indication
+WARNING: StructureDefinition/be-model-medication-record: StructureDefinition.snapshot.element[21].type[0].targetProfile[0]: Unable to resolve profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/medication-indication
+== /github/workspace/input/riziv-medrecord.xml ==
+WARNING: ImplementationGuide/hl7.fhir.be.riziv-medicationrecord: ImplementationGuide.definition.page.page[5].page[10].title: value should not start or finish with whitespace

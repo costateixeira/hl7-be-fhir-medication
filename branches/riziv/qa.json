@@ -1,0 +1,12 @@
+{
+  "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/riziv-medicationrecord",
+  "name": "MedicationRecord",
+  "package-id": "hl7.fhir.be.riziv-medicationrecord",
+  "ig-ver": "0.1.0-test",
+  "date": "Wed, 18 Aug, 2021 14:31:38 +0000",
+  "errs": 19,
+  "warnings": 73,
+  "hints": 39,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

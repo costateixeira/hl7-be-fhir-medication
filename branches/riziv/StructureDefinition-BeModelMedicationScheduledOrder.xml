@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BeModelMedicationScheduledOrder"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder" title="Record of a single planned administration event">BeModelMedicationScheduledOrder</a><a name="BeModelMedicationScheduledOrder"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medication Record Prescription logical model</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.identifier" title="The business identifier(s) for the medication prescription">identifier</a><a name="BeModelMedicationScheduledOrder.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The business identifier(s) for the medication prescription</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.patient" title="The person for which the medication is prescribed.">patient</a><a name="BeModelMedicationScheduledOrder.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The person for which the medication is prescribed.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.status" title="active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)">status</a><a name="BeModelMedicationScheduledOrder.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.statusReason" title="Reason for current status medicationRequest Status Reason Codes (Example)">statusReason</a><a name="BeModelMedicationScheduledOrder.statusReason"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for current status medicationRequest Status Reason Codes (Example)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.product[x]" title="Medication to be taken SNOMED CT Medication Codes (Example)">product[x]</a><a name="BeModelMedicationScheduledOrder.product_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medication to be taken SNOMED CT Medication Codes (Example)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">productCodeableConcept</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> productReference</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/medication.html">Medication</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.encounter" title="Encounter created as part of encounter/admission/stay">encounter</a><a name="BeModelMedicationScheduledOrder.encounter"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Encounter created as part of encounter/admission/stay</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.reason" title="Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)">reason</a><a name="BeModelMedicationScheduledOrder.reason"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> | <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.groupIdentifier" title="Composite request this is part of">groupIdentifier</a><a name="BeModelMedicationScheduledOrder.groupIdentifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Composite request this is part of</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.dosageInstruction" title="How the medication should be taken">dosageInstruction</a><a name="BeModelMedicationScheduledOrder.dosageInstruction"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How the medication should be taken<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.note" title="Additional Information about the prescription">note</a><a name="BeModelMedicationScheduledOrder.note"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additional Information about the prescription<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-BeModelMedicationScheduledOrder-definitions.html#BeModelMedicationScheduledOrder.treatment" title="Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to">treatment</a><a name="BeModelMedicationScheduledOrder.treatment"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledOrder"/>
+  <version value="0.1.0-test"/>
+  <name value="BeModelMedicationScheduledOrder"/>
+  <title value="Medication Record Prescription logical model"/>
+  <status value="active"/>
+  <date value="2021-08-18T14:31:38+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <description value="Record of a single planned administration event"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledOrder"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="BeModelMedicationScheduledOrder">
+      <path value="BeModelMedicationScheduledOrder"/>
+      <short value="Medication Record Prescription logical model"/>
+      <definition value="Record of a single planned administration event"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.identifier">
+      <path value="BeModelMedicationScheduledOrder.identifier"/>
+      <short value="The business identifier(s) for the medication prescription"/>
+      <definition value="The business identifier(s) for the medication prescription"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.identifier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.patient">
+      <path value="BeModelMedicationScheduledOrder.patient"/>
+      <short value="The person for which the medication is prescribed."/>
+      <definition value="The person for which the medication is prescribed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.patient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.status">
+      <path value="BeModelMedicationScheduledOrder.status"/>
+      <short value="active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)"/>
+      <definition value="active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.statusReason">
+      <path value="BeModelMedicationScheduledOrder.statusReason"/>
+      <short value="Reason for current status medicationRequest Status Reason Codes (Example)"/>
+      <definition value="Reason for current status medicationRequest Status Reason Codes (Example)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.statusReason"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.product[x]">
+      <path value="BeModelMedicationScheduledOrder.product[x]"/>
+      <short value="Medication to be taken SNOMED CT Medication Codes (Example)"/>
+      <definition value="Medication to be taken SNOMED CT Medication Codes (Example)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.product[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.encounter">
+      <path value="BeModelMedicationScheduledOrder.encounter"/>
+      <short value="Encounter created as part of encounter/admission/stay"/>
+      <definition value="Encounter created as part of encounter/admission/stay"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.encounter"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.reason">
+      <path value="BeModelMedicationScheduledOrder.reason"/>
+      <short value="Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)"/>
+      <definition value="Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.reason"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.groupIdentifier">
+      <path value="BeModelMedicationScheduledOrder.groupIdentifier"/>
+      <short value="Composite request this is part of"/>
+      <definition value="Composite request this is part of"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.groupIdentifier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.dosageInstruction">
+      <path value="BeModelMedicationScheduledOrder.dosageInstruction"/>
+      <short value="How the medication should be taken"/>
+      <definition value="How the medication should be taken"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.dosageInstruction"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Dosage"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.note">
+      <path value="BeModelMedicationScheduledOrder.note"/>
+      <short value="Additional Information about the prescription"/>
+      <definition value="Additional Information about the prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.note"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Annotation"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.treatment">
+      <path value="BeModelMedicationScheduledOrder.treatment"/>
+      <short value="Link to the &#39;parent&#39; treatment - i.e the treatment that this order is derived from, or contriburing to"/>
+      <definition value="Link to the &#39;parent&#39; treatment - i.e the treatment that this order is derived from, or contriburing to"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BeModelMedicationScheduledOrder.treatment"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="BeModelMedicationScheduledOrder">
+      <path value="BeModelMedicationScheduledOrder"/>
+      <short value="Medication Record Prescription logical model"/>
+      <definition value="Record of a single planned administration event"/>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.identifier">
+      <path value="BeModelMedicationScheduledOrder.identifier"/>
+      <short value="The business identifier(s) for the medication prescription"/>
+      <definition value="The business identifier(s) for the medication prescription"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.patient">
+      <path value="BeModelMedicationScheduledOrder.patient"/>
+      <short value="The person for which the medication is prescribed."/>
+      <definition value="The person for which the medication is prescribed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.status">
+      <path value="BeModelMedicationScheduledOrder.status"/>
+      <short value="active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)"/>
+      <definition value="active  | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown medicationrequest Status (Required)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.statusReason">
+      <path value="BeModelMedicationScheduledOrder.statusReason"/>
+      <short value="Reason for current status medicationRequest Status Reason Codes (Example)"/>
+      <definition value="Reason for current status medicationRequest Status Reason Codes (Example)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.product[x]">
+      <path value="BeModelMedicationScheduledOrder.product[x]"/>
+      <short value="Medication to be taken SNOMED CT Medication Codes (Example)"/>
+      <definition value="Medication to be taken SNOMED CT Medication Codes (Example)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.encounter">
+      <path value="BeModelMedicationScheduledOrder.encounter"/>
+      <short value="Encounter created as part of encounter/admission/stay"/>
+      <definition value="Encounter created as part of encounter/admission/stay"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.reason">
+      <path value="BeModelMedicationScheduledOrder.reason"/>
+      <short value="Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)"/>
+      <definition value="Reason or indication for ordering or not ordering the medication Condition/Problem/Diagnosis Codes (Example)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.groupIdentifier">
+      <path value="BeModelMedicationScheduledOrder.groupIdentifier"/>
+      <short value="Composite request this is part of"/>
+      <definition value="Composite request this is part of"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.dosageInstruction">
+      <path value="BeModelMedicationScheduledOrder.dosageInstruction"/>
+      <short value="How the medication should be taken"/>
+      <definition value="How the medication should be taken"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Dosage"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.note">
+      <path value="BeModelMedicationScheduledOrder.note"/>
+      <short value="Additional Information about the prescription"/>
+      <definition value="Additional Information about the prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Annotation"/>
+      </type>
+    </element>
+    <element id="BeModelMedicationScheduledOrder.treatment">
+      <path value="BeModelMedicationScheduledOrder.treatment"/>
+      <short value="Link to the &#39;parent&#39; treatment - i.e the treatment that this order is derived from, or contriburing to"/>
+      <definition value="Link to the &#39;parent&#39; treatment - i.e the treatment that this order is derived from, or contriburing to"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

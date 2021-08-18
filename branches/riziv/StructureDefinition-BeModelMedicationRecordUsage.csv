@@ -1,0 +1,34 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeModelMedicationRecordUsage","","","",0,*,"","","","","Medication Record Usage logical model","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BeModelMedicationRecordUsage.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","External identifier","External identifier","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.identifier",0,*,"",""
+"BeModelMedicationRecordUsage.status","","","",1,1,"","","","code {[]} {[]}
+","completed | entered-in-error | unknown","completed | entered-in-error | unknown","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.status",1,1,"",""
+"BeModelMedicationRecordUsage.category","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Type of medication usage MedicationUsage Administration Location Codes (Example)","Type of medication usage MedicationUsage Administration Location Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.category",0,*,"",""
+"BeModelMedicationRecordUsage.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","What medication was taken SNOMED CT Medication Codes (Example)","What medication was taken SNOMED CT Medication Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.product[x]",1,1,"",""
+"BeModelMedicationRecordUsage.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
+","Who is/was taking the medication","Who is/was taking the medication","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.subject",1,1,"",""
+"BeModelMedicationRecordUsage.effective[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","The date/time or interval when the medication is/was/will be taken","The date/time or interval when the medication is/was/will be taken","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.effective[x]",0,1,"",""
+"BeModelMedicationRecordUsage.dateAsserted","","","",0,1,"","","","dateTime {[]} {[]}
+","When the usage was asserted?","When the usage was asserted?","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.dateAsserted",0,1,"",""
+"BeModelMedicationRecordUsage.informationSource","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Person or organization that provided the information about the taking of this medication","Person or organization that provided the information about the taking of this medication","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.informationSource",0,1,"",""
+"BeModelMedicationRecordUsage.reason[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport]]}","Reason for why the medication is being/was taken Condition/Problem/Diagnosis Codes (Example)","Reason for why the medication is being/was taken Condition/Problem/Diagnosis Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.reason[x]",0,*,"",""
+"BeModelMedicationRecordUsage.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Further information about the usage","Further information about the usage","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.note",0,*,"",""
+"BeModelMedicationRecordUsage.renderedDosageInstruction","","","",0,1,"","","","string {[]} {[]}
+","Full representation of the dosage instructions","Full representation of the dosage instructions","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.renderedDosageInstruction",0,1,"",""
+"BeModelMedicationRecordUsage.dosage","","","",0,*,"","","","Dosage {[]} {[]}
+","Details of how medication is/was taken or should be taken","Details of how medication is/was taken or should be taken","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.dosage",0,*,"",""
+"BeModelMedicationRecordUsage.adherence","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Indicates if the medication is being consumed or administered as instructed","Indicates if the medication is being consumed or administered as instructed","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.adherence",0,1,"",""
+"BeModelMedicationRecordUsage.adherence.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type of adherence MedicationUsage Adherence Codes (Example)","Type of adherence MedicationUsage Adherence Codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.adherence.code",1,1,"",""
+"BeModelMedicationRecordUsage.adherence.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Details of the reason for the current use of the medication SNOMED CT Drug Therapy Status codes (Example)","Details of the reason for the current use of the medication SNOMED CT Drug Therapy Status codes (Example)","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.adherence.reason",0,1,"",""
+"BeModelMedicationRecordUsage.treatment","","","",0,1,"","","","Reference {[]} {[]}
+","The treatment that this medication usage report belongs to","The treatment that this medication usage report belongs to","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordUsage.treatment",0,1,"",""
