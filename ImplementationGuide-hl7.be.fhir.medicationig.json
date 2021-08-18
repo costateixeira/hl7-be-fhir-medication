@@ -11,7 +11,7 @@
   "title": "HL7 Belgium Medication Implementation Guide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-18T09:15:02+00:00",
+  "date": "2021-08-18T10:03:10+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1648,6 +1648,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/13-dispense-3"
+        },
+        "name": "Example MedicationDispense - 13-dispense-3",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1819,6 +1832,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/13-dispense"
+        },
+        "name": "Example MedicationDispense - 13-dispense",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1857,6 +1883,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/13-treatmentLine"
+        },
+        "name": "Example MedicationStatement - 13-treatmentLine",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1870,6 +1909,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/13-treatmentLine-2"
+        },
+        "name": "Example MedicationStatement - 13-treatmentLine-2",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1878,6 +1930,19 @@
         },
         "name": "[Logical Model] - Treatment",
         "description": "A model for representing a Treatment."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/13-dispense-2"
+        },
+        "name": "Example MedicationDispense - 13-dispense-2",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1992,6 +2057,19 @@
         "reference": {
           "reference": "Condition/arthritis-condition"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/13-treatment"
+        },
+        "name": "Headache",
+        "exampleCanonical": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
       },
       {
         "extension": [

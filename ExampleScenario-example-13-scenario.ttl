@@ -141,7 +141,7 @@
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "8-treatment" ]
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "13-treatment" ]
              ]
            ]
          ], [
@@ -152,7 +152,7 @@
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "8-treatmentLine" ]
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "13-treatmentLine" ]
              ]
            ]
          ]
@@ -182,7 +182,7 @@
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "8-treatment" ]
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "13-treatment" ]
              ]
            ]
          ], [
@@ -193,7 +193,7 @@
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "8-treatmentLine" ]
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "13-treatmentLine-2" ]
              ]
            ]
          ]
@@ -223,7 +223,7 @@
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "8-treatment" ]
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "13-treatment" ]
              ]
            ]
          ], [
@@ -234,7 +234,7 @@
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "8-treatmentLine" ]
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "13-treatmentLine" ]
              ]
            ]
          ]
