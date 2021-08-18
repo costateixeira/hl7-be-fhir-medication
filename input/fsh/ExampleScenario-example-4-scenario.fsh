@@ -31,7 +31,6 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * instance[=].resourceType = #MedicationDispense
 * instance[=].name = "Dispense for Prescription"
 
-
 * instance[+].resourceId = "4-1-prescription"
 * instance[=].resourceType = #MedicationRequest
 * instance[=].name = "New prescription"
@@ -83,7 +82,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * process[=].step[=].process[=].step[=].operation.number = "3"
 * process[=].step[=].process[=].step[=].operation.initiator = "GP"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-prescription"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-prescription"
 
 * process[=].step[+].process[+].title = "Collect info"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
