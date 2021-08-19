@@ -47,61 +47,73 @@ Title: "Refuse the dispense prescribed medication"
 * instance[=].resourceType = #MedicationDispense
 * instance[=].name = "Refused Dispense"
 
-* process[+].title = "Refuse the dispense prescribed medication"
-* process[=].description = "description"
-* process[=].preConditions = "The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication."
-* process[=].postConditions = "It is possible to capture that the original prescription was and that the dispense was refused"
-
-* process[=].step[+].operation.name = "Goes to appointment"
-* process[=].step[=].operation.number = "1"
-* process[=].step[=].operation.initiator = "PATIENT"
-* process[=].step[=].operation.receiver = "GP"
-
-* process[=].step[+].operation.name = "Get Patient's Medication"
-* process[=].step[=].operation.number = "2"
-* process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.response.resourceId = "EB"
-
-* process[=].step[+].operation.name = "Create new prescription"
-* process[=].step[=].operation.number = "3"
-* process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "6-prescription"
-
-* process[=].step[+].operation.name = "Create new treatment"
-* process[=].step[=].operation.number = "4"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "6-treatment"
-
-* process[=].step[+].operation.name = "Create new treatment Line"
-* process[=].step[=].operation.number = "5"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "6-treatmentLine"
-
-* process[=].step[+].operation.name = "Get patient's Prescriptions"
-* process[=].step[=].operation.number = "6"
-* process[=].step[=].operation.initiator = "PHARM"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.response.resourceId = "EB"
-
-* process[=].step[+].operation.name = "Refuse Dispense"
-* process[=].step[=].operation.number = "7"
-* process[=].step[=].operation.initiator = "PHARM"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "6-dispense"
-
-
-* process[=].step[+].operation.name = "Update treatment"
-* process[=].step[=].operation.number = "8"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "6-treatment"
-
-* process[=].step[+].operation.name = "Update treatment Line"
-* process[=].step[=].operation.number = "9"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "6-treatmentLine"
+* process[+]
+  * title = "Refuse the dispense prescribed medication"
+  * description = "description"
+  * preConditions = "The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication."
+  * postConditions = "It is possible to capture that the original prescription was and that the dispense was refused"
+  * step[+]
+    * process[+]
+      * title = "Initial contact"
+      * step[+]
+        * operation.name = "Goes to appointment"
+        * operation.number = "1"
+        * operation.initiator = "PATIENT"
+        * operation.receiver = "GP"
+      * step[+]
+        * operation.name = "Get Patient's Medication"
+        * operation.number = "2"
+        * operation.initiator = "GP"
+        * operation.receiver = "VAULT"
+        * operation.response.resourceId = "EB"
+      * step[+]
+        * operation.name = "Create new prescription"
+        * operation.number = "3"
+        * operation.initiator = "GP"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "6-prescription"
+  * step[+]
+    * process[+]
+      * title = "Treatment resources Creation"
+      * step[+]
+        * operation.name = "Create new treatment"
+        * operation.number = "4"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "6-treatment"
+      * step[+]
+        * operation.name = "Create new treatment Line"
+        * operation.number = "5"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "6-treatmentLine"
+  * step[+]
+    * process[+]
+      * title = "Dispense"
+      * step[+]
+        * operation.name = "Get patient's Prescriptions"
+        * operation.number = "6"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.response.resourceId = "EB"
+      * step[+]
+        * operation.name = "Refuse Dispense"
+        * operation.number = "7"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "6-dispense"
+  * step[+]
+    * process[+]
+      * title = "Treatment Resources Update"
+      * step[+]
+        * operation.name = "Update treatment"
+        * operation.number = "8"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "6-treatment"
+      * step[+]
+        * operation.name = "Update treatment Line"
+        * operation.number = "9"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "6-treatmentLine"

@@ -49,60 +49,73 @@ Title: "Dispense of new brand medication that is given because the old is unavai
 * instance[=].name = "New Treatment based on prescription"
 
 
-* process[+].title = "Change brand from prescription on dispense because of out of stock"
-* process[=].description = "description"
-* process[=].preConditions = "The patient visits their GP and is prescribed dafalgan Forte 1000 mg cp (TID) for headaches. When reaching the pharmacy for dispense, the pharmacy does not have dafalgan Forte now but dispenses Paracetabs Forte 1000 mg instead."
-* process[=].postConditions = "It is possible to capture that the original prescription was dafalgan but the dispense was Paracetabs"
-
-* process[=].step[+].operation.name = "Goes to appointment"
-* process[=].step[=].operation.number = "1"
-* process[=].step[=].operation.initiator = "PATIENT"
-* process[=].step[=].operation.receiver = "GP"
-
-* process[=].step[+].operation.name = "Get Patient's Medication"
-* process[=].step[=].operation.number = "2"
-* process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.response.resourceId = "EB"
-
-* process[=].step[+].operation.name = "Create new prescription"
-* process[=].step[=].operation.number = "3"
-* process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "5-prescription"
-
-* process[=].step[+].operation.name = "Create new treatment"
-* process[=].step[=].operation.number = "4"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "5-treatment"
-
-* process[=].step[+].operation.name = "Create new treatment Line"
-* process[=].step[=].operation.number = "5"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "5-treatmentLine"
-
-* process[=].step[+].operation.name = "Get patient's Prescriptions"
-* process[=].step[=].operation.number = "6"
-* process[=].step[=].operation.initiator = "PHARM"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.response.resourceId = "EB"
-
-* process[=].step[+].operation.name = "Dispense new product"
-* process[=].step[=].operation.number = "7"
-* process[=].step[=].operation.initiator = "PHARM"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "5-dispense"
-
-* process[=].step[+].operation.name = "Update treatment"
-* process[=].step[=].operation.number = "8"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "5-treatment"
-
-* process[=].step[+].operation.name = "Update treatment Line"
-* process[=].step[=].operation.number = "9"
-* process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].operation.request.resourceId = "5-treatmentLine"
+* process[+]
+  * title = "Change brand from prescription on dispense because of out of stock"
+  * description = "description"
+  * preConditions = "The patient visits their GP and is prescribed dafalgan Forte 1000 mg cp (TID) for headaches. When reaching the pharmacy for dispense, the pharmacy does not have dafalgan Forte now but dispenses Paracetabs Forte 1000 mg instead."
+  * postConditions = "It is possible to capture that the original prescription was dafalgan but the dispense was Paracetabs"
+  * step[+]
+    * process[+]
+      * title = "Initial contact"
+      * step[+]
+        * operation.name = "Goes to appointment"
+        * operation.number = "1"
+        * operation.initiator = "PATIENT"
+        * operation.receiver = "GP"
+      * step[+]
+        * operation.name = "Get Patient's Medication"
+        * operation.number = "2"
+        * operation.initiator = "GP"
+        * operation.receiver = "VAULT"
+        * operation.response.resourceId = "EB"
+      * step[+]
+        * operation.name = "Create new prescription"
+        * operation.number = "3"
+        * operation.initiator = "GP"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "5-prescription"
+  * step[+]
+    * process[+]
+      * title = "Treatment resources Creation"
+      * step[+]
+        * operation.name = "Create new treatment"
+        * operation.number = "4"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "5-treatment"
+      * step[+]
+        * operation.name = "Create new treatment Line"
+        * operation.number = "5"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "5-treatmentLine"
+  * step[+]
+    * process[+]
+      * title = "Dispense"
+      * step[+]
+        * operation.name = "Get patient's Prescriptions"
+        * operation.number = "6"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.response.resourceId = "EB"
+      * step[+]
+        * operation.name = "Dispense new product"
+        * operation.number = "7"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "5-dispense"
+  * step[+]
+    * process[+]
+      * title = "Treatment Resources Update"
+      * step[+]
+        * operation.name = "Update treatment"
+        * operation.number = "8"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "5-treatment"
+      * step[+]
+        * operation.name = "Update treatment Line"
+        * operation.number = "9"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "5-treatmentLine"

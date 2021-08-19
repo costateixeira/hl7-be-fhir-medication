@@ -31,6 +31,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * instance[=].resourceType = #MedicationDispense
 * instance[=].name = "Dispense for Prescription"
 
+
 * instance[+].resourceId = "4-1-prescription"
 * instance[=].resourceType = #MedicationRequest
 * instance[=].name = "New prescription"
@@ -61,89 +62,101 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 
 
 
-* process[+].title = "Dispense of prescribed medication, and dispense of a product that can be done without a prescription"
-* process[=].description = "description"
-* process[=].preConditions = "The patient visits their GP and is prescribed Rosuvastatin 10 mg cp for cholesterol. After reaching the pharmacy, Crestor 10 is dispensed facing that prescription. Additionally, Dafalgan compr. 20x 500mg (OTC) is also dispensed due to a complaint of a minor toothache."
-* process[=].postConditions = "This should result in two treatment lines. One with prescription and dispense and one with only dispense."
+* process[+].
+  * title = "Dispense of prescribed medication, and dispense of a product that can be done without a prescription"
+  * description = "description"
+  * preConditions = "The patient visits their GP and is prescribed Rosuvastatin 10 mg cp for cholesterol. After reaching the pharmacy, Crestor 10 is dispensed facing that prescription. Additionally, Dafalgan compr. 20x 500mg (OTC) is also dispensed due to a complaint of a minor toothache."
+  * postConditions = "This should result in two treatment lines. One with prescription and dispense and one with only dispense."
 
-* process[=].step[+].process[+].title = "Prescription"
-* process[=].step[=].process[=].step[+].operation.name = "Goes to appointment"
-* process[=].step[=].process[=].step[=].operation.number = "1"
-* process[=].step[=].process[=].step[=].operation.initiator = "PATIENT"
-* process[=].step[=].process[=].step[=].operation.receiver = "GP"
+  * step[+]
+    * process[+]
+      * title = "Initial contact"
+      * step[+]
+        * operation.name = "Goes to appointment"
+        * operation.number = "1"
+        * operation.initiator = "PATIENT"
+        * operation.receiver = "GP"
+      * step[+]
 
-* process[=].step[=].process[=].step[+].operation.name = "Get Patient's Medication"
-* process[=].step[=].process[=].step[=].operation.number = "2"
-* process[=].step[=].process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.response.resourceId = "EB"
+        * operation.name = "Get Patient's Medication"
+        * operation.number = "2"
+        * operation.initiator = "GP"
+        * operation.receiver = "VAULT"
+        * operation.response.resourceId = "EB"
+      * step[+]
+        * operation.name = "Create new prescription"
+        * operation.number = "3"
+        * operation.initiator = "GP"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-prescription"
+  * step[+]
+    * process[+]
+      * title = "Treatment resources Creation"
+      * step[+]
+        * operation.name = "Create new treatment"
+        * operation.number = "4"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-1-treatment"
+      
+      * step[+]
+        * operation.name = "Create new treatment Line"
+        * operation.number = "5"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-1-treatmentLine"
+  * step[+]
+    * process[+]
+      * title = "Dispense"
+      * step[+]
+        * operation.name = "Get patient's Prescriptions"
+        * operation.number = "6"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.response.resourceId = "EB"
+      * step[+]
+        * operation.name = "Dispense new product"
+        * operation.number = "7"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-1-dispense"
+  * step[+]
+    * process[+]
+      * title = "Treatment Resources Update"
+      * step[+]
+        * operation.name = "Update treatment"
+        * operation.number = "8"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-1-treatment"
+      * step[+]
+        * operation.name = "Update treatment Line"
+        * operation.number = "9"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-1-treatmentLine"
+  * step[+]
+    * process[+]
+      * title = "Second dispense"
+      * step[+]
+        * operation.name = "Additional dispense"
+        * operation.number = "10"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-2-dispense"
 
-* process[=].step[=].process[=].step[+].operation.name = "Create new prescription"
-* process[=].step[=].process[=].step[=].operation.number = "3"
-* process[=].step[=].process[=].step[=].operation.initiator = "GP"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-prescription"
-
-* process[=].step[+].process[+].title = "Collect info"
-* process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
-* process[=].step[=].process[=].step[=].operation.number = "4"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-treatment"
-
-* process[=].step[=].process[+].title = "Collect info"
-* process[=].step[=].process[=].step[+].operation.name = "Create new treatment Line"
-* process[=].step[=].process[=].step[=].operation.number = "5"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-treatmentLine"
-
-* process[=].step[+].process[+].title = "Dispense"
-* process[=].step[=].process[=].step[+].operation.name = "Get patient's Prescriptions"
-* process[=].step[=].process[=].step[=].operation.number = "6"
-* process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.response.resourceId = "EB"
-
-* process[=].step[=].process[=].step[+].operation.name = "Dispense new product"
-* process[=].step[=].process[=].step[=].operation.number = "7"
-* process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-dispense"
-
-* process[=].step[=].process[=].step[+].operation.name = "Additional dispense"
-* process[=].step[=].process[=].step[=].operation.number = "10"
-* process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-2-dispense"
-
-
-
-* process[=].step[+].process[+].title = "Collect info"
-* process[=].step[=].process[=].step[+].operation.name = "Update treatment"
-* process[=].step[=].process[=].step[=].operation.number = "8"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-treatment"
-
-* process[=].step[=].process[=].step[+].operation.name = "Update treatment Line"
-* process[=].step[=].process[=].step[=].operation.number = "9"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-1-treatmentLine"
-
-
-
-* process[=].step[=].process[+].title = "Collect info"
-* process[=].step[=].process[=].step[+].operation.name = "Additional treatment"
-* process[=].step[=].process[=].step[=].operation.number = "11"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-2-treatment"
-
-
-* process[=].step[=].process[=].step[+].operation.name = "Additional Treatment Line"
-* process[=].step[=].process[=].step[=].operation.number = "12"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "4-2-treatmentLine"
+  * step[+]
+    * process[+]
+      * title = "New Treatment resources Creation"
+      * step[+]
+        * operation.name = "Additional treatment"
+        * operation.number = "11"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-2-treatment"
+      * step[+]
+         * operation.name = "Additional Treatment Line"
+         * operation.number = "12"
+         * operation.initiator = "VAULT"
+         * operation.receiver = "VAULT"
+         * operation.request.resourceId = "4-2-treatmentLine"
