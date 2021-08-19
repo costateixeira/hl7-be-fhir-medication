@@ -62,20 +62,20 @@ Title: "Prescribed medication is changed by another medication from a different 
         * operation.number = "1"
         * operation.initiator = "PATIENT"
         * operation.receiver = "GP"
-     * step[+]
+      * step[+]
         * operation.name = "Get Patient's Medication"
         * operation.number = "2"
         * operation.initiator = "GP"
         * operation.receiver = "VAULT"
         * operation.response.resourceId = "EB"
-     * step[+]
+      * step[+]
         * operation.name = "Create new prescription"
         * operation.number = "3"
         * operation.initiator = "GP"
         * operation.receiver = "VAULT"
         * operation.response.resourceId = "2a-prescription"
 
- * step[+]
+  * step[+]
     * process[+]
       * title = "group 2"
       * step[+]

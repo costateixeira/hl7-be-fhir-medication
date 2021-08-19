@@ -155,8 +155,8 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "4-2-treatment"
       * step[+]
-         * operation.name = "Additional Treatment Line"
-         * operation.number = "12"
-         * operation.initiator = "VAULT"
-         * operation.receiver = "VAULT"
-         * operation.request.resourceId = "4-2-treatmentLine"
+        * operation.name = "Additional Treatment Line"
+        * operation.number = "12"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "4-2-treatmentLine"
