@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp> a fhir:StructureDefinition;
+<https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MedRecord-comp"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
+  fhir:StructureDefinition.url [ fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "MedRecordComposition"];
   fhir:StructureDefinition.title [ fhir:value "[Profile] - Structure Composition for Medication Record"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-18T16:05:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-19T13:46:58+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -41,9 +41,10 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "BE" ]
-     ]
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Belgium" ]
   ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
@@ -3871,9 +3872,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -4617,9 +4618,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -5363,9 +5364,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -6109,25 +6110,25 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder";
            fhir:index 1;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense";
            fhir:index 2;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration";
            fhir:index 3;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration";
            fhir:index 4;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -6298,9 +6299,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment>
          ]
        ]
      ], [
@@ -6319,9 +6320,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine>
          ]
        ]
      ], [
@@ -6340,9 +6341,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView>
          ]
        ]
      ], [
@@ -6361,25 +6362,25 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage";
            fhir:index 0;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder";
            fhir:index 1;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense";
            fhir:index 2;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration";
            fhir:index 3;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration>
          ], [
-           fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration";
+           fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration";
            fhir:index 4;
-           fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration>
+           fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration>
          ]
        ]
      ]
@@ -6387,7 +6388,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

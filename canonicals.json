@@ -1,240 +1,289 @@
 [
   {
+    "id": "be-model-medication-record",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/be-model-medication-record",
+    "version": "0.2.0",
+    "name": "BeModelMedicationRecord"
+  },
+  {
     "id": "be-cs-medication-summary-types",
     "type": "CodeSystem",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types",
+    "version": "0.2.0",
     "name": "BeCSMedicationSummaryTypes"
   },
   {
     "id": "example-1-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-1-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-1-scenario",
+    "version": "0.2.0",
     "name": "ChangedmedicationSameVOSScenario"
   },
   {
     "id": "example-13-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-13-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-13-scenario",
+    "version": "0.2.0",
     "name": "MedicationOTC"
   },
   {
     "id": "example-2-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-2-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-2-scenario",
+    "version": "0.2.0",
     "name": "ChangedmedicationDifferentVOSScenario"
   },
   {
     "id": "example-3-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-3-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-3-scenario",
+    "version": "0.2.0",
     "name": "DispenseBeforePrescription"
   },
   {
     "id": "example-4-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-4-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-4-scenario",
+    "version": "0.2.0",
     "name": "DispensePrescriptionAndIsolatedDispense"
   },
   {
     "id": "example-5-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-5-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-5-scenario",
+    "version": "0.2.0",
     "name": "DispenseNewBrandOldUnavailable"
   },
   {
     "id": "example-6-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-6-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-6-scenario",
+    "version": "0.2.0",
     "name": "RefusalOfDispense"
   },
   {
     "id": "example-7-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-7-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-7-scenario",
+    "version": "0.2.0",
     "name": "MedicationNotTaken"
   },
   {
     "id": "example-8-scenario",
     "type": "ExampleScenario",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-8-scenario",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ExampleScenario/example-8-scenario",
+    "version": "0.2.0",
     "name": "MedicationStopped"
   },
   {
-    "id": "hl7.fhir.be.riziv-medicationrecord",
+    "id": "hl7.be.fhir.medicationig",
     "type": "ImplementationGuide",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/hl7.fhir.be.riziv-medicationrecord",
-    "version": "0.1.0-test",
-    "name": "MedicationRecord"
+    "url": "https://www.hl7belgium.be/fhir/ImplementationGuide/hl7.be.fhir.medicationig",
+    "version": "0.2.0",
+    "name": "BEMedicationIG"
+  },
+  {
+    "id": "be-ns-cnk-codes",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.be/fhir/NamingSystem/be-ns-cnk-codes",
+    "version": "0.2.0",
+    "name": "BeNSCNK"
+  },
+  {
+    "id": "be-ns-nihdi-organization",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.be/fhir/NamingSystem/be-ns-nihdi-organization",
+    "version": "0.2.0",
+    "name": "BeNSNihdiOrganization"
+  },
+  {
+    "id": "be-ns-nihdi-professional",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.be/fhir/NamingSystem/be-ns-nihdi-professional",
+    "version": "0.2.0",
+    "name": "BeNSNihdiIndividual"
+  },
+  {
+    "id": "be-ns-prescription-ids",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.be/fhir/NamingSystem/be-ns-prescription-ids",
+    "version": "0.2.0",
+    "name": "BeNSPrescriptions"
+  },
+  {
+    "id": "be-ns-product-package-type",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.be/fhir/NamingSystem/be-ns-product-package-type",
+    "version": "0.2.0",
+    "name": "BeNSProductPackage"
   },
   {
     "id": "BeModelMedicationRecord",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecord",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecord",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecord"
   },
   {
     "id": "BeModelMedicationRecordAdministration",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordAdministration",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordAdministration",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecordAdministration"
   },
   {
     "id": "BeModelMedicationRecordDispense",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordDispense",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordDispense",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecordDispense"
   },
   {
     "id": "BeModelMedicationRecordOrder",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordOrder",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordOrder",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecordOrder"
   },
   {
     "id": "BeModelMedicationRecordSummaryView",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordSummaryView",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordSummaryView",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecordSummaryView"
   },
   {
     "id": "BeModelMedicationRecordTreatment",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordTreatment",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordTreatment",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecordTreatment"
   },
   {
     "id": "BeModelMedicationRecordTreatmentLine",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordTreatmentLine",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordTreatmentLine",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecordTreatmentLine"
   },
   {
     "id": "BeModelMedicationRecordUsage",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordUsage",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordUsage",
+    "version": "0.2.0",
     "name": "BeModelMedicationRecordUsage"
   },
   {
     "id": "BeModelMedicationScheduledAdministration",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledAdministration",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationScheduledAdministration",
+    "version": "0.2.0",
     "name": "BeModelMedicationScheduledAdministration"
   },
   {
     "id": "MedRecord",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
+    "version": "0.2.0",
     "name": "MedRecord"
   },
   {
     "id": "MedRecord-comp",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp",
+    "version": "0.2.0",
     "name": "MedRecordComposition"
   },
   {
     "id": "MedRecordAdministration",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration",
+    "version": "0.2.0",
     "name": "MedRecordAdministration"
   },
   {
     "id": "MedRecordDispense",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense",
+    "version": "0.2.0",
     "name": "MedRecordDispense"
   },
   {
     "id": "MedRecordMedicationScheduledAdministration",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration",
+    "version": "0.2.0",
     "name": "MedRecordMedicationScheduledAdministration"
   },
   {
     "id": "MedRecordMedicationSummaryView",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView",
+    "version": "0.2.0",
     "name": "MedRecordMedicationSummaryView"
   },
   {
     "id": "MedRecordOrder",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder",
+    "version": "0.2.0",
     "name": "MedRecordOrder"
   },
   {
     "id": "MedRecordTreatment",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment",
+    "version": "0.2.0",
     "name": "MedRecordTreatment"
   },
   {
     "id": "MedRecordTreatmentLine",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine",
+    "version": "0.2.0",
     "name": "MedRecordTreatmentLine"
   },
   {
     "id": "MedRecordUsage",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage",
+    "version": "0.2.0",
     "name": "MedRecordUsage"
   },
   {
-    "id": "be-model-medication-record",
+    "id": "be-medicationdispense",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-model-medication-record",
-    "version": "0.1.0-test",
-    "name": "BeModelMedicationRecord"
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",
+    "version": "0.2.0",
+    "name": "BeMedicationDispense"
   },
   {
     "id": "related-tl",
     "type": "StructureDefinition",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/related-tl",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl",
+    "version": "0.2.0",
     "name": "RelatedTreatmentLine"
   },
   {
     "id": "be-vs-medication-summary-types",
     "type": "ValueSet",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types",
+    "version": "0.2.0",
     "name": "BeVSMedicationSummaryTypes"
   },
   {
     "id": "medication-substitution-dispense-v1",
     "type": "ValueSet",
-    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1",
-    "version": "0.1.0-test",
+    "url": "https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1",
+    "version": "0.2.0",
     "name": "SubstitutionReason"
+  },
+  {
+    "id": "be-model-medication-dispense",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-medication-dispense",
+    "version": "0.2.0",
+    "name": "BeMedicationDispense"
   }
 ]

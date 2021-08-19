@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.BE.RIZIV-MEDICATIONRECORD\[Profile] - Medication Record - Definitions - FHIR v4.0.1</title>
+    <title>HL7.BE.FHIR.MEDICATIONIG\[Profile] - Medication Record - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -24,7 +24,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7-be.css" rel="stylesheet"/>
-<link href="assets/css/riziv.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 <!--
@@ -52,33 +51,33 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.3.16"}
-    h3,h4,h5,h6{--heading-prefix:"7.3.16"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.18"}
+    h3,h4,h5,h6{--heading-prefix:"7.18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="ig-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7-be.github.io">
+            <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+          </a>
+        </div>
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="ig-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
         <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://hl7.eu">
-            <img height="71" alt="Project home" src="assets/images/riziv.png"/>
+          <a id="project-logo" no-external="true" href="http://hl7belgium.org">
+            <img height="71" alt="Project home" src="assets/images/meds.png"/>
           </a>
         </div>
 
-<!-- Right logo - for example the FHIR logo -->
-<!-- Make sure you have authorization to use the FHIR logo -->
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/hl7-be.png"/> </a>
-        </div>
-
-<!-- search icon - if you want -->
-<!--
-        <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
-        </div>
--->
-
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">MedicationRecord</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Belgium Medication Implementation Guide</span><br/>0.2.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -106,47 +105,71 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
-<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
-
+		<ul class="dropdown-menu">
+			<li>
+				<a href="howto.html">How to use this Publication</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec
+				</a>
+			</li>
+		</ul>
 	</li>
--->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="medicationrecord-definitions.html">Definitions</a>
+				<a href="usecases.html">Use Cases</a>
 			</li>
 			<li>
-				<a href="functional-description.html">Overview</a>
+				<a href="logical-models.html">Logical Models</a>
 			</li>
+<!--
 			<li>
-				<a href="medicationrecord-requirements.html">Requirements</a>
+				<a target="_blank" href="#">Services &amp; Transactions</a>
 			</li>
-			<li>
-				<a href="medicationrecord-scenarios.html">Scenarios</a>
-			</li>
+-->
 		</ul>
 
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="implementation.html">Technical overview</a>
-			</li>
-			<li>
-				<a href="artifacts.html">Artifacts</a>
+				<a href="artifacts.html">Artifact Index</a>
 			</li>
 		</ul>
 	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Core Profiles</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#">DZOP</a>
+			</li>
+            <li>
+				<a href="#">EFRO</a>
+			</li>
+		</ul>
+	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
+<!--			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a href="testservers.html">Test Servers</a></li>
+-->
 			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
@@ -162,7 +185,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='implementation.html'><b>Medication Record Implementation</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>[Profile] - Medication Record</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>[Profile] - Medication Record</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -175,7 +198,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MedicationRecord - Local Development build (v0.1.0-test). See the <a href="http://hl7belgium.org/fhir/riziv-medicationrecord/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   
 
 
@@ -225,12 +248,6 @@
     </li>
   
 
-
-  
-    <li>
-      <a href="StructureDefinition-MedRecord.profile.ttl.html">TTL</a>
-    </li>
-  
 
 
 </ul>
@@ -736,7 +753,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
   <tr><td>Definition</td><td><p>A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition must be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition must be included as subsequent entries in the Bundle (for example Patient, Practitioner, Encounter, etc.).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a>(<a href="StructureDefinition-MedRecord-comp.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp]]">MedRecordComposition</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a>(<a href="StructureDefinition-MedRecord-comp.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp]]">MedRecordComposition</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>While the focus of this specification is on patient-specific clinical statements, this resource can also apply to other healthcare-related statements such as study protocol designs, healthcare invoices and other activities that are not necessarily patient-specific or clinical.</p>
 </td></tr>
@@ -1302,7 +1319,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
   <tr><td>Definition</td><td><p>Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>(<a href="StructureDefinition-MedRecordTreatment.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment]]">MedRecordTreatment</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>(<a href="StructureDefinition-MedRecordTreatment.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment]]">MedRecordTreatment</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Care Team</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1587,7 +1604,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
 <p>The primary difference between a medication statement and a medication administration is that the medication administration has complete administration information and is based on actual administration information from the person who administered the medication.  A medication statement is often, if not always, less specific.  There is no required date/time when the medication was administered, in fact we only know that a source has reported the patient is taking this medication, where details such as time, quantity, or rate or even medication product may be incomplete or missing or less precise.  As stated earlier, the medication statement information may come from the patient's memory, from a prescription bottle or from a list of medications the patient, clinician or other party maintains.  Medication administration is more formal and is not missing detailed information.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>(<a href="StructureDefinition-MedRecordTreatmentLine.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine]]">MedRecordTreatmentLine</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>(<a href="StructureDefinition-MedRecordTreatmentLine.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine]]">MedRecordTreatmentLine</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>When interpreting a medicationStatement, the value of the status and NotTaken needed to be considered:
 MedicationStatement.status + MedicationStatement.wasNotTaken
@@ -1882,7 +1899,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
 <p>The primary difference between a medication statement and a medication administration is that the medication administration has complete administration information and is based on actual administration information from the person who administered the medication.  A medication statement is often, if not always, less specific.  There is no required date/time when the medication was administered, in fact we only know that a source has reported the patient is taking this medication, where details such as time, quantity, or rate or even medication product may be incomplete or missing or less precise.  As stated earlier, the medication statement information may come from the patient's memory, from a prescription bottle or from a list of medications the patient, clinician or other party maintains.  Medication administration is more formal and is not missing detailed information.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>(<a href="StructureDefinition-MedRecordTreatmentLine.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine]]">MedRecordTreatmentLine</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>(<a href="StructureDefinition-MedRecordTreatmentLine.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine]]">MedRecordTreatmentLine</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>When interpreting a medicationStatement, the value of the status and NotTaken needed to be considered:
 MedicationStatement.status + MedicationStatement.wasNotTaken
@@ -2176,7 +2193,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
   <tr><td>Definition</td><td><p>An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called &quot;MedicationRequest&quot; rather than &quot;MedicationPrescription&quot; or &quot;MedicationOrder&quot; to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>(<a href="StructureDefinition-MedRecordOrder.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder]]">MedRecordOrder</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>(<a href="StructureDefinition-MedRecordOrder.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder]]">MedRecordOrder</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Prescription, Order</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2460,7 +2477,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
   <tr><td>Definition</td><td><p>Indicates that a medication product is to be or has been dispensed for a named person/patient.  This includes a description of the medication product (supply) provided and the instructions for administering the medication.  The medication dispense is the result of a pharmacy system responding to a medication order.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>(<a href="StructureDefinition-MedRecordDispense.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense]]">MedRecordDispense</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>(<a href="StructureDefinition-MedRecordDispense.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense]]">MedRecordDispense</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">dom-2</b>: If the resource is contained in another resource, it SHALL NOT contain nested Resources (: contained.contained.empty())<br/><b title="Formal Invariant Identifier">dom-3</b>: If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource (: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty())<br/><b title="Formal Invariant Identifier">dom-4</b>: If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty())<br/><b title="Formal Invariant Identifier">dom-5</b>: If a resource is contained in another resource, it SHALL NOT have a security label (: contained.meta.security.empty())<br/><b title="Formal Invariant Identifier">dom-6</b>: A resource should have narrative for robust management (: text.`div`.exists())<br/><b title="Formal Invariant Identifier">mdd-1</b>: whenHandedOver cannot be before whenPrepared (: whenHandedOver.empty() or whenPrepared.empty() or whenHandedOver &gt;= whenPrepared)</td></tr>
@@ -2743,7 +2760,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
   <tr><td>Definition</td><td><p>Describes the event of a patient consuming or otherwise being administered a medication.  This may be as simple as swallowing a tablet or it may be a long running infusion.  Related resources tie this event to the authorizing prescription, and the specific encounter between patient and health care practitioner.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>(<a href="StructureDefinition-MedRecordAdministration.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration]]">MedRecordAdministration</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>(<a href="StructureDefinition-MedRecordAdministration.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration]]">MedRecordAdministration</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">dom-2</b>: If the resource is contained in another resource, it SHALL NOT contain nested Resources (: contained.contained.empty())<br/><b title="Formal Invariant Identifier">dom-3</b>: If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource (: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty())<br/><b title="Formal Invariant Identifier">dom-4</b>: If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty())<br/><b title="Formal Invariant Identifier">dom-5</b>: If a resource is contained in another resource, it SHALL NOT have a security label (: contained.meta.security.empty())<br/><b title="Formal Invariant Identifier">dom-6</b>: A resource should have narrative for robust management (: text.`div`.exists())</td></tr>
@@ -3026,7 +3043,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
   <tr><td>Definition</td><td><p>An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called &quot;MedicationRequest&quot; rather than &quot;MedicationPrescription&quot; or &quot;MedicationOrder&quot; to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>(<a href="StructureDefinition-MedRecordMedicationScheduledAdministration.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration]]">MedRecordMedicationScheduledAdministration</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>(<a href="StructureDefinition-MedRecordMedicationScheduledAdministration.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration]]">MedRecordMedicationScheduledAdministration</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Prescription, Order</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -3311,7 +3328,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
 <p>The primary difference between a medication statement and a medication administration is that the medication administration has complete administration information and is based on actual administration information from the person who administered the medication.  A medication statement is often, if not always, less specific.  There is no required date/time when the medication was administered, in fact we only know that a source has reported the patient is taking this medication, where details such as time, quantity, or rate or even medication product may be incomplete or missing or less precise.  As stated earlier, the medication statement information may come from the patient's memory, from a prescription bottle or from a list of medications the patient, clinician or other party maintains.  Medication administration is more formal and is not missing detailed information.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>(<a href="StructureDefinition-MedRecordUsage.html" title="[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage]]">MedRecordUsage</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>(<a href="StructureDefinition-MedRecordUsage.html" title="[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage]]">MedRecordUsage</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>When interpreting a medicationStatement, the value of the status and NotTaken needed to be considered:
 MedicationStatement.status + MedicationStatement.wasNotTaken
@@ -3579,7 +3596,7 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
     }
 
     if (!currentTabIndex)
-      currentTabIndex = '1';
+      currentTabIndex = '0';
 
     $( '#tabs' ).tabs({
       active: currentTabIndex,
@@ -3606,16 +3623,12 @@ HTTP verbs (in the HTTP command line). See <a href="https://tools.ietf.org/html/
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 18, 2021 16:05+0000">2021-08-18</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 19, 2021 13:46+0000">2021-08-19</span>
           <br/>
           <span style="color: #FFFF77">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7belgium.org/fhir/riziv-medicationrecord/history.html">Version History </a> |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" target="_blank" href="https://github.com/hl7-be/hl7-be-fhir-medication/projects/1">Issues</a> |
 
           </span>
         </p>
@@ -3640,6 +3653,89 @@ anchors.add()</script>
   
 <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+      <script type="text/javascript">
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSfFeLMvb7wmUDGa181obPb04Igny75iqSy2jMSp6Wg40LKWjw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* <![CDATA[ */
+            parameterFieldId = 'entry.'+parseInt(1353807103).toString() // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+            parameterVariableName = 'pageTitle' 
+/* ]]> */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '&';
+            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* <![CDATA[ */
+            parameterFieldId = 'entry.'+parseInt(247644557).toString() // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+            parameterVariableName = 'sectionName' 
+/* ]]> */
+
+            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+              default:
+                  console.log("Parameter value not supported");
+                  break;
+                case "pageTitle":
+                  parameterValue = encodeURIComponent($(document).attr('title'));
+                  break;
+                case "sectionId":
+                  parameterValue = id;
+                  break;
+                case "sectionName":
+                  parameterValue = document.getElementById(id).textContent;
+                  break;
+            }
+            feedbackurl = feedbackurl + '&';
+            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+            
+          
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        })
+      </script>  
+    
+  
 
 
 

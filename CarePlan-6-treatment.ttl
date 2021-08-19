@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/CarePlan/6-treatment> a fhir:CarePlan;
+<https://www.hl7belgium.be/fhir/CarePlan/6-treatment> a fhir:CarePlan;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "6-treatment"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment";
+       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment";
        fhir:index 0;
-       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment>
+       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment>
      ]
   ];
   fhir:DomainResource.text [
@@ -36,13 +36,13 @@
   fhir:CarePlan.created [ fhir:value "2021-07-19T13:00:00+02:00"^^xsd:dateTime];
   fhir:CarePlan.addresses [
      fhir:index 0;
-     fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/headache-condition>;
+     fhir:link <https://www.hl7belgium.be/fhir/Condition/headache-condition>;
      fhir:Reference.reference [ fhir:value "Condition/headache-condition" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/CarePlan/6-treatment.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/CarePlan/6-treatment.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5c535703-5064-4688-a610-9c9032de515e"/>
+  <id value="161df1cb-65af-4a55-aa48-ead52e243131"/>
   <meta>
-    <lastUpdated value="2021-08-18T16:05:42.232+00:00"/>
+    <lastUpdated value="2021-08-19T13:46:58.796+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types"/>
+    <fullUrl value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
     <resource>
       <ValueSet>
         <id value="be-vs-medication-summary-types"/>
@@ -16,11 +16,11 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-be-cs-medication-summary-types.html">[Code System] - Medication Summary Types  v0.1.0-test (CodeSystem)</a>
+              <a href="CodeSystem-be-cs-medication-summary-types.html">[Code System] - Medication Summary Types  v0.2.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
               <a href="CodeSystem-be-cs-medication-summary-types.html">
-                <code>http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types</code>
+                <code>https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types</code>
               </a>
             </p>
             <table class="codes">
@@ -37,7 +37,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6"> </a>
+                  <a name="https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6"> </a>
                   <a href="CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.466">kmehr-ms-5.6</a>
                 </td>
                 <td>Belgian Medication Schema v5.6 - 09/2018</td>
@@ -45,7 +45,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5"> </a>
+                  <a name="https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5"> </a>
                   <a href="CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.465">kmehr-ms-5.5</a>
                 </td>
                 <td>Belgian Medication Schema v5.5 - 12-2017</td>
@@ -54,12 +54,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types"/>
-        <version value="0.1.0-test"/>
+        <url value="https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types"/>
+        <version value="0.2.0"/>
         <name value="BeVSMedicationSummaryTypes"/>
         <title value="[Value Set] - Medication Summary Types "/>
         <status value="active"/>
-        <date value="2021-08-18T16:05:42+00:00"/>
+        <date value="2021-08-19T13:46:58+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -70,13 +70,14 @@
         <description value="Valueset -  Medication Summary types"/>
         <jurisdiction>
           <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
           </coding>
+          <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1a14157a-4f40-4654-b577-48d5c70875ce"/>
-          <timestamp value="2021-08-18T16:06:05+00:00"/>
+          <identifier value="urn:uuid:be7d019d-192b-41ac-a734-f98a9b8ada43"/>
+          <timestamp value="2021-08-19T13:47:25+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -84,15 +85,15 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types|0.1.0-test"/>
+            <valueUri value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types|0.2.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types"/>
+            <system value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
             <code value="kmehr-ms-5.6"/>
             <display value="Belgian Medication Schema v5.6 - 09/2018"/>
           </contains>
           <contains>
-            <system value="http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types"/>
+            <system value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
             <code value="kmehr-ms-5.5"/>
             <display value="Belgian Medication Schema v5.5 - 12-2017"/>
           </contains>
@@ -101,7 +102,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1"/>
+    <fullUrl value="https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1"/>
     <resource>
       <ValueSet>
         <id value="medication-substitution-dispense-v1"/>
@@ -182,12 +183,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1"/>
-        <version value="0.1.0-test"/>
+        <url value="https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1"/>
+        <version value="0.2.0"/>
         <name value="SubstitutionReason"/>
         <title value="[Value Set] - Medication Substitution"/>
         <status value="active"/>
-        <date value="2021-08-18T16:05:42+00:00"/>
+        <date value="2021-08-19T13:46:58+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -198,13 +199,14 @@
         <description value="Value set for substituting a medication on dispense."/>
         <jurisdiction>
           <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
           </coding>
+          <text value="Belgium"/>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0788142b-cb10-4548-afef-773383cef52b"/>
-          <timestamp value="2021-08-18T16:06:10+00:00"/>
+          <identifier value="urn:uuid:70625dcb-341d-4f53-ba91-c74c0475650a"/>
+          <timestamp value="2021-08-19T13:47:30+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

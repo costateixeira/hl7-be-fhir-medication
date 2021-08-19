@@ -1,25 +1,25 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5c535703-5064-4688-a610-9c9032de515e",
+  "id" : "161df1cb-65af-4a55-aa48-ead52e243131",
   "meta" : {
-    "lastUpdated" : "2021-08-18T16:05:42.232+00:00"
+    "lastUpdated" : "2021-08-19T13:46:58.796+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types",
+    "fullUrl" : "https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "be-vs-medication-summary-types",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-medication-summary-types.html\">[Code System] - Medication Summary Types  v0.1.0-test (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-medication-summary-types.html\"><code>http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.466\">kmehr-ms-5.6</a></td><td>Belgian Medication Schema v5.6 - 09/2018</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7belgium.org-fhir-riziv-medicationrecord-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.465\">kmehr-ms-5.5</a></td><td>Belgian Medication Schema v5.5 - 12-2017</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-medication-summary-types.html\">[Code System] - Medication Summary Types  v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-medication-summary-types.html\"><code>https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.6\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.466\">kmehr-ms-5.6</a></td><td>Belgian Medication Schema v5.6 - 09/2018</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.be-fhir-CodeSystem-be-cs-medication-summary-types-kmehr-ms-5.5\"> </a><a href=\"CodeSystem-be-cs-medication-summary-types.html#be-cs-medication-summary-types-kmehr-ms-5.465\">kmehr-ms-5.5</a></td><td>Belgian Medication Schema v5.5 - 12-2017</td><td/></tr></table></div>"
       },
-      "url" : "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types",
-      "version" : "0.1.0-test",
+      "url" : "https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types",
+      "version" : "0.2.0",
       "name" : "BeVSMedicationSummaryTypes",
       "title" : "[Value Set] - Medication Summary Types ",
       "status" : "active",
-      "date" : "2021-08-18T16:05:42+00:00",
+      "date" : "2021-08-19T13:46:58+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -30,13 +30,14 @@
       "description" : "Valueset -  Medication Summary types",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        }],
+        "text" : "Belgium"
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1a14157a-4f40-4654-b577-48d5c70875ce",
-        "timestamp" : "2021-08-18T16:06:05+00:00",
+        "identifier" : "urn:uuid:be7d019d-192b-41ac-a734-f98a9b8ada43",
+        "timestamp" : "2021-08-19T13:47:25+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -44,15 +45,15 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types|0.1.0-test"
+          "valueUri" : "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types|0.2.0"
         }],
         "contains" : [{
-          "system" : "http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types",
+          "system" : "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types",
           "code" : "kmehr-ms-5.6",
           "display" : "Belgian Medication Schema v5.6 - 09/2018"
         },
         {
-          "system" : "http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types",
+          "system" : "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types",
           "code" : "kmehr-ms-5.5",
           "display" : "Belgian Medication Schema v5.5 - 12-2017"
         }]
@@ -60,7 +61,7 @@
     }
   },
   {
-    "fullUrl" : "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1",
+    "fullUrl" : "https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "medication-substitution-dispense-v1",
@@ -68,12 +69,12 @@
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html\">ActReason v2.0.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/2.1.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html\">SubstanceAdminSubstitutionReason v2.0.0 (ValueSet)</a></li></ul></div><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActReason</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-CT\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-CT\">CT</a></td><td>continuing therapy</td><td>Indicates that the decision to substitute or to not substitute was driven by a desire to maintain consistency with a pre-existing therapy. I.e. The performer provided the same item/service as had been previously provided rather than providing exactly what was ordered, or rather than substituting with a lower-cost equivalent.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-FP\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-FP\">FP</a></td><td>formulary policy</td><td>Indicates that the decision to substitute or to not substitute was driven by a policy expressed within the formulary.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-OS\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-OS\">OS</a></td><td>out of stock</td><td>In the case of 'substitution', indicates that the substitution occurred because the ordered item was not in stock. In the case of 'no substitution', indicates that a cheaper equivalent was not substituted because it was not in stock.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-RR\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-RR\">RR</a></td><td>regulatory requirement</td><td>Indicates that the decision to substitute or to not substitute was driven by a jurisdictional regulatory requirement mandating or prohibiting substitution.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-UNABLE\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-UNABLE\">UNABLE</a></td><td>unable to use</td><td>**Description:**&lt;The patient is not (or is no longer) able to use the medication in a manner prescribed.\r\n\r\n**Example:**CanaTMt swallow.</td></tr></table></div>"
       },
-      "url" : "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/medication-substitution-dispense-v1",
-      "version" : "0.1.0-test",
+      "url" : "https://www.hl7belgium.be/fhir/ValueSet/medication-substitution-dispense-v1",
+      "version" : "0.2.0",
       "name" : "SubstitutionReason",
       "title" : "[Value Set] - Medication Substitution",
       "status" : "active",
-      "date" : "2021-08-18T16:05:42+00:00",
+      "date" : "2021-08-19T13:46:58+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -84,13 +85,14 @@
       "description" : "Value set for substituting a medication on dispense.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        }],
+        "text" : "Belgium"
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0788142b-cb10-4548-afef-773383cef52b",
-        "timestamp" : "2021-08-18T16:06:10+00:00",
+        "identifier" : "urn:uuid:70625dcb-341d-4f53-ba91-c74c0475650a",
+        "timestamp" : "2021-08-19T13:47:30+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

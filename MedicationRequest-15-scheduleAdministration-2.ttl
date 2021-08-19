@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/15-scheduleAdministration-2> a fhir:MedicationRequest;
+<https://www.hl7belgium.be/fhir/MedicationRequest/15-scheduleAdministration-2> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "15-scheduleAdministration-2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration";
+       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration";
        fhir:index 0;
-       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration>
+       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration>
      ]
   ];
   fhir:DomainResource.text [
@@ -81,7 +81,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/15-scheduleAdministration-2.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/MedicationRequest/15-scheduleAdministration-2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

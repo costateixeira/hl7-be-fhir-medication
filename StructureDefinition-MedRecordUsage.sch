@@ -13,7 +13,7 @@
     <sch:title>f:MedicationStatement</sch:title>
     <sch:rule context="f:MedicationStatement">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/event-basedOn']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/event-basedOn': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/related-tl']) &lt;= 1">extension with URL = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/related-tl': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://www.hl7belgium.be/fhir/StructureDefinition/related-tl']) &lt;= 1">extension with URL = 'https://www.hl7belgium.be/fhir/StructureDefinition/related-tl': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 0">basedOn: maximum cardinality of 'basedOn' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

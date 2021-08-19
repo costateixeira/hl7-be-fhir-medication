@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine> a fhir:StructureDefinition;
+<https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MedRecordTreatmentLine"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
+  fhir:StructureDefinition.url [ fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "MedRecordTreatmentLine"];
   fhir:StructureDefinition.title [ fhir:value "[Profile] - Treatment Line"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-18T16:05:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-19T13:46:58+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -41,9 +41,10 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "BE" ]
-     ]
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Belgium" ]
   ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
@@ -2380,7 +2381,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

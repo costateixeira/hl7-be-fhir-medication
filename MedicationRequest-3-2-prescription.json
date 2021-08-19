@@ -3,7 +3,7 @@
   "id": "3-2-prescription",
   "meta": {
     "profile": [
-      "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"
+      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
     ]
   },
   "text": {
