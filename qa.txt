@@ -3,7 +3,7 @@
 
 err = 146, warn = 116, info = 90
 IG Publisher Version: 1.1.77
-Generated Thu Aug 19 14:06:29 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
+Generated Thu Aug 19 14:52:12 UTC 2021. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.be/fhir)
 
  Build Errors : 684 / 18 / 0
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
