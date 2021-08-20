@@ -58,7 +58,7 @@
     <postConditions value="A new treatment and treatment line are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each."/>
     <step>
       <process>
-        <title value="group 1"/>
+        <title value="Initial Contact"/>
         <step>
           <operation>
             <number value="1"/>
@@ -85,7 +85,7 @@
     </step>
     <step>
       <process>
-        <title value="group 2"/>
+        <title value="Treatment resources Creation"/>
         <step>
           <operation>
             <number value="4"/>
@@ -112,7 +112,7 @@
     </step>
     <step>
       <process>
-        <title value="group 3"/>
+        <title value="Dispense"/>
         <step>
           <operation>
             <number value="6"/>
@@ -139,7 +139,7 @@
     </step>
     <step>
       <process>
-        <title value="group 4"/>
+        <title value="Treatment Resources Update"/>
         <step>
           <operation>
             <number value="8"/>
