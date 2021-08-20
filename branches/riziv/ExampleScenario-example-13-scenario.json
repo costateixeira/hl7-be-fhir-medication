@@ -141,7 +141,7 @@
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
-                      "resourceId": "13-treatment"
+                      "resourceId": "8-treatment"
                     }
                   }
                 },
@@ -152,7 +152,7 @@
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
-                      "resourceId": "13-treatmentLine"
+                      "resourceId": "8-treatmentLine"
                     }
                   }
                 }
@@ -184,7 +184,7 @@
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
-                      "resourceId": "13-treatment"
+                      "resourceId": "8-treatment"
                     }
                   }
                 },
@@ -195,7 +195,7 @@
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
-                      "resourceId": "13-treatmentLine-2"
+                      "resourceId": "8-treatmentLine"
                     }
                   }
                 }
@@ -227,7 +227,7 @@
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
-                      "resourceId": "13-treatment"
+                      "resourceId": "8-treatment"
                     }
                   }
                 },
@@ -238,7 +238,7 @@
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
-                      "resourceId": "13-treatmentLine"
+                      "resourceId": "8-treatmentLine"
                     }
                   }
                 }

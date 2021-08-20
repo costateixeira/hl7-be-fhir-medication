@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedRecordMedicationSummaryView"];
   fhir:StructureDefinition.title [ fhir:value "[Profile] - Summary View"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-18T16:05:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-20T08:50:24+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Belgium"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

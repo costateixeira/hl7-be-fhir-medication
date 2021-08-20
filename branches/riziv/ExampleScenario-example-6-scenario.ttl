@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "example-6-scenario"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-6-scenario</code></p><p><b>version</b>: 0.1.0-test</p><p><b>name</b>: RefusalOfDispense</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href=\"http://hl7belgium.org\">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 BE}\">Belgium</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: New prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Refused Dispense</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Refuse the dispense prescribed medication</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication.</p><p><b>postConditions</b>: It is possible to capture that the original prescription was and that the dispense was refused</p><blockquote><p><b>step</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>1</td><td>Goes to appointment</td><td>PATIENT</td><td>GP</td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Get Patient's Medication</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Create new prescription</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>6-prescription</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Create new treatment</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>6-treatment</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 5</p><p><b>name</b>: Create new treatment Line</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>6-treatmentLine</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 6</p><p><b>name</b>: Get patient's Prescriptions</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 7</p><p><b>name</b>: Refuse Dispense</p><p><b>initiator</b>: PHARM</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>6-dispense</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 8</p><p><b>name</b>: Update treatment</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>6-treatment</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 9</p><p><b>name</b>: Update treatment Line</p><p><b>initiator</b>: VAULT</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>6-treatmentLine</td></tr></table></blockquote></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-6-scenario</code></p><p><b>version</b>: 0.1.0-test</p><p><b>name</b>: RefusalOfDispense</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href=\"http://hl7belgium.org\">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 BE}\">Belgium</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: New prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 6-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Refused Dispense</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Refuse the dispense prescribed medication</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and is prescribed ibuprofen 400 mg cp (TID) for headaches. The pharmacist, after a conversation with the patient, got to know that he was doing Tritace (ramipril) 10 mg for hypertension.Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication.</p><p><b>postConditions</b>: It is possible to capture that the original prescription was and that the dispense was refused</p><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Initial contact</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment resources Creation</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment Resources Update</p></blockquote></blockquote></blockquote></div>"
   ];
   fhir:ExampleScenario.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-6-scenario"];
   fhir:ExampleScenario.version [ fhir:value "0.1.0-test"];
@@ -90,98 +90,126 @@
      fhir:ExampleScenario.process.postConditions [ fhir:value "It is possible to capture that the original prescription was and that the dispense was refused" ];
      fhir:ExampleScenario.process.step [
        fhir:index 0;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "1" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Goes to appointment" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "PATIENT" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "GP" ]
+       fhir:ExampleScenario.process.step.process [
+         fhir:index 0;
+         fhir:ExampleScenario.process.title [ fhir:value "Initial contact" ];
+         fhir:ExampleScenario.process.step [
+           fhir:index 0;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "1" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Goes to appointment" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "PATIENT" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "GP" ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "2" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Get Patient's Medication" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.response [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "EB" ]
+             ]
+           ]
+         ], [
+           fhir:index 2;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "3" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new prescription" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-prescription" ]
+             ]
+           ]
+         ]
        ]
      ], [
        fhir:index 1;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "2" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Get Patient's Medication" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.response [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "EB" ]
+       fhir:ExampleScenario.process.step.process [
+         fhir:index 0;
+         fhir:ExampleScenario.process.title [ fhir:value "Treatment resources Creation" ];
+         fhir:ExampleScenario.process.step [
+           fhir:index 0;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new treatment" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatment" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "5" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new treatment Line" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatmentLine" ]
+             ]
+           ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "3" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new prescription" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.request [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-prescription" ]
+       fhir:ExampleScenario.process.step.process [
+         fhir:index 0;
+         fhir:ExampleScenario.process.title [ fhir:value "Dispense" ];
+         fhir:ExampleScenario.process.step [
+           fhir:index 0;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "6" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Get patient's Prescriptions" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "PHARM" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.response [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "EB" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "7" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Refuse Dispense" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "PHARM" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-dispense" ]
+             ]
+           ]
          ]
        ]
      ], [
        fhir:index 3;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new treatment" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.request [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatment" ]
-         ]
-       ]
-     ], [
-       fhir:index 4;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "5" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new treatment Line" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.request [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatmentLine" ]
-         ]
-       ]
-     ], [
-       fhir:index 5;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "6" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Get patient's Prescriptions" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "PHARM" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.response [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "EB" ]
-         ]
-       ]
-     ], [
-       fhir:index 6;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "7" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Refuse Dispense" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "PHARM" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.request [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-dispense" ]
-         ]
-       ]
-     ], [
-       fhir:index 7;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "8" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Update treatment" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.request [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatment" ]
-         ]
-       ]
-     ], [
-       fhir:index 8;
-       fhir:ExampleScenario.process.step.operation [
-         fhir:ExampleScenario.process.step.operation.number [ fhir:value "9" ];
-         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Update treatment Line" ];
-         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-         fhir:ExampleScenario.process.step.operation.request [
-           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatmentLine" ]
+       fhir:ExampleScenario.process.step.process [
+         fhir:index 0;
+         fhir:ExampleScenario.process.title [ fhir:value "Treatment Resources Update" ];
+         fhir:ExampleScenario.process.step [
+           fhir:index 0;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "8" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Update treatment" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatment" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "9" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Update treatment Line" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "6-treatmentLine" ]
+             ]
+           ]
          ]
        ]
      ]

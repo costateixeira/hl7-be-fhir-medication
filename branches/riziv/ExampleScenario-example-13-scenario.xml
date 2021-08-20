@@ -121,7 +121,7 @@
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="13-treatment"/>
+              <resourceId value="8-treatment"/>
             </request>
           </operation>
         </step>
@@ -132,7 +132,7 @@
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="13-treatmentLine"/>
+              <resourceId value="8-treatmentLine"/>
             </request>
           </operation>
         </step>
@@ -160,7 +160,7 @@
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="13-treatment"/>
+              <resourceId value="8-treatment"/>
             </request>
           </operation>
         </step>
@@ -171,7 +171,7 @@
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="13-treatmentLine-2"/>
+              <resourceId value="8-treatmentLine"/>
             </request>
           </operation>
         </step>
@@ -199,7 +199,7 @@
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="13-treatment"/>
+              <resourceId value="8-treatment"/>
             </request>
           </operation>
         </step>
@@ -210,7 +210,7 @@
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="13-treatmentLine"/>
+              <resourceId value="8-treatmentLine"/>
             </request>
           </operation>
         </step>

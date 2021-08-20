@@ -11,7 +11,7 @@
   "title": "MedicationRecord",
   "status": "draft",
   "experimental": false,
-  "date": "2021-08-18T16:05:42+00:00",
+  "date": "2021-08-20T08:50:24+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1266,6 +1266,108 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/13-dispense"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 13 - Dispense 1",
+        "description": "Dispense of OTC medication on the community pharmacy",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/13-dispense-2"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 13 - Dispense 2",
+        "description": "Dispense of OTC medication on the community pharmacy",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/13-dispense-3"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 13 - Dispense 3",
+        "description": "Dispense of OTC medication on the community pharmacy",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/13-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 13 - Treatment",
+        "description": "Dispense of OTC medication on the community pharmacy",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/13-treatmentLine"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 13 - Treatment Line 1",
+        "description": "Dispense of OTC medication on the community pharmacy",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/13-treatmentLine-2"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 13 - Treatment Line 2",
+        "description": "Dispense of OTC medication on the community pharmacy",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -1546,19 +1648,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/13-dispense-3"
-        },
-        "name": "Example MedicationDispense - 13-dispense-3",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1692,19 +1781,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/13-dispense"
-        },
-        "name": "Example MedicationDispense - 13-dispense",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1731,19 +1807,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/13-treatmentLine"
-        },
-        "name": "Example MedicationStatement - 13-treatmentLine",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1757,19 +1820,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/13-treatmentLine-2"
-        },
-        "name": "Example MedicationStatement - 13-treatmentLine-2",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -1778,19 +1828,6 @@
         },
         "name": "[Logical Model] - Treatment",
         "description": "A model for representing a Treatment."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationDispense"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationDispense/13-dispense-2"
-        },
-        "name": "Example MedicationDispense - 13-dispense-2",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
       },
       {
         "extension": [
@@ -1867,19 +1904,6 @@
         "reference": {
           "reference": "Condition/arthritis-condition"
         }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/13-treatment"
-        },
-        "name": "Headache",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"
       },
       {
         "extension": [
@@ -1974,7 +1998,19 @@
         {
           "nameUrl": "medicationrecord-requirements.html",
           "title": "Requirements - Medication Record",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "medication-granularity.html",
+              "title": "Medication Levels",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "medication-class-group.html",
+              "title": "Medication Classification and grouping",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "medicationrecord-patterns.html",
@@ -1989,19 +2025,7 @@
             {
               "nameUrl": "medicationrecord-pattern-2.html",
               "title": "Pattern 2 - update a patient's medication record",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "medication-granularity.html",
-                  "title": "Medication Levels",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "medication-class-group.html",
-                  "title": "Medication Classification and grouping",
-                  "generation": "markdown"
-                }
-              ]
+              "generation": "markdown"
             },
             {
               "nameUrl": "medicationrecord-pattern-3.html",
