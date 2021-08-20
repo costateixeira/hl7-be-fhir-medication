@@ -58,8 +58,7 @@
     <postConditions value="How the treatments and treatment line behave with OTC dispenses without prescription and for the same condition"/>
     <step>
       <process>
-        <title value="group 1"/>
-        <description value="group 1"/>
+        <title value="Initial Contact"/>
         <step>
           <operation>
             <number value="1"/>
@@ -83,8 +82,7 @@
     </step>
     <step>
       <process>
-        <title value="group 2"/>
-        <description value="group 2"/>
+        <title value="First Dispense"/>
         <step>
           <operation>
             <number value="3"/>
@@ -96,6 +94,11 @@
             </request>
           </operation>
         </step>
+      </process>
+    </step>
+    <step>
+      <process>
+        <title value="Treatment resources Creation"/>
         <step>
           <operation>
             <number value="4"/>
@@ -122,8 +125,7 @@
     </step>
     <step>
       <process>
-        <title value="group 3"/>
-        <description value="group 3"/>
+        <title value="Second Dispense"/>
         <step>
           <operation>
             <number value="6"/>
@@ -135,6 +137,11 @@
             </request>
           </operation>
         </step>
+      </process>
+    </step>
+    <step>
+      <process>
+        <title value="New Treatment resources Creation"/>
         <step>
           <operation>
             <number value="7"/>
@@ -161,8 +168,7 @@
     </step>
     <step>
       <process>
-        <title value="group 4"/>
-        <description value="group 4"/>
+        <title value="Third Dispense"/>
         <step>
           <operation>
             <number value="9"/>
@@ -174,6 +180,11 @@
             </request>
           </operation>
         </step>
+      </process>
+    </step>
+    <step>
+      <process>
+        <title value="Treatment resources Creation"/>
         <step>
           <operation>
             <number value="10"/>

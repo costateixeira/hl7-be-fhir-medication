@@ -55,8 +55,7 @@ Title: "Dispense of OTC medication on the community pharmacy"
 
 
 
-* process[=].step[+].process[+].title = "group 1"
-* process[=].step[=].process[=].description = "group 1"
+* process[=].step[+].process[+].title = "Initial Contact"
 
 * process[=].step[=].process[=].step[+].operation.name = "Goes to Pharmacy"
 * process[=].step[=].process[=].step[=].operation.number = "1"
@@ -73,14 +72,14 @@ Title: "Dispense of OTC medication on the community pharmacy"
 
 
 
-* process[=].step[+].process[+].title = "group 2"
-* process[=].step[=].process[=].description = "group 2"
+* process[=].step[+].process[+].title = "First Dispense"
 * process[=].step[=].process[=].step[+].operation.name = "Dispense a product"
 * process[=].step[=].process[=].step[=].operation.number = "3"
 * process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-dispense"
 
+* process[=].step[+].process[+].title = "Treatment resources Creation"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
 * process[=].step[=].process[=].step[=].operation.number = "4"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
@@ -96,14 +95,14 @@ Title: "Dispense of OTC medication on the community pharmacy"
 
 
 
-* process[=].step[+].process[+].title = "group 3"
-* process[=].step[=].process[=].description = "group 3"
+* process[=].step[+].process[+].title = "Second Dispense"
 * process[=].step[=].process[=].step[+].operation.name = "Dispense another product"
 * process[=].step[=].process[=].step[=].operation.number = "6"
 * process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-dispense-2"
 
+* process[=].step[+].process[+].title = "New Treatment resources Creation"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
 * process[=].step[=].process[=].step[=].operation.number = "7"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
@@ -117,14 +116,14 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "8-treatmentLine"
 
 
-* process[=].step[+].process[+].title = "group 4"
-* process[=].step[=].process[=].description = "group 4"
+* process[=].step[+].process[+].title = "Third Dispense"
 * process[=].step[=].process[=].step[+].operation.name = "Dispense another product"
 * process[=].step[=].process[=].step[=].operation.number = "9"
 * process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-dispense-3"
 
+* process[=].step[+].process[+].title = "Treatment resources Creation"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
 * process[=].step[=].process[=].step[=].operation.number = "10"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"

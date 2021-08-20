@@ -56,7 +56,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 
   * step[+]
     * process[+]
-      * title = "group 1"
+      * title = "Initial Contact"
       * step[+]
         * operation.name = "Goes to appointment"
         * operation.number = "1"
@@ -77,7 +77,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 
   * step[+]
     * process[+]
-      * title = "group 2"
+      * title = "Treatment resources Creation"
       * step[+]
         * operation.name = "Create new treatment"
         * operation.number = "4"
@@ -93,7 +93,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 
   * step[+]
     * process[+]
-      * title = "group 3"
+      * title = "Dispense"
       * step[+]
         * operation.name = "Get patient's Prescriptions"
         * operation.number = "6"
@@ -109,7 +109,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 
   * step[+]
     * process[+]
-      * title = "group 4"
+      * title = "Treatment Resources Update"
       * step[+]
         * operation.name = "Create new treatment"
         * operation.number = "8"

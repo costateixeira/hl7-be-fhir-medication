@@ -56,7 +56,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
   * step[+]
     * process[+]
-      * title = "group 1"
+      * title = "Initial Contact"
       * step[+]
         * operation.name = "Goes to appointment"
         * operation.number = "1"
@@ -78,7 +78,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.request.resourceId = "1-prescription"
   * step[+]
     * process[+]
-      * title = "group 2"
+      * title = "Treatment resources Creation"
       * step[+]
         * operation.name = "Create new treatment"
         * operation.number = "4"
@@ -94,7 +94,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
   * step[+]
     * process[+]
-      * title = "group 3"
+      * title = "Dispense"
       * step[+]
         * operation.name = "Get patient's Prescriptions"
         * operation.number = "6"
@@ -110,7 +110,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
   * step[+]
     * process[+]
-      * title = "group 4"
+      * title = "Treatment Resources Update"
       * step[+]
         * operation.name = "Create new treatment"
         * operation.number = "8"
