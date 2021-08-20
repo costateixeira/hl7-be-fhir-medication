@@ -270,6 +270,17 @@
                       "resourceId": "4-2-treatment"
                     }
                   }
+                },
+                {
+                  "operation": {
+                    "number": "12",
+                    "name": "Additional Treatment Line",
+                    "initiator": "VAULT",
+                    "receiver": "VAULT",
+                    "request": {
+                      "resourceId": "4-2-treatmentLine"
+                    }
+                  }
                 }
               ]
             }

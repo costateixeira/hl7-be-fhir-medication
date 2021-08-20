@@ -235,6 +235,17 @@
             </request>
           </operation>
         </step>
+        <step>
+          <operation>
+            <number value="12"/>
+            <name value="Additional Treatment Line"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="4-2-treatmentLine"/>
+            </request>
+          </operation>
+        </step>
       </process>
     </step>
   </process>
