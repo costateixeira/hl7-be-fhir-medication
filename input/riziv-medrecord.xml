@@ -523,6 +523,54 @@
 </resource>
 
 
+<resource>
+  <reference>
+     <reference value="MedicationDispense/13-dispense" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 13 - Dispense 1" />
+  <description value="Dispense of OTC medication on the community pharmacy" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/13-dispense-2" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 13 - Dispense 2" />
+  <description value="Dispense of OTC medication on the community pharmacy" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationDispense/13-dispense-3" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 13 - Dispense 3" />
+  <description value="Dispense of OTC medication on the community pharmacy" />
+</resource>
+<resource>
+  <reference>
+     <reference value="CarePlan/13-treatment" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 13 - Treatment" />
+  <description value="Dispense of OTC medication on the community pharmacy" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/13-treatmentLine" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 13 - Treatment Line 1" />
+  <description value="Dispense of OTC medication on the community pharmacy" />
+</resource>
+<resource>
+  <reference>
+     <reference value="MedicationStatement/13-treatmentLine-2" />
+  </reference>
+  <fhirVersion value="4.0.1" />
+  <name value="Example 13 - Treatment Line 2" />
+  <description value="Dispense of OTC medication on the community pharmacy" />
+</resource>
 
 
 <resource>
@@ -678,6 +726,16 @@
         <nameUrl value="medicationrecord-requirements.html"/>
         <title value="Requirements - Medication Record"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="medication-granularity.html"/>
+          <title value="Medication Levels"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medication-class-group.html"/>
+          <title value="Medication Classification and grouping"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="medicationrecord-patterns.html"/>
@@ -692,16 +750,6 @@
           <nameUrl value="medicationrecord-pattern-2.html"/>
           <title value="Pattern 2 - update a patient's medication record"/>
           <generation value="markdown"/>
-          <page>
-            <nameUrl value="medication-granularity.html"/>
-            <title value="Medication Levels"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="medication-class-group.html"/>
-            <title value="Medication Classification and grouping"/>
-            <generation value="markdown"/>
-          </page>
         </page>
         <page>
           <nameUrl value="medicationrecord-pattern-3.html"/>

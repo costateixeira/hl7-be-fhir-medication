@@ -57,100 +57,120 @@
     <preConditions value="The patient visits their GP and is prescribed dafalgan Forte 1000 mg cp (TID) for headaches. When reaching the pharmacy for dispense, the pharmacy does not have dafalgan Forte now but dispenses Paracetabs Forte 1000 mg instead."/>
     <postConditions value="It is possible to capture that the original prescription was dafalgan but the dispense was Paracetabs"/>
     <step>
-      <operation>
-        <number value="1"/>
-        <name value="Goes to appointment"/>
-        <initiator value="PATIENT"/>
-        <receiver value="GP"/>
-      </operation>
+      <process>
+        <title value="Initial contact"/>
+        <step>
+          <operation>
+            <number value="1"/>
+            <name value="Goes to appointment"/>
+            <initiator value="PATIENT"/>
+            <receiver value="GP"/>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="2"/>
+            <name value="Get Patient&#39;s Medication"/>
+            <initiator value="GP"/>
+            <receiver value="VAULT"/>
+            <response>
+              <resourceId value="EB"/>
+            </response>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="3"/>
+            <name value="Create new prescription"/>
+            <initiator value="GP"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="5-prescription"/>
+            </request>
+          </operation>
+        </step>
+      </process>
     </step>
     <step>
-      <operation>
-        <number value="2"/>
-        <name value="Get Patient&#39;s Medication"/>
-        <initiator value="GP"/>
-        <receiver value="VAULT"/>
-        <response>
-          <resourceId value="EB"/>
-        </response>
-      </operation>
+      <process>
+        <title value="Treatment resources Creation"/>
+        <step>
+          <operation>
+            <number value="4"/>
+            <name value="Create new treatment"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="5-treatment"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="5"/>
+            <name value="Create new treatment Line"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="5-treatmentLine"/>
+            </request>
+          </operation>
+        </step>
+      </process>
     </step>
     <step>
-      <operation>
-        <number value="3"/>
-        <name value="Create new prescription"/>
-        <initiator value="GP"/>
-        <receiver value="VAULT"/>
-        <request>
-          <resourceId value="5-prescription"/>
-        </request>
-      </operation>
+      <process>
+        <title value="Dispense"/>
+        <step>
+          <operation>
+            <number value="6"/>
+            <name value="Get patient&#39;s Prescriptions"/>
+            <initiator value="PHARM"/>
+            <receiver value="VAULT"/>
+            <response>
+              <resourceId value="EB"/>
+            </response>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="7"/>
+            <name value="Dispense new product"/>
+            <initiator value="PHARM"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="5-dispense"/>
+            </request>
+          </operation>
+        </step>
+      </process>
     </step>
     <step>
-      <operation>
-        <number value="4"/>
-        <name value="Create new treatment"/>
-        <initiator value="VAULT"/>
-        <receiver value="VAULT"/>
-        <request>
-          <resourceId value="5-treatment"/>
-        </request>
-      </operation>
-    </step>
-    <step>
-      <operation>
-        <number value="5"/>
-        <name value="Create new treatment Line"/>
-        <initiator value="VAULT"/>
-        <receiver value="VAULT"/>
-        <request>
-          <resourceId value="5-treatmentLine"/>
-        </request>
-      </operation>
-    </step>
-    <step>
-      <operation>
-        <number value="6"/>
-        <name value="Get patient&#39;s Prescriptions"/>
-        <initiator value="PHARM"/>
-        <receiver value="VAULT"/>
-        <response>
-          <resourceId value="EB"/>
-        </response>
-      </operation>
-    </step>
-    <step>
-      <operation>
-        <number value="7"/>
-        <name value="Dispense new product"/>
-        <initiator value="PHARM"/>
-        <receiver value="VAULT"/>
-        <request>
-          <resourceId value="5-dispense"/>
-        </request>
-      </operation>
-    </step>
-    <step>
-      <operation>
-        <number value="8"/>
-        <name value="Update treatment"/>
-        <initiator value="VAULT"/>
-        <receiver value="VAULT"/>
-        <request>
-          <resourceId value="5-treatment"/>
-        </request>
-      </operation>
-    </step>
-    <step>
-      <operation>
-        <number value="9"/>
-        <name value="Update treatment Line"/>
-        <initiator value="VAULT"/>
-        <receiver value="VAULT"/>
-        <request>
-          <resourceId value="5-treatmentLine"/>
-        </request>
-      </operation>
+      <process>
+        <title value="Treatment Resources Update"/>
+        <step>
+          <operation>
+            <number value="8"/>
+            <name value="Update treatment"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="5-treatment"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="9"/>
+            <name value="Update treatment Line"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="5-treatmentLine"/>
+            </request>
+          </operation>
+        </step>
+      </process>
     </step>
   </process>
 </ExampleScenario>
