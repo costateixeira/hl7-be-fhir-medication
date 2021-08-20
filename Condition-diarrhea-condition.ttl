@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/diarrhea-condition> a fhir:Condition;
+<https://www.hl7belgium.be/fhir/Condition/diarrhea-condition> a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "diarrhea-condition"];
   fhir:DomainResource.text [
@@ -29,7 +29,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/diarrhea-condition.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/Condition/diarrhea-condition.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

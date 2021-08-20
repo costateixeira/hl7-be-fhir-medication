@@ -2,7 +2,7 @@
 "BeModelMedicationRecordTreatmentLine","","","",0,*,"","","","","[Logical Model] - Treatment Line","A model for representing a Treatment Line.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "BeModelMedicationRecordTreatmentLine.identifier","","","",0,1,"","","","Identifier {[]} {[]}
 ","The business identifier(s) for the medication treatment Line","The business identifier(s) for the medication treatment Line","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.identifier",0,1,"",""
-"BeModelMedicationRecordTreatmentLine.basedOn","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordTreatment]]}
+"BeModelMedicationRecordTreatmentLine.basedOn","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordTreatment]]}
 ","The identifier of the treatment from which this line stems","The identifier of the treatment from which this line stems","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.basedOn",0,1,"",""
 "BeModelMedicationRecordTreatmentLine.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","For whom this treatment line was created","For whom this treatment line was created","","","","","","","","","",,,,,"",,,,"BeModelMedicationRecordTreatmentLine.subject",1,1,"",""

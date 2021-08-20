@@ -3,7 +3,7 @@
   "id": "15-treatment",
   "meta": {
     "profile": [
-      "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"
+      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
     ]
   },
   "text": {

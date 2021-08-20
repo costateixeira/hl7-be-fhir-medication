@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationStatement/7-treatmentLine> a fhir:MedicationStatement;
+<https://www.hl7belgium.be/fhir/MedicationStatement/7-treatmentLine> a fhir:MedicationStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "7-treatmentLine"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine";
+       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine";
        fhir:index 0;
-       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine>
+       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine>
      ]
   ];
   fhir:DomainResource.text [
@@ -52,7 +52,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationStatement/7-treatmentLine.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/MedicationStatement/7-treatmentLine.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

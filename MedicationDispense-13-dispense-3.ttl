@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationDispense/13-dispense-3> a fhir:MedicationDispense;
+<https://www.hl7belgium.be/fhir/MedicationDispense/13-dispense-3> a fhir:MedicationDispense;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "13-dispense-3"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense";
+       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense";
        fhir:index 0;
-       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense>
+       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense>
      ]
   ];
   fhir:DomainResource.text [
@@ -90,7 +90,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationDispense/13-dispense-3.ttl> a owl:Ontology;
+<https://www.hl7belgium.be/fhir/MedicationDispense/13-dispense-3.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -15,12 +15,12 @@
       "valueCode": "not-classified"
     }
   ],
-  "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord",
-  "version": "0.1.0-test",
+  "url": "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord",
+  "version": "0.2.0",
   "name": "MedRecord",
   "title": "[Profile] - Medication Record",
   "status": "active",
-  "date": "2021-08-20T09:04:32+00:00",
+  "date": "2021-08-20T09:06:30+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -37,10 +37,11 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "BE"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
         }
-      ]
+      ],
+      "text": "Belgium"
     }
   ],
   "fhirVersion": "4.0.1",
@@ -2155,7 +2156,7 @@
           {
             "code": "Composition",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp"
             ]
           }
         ],
@@ -4589,7 +4590,7 @@
           {
             "code": "CarePlan",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
             ]
           }
         ],
@@ -5836,7 +5837,7 @@
           {
             "code": "MedicationStatement",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
             ]
           }
         ],
@@ -7083,7 +7084,7 @@
           {
             "code": "MedicationStatement",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
             ]
           }
         ],
@@ -8333,7 +8334,7 @@
           {
             "code": "MedicationRequest",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
             ]
           }
         ],
@@ -9583,7 +9584,7 @@
           {
             "code": "MedicationDispense",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
             ]
           }
         ],
@@ -10837,7 +10838,7 @@
           {
             "code": "MedicationAdministration",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
             ]
           }
         ],
@@ -12087,7 +12088,7 @@
           {
             "code": "MedicationRequest",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
             ]
           }
         ],
@@ -13338,7 +13339,7 @@
           {
             "code": "MedicationStatement",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
             ]
           }
         ],
@@ -14426,7 +14427,7 @@
           {
             "code": "Composition",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp"
             ]
           }
         ],
@@ -14467,7 +14468,7 @@
           {
             "code": "CarePlan",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"
             ]
           }
         ],
@@ -14489,7 +14490,7 @@
           {
             "code": "MedicationStatement",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
             ]
           }
         ],
@@ -14511,7 +14512,7 @@
           {
             "code": "MedicationStatement",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"
             ]
           }
         ],
@@ -14533,7 +14534,7 @@
           {
             "code": "MedicationRequest",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"
             ]
           }
         ],
@@ -14555,7 +14556,7 @@
           {
             "code": "MedicationDispense",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
             ]
           }
         ],
@@ -14577,7 +14578,7 @@
           {
             "code": "MedicationAdministration",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
             ]
           }
         ],
@@ -14599,7 +14600,7 @@
           {
             "code": "MedicationRequest",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
             ]
           }
         ],
@@ -14621,7 +14622,7 @@
           {
             "code": "MedicationStatement",
             "profile": [
-              "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
             ]
           }
         ],
