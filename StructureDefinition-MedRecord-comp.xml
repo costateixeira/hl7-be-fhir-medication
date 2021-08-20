@@ -23,12 +23,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecord-comp"/>
-  <version value="0.2.0"/>
+  <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp"/>
+  <version value="0.1.0-test"/>
   <name value="MedRecordComposition"/>
   <title value="[Profile] - Structure Composition for Medication Record"/>
   <status value="active"/>
-  <date value="2021-08-19T14:51:25+00:00"/>
+  <date value="2021-08-20T08:50:24+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -39,10 +39,9 @@
   <description value="The profile for how to organize the information in a medication Record"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="056"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
     </coding>
-    <text value="Belgium"/>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
@@ -2971,7 +2970,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"/>
       </type>
       <condition value="cmp-2"/>
       <constraint>
@@ -3527,7 +3526,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"/>
       </type>
       <condition value="cmp-2"/>
       <constraint>
@@ -4083,7 +4082,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView"/>
       </type>
       <condition value="cmp-2"/>
       <constraint>
@@ -4639,11 +4638,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
       </type>
       <condition value="cmp-2"/>
       <constraint>
@@ -4772,7 +4771,7 @@
       <path value="Composition.section.entry"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"/>
       </type>
     </element>
     <element id="Composition.section:MedRecordTreatmentLine">
@@ -4786,7 +4785,7 @@
       <path value="Composition.section.entry"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"/>
       </type>
     </element>
     <element id="Composition.section:MedRecordMedicationSummaryView">
@@ -4800,7 +4799,7 @@
       <path value="Composition.section.entry"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView"/>
       </type>
     </element>
     <element id="Composition.section:detailsRecord">
@@ -4814,11 +4813,11 @@
       <path value="Composition.section.entry"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"/>
-        <targetProfile value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration"/>
+        <targetProfile value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration"/>
       </type>
     </element>
   </differential>

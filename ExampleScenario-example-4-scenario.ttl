@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/ExampleScenario/example-4-scenario> a fhir:ExampleScenario;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-4-scenario> a fhir:ExampleScenario;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "example-4-scenario"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>https://www.hl7belgium.be/fhir/ExampleScenario/example-4-scenario</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: DispensePrescriptionAndIsolatedDispense</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href=\"http://hl7belgium.org\">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}\">Belgium</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Dispense for Prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: New prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-2-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Isolated dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-2-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-2-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on dispense</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Dispense of prescribed medication, and dispense of a product that can be done without a prescription</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and is prescribed Rosuvastatin 10 mg cp for cholesterol. After reaching the pharmacy, Crestor 10 is dispensed facing that prescription. Additionally, Dafalgan compr. 20x 500mg (OTC) is also dispensed due to a complaint of a minor toothache.</p><p><b>postConditions</b>: This should result in two treatment lines. One with prescription and dispense and one with only dispense.</p><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Initial contact</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment resources Creation</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment Resources Update</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Second dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: New Treatment resources Creation</p></blockquote></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-4-scenario</code></p><p><b>version</b>: 0.1.0-test</p><p><b>name</b>: DispensePrescriptionAndIsolatedDispense</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href=\"http://hl7belgium.org\">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 BE}\">Belgium</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Dispense for Prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-prescription</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: New prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-2-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Isolated dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-1-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on prescription</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-2-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 4-2-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on dispense</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Dispense of prescribed medication, and dispense of a product that can be done without a prescription</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and is prescribed Rosuvastatin 10 mg cp for cholesterol. After reaching the pharmacy, Crestor 10 is dispensed facing that prescription. Additionally, Dafalgan compr. 20x 500mg (OTC) is also dispensed due to a complaint of a minor toothache.</p><p><b>postConditions</b>: This should result in two treatment lines. One with prescription and dispense and one with only dispense.</p><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Initial contact</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment resources Creation</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment Resources Update</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Second dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: New Treatment resources Creation</p></blockquote></blockquote></blockquote></div>"
   ];
-  fhir:ExampleScenario.url [ fhir:value "https://www.hl7belgium.be/fhir/ExampleScenario/example-4-scenario"];
-  fhir:ExampleScenario.version [ fhir:value "0.2.0"];
+  fhir:ExampleScenario.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-4-scenario"];
+  fhir:ExampleScenario.version [ fhir:value "0.1.0-test"];
   fhir:ExampleScenario.name [ fhir:value "DispensePrescriptionAndIsolatedDispense"];
   fhir:ExampleScenario.status [ fhir:value "draft"];
   fhir:ExampleScenario.experimental [ fhir:value "false"^^xsd:boolean];
@@ -31,10 +31,9 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "056" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "Belgium" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
   ];
   fhir:ExampleScenario.actor [
      fhir:index 0;
@@ -262,17 +261,6 @@
                fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "4-2-treatment" ]
              ]
            ]
-         ], [
-           fhir:index 1;
-           fhir:ExampleScenario.process.step.operation [
-             fhir:ExampleScenario.process.step.operation.number [ fhir:value "12" ];
-             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Additional Treatment Line" ];
-             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
-             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
-             fhir:ExampleScenario.process.step.operation.request [
-               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "4-2-treatmentLine" ]
-             ]
-           ]
          ]
        ]
      ]
@@ -280,7 +268,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/ExampleScenario/example-4-scenario.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-4-scenario.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

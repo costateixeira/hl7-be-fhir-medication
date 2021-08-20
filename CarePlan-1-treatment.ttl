@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/CarePlan/1-treatment> a fhir:CarePlan;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/CarePlan/1-treatment> a fhir:CarePlan;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "1-treatment"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment";
+       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment";
        fhir:index 0;
-       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment>
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment>
      ]
   ];
   fhir:DomainResource.text [
@@ -36,13 +36,13 @@
   fhir:CarePlan.created [ fhir:value "2021-07-19T13:00:00+02:00"^^xsd:dateTime];
   fhir:CarePlan.addresses [
      fhir:index 0;
-     fhir:link <https://www.hl7belgium.be/fhir/Condition/hypertension-condition>;
+     fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/hypertension-condition>;
      fhir:Reference.reference [ fhir:value "Condition/hypertension-condition" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/CarePlan/1-treatment.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/CarePlan/1-treatment.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

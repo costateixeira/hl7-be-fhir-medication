@@ -3,7 +3,7 @@
   "id": "week-view",
   "meta": {
     "profile": [
-      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationSummaryView"
+      "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationSummaryView"
     ]
   },
   "text": {

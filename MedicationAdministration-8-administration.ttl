@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationAdministration/8-administration> a fhir:MedicationAdministration;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationAdministration/8-administration> a fhir:MedicationAdministration;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "8-administration"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration";
+       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration";
        fhir:index 0;
-       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration>
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration>
      ]
   ];
   fhir:DomainResource.text [
@@ -86,7 +86,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationAdministration/8-administration.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationAdministration/8-administration.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

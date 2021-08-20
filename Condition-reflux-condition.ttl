@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/reflux-condition> a fhir:Condition;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/reflux-condition> a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "reflux-condition"];
   fhir:DomainResource.text [
@@ -29,7 +29,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/reflux-condition.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/reflux-condition.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

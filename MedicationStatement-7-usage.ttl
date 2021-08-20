@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationStatement/7-usage> a fhir:MedicationStatement;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationStatement/7-usage> a fhir:MedicationStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "7-usage"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage";
+       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage";
        fhir:index 0;
-       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage>
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage>
      ]
   ];
   fhir:DomainResource.text [
@@ -59,7 +59,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationStatement/7-usage.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationStatement/7-usage.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

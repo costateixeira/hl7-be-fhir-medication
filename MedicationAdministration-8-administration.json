@@ -3,7 +3,7 @@
   "id": "8-administration",
   "meta": {
     "profile": [
-      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordAdministration"
+      "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordAdministration"
     ]
   },
   "text": {

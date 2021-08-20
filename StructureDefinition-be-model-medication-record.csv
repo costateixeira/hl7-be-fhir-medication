@@ -13,7 +13,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The patient that has the medication","The patient that has the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.patient",1,1,"",""
 "BeMedicationRecord.patient.name","","","",0,1,"","","","HumanName {[]} {[]}
 ","The name of the patient","The name of the patient","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.patient.name",0,1,"",""
-"BeMedicationRecord.patient.identifier","","","",0,1,"","","","CodeableReference {[]} {[]}
+"BeMedicationRecord.patient.identifier","","","",0,1,"","","","Identifier {[]} {[]}
 ","An identifier or reference to the patient defined elsewhere","An identifier or reference to the patient defined elsewhere","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.patient.identifier",0,1,"",""
 "BeMedicationRecord.recordIdentifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","An identifier of the medication record when it needs to be exchanged or tracked","An identifier of the medication record when it needs to be exchanged or tracked","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.recordIdentifier",0,*,"",""
@@ -28,35 +28,33 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "BeMedicationRecord.summary.author","","","",1,1,"","","","Reference {[]} {[]}
 ","The author of the summary","The author of the summary","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.author",1,1,"",""
 "BeMedicationRecord.summary.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","The type of summary","The type of summary, which determines the rules for the creation of this summary","","","","","","","","","",,"required","","be-vs-medication-summary-types","",,,,"BeMedicationRecord.summary.type",1,1,"",""
+","The type of summary","The type of summary, which determines the rules for the creation of this summary","","","","","","","","","",,"required","","http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types","",,,,"BeMedicationRecord.summary.type",1,1,"",""
 "BeMedicationRecord.summary.basedOn","","","",0,*,"","","","Reference {[]} {[]}
 ","The information that this summary is basedOn","The information that this summary is basedOn, e.g. Provenance, MedicationRequest, MedicationDispense..","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.basedOn",0,*,"",""
 "BeMedicationRecord.summary.criteria","","","",0,1,"","","","Annotation {[]} {[]}
 ","A description of the criteria for this summary","A description of the criteria for this summary","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.criteria",0,1,"",""
 "BeMedicationRecord.summary.period","","","",0,1,"","","","Period {[]} {[]}
 ","The period covered by this summary","The period to which the summary refers","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.period",0,1,"",""
-"BeMedicationRecord.summary.treatmentLine","","","",0,*,"","","","BackboneElement {[]} {[]}
-","Each line in the summary","Each line in the summary - different types of summary may have different criteria for what constitutes a unique line","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine",0,*,"",""
-"BeMedicationRecord.summary.treatmentLine.identifier","","","",0,*,"","","","Identifier {[]} {[]}
-","Unique business identifier for this treatment line","Unique business identifier for this treatment line","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.identifier",0,*,"",""
-"BeMedicationRecord.summary.treatmentLine.details","","","",0,1,"","","","BackboneElement {[]} {[]}
-","The details of the medication","The details of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details",0,1,"",""
-"BeMedicationRecord.summary.treatmentLine.details.dosage","","","",0,1,"","","","Dosage {[]} {[]}
-","The medication dosage","The medication dosage","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.dosage",0,1,"",""
-"BeMedicationRecord.summary.treatmentLine.details.status","","","",1,1,"","","","code {[]} {[]}
-","The medication status","The medication status","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.status",1,1,"",""
-"BeMedicationRecord.summary.treatmentLine.details.type","","","",0,1,"","","","code {[]} {[]}
-","The type of medication - OTC, hospital, or other","The type of medication - OTC, hospital, or other","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.type",0,1,"",""
-"BeMedicationRecord.summary.treatmentLine.details.indication","","","",0,*,"","","","CodeableReference {[]} {[]}
-","The indication(s) for which this medication is taken","The indication(s) for which this medication is taken","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.indication",0,*,"",""
-"BeMedicationRecord.summary.treatmentLine.details.medication","","","",1,*,"","","","BackboneElement {[]} {[]}
-","The medication that is planned or taken","The medication that is planned or taken","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication",1,*,"",""
-"BeMedicationRecord.summary.treatmentLine.details.medication.reference","","","",0,1,"","","","Reference {[]} {[]}
-","A reference to a medication description","A reference to a medication description","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication.reference",0,1,"",""
-"BeMedicationRecord.summary.treatmentLine.details.medication.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","The code of the medication","The code of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication.code",0,1,"",""
-"BeMedicationRecord.summary.treatmentLine.details.medication.class","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","The class of the medication e.g. ATC","The class of the medication e.g. ATC","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication.class",0,*,"",""
+"BeMedicationRecord.treatmentLine","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Each line in the summary","Each line in the summary - different types of summary may have different criteria for what constitutes a unique line","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine",0,*,"",""
+"BeMedicationRecord.treatmentLine.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Unique business identifier for this treatment line","Unique business identifier for this treatment line","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.identifier",0,*,"",""
+"BeMedicationRecord.treatmentLine.dosage","","","",0,1,"","","","Dosage {[]} {[]}
+","The medication dosage","The medication dosage","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.dosage",0,1,"",""
+"BeMedicationRecord.treatmentLine.status","","","",1,1,"","","","code {[]} {[]}
+","The medication status","The medication status","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.status",1,1,"",""
+"BeMedicationRecord.treatmentLine.type","","","",0,1,"","","","code {[]} {[]}
+","The type of medication - OTC, hospital, or other","The type of medication - OTC, hospital, or other","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.type",0,1,"",""
+"BeMedicationRecord.treatmentLine.indication[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/medication-indication]]}","The indication(s) for which this medication is taken","The indication(s) for which this medication is taken","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.indication[x]",0,*,"",""
+"BeMedicationRecord.treatmentLine.medication","","","",1,*,"","","","BackboneElement {[]} {[]}
+","The medication that is planned or taken","The medication that is planned or taken","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.medication",1,*,"",""
+"BeMedicationRecord.treatmentLine.medication.reference","","","",0,1,"","","","Reference {[]} {[]}
+","A reference to a medication description","A reference to a medication description","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.medication.reference",0,1,"",""
+"BeMedicationRecord.treatmentLine.medication.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The code of the medication","The code of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.medication.code",0,1,"",""
+"BeMedicationRecord.treatmentLine.medication.class","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","The class of the medication e.g. ATC","The class of the medication e.g. ATC","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.treatmentLine.medication.class",0,*,"",""
 "BeMedicationRecord.historyDetails","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","The details about the medication history","The details about the medication history","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.historyDetails",0,1,"",""
 "BeMedicationRecord.historyDetails.orders","","","",0,*,"","","","Reference {[]} {[]}

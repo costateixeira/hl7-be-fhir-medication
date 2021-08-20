@@ -1,12 +1,12 @@
 {
-  "url": "https://www.hl7belgium.be/fhir/ImplementationGuide/hl7-be-fhir-medication",
-  "name": "BEMedicationIG",
-  "package-id": "hl7.be.fhir.medicationig",
-  "ig-ver": "0.2.0",
-  "date": "Thu, 19 Aug, 2021 14:51:25 +0000",
-  "errs": 146,
-  "warnings": 116,
-  "hints": 90,
+  "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/riziv-medicationrecord",
+  "name": "MedicationRecord",
+  "package-id": "hl7.fhir.be.riziv-medicationrecord",
+  "ig-ver": "0.1.0-test",
+  "date": "Fri, 20 Aug, 2021 08:50:24 +0000",
+  "errs": 76,
+  "warnings": 60,
+  "hints": 79,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

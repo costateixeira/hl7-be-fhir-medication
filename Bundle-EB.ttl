@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Bundle/EB> a fhir:Bundle;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Bundle/EB> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "EB"];
   fhir:Bundle.type [ fhir:value "searchset"] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Bundle/EB.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Bundle/EB.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

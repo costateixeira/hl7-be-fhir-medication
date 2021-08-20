@@ -31,12 +31,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatmentLine"/>
-  <version value="0.2.0"/>
+  <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"/>
+  <version value="0.1.0-test"/>
   <name value="MedRecordTreatmentLine"/>
   <title value="[Profile] - Treatment Line"/>
   <status value="active"/>
-  <date value="2021-08-19T14:51:25+00:00"/>
+  <date value="2021-08-20T08:50:24+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -47,10 +47,9 @@
   <description value="The profile for Medication Treatment Line - a single recorded item/line of a medication treatment"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="056"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
     </coding>
-    <text value="Belgium"/>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>

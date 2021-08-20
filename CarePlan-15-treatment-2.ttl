@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/CarePlan/15-treatment-2> a fhir:CarePlan;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/CarePlan/15-treatment-2> a fhir:CarePlan;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "15-treatment-2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment";
+       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment";
        fhir:index 0;
-       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordTreatment>
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment>
      ]
   ];
   fhir:DomainResource.text [
@@ -52,7 +52,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/CarePlan/15-treatment-2.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/CarePlan/15-treatment-2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

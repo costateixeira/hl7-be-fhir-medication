@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/arthritis-condition> a fhir:Condition;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/arthritis-condition> a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "arthritis-condition"];
   fhir:DomainResource.text [
@@ -29,7 +29,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/arthritis-condition.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/arthritis-condition.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
