@@ -261,6 +261,17 @@
                fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "4-2-treatment" ]
              ]
            ]
+         ], [
+           fhir:index 1;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "12" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Additional Treatment Line" ];
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "4-2-treatmentLine" ]
+             ]
+           ]
          ]
        ]
      ]
