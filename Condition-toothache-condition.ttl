@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/toothache-condition> a fhir:Condition;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/toothache-condition> a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "toothache-condition"];
   fhir:DomainResource.text [
@@ -29,7 +29,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/toothache-condition.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/toothache-condition.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

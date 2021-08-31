@@ -3,7 +3,7 @@
   "id": "8-usage",
   "meta": {
     "profile": [
-      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordUsage"
+      "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordUsage"
     ]
   },
   "text": {

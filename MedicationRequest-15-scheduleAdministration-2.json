@@ -3,7 +3,7 @@
   "id": "15-scheduleAdministration-2",
   "meta": {
     "profile": [
-      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordMedicationScheduledAdministration"
+      "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordMedicationScheduledAdministration"
     ]
   },
   "text": {

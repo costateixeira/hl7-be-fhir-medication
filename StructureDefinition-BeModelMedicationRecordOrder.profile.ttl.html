@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.FHIR.MEDICATIONIG\[Logical Model] - Prescription - TTL Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.BE.RIZIV-MEDICATIONRECORD\[Logical Model] - Prescription - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -28,6 +28,7 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<link href="assets/css/riziv.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 <!--
@@ -55,33 +56,33 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.6"}
-    h3,h4,h5,h6{--heading-prefix:"7.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.3.4"}
+    h3,h4,h5,h6{--heading-prefix:"7.3.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
-
-        <div id="ig-nav">
-          <a id="hl7-logo" no-external="true" href="https://hl7-be.github.io">
-            <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/riziv.png"/>
           </a>
         </div>
-        <div id="fhir-nav">
-          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/hl7-be.png"/> </a>
         </div>
-        <div id="ig-search">
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
           <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
-<!-- Left logo - typically the publisher's logo - project or affiliate -->
-        <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://hl7belgium.org">
-            <img height="71" alt="Project home" src="assets/images/meds.png"/>
-          </a>
-        </div>
+-->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HL7 Belgium Medication Implementation Guide</span><br/>0.2.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">MedicationRecord</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -109,71 +110,47 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="howto.html">How to use this Publication</a>
-			</li>
-			<li>
-				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec
-				</a>
-			</li>
-		</ul>
+
 	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="usecases.html">Use Cases</a>
+				<a href="medicationrecord-definitions.html">Definitions</a>
 			</li>
 			<li>
-				<a href="logical-models.html">Logical Models</a>
+				<a href="functional-description.html">Overview</a>
 			</li>
-<!--
 			<li>
-				<a target="_blank" href="#">Services &amp; Transactions</a>
+				<a href="medicationrecord-requirements.html">Requirements</a>
 			</li>
--->
+			<li>
+				<a href="medicationrecord-scenarios.html">Scenarios</a>
+			</li>
 		</ul>
 
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="artifacts.html">Artifact Index</a>
+				<a href="implementation.html">Technical overview</a>
+			</li>
+			<li>
+				<a href="artifacts.html">Artifacts</a>
 			</li>
 		</ul>
 	</li>
-<!--
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
-			<b class="caret"></b>
-		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="#">Core Profiles</a>
-			</li>
-			<li class="divider"></li>
-			<li>
-				<a href="#">DZOP</a>
-			</li>
-            <li>
-				<a href="#">EFRO</a>
-			</li>
-		</ul>
-	</li>
--->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-<!--			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
-			<li><a href="testservers.html">Test Servers</a></li>
--->
 			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
@@ -189,7 +166,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>[Logical Model] - Prescription</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='implementation.html'><b>Medication Record Implementation</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>[Logical Model] - Prescription</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -202,7 +179,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MedicationRecord - Local Development build (v0.1.0-test). See the <a href="http://hl7belgium.org/fhir/riziv-medicationrecord/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -253,6 +230,12 @@
   
 
 
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
 
 </ul>
 
@@ -284,12 +267,12 @@
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;The logical name of the element\&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Information about the use of the element\&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Minimum and Maximum # of times the the element can appear in the instance\&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;width: 100px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Reference to the type of the element\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Additional information about the element\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;http://hl7.org/fhir/R4/help16.png\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder\&quot; title=\&quot;A model for representing a product order.\&quot;&gt;BeModelMedicationRecordOrder&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;[Logical Model] - Prescription&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_datatype.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.identifier\&quot; title=\&quot;The business identifier(s) for the medication prescription\&quot;&gt;identifier&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Identifier\&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;The business identifier(s) for the medication prescription&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.patient\&quot; title=\&quot;The person for which the medication is prescribed.\&quot;&gt;patient&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.patient\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;http://hl7.org/fhir/R4/patient.html\&quot;&gt;Patient&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;The person for which the medication is prescribed.&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_primitive.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Primitive Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.status\&quot; title=\&quot;Status of the prescription\&quot;&gt;status&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.status\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Status of the prescription&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_datatype.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.statusReason\&quot; title=\&quot;Reason for current prescription status\&quot;&gt;statusReason&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.statusReason\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..*&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Reason for current prescription status&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_primitive.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Primitive Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.intent\&quot; title=\&quot;Intent of the prescription\&quot;&gt;intent&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.intent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#code\&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Intent of the prescription&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_choice.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Choice of Types\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.product[x]\&quot; title=\&quot;Product prescribed\&quot;&gt;product[x]&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.product_x_\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;1..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Product prescribed&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_datatype.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;span title=\&quot;Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\&quot;&gt;productCodeableConcept&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vline.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; productReference&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html#Reference\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;http://hl7.org/fhir/R4/medication.html\&quot;&gt;Medication&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.encounter\&quot; title=\&quot;Encounter on which the medication was prescribed\&quot;&gt;encounter&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.encounter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;http://hl7.org/fhir/R4/encounter.html\&quot;&gt;Encounter&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Encounter on which the medication was prescribed&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.requester\&quot; title=\&quot;Who made the prescription\&quot;&gt;requester&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.requester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;http://hl7.org/fhir/R4/practitioner.html\&quot;&gt;Practitioner&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Who made the prescription&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.reason\&quot; title=\&quot;Reason or indication for ordering or not ordering the product\&quot;&gt;reason&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.reason\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..*&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;http://hl7.org/fhir/R4/condition.html\&quot;&gt;Condition&lt;/a&gt; | &lt;a href=\&quot;http://hl7.org/fhir/R4/observation.html\&quot;&gt;Observation&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Reason or indication for ordering or not ordering the product&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_datatype.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.groupIdentifier\&quot; title=\&quot;Composite request this is part of\&quot;&gt;groupIdentifier&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.groupIdentifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Identifier\&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Composite request this is part of&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_datatype.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.dosageInstruction\&quot; title=\&quot;How the product should be taken/administered\&quot;&gt;dosageInstruction&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.dosageInstruction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..*&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Dosage\&quot;&gt;Dosage&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;How the product should be taken/administered&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_datatype.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.note\&quot; title=\&quot;Additional Information about the prescription\&quot;&gt;note&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.note\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..*&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Annotation\&quot;&gt;Annotation&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Additional Information about the prescription&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_primitive.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Primitive Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.date\&quot; title=\&quot;When prescription was initially made\&quot;&gt;date&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.date\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#dateTime\&quot;&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;When prescription was initially made&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_primitive.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Primitive Data Type\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.location\&quot; title=\&quot;Where the prescription was initially made\&quot;&gt;location&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.location\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Where the prescription was initially made&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.treatmentPlan\&quot; title=\&quot;Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to\&quot;&gt;treatmentPlan&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.treatmentPlan\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;()&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Link to the 'parent' treatment - i.e the treatment that this order is derived from, or contriburing to&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-BeModelMedicationRecordOrder-definitions.html#BeModelMedicationRecordOrder.basedOn\&quot; title=\&quot;link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose\&quot;&gt;basedOn&lt;/a&gt;&lt;a name=\&quot;BeModelMedicationRecordOrder.basedOn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;()&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;link to the 'parent' treatmentLine - i.e the line that covers all of the same drug for a certain purpose&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;http://hl7.org/fhir/R4/help16.png\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">fhir:StructureDefinition.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordOrder&quot;];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.2.0&quot;];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">fhir:StructureDefinition.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordOrder&quot;];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.0-test&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;BeModelMedicationRecordOrder&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;[Logical Model] - Prescription&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-08-20T09:06:30+00:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-08-31T14:26:51+00:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">fhir:StructureDefinition.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;HL7 Belgium&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">fhir:StructureDefinition.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -303,9 +286,8 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;056&quot; ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Belgium&quot; ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;BE&quot; ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhir:StructureDefinition.fhirVersion</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4.0.1&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">fhir:StructureDefinition.mapping</a> [
@@ -316,7 +298,7 @@
   ];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.kind">fhir:StructureDefinition.kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;logical&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.abstract">fhir:StructureDefinition.abstract</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.type">fhir:StructureDefinition.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.hl7belgium.be/fhir/StructureDefinition/BeModelMedicationRecordOrder&quot;];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.type">fhir:StructureDefinition.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordOrder&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.baseDefinition">fhir:StructureDefinition.baseDefinition</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/Base&quot;;
      <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Base&gt;
@@ -811,7 +793,7 @@
     }
 
     if (!currentTabIndex)
-      currentTabIndex = '0';
+      currentTabIndex = '1';
 
     $( '#tabs' ).tabs({
       active: currentTabIndex,
@@ -838,12 +820,16 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.be.fhir.medicationig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 20, 2021 09:06+0000">2021-08-20</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 31, 2021 14:26+0000">2021-08-31</span>
           <br/>
           <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" target="_blank" href="https://github.com/hl7-be/hl7-be-fhir-medication/projects/1">Issues</a> |
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7belgium.org/fhir/riziv-medicationrecord/history.html">Version History </a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 
           </span>
         </p>
@@ -868,89 +854,6 @@ anchors.add()</script>
   
 <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-      <script type="text/javascript">
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSfFeLMvb7wmUDGa181obPb04Igny75iqSy2jMSp6Wg40LKWjw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(1353807103).toString() // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-            parameterVariableName = 'pageTitle' 
-/* ]]> */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(247644557).toString() // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-            parameterVariableName = 'sectionName' 
-/* ]]> */
-
-            switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-            
-          
-          if (id) { //To make sure the element has an id
-            $(this).append(function () {
-              return $('<a/>', {
-                id,
-                href: feedbackurl,
-                text: feedbacklabel+' ' ,
-                class: 'feedback',
-                target: '_blank',
-                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
-        
-              });
-            });
-          }
-        })
-      </script>  
-    
-  
 
 
 

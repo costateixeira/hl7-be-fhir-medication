@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/pharyngitis-condition> a fhir:Condition;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/pharyngitis-condition> a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pharyngitis-condition"];
   fhir:DomainResource.text [
@@ -29,7 +29,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/Condition/pharyngitis-condition.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/Condition/pharyngitis-condition.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

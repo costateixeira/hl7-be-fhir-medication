@@ -3,7 +3,7 @@
   "id": "4-2-dispense",
   "meta": {
     "profile": [
-      "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordDispense"
+      "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"
     ]
   },
   "text": {

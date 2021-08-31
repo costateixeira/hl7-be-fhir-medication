@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationRequest/15-prescription-2> a fhir:MedicationRequest;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/15-prescription-2> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "15-prescription-2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder";
+       fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder";
        fhir:index 0;
-       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/MedRecordOrder>
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder>
      ]
   ];
   fhir:DomainResource.text [
@@ -31,7 +31,7 @@
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/related-tl" ];
+     fhir:Extension.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/related-tl" ];
      fhir:Extension.valueReference [
        fhir:Reference.reference [ fhir:value "example-15-of-medication-treatmentLine2" ]
      ]
@@ -106,7 +106,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.hl7belgium.be/fhir/MedicationRequest/15-prescription-2.ttl> a owl:Ontology;
+<http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/15-prescription-2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
