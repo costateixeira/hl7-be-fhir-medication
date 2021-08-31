@@ -209,60 +209,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Prescriptions attributes</strong></p>
 <ol>
-  <li>Produt Identification - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication">medication</a>
+  <li>Produt Identification
     <ul>
       <li>VOS - paracetamol oral 1G (24745)</li>
       <li>mppcv - Dafalgan compr. pellic. (séc.) Forte 16x 1g  (1799147)</li>
     </ul>
   </li>
   <li>
-    <p>Dosage - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction">dosageInstruction</a></p>
+    <p>Dosage</p>
   </li>
   <li>
-    <p>Reason for not prescribing VOS - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.substitution">substitution</a>.allowed (F) and <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.substitution">substitution</a>.reason</p>
+    <p>Reason for not prescribing VOS</p>
   </li>
   <li>
-    <p>Date of the prescription - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn">authoredOn</a></p>
+    <p>Date of the prescription - 2021-07-19T09:00:00+02:00</p>
   </li>
   <li>
-    <p>Patient for whom the prescription is - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject">subject</a></p>
+    <p>Patient for whom the prescription is - Pia Peters</p>
   </li>
   <li>
-    <p>Requester - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester">requester</a></p>
+    <p>Requester - GP</p>
   </li>
   <li>
-    <p>Encounter - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter">encounter</a></p>
+    <p>Encounter - ID: 0cf5dc52-28dc-43ce-96d2-3a757526c739</p>
   </li>
-  <li>Status (active) - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status">status</a></li>
+  <li>Status - active</li>
 </ol>
 
 <p><strong>Dispense attributes</strong></p>
 <ol>
-  <li>Produt Identification - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medicationReference">medicationReference</a> or <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medication[x]:medicationCodeableConcept">medicationCodeableConcept</a>
+  <li>Produt Identification
     <ul>
       <li>VOS - paracetamol oral 1G (24745)</li>
       <li>mppcv - Dafalgan compr. pellic. (séc.) Forte 10x 1g (3010733)</li>
     </ul>
   </li>
   <li>
-    <p>Total quantity (30) - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.quantity">quantity</a></p>
+    <p>Total quantity - 30</p>
   </li>
   <li>
-    <p>Reason for change (out of stock) - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.note">note</a></p>
+    <p>Reason for change - out of stock</p>
   </li>
   <li>
-    <p>Identification of Prescription - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription">authorizingPrescription</a></p>
+    <p>Identification of Prescription - 69eb6358-6eb6-40e4-972f-33d22c3392c5</p>
   </li>
   <li>
-    <p>Date of the dispense - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver">whenHandedOver</a></p>
+    <p>Date of the dispense - “2021-07-19T13:00:00+02:00”</p>
   </li>
   <li>
-    <p>Dosage - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction">dosageInstruction</a></p>
+    <p>Dosage</p>
   </li>
   <li>
-    <p>Subject - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject">subject</a></p>
+    <p>Subject - Pia Peters</p>
   </li>
-  <li>Dispenser - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer">performer</a></li>
+  <li>Dispenser - Pharmacist</li>
 </ol>
 
 
@@ -288,7 +288,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 20, 2021 09:04+0000">2021-08-20</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 31, 2021 14:26+0000">2021-08-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

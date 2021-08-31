@@ -207,110 +207,113 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Prescriptions attributes</strong></p>
 <ol>
-  <li>Produt Identification - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication">medication</a>
+  <li>Produt Identification
     <ul>
       <li>VOS - amoxicilline + acide clavulanique oral 875 mg + 125 mg (1941)</li>
     </ul>
   </li>
-  <li>Dosage - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction">dosageInstruction</a>
-    <ul>
-      <li><a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction.patientInstruction">PatientInstructions</a> for taking.</li>
-    </ul>
+  <li>
+    <p>Dosage</p>
   </li>
   <li>
-    <p>Date of the prescription - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn">authoredOn</a></p>
+    <p>Date of the prescription - 2021-07-19T09:00:00+02:00</p>
   </li>
   <li>
-    <p>Patient for whom the prescription is - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject">subject</a></p>
+    <p>Patient for whom the prescription is - Pia Peters</p>
   </li>
   <li>
-    <p>Requester - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester">requester</a></p>
+    <p>Requester - GP</p>
   </li>
   <li>
-    <p>Encounter - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter">encounter</a></p>
+    <p>Encounter</p>
   </li>
-  <li>Status (active) - <a href="https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status">status</a></li>
+  <li>Status - active</li>
 </ol>
 
 <p><strong>Dispense attributes</strong></p>
 <ol>
-  <li>Produt Identification <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medicationReference">medicationReference</a> or <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medication[x]:medicationCodeableConcept">medicationCodeableConcept</a>
+  <li>Produt Identification
     <ul>
       <li>VOS - amoxicilline + acide clavulanique oral 875 mg + 125 mg (1941)</li>
       <li>mppcv - Amoxiclav Sandoz 875/125 compr. (séc.) 20x (1715127)</li>
     </ul>
   </li>
   <li>
-    <p>Total quantity (20) - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.quantity">quantity</a></p>
+    <p>Total quantity - 20</p>
   </li>
   <li>
-    <p>Identification of Prescription - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription">authorizingPrescription</a></p>
+    <p>Identification of Prescription</p>
   </li>
   <li>
-    <p>Date of the dispense - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver">whenHandedOver</a></p>
+    <p>Date of the dispense - 2021-07-19T13:00:00+02:00</p>
   </li>
   <li>
-    <p>Dosage - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction">dosageInstruction</a></p>
+    <p>Dosage</p>
   </li>
   <li>
-    <p>Subject - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject">subject</a></p>
+    <p>Subject - Pia Peters</p>
   </li>
-  <li>Dispenser - <a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer">performer</a></li>
+  <li>Dispenser - Pharmacist</li>
 </ol>
 
 <p><strong>Administration attributes</strong></p>
 <ol>
   <li>
-    <p>Product Identification - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.medication">medication</a></p>
+    <p>Product Identification 
+    * mppcv - Amoxiclav Sandoz 875/125 compr. (séc.) 20x (1715127)</p>
   </li>
   <li>
-    <p>Subject - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.subject">subject</a></p>
+    <p>Subject - Pia Peters</p>
   </li>
   <li>
-    <p>Encounter - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.encounter">encounter</a></p>
+    <p>Encounter</p>
   </li>
   <li>
-    <p>Occurence - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.occurence_x_">occurence</a></p>
+    <p>Occurence  - 2021-07-19T18:00:00+02:00</p>
   </li>
   <li>
-    <p>Performer - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.performer">performer</a></p>
+    <p>Performer - Nurse</p>
   </li>
   <li>
-    <p>Prescription - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.request">request</a></p>
+    <p>Prescription</p>
   </li>
   <li>
-    <p>Dosage - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.dosage">dosage</a></p>
+    <p>Dosage</p>
   </li>
   <li>
-    <p>Status (stopped) - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.status">status</a></p>
+    <p>Status - stopped</p>
   </li>
   <li>
-    <p>Status Reason (allergic reaction) - <a href="https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.statusReason">statusReason</a></p>
+    <p>Status Reason - allergic reaction</p>
   </li>
 </ol>
 
 <p><strong>Medication Usage</strong></p>
 <ol>
   <li>
-    <p>Product Identification - <a href="https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.medication">medication</a></p>
+    <p>Product Identification 
+    * mppcv - Amoxiclav Sandoz 875/125 compr. (séc.) 20x (1715127)</p>
   </li>
   <li>
-    <p>Subject - <a href="https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.subject">subject</a></p>
+    <p>Subject - Pia Peters</p>
   </li>
   <li>
-    <p>Date of report - <a href="https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.dateAsserted">dateAsserted</a></p>
+    <p>Date of report - 2021-07-19T18:30:00+02:00</p>
   </li>
   <li>
-    <p>InformationSource (Patient) - <a href="https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.informationSource">informationSource</a></p>
+    <p>InformationSource - Patient</p>
   </li>
   <li>
-    <p>Prescription link - <a href="https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.derivedFrom">derivedFrom</a></p>
+    <p>Subject - Pia Peters</p>
   </li>
   <li>
-    <p>Status (not-taking) - <a href="https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.code">adherence.code</a></p>
+    <p>Prescription</p>
   </li>
   <li>
-    <p>Reason (Medication stopped - side effect) - <a href="https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.reason">adherence.reason</a></p>
+    <p>Status not-taking</p>
+  </li>
+  <li>
+    <p>Reason - “Medication stopped - side effect”</p>
   </li>
 </ol>
 
@@ -353,7 +356,7 @@ link Prescription to Administration--></g></svg>
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 20, 2021 09:04+0000">2021-08-20</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 31, 2021 14:26+0000">2021-08-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
