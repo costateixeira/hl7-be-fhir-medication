@@ -10,46 +10,56 @@ Then it is reported that the medication was not taken at all.
 
 
 **Prescriptions attributes**
-1. Produt Identification - [medication](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication) 
+1. Produt Identification 
     * VOS - ciprofloxacine oral 500 mg (6734)
   
-2. Dosage - [dosageInstruction](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction)
-    * [PatientInstructions](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction.patientInstruction) for taking.
+2. Dosage 
   
-3. Date of the prescription - [authoredOn](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn)
+3. Date of the prescription - 2021-07-19T09:00:00+02:00
    
-4. Patient for whom the prescription is - [subject](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject)
+4. Patient for whom the prescription is - Pia Peters
    
-5. Requester - [requester](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester)
+5. Requester - GP
    
-6. Encounter - [encounter](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter)
+6. Encounter 
    
-7. Status (active) - [status](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status)
+7. Status - active
 
 **Dispense attributes**
-1. Produt Identification [medicationReference](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medicationReference) or [medicationCodeableConcept](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medication[x]:medicationCodeableConcept)
+1. Produt Identification
     * VOS - ciprofloxacine oral 500 mg (6734)
     * mppcv - Ciproxine compr. pellic. (séc.) 20x 500mg (1359611)
   
-2. Total quantity (20) - [quantity](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.quantity)
+2. Total quantity - 20 
    
-3. Identification of Prescription - [authorizingPrescription](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription)
+3. Identification of Prescription 
    
-4. Date of the dispense - [whenHandedOver](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver)
+4. Date of the dispense - 2021-07-19T13:00:00+02:00
    
-5. Dosage - [dosageInstruction](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction)
+5. Dosage 
    
-6. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
+6. Subject - Pia Peters
    
-7. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
+7. Dispenser - Pharmacist
 
 **Medication Usage**
-1. Product Identification - [medication](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.medication)
-2. Subject - [subject](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.subject)
-3. Date of report - [dateAsserted](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.dateAsserted)
-4. InformationSource (Patient) - [informationSource](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.informationSource)
-5. Prescription link - [derivedFrom](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.derivedFrom)
-6. Status (not-taking) - [adherence.code](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.code) 
-7. Reason (not needed) - [adherence.reason](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.reason)
+
+1. Product Identification
+    * mppcv - Ciproxine compr. pellic. (séc.) 20x 500mg (1359611)
+   
+2. Subject - Pia Peters
+   
+3. Date of report - 2021-08-19T13:00:00+02:00
+   
+4. InformationSource - Patient 
+
+5. subject - Pia Peters 
+   
+6. Prescription  
+   
+7.  Status - not-taking
+   
+8.  Reason - not needed 
+   
 
 

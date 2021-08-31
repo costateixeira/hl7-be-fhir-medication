@@ -10,39 +10,39 @@ This example shows a prescription that is made by brand name and the pharmacist 
 * This should result in a medication summary that can group treatment lines, enabling the visualization of the prescription and related dispenses next to each other.
 
 **Prescriptions attributes**
-1. Produt Identification - [medication](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication) 
+1. Produt Identification 
     *	VOS - paracetamol oral 1G (24745)
     *	mppcv - Dafalgan compr. pellic. (séc.) Forte 16x 1g  (1799147)
 
-2. Dosage - [dosageInstruction](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction)
+2. Dosage
    
-3. Reason for not prescribing VOS - [substitution](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.substitution).allowed (F) and [substitution](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.substitution).reason
+3. Reason for not prescribing VOS
    
-4. Date of the prescription - [authoredOn](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn)
+4. Date of the prescription - 2021-07-19T09:00:00+02:00
    
-5. Patient for whom the prescription is - [subject](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject)
+5. Patient for whom the prescription is - Pia Peters
    
-6. Requester - [requester](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester)
+6. Requester - GP
    
-7. Encounter - [encounter](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter)
+7. Encounter - ID: 0cf5dc52-28dc-43ce-96d2-3a757526c739
    
-8. Status (active) - [status](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status)
+8. Status - active
 
 **Dispense attributes**
-1. Produt Identification - [medicationReference](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medicationReference) or [medicationCodeableConcept](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medication[x]:medicationCodeableConcept)
+1. Produt Identification 
     * VOS - paracetamol oral 1G (24745)
     * mppcv - Dafalgan compr. pellic. (séc.) Forte 10x 1g (3010733)
 
-2. Total quantity (30) - [quantity](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.quantity)
+2. Total quantity - 30
    
-3. Reason for change (out of stock) - [note](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.note)
+3. Reason for change - out of stock
    
-4. Identification of Prescription - [authorizingPrescription](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription)
+4. Identification of Prescription - 69eb6358-6eb6-40e4-972f-33d22c3392c5
+
+5. Date of the dispense - "2021-07-19T13:00:00+02:00"
    
-5. Date of the dispense - [whenHandedOver](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver)
+6. Dosage 
    
-6. Dosage - [dosageInstruction](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction)
+7. Subject - Pia Peters
    
-7. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
-   
-8. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
+8. Dispenser - Pharmacist

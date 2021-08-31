@@ -10,36 +10,36 @@ This example shows a prescription that is made by VOS and the pharmacist changes
 * Since the ibuprofen inhibits the anti-hipertensive action of ramipril, the pharmacist chose to change ibuprofen by paracetamol, dispensing Dafalgan Forte 1000 mg also TID;
  
 **Prescriptions attributes**
-1. Produt Identification - [medication](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication) 
+1. Produt Identification 
     * VOS - ibuproféne oral 400 mg (16279)
 
-2. Dosage - [dosageInstruction](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction)
+2. Dosage 
    
-3. Date of the prescription - [authoredOn](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn)
+3. Date of the prescription - 2021-07-19T09:00:00+02:00
    
-4. Patient for whom the prescription is - [subject](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject)
+4. Patient for whom the prescription is - Pia Peters
    
-5. Requester - [requester](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester)
+5. Requester - GP
    
-6. Encounter - [encounter](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter)  
+6. Encounter - ID: 0cf5dc52-28dc-43ce-96d2-3a757526c739
    
-7. Status (active) - [status](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status)
+7. Status - active
 
 **Dispense attributes**
-1. Produt Identification - [medicationReference](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medicationReference) or [medicationCodeableConcept](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medication[x]:medicationCodeableConcept)
+1. Produt Identification
      * VOS - paracetamol oral 1G (24745)
      * mppcv - Dafalgan compr. efferv. (séc.) Forte 20x 1g (3391281)
 
-2. Total quantity (20) - [quantity](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.quantity)
+2. Total quantity - 20
    
-3. Reason for change (drug-drug interaction) - [note](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.note)
+3. Reason for change  - drug-drug interaction 
    
-4. Identification of Prescription - [authorizingPrescription](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription)
+4. Identification of Prescription - 69eb6358-6eb6-40e4-972f-33d22c3392c5
    
-5. Date of the dispense - [whenHandedOver](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver)
+5. Date of the dispense - "2021-07-19T13:00:00+02:00"
    
-6. Dosage - [dosageInstruction](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction)
+6. Dosage
    
-8. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
+7. Subject - Pia Peters
    
-9.  Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
+8. Dispenser - Pharmacist

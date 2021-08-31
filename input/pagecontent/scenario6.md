@@ -8,34 +8,34 @@ This example shows a prescription that is made by VOS and the pharmacist refuses
 * Since the ibuprofen interacts with ramipril, the pharmacist chose to refuse the dispense of the medication;
 
 **Prescriptions attributes**
-1. Produt Identification - [medication](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication) 
+1. Produt Identification
     * VOS - ibuproféne oral 400 mg (16279)
   
-2. Dosage - [dosageInstruction](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction)
+2. Dosage 
    
-3. Date of the prescription - [authoredOn](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn)
+3. Date of the prescription - 2021-07-19T09:00:00+02:00
    
-4. Patient for whom the prescription is - [subject](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject)
+4. Patient for whom the prescription is - Pia Peters
    
-5. Requester - [requester](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester)
+5. Requester - GP
    
-6. Encounter - [encounter](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter)  
+6. Encounter 
    
-7. Status (active) - [status](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status)
+7. Status - active
 
 
 
 **Dispense attributes**
 
-1. Reason for refusal (drug-drug interaction) - [note](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.note)
+1. Reason for refusal - drug-drug interaction 
    
-2. Identification of Prescription - [authorizingPrescription](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription)
+2. Identification of Prescription 
    
-3. Date of the dispense - [whenHandedOver](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver) 
+3. Date of the dispense - 2021-07-19T13:00:00+02:00
    
-4. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
+4. Subject - Pia Peters
    
-5. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
+5. Dispenser - Pharmacist
    
 6. ?? do we add the code/reference of the medication that was not dispensed ??
 7. do we add quantity? in IHE, we do Medication=X, QTY = 0

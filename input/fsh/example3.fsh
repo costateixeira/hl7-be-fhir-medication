@@ -128,7 +128,7 @@ Title: "Dispense medication before the prescription of the general practitioner"
 * medicationCodeableConcept = https://vos-identifier.be/vos_product_codes#24646  "pantoprazole oral 20 mg"
 
 
-* authoredOn = "2021-07-19T09:00:00+02:00"
+* authoredOn = "2021-08-19T09:00:00+02:00"
 
 * requester.identifier.value = "7c121778-5b2b-442d-9314-0a73995ab3dd"
 * requester.identifier.system = "http://physician-identifiers.com"

@@ -11,40 +11,40 @@ This example shows a prescription that is made by VOS and the pharmacist changes
 
 
 **Prescriptions attributes**
-1. Produt Identification - [medication](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication) 
+1. Produt Identification 
     * VOS - paracetamol oral 1G (24745)
 
-2. Dosage - [dosageInstruction](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction)
+2. Dosage
    
-3. Date of the prescription - [authoredOn](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn)
+3. Date of the prescription - 2021-07-19T09:00:00+02:00
    
-4. Patient for whom the prescription is - [subject](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject)
+4. Patient for whom the prescription is - Pia Peters
    
-5. Requester - [requester](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester)
+5. Requester - GP
    
-6. Encounter - [encounter](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter)  
+6. Encounter - ID: 0cf5dc52-28dc-43ce-96d2-3a757526c739
    
-7. Status (active) - [status](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status)
+7. Status - active
 
 
 **Dispense attributes**
-1.	Produt Identification - [medicationReference](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medicationReference) or [medicationCodeableConcept](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medication[x]:medicationCodeableConcept)
+1.	Produt Identification
      * VOS - paracetamol oral 500 mg (24901)
      * mppcv - Dafalgan compr. 20x 500mg (2933893)
   
-2. Total quantity (20) - [quantity](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.quantity)
-
-3. Reason for change (difficulty swallowing) - [note](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.note)
-
-4. Identification of Prescription - [authorizingPrescription](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription)
-
-5. Date of the dispense - [whenHandedOver](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver)
-
-6. Dosage - [dosageInstruction](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction)
-
-7. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
+1. Total quantity - 20
    
-8. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
+2. Reason for change - difficulty swallowing
+   
+3. Identification of Prescription - 69eb6358-6eb6-40e4-972f-33d22c3392c5
+
+4. Date of the dispense - "2021-07-19T13:00:00+02:00"
+
+5. Dosage 
+
+6. Subject - Pia Peters
+   
+7. Dispenser - Pharmacist
 
 
 ### Notes:  

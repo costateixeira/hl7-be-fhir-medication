@@ -8,73 +8,78 @@ This example shows a prescription that is made by VOS and the pharmacist dispens
 * This should result in a medication summary that can group treatment lines, enabling the visualization of the prescription, dispenses and administrations next to each other.
 
 **Prescriptions attributes**
-1. Produt Identification - [medication](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.medication) 
+1. Produt Identification 
     * VOS - amoxicilline + acide clavulanique oral 875 mg + 125 mg (1941)
   
-2. Dosage - [dosageInstruction](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.dosageInstruction)
-    * [PatientInstructions](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction.patientInstruction) for taking.
+2. Dosage 
   
-3. Date of the prescription - [authoredOn](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.authoredOn)
+3. Date of the prescription - 2021-07-19T09:00:00+02:00
    
-4. Patient for whom the prescription is - [subject](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.subject)
+4. Patient for whom the prescription is - Pia Peters
    
-5. Requester - [requester](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.requester)
+5. Requester - GP
    
-6. Encounter - [encounter](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.encounter)
+6. Encounter
    
-7. Status (active) - [status](https://build.fhir.org/medicationrequest-definitions.html#MedicationRequest.status)
+7. Status - active
 
 **Dispense attributes**
-1. Produt Identification [medicationReference](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medicationReference) or [medicationCodeableConcept](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.medication[x]:medicationCodeableConcept)
+1. Produt Identification
     * VOS - amoxicilline + acide clavulanique oral 875 mg + 125 mg (1941)
     * mppcv - Amoxiclav Sandoz 875/125 compr. (séc.) 20x (1715127)
   
-2. Total quantity (20) - [quantity](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.quantity)
+2. Total quantity - 20
    
-3. Identification of Prescription - [authorizingPrescription](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.authorizingPrescription)
+3. Identification of Prescription 
    
-4. Date of the dispense - [whenHandedOver](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.whenHandedOver)
+4. Date of the dispense - 2021-07-19T13:00:00+02:00
    
-5. Dosage - [dosageInstruction](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.dosageInstruction)
+5. Dosage 
    
-6. Subject - [subject](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.subject)
+6. Subject - Pia Peters
    
-7. Dispenser - [performer](https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master/StructureDefinition-be-medicationdispense-definitions.html#MedicationDispense.performer)
+7. Dispenser - Pharmacist
 
 **Administration attributes**
-1. Product Identification - [medication](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.medication)
+1. Product Identification 
+       * mppcv - Amoxiclav Sandoz 875/125 compr. (séc.) 20x (1715127)
+
    
-2. Subject - [subject](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.subject)
+2. Subject - Pia Peters
    
-3. Encounter - [encounter](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.encounter)
+3. Encounter 
    
-4. Occurence - [occurence](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.occurence_x_)
+4. Occurence  - 2021-07-19T18:00:00+02:00
    
-5. Performer - [performer](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.performer)
+5. Performer - Nurse
    
-6. Prescription - [request](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.request)
+6. Prescription 
    
-7. Dosage - [dosage](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.dosage)
+7. Dosage 
    
-8. Status (stopped) - [status](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.status)
+8. Status - stopped
    
-9.  Status Reason (allergic reaction) - [statusReason](https://build.fhir.org/medicationadministration-definitions.html#MedicationAdministration.statusReason)
+9.  Status Reason - allergic reaction
 
 
 **Medication Usage**
-1. Product Identification - [medication](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.medication)
+1. Product Identification 
+       * mppcv - Amoxiclav Sandoz 875/125 compr. (séc.) 20x (1715127)
+
    
-2. Subject - [subject](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.subject)
+2. Subject - Pia Peters
    
-3. Date of report - [dateAsserted](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.dateAsserted)
+3. Date of report - 2021-07-19T18:30:00+02:00
    
-4. InformationSource (Patient) - [informationSource](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.informationSource)
+4. InformationSource - Patient
+
+5. Subject - Pia Peters
    
-5. Prescription link - [derivedFrom](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.derivedFrom)
+6. Prescription 
    
-6. Status (not-taking) - [adherence.code](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.code) 
+7. Status not-taking
    
-7. Reason (Medication stopped - side effect) - [adherence.reason](https://build.fhir.org/medicationusage-definitions.html#MedicationUsage.adherence.reason)
+8. Reason - "Medication stopped - side effect" 
 
 
 ### Notes:  
